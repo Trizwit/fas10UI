@@ -100,22 +100,31 @@ string cta-text:
 body body:
 
 -- ftd.column:
-width.fixed.percent: 33.33
+background.solid: $inherited.colors.background.step-1
+width.fixed.px: 432
+
+-- ftd.column:
 padding.px: 16
 
 -- ftd.image:
 src: $blog.pic
+width.fixed.px: 400
+
+-- ftd.column:
+padding.px: 24
 
 -- ftd.text: $blog.head
-role: $inherited.types.copy-regular
+role: $inherited.types.label-small
 color: $inherited.colors.text
+margin-bottom.px: 4
 
 -- ftd.text: $blog.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+margin-bottom.px: 12
 
 -- ftd.text: $blog.body
-role: $inherited.types.copy-regular
+role: $inherited.types.label-large
 color: $inherited.colors.text
 
 -- ftd.text: $blog.cta-text
@@ -124,4 +133,31 @@ color: $inherited.colors.text
 
 -- end: ftd.column
 
+-- end: ftd.column
+
+-- end: ftd.column
+
 -- end: blog
+
+
+
+
+
+
+
+
+
+
+-- component row-container:
+children c:
+
+-- ftd.row:
+align-self: center
+align-content: center
+children: $row-container.c
+spacing.fixed.px: 25
+wrap: true
+
+-- end: ftd.row
+
+-- end: row-container
