@@ -2,7 +2,7 @@
 
 FASTN Blank Package Template Repo
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fifthtry/fastn-heroku&env[DOWNLOAD_BASE_URL]=https://raw.githubusercontent.com/<user_name>/<repo_name>/main/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fifthtry/fastn-heroku&env[DOWNLOAD_BASE_URL]=https://raw.githubusercontent.com/sarvom/component-library-tailwind/main/)
 
 
 > 🧑‍🚀 **Seasoned traveler?** update this file. Enjoy!
