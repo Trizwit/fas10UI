@@ -1,9 +1,6 @@
 -- import: fastn
 
--- fastn.package: sarvom.github.io/component-library-tailwind
+-- fastn.package: sarvom.github.io/component-library-tailblocks
 
 -- fastn.dependency: fifthtry.github.io/doc-site as ds
--- fastn.dependency: fifthtry.github.io/bling as bling
 
--- fastn.auto-import: bling/chat as chat
--- fastn.auto-import: ds

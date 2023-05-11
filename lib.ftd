@@ -1,0 +1,127 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+
+-- component page:
+children c:
+
+-- ftd.column:
+width: fill-container
+background.solid: $inherited.colors.background.base
+
+-- navbar: Tailblocks
+menu: $assets.files.images.menu.png
+toggle: $assets.files.images.toggle.png
+
+-- ftd.column:
+width: fill-container
+margin-vertical.px: 50
+children: $page.c
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: page
+
+
+
+
+
+
+
+
+
+
+-- component navbar:
+caption title:
+ftd.image-src menu:
+ftd.image-src toggle:
+boolean $mode: false
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding.px: 20
+
+-- ftd.row:
+
+-- ftd.image:
+src: $navbar.menu
+height.fixed.px: 20
+width.fixed.px: 20
+margin-right.px: 5
+margin-vertical.px: 5
+
+-- ftd.text: $navbar.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- ftd.row:
+align-content: right
+margin-left.percent: 90
+
+-- ftd.image: 
+if: { !navbar.mode }
+src: $navbar.toggle
+height.fixed.px: 24
+width.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $navbar.mode, v = true)
+$on-click$: $ftd.enable-dark-mode()
+
+-- ftd.image: 
+if: { navbar.mode }
+src: $navbar.toggle
+height.fixed.px: 24
+width.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $navbar.mode, v = false)
+$on-click$: $ftd.enable-light-mode()
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: navbar
+
+
+
+
+
+
+
+
+
+
+-- component blog:
+caption title:
+string head:
+ftd.image-src pic:
+string cta-text:
+body body:
+
+-- ftd.column:
+width.fixed.percent: 33.33
+padding.px: 16
+
+-- ftd.image:
+src: $blog.pic
+
+-- ftd.text: $blog.head
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.text: $blog.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.text: $blog.body
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- ftd.text: $blog.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: blog
