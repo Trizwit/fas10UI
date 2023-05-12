@@ -1,15 +1,29 @@
 -- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/tailblocks-cs
 
 -- component page:
 children c:
 
 -- ftd.column:
 width: fill-container
+colors: $tailblocks-cs.main
+types: $opensans-typography.types
 background.solid: $inherited.colors.background.base
 
--- navbar: Tailblocks
+-- navbar: Component Library
 menu: $assets.files.images.menu.png
 toggle: $assets.files.images.toggle.png
+
+-- selector:
+
+-- button: Blog-1
+url: /
+
+-- button: Blog-2
+url: /
+
+-- end: selector
 
 -- ftd.column:
 width: fill-container
@@ -41,6 +55,7 @@ boolean $mode: false
 width: fill-container
 height: hug-content
 padding.px: 20
+background.solid: $inherited.colors.background.step-2
 
 -- ftd.row:
 
@@ -54,12 +69,12 @@ margin-vertical.px: 5
 -- ftd.text: $navbar.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+margin-vertical.px: 3
 
 -- end: ftd.row
 
 -- ftd.row:
-align-content: right
-margin-left.percent: 90
+margin-left.percent: 80
 
 -- ftd.image: 
 if: { !navbar.mode }
@@ -92,7 +107,7 @@ $on-click$: $ftd.enable-light-mode()
 
 
 
--- component blog:
+-- component blog-1:
 caption title:
 string head:
 ftd.image-src pic:
@@ -101,33 +116,30 @@ body body:
 
 -- ftd.column:
 background.solid: $inherited.colors.background.step-1
-width.fixed.px: 432
-
--- ftd.column:
-padding.px: 16
+max-width.fixed.px: 380
 
 -- ftd.image:
-src: $blog.pic
-width.fixed.px: 400
+src: $blog-1.pic
+max-width.fixed.px: 380
 
 -- ftd.column:
 padding.px: 24
 
--- ftd.text: $blog.head
+-- ftd.text: $blog-1.head
 role: $inherited.types.label-small
 color: $inherited.colors.text
 margin-bottom.px: 4
 
--- ftd.text: $blog.title
+-- ftd.text: $blog-1.title
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 margin-bottom.px: 12
 
--- ftd.text: $blog.body
+-- ftd.text: $blog-1.body
 role: $inherited.types.label-large
 color: $inherited.colors.text
 
--- ftd.text: $blog.cta-text
+-- ftd.text: $blog-1.cta-text
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
 
@@ -135,9 +147,53 @@ color: $inherited.colors.text
 
 -- end: ftd.column
 
+-- end: blog-1
+
+
+
+
+
+
+
+
+
+
+-- component blog-2:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: center
+align-self: center
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.px: 380
+padding.px: 24
+
+-- ftd.text: $blog-2.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.text
+margin-bottom.px: 4
+
+-- ftd.text: $blog-2.title
+style: bold
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $blog-2.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $blog-2.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
 -- end: ftd.column
 
--- end: blog
+-- end: blog-2
 
 
 
@@ -161,3 +217,60 @@ wrap: true
 -- end: ftd.row
 
 -- end: row-container
+
+
+
+
+
+
+
+
+
+
+-- component selector:
+children c:
+
+-- ftd.column:
+width.fixed.percent: 10
+height: fill-container
+padding.px: 10
+align-content: center
+spacing.fixed.px: 20
+background.solid: $inherited.colors.background.step-2
+children: $selector.c
+
+
+-- end: ftd.column
+
+-- end: selector
+
+
+
+
+
+
+
+
+
+
+-- component button:
+caption name:
+string url:
+boolean $is-active: false
+
+-- ftd.text: $button.name
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-width.px: 1
+border-radius.px: 4
+background.solid: $inherited.colors.cta-primary.base
+border-color: $inherited.colors.cta-primary.base
+border-color if {button.is-active}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
+color: $inherited.colors.cta-primary.text
+link: $button.url
+
+-- end: button

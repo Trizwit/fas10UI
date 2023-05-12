@@ -3,4 +3,5 @@
 -- fastn.package: sarvom.github.io/component-library-tailblocks
 
 -- fastn.dependency: fifthtry.github.io/doc-site as ds
-
+-- fastn.dependency: fastn-community.github.io/opensans-typography
+-- fastn.dependency: sarvom.github.io/tailblocks-cs

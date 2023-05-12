@@ -6,25 +6,22 @@
 
 -- lib.row-container:
 
--- lib.blog: The Catalyzer
-head: **Category**
-pic: $assets.files.images.720x400.png
+-- lib.blog-2: Raclette Blueberry Nextious Level
+head: Category
 cta-text: Learn more
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
 
--- lib.blog: **The 400 Blows**
-head: **Category**
-pic: $assets.files.images.721x401.png
+-- lib.blog-2: Ennui Snackwave Thundercats
+head: Category
 cta-text: Learn more
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
 
--- lib.blog: **Shooting Stars**
-head: **Category**
-pic: $assets.files.images.722x402.png
+-- lib.blog-2: Shooting Stars
+head: Category
 cta-text: Learn more
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
