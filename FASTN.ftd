@@ -5,3 +5,16 @@
 -- fastn.dependency: fifthtry.github.io/doc-site as ds
 -- fastn.dependency: fastn-community.github.io/opensans-typography
 -- fastn.dependency: sarvom.github.io/tailblocks-cs
+
+
+
+
+
+
+-- fastn.sitemap:
+
+# Home: index.html
+
+- Blog-1: /
+
+- Blog-2: /

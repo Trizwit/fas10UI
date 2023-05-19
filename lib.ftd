@@ -1,6 +1,7 @@
 -- import: sarvom.github.io/component-library-tailblocks/assets
 -- import: fastn-community.github.io/opensans-typography
 -- import: sarvom.github.io/tailblocks-cs
+-- import: fastn/processors as pr
 
 -- component page:
 children c:
@@ -57,6 +58,7 @@ margin-vertical.px: 5
 
 -- ftd.text: $navbar.title
 role: $inherited.types.copy-regular
+style: bold
 color: $inherited.colors.text
 margin-vertical.px: 3
 
@@ -100,7 +102,8 @@ $on-click$: $ftd.enable-light-mode()
 children c:
 
 -- ftd.row:
-margin-vertical.px: 50
+margin-vertical.px: 56
+margin-horizontal.px: 32
 align-self: center
 align-content: center
 children: $row-container.c
@@ -118,18 +121,28 @@ wrap: true
 
 
 
-
+-- boolean $push-left: false
 
 -- component selector:
 children c:
 
 -- ftd.column:
-width.fixed.percent: 15
-height: fill-container
-padding.px: 10
-align-content: center
-spacing.fixed.px: 20
-background.solid: $inherited.colors.background.step-2
+min-width.fixed.percent if { !$push-left }: 20
+min-height.fixed.calc: 100vh - 0px
+height.fixed.vh: 100
+overflow-y: auto
+width.fixed.percent if { !$push-left }: 20
+width.fixed.percent if { $push-left }: 1
+align-content: top-left
+background.solid: $inherited.colors.background.step-1
+border-radius.px: 8
+padding-left.px: 24
+padding-top.px: 36
+padding-right.px: 16
+padding-bottom.px: 32
+margin-top.px: 25
+margin-bottom.px: 25
+spacing.fixed.px: 10
 children: $selector.c
 
 
@@ -146,10 +159,12 @@ children: $selector.c
 
 
 
+
+
 -- component button:
 caption name:
-string url:
 boolean $is-active: false
+string url:
 
 -- ftd.text: $button.name
 width.fixed.percent: 85
@@ -188,11 +203,11 @@ body body:
 
 -- ftd.column:
 background.solid: $inherited.colors.background.step-1
-max-width.fixed.px: 380
+max-width.fixed.percent: 25
 
 -- ftd.image:
 src: $blog-1.pic
-max-width.fixed.px: 380
+width: fill-container
 
 -- ftd.column:
 padding.px: 24
@@ -240,7 +255,7 @@ body body:
 align-content: center
 align-self: center
 background.solid: $inherited.colors.background.step-1
-max-width.fixed.px: 380
+max-width.fixed.percent: 25
 padding.px: 24
 
 -- ftd.text: $blog-2.head
@@ -286,7 +301,7 @@ body body:
 align-content: left
 align-self: start
 background.solid: $inherited.colors.background.step-1
-max-width.fixed.px: 380
+max-width.fixed.percent: 25
 padding.px: 24
 
 -- ftd.text: $blog-3.head
@@ -332,7 +347,7 @@ body body:
 align-content: left
 align-self: start
 background.solid: $inherited.colors.background.step-1
-max-width.fixed.px: 380
+max-width.fixed.percent: 25
 padding.px: 24
 
 -- ftd.text: $blog-4.head
@@ -384,6 +399,7 @@ style: semi-bold
 role: $inherited.types.label-small
 color: $inherited.colors.custom.one
 margin-bottom.px: 4
+margin-right.px: 8
 
 -- ftd.column:
  
@@ -426,7 +442,7 @@ body body:
 align-content: left
 align-self: start
 background.solid: $inherited.colors.background.step-1
-max-width.fixed.px: 380
+max-width.fixed.percent: 25
 padding.px: 24
 
 -- ftd.text: $content-1.head
@@ -472,7 +488,7 @@ body body:
 align-content: left
 align-self: start
 background.solid: $inherited.colors.background.step-1
-max-width.fixed.px: 380
+max-width.fixed.percent: 25
 padding.px: 24
 
 -- ftd.text: $content-2.head
@@ -518,7 +534,7 @@ body body:
 align-content: left
 align-self: start
 background.solid: $inherited.colors.background.step-1
-max-width.fixed.px: 380
+max-width.fixed.percent: 25
 padding.px: 24
 
 -- ftd.text: $content-3.head
@@ -564,7 +580,7 @@ body body:
 align-content: left
 align-self: start
 background.solid: $inherited.colors.background.step-1
-max-width.fixed.px: 380
+max-width.fixed.percent: 25
 padding.px: 24
 
 -- ftd.text: $content-4.head
@@ -610,7 +626,7 @@ body body:
 align-content: left
 align-self: start
 background.solid: $inherited.colors.background.step-1
-max-width.fixed.px: 380
+max-width.fixed.percent: 25
 padding.px: 24
 
 -- ftd.text: $content-5.head

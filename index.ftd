@@ -7,93 +7,29 @@
 -- lib.selector:
 
 -- lib.button: Blog-1
-url: /
+url: blog-1
 
 -- lib.button: Blog-2
-url: /
+url: blog-2
 
 -- lib.button: Blog-3
-url: /
+url: blog-3
 
 -- lib.button: Blog-4
-url: /
+url: blog-4
 
 -- lib.button: Blog-5
-url: /
-
--- lib.button: Content-1
-url: /
-
--- lib.button: Content-2
-url: /
-
--- lib.button: Content-3
-url: /
-
--- lib.button: Content-4
-url: /
-
--- lib.button: Content-5
-url: /
-
--- lib.button: Content-6
-url: /
-
--- lib.button: Content-7
-url: /
-
--- lib.button: Content-8
-url: /
-
--- lib.button: Pricing-4
-url: /
-
--- lib.button: Pricing-5
-url: /
-
--- lib.button: Pricing-6
-url: /
+url: blog-5
 
 -- end: lib.selector
 
 -- lib.row-container:
 
--- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.720x400.png
-head: Category
-cta-text: Learn more
 
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
-
--- lib.blog-2: Ennui Snackwave Thundercats
-head: Category
-cta-text: Learn more
-
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
-
--- lib.blog-3: Shooting Stars
-head: Category
-cta-text: Learn more
-
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
-
--- lib.blog-4: Shooting Stars
-head: Category
-cta-text: Learn more
-
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
-
--- lib.blog-5: Shooting Stars
-head: Category
-cta-text: Learn more
-
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
 
 -- end: lib.row-container
 
+
+
 -- end: lib.page
+
