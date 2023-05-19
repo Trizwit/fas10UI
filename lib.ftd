@@ -15,22 +15,11 @@ background.solid: $inherited.colors.background.base
 menu: $assets.files.images.menu.png
 toggle: $assets.files.images.toggle.png
 
--- selector:
-
--- button: Blog-1
-url: /
-
--- button: Blog-2
-url: /
-
--- end: selector
-
--- ftd.column:
+-- ftd.row:
 width: fill-container
-margin-vertical.px: 50
 children: $page.c
 
--- end: ftd.column
+-- end: ftd.row
 
 -- end: ftd.column
 
@@ -107,12 +96,95 @@ $on-click$: $ftd.enable-light-mode()
 
 
 
+-- component row-container:
+children c:
+
+-- ftd.row:
+margin-vertical.px: 50
+align-self: center
+align-content: center
+children: $row-container.c
+spacing.fixed.px: 25
+wrap: true
+
+-- end: ftd.row
+
+-- end: row-container
+
+
+
+
+
+
+
+
+
+
+-- component selector:
+children c:
+
+-- ftd.column:
+width.fixed.percent: 15
+height: fill-container
+padding.px: 10
+align-content: center
+spacing.fixed.px: 20
+background.solid: $inherited.colors.background.step-2
+children: $selector.c
+
+
+-- end: ftd.column
+
+-- end: selector
+
+
+
+
+
+
+
+
+
+
+-- component button:
+caption name:
+string url:
+boolean $is-active: false
+
+-- ftd.text: $button.name
+width.fixed.percent: 85
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-width.px: 1
+border-radius.px: 4
+background.solid: $inherited.colors.cta-primary.base
+border-color: $inherited.colors.cta-primary.base
+border-color if {button.is-active}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
+color: $inherited.colors.cta-primary.text
+link: $button.url
+
+-- end: button
+
+
+
+
+
+
+
+
+
+
 -- component blog-1:
 caption title:
 string head:
 ftd.image-src pic:
 string cta-text:
 body body:
+
 
 -- ftd.column:
 background.solid: $inherited.colors.background.step-1
@@ -204,45 +276,42 @@ color: $inherited.colors.text
 
 
 
--- component row-container:
-children c:
-
--- ftd.row:
-align-self: center
-align-content: center
-children: $row-container.c
-spacing.fixed.px: 25
-wrap: true
-
--- end: ftd.row
-
--- end: row-container
-
-
-
-
-
-
-
-
-
-
--- component selector:
-children c:
+-- component blog-3:
+caption title:
+string head:
+string cta-text:
+body body:
 
 -- ftd.column:
-width.fixed.percent: 10
-height: fill-container
-padding.px: 10
-align-content: center
-spacing.fixed.px: 20
-background.solid: $inherited.colors.background.step-2
-children: $selector.c
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.px: 380
+padding.px: 24
 
+-- ftd.text: $blog-3.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $blog-3.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $blog-3.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $blog-3.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
 
 -- end: ftd.column
 
--- end: selector
+-- end: blog-3
 
 
 
@@ -253,24 +322,317 @@ children: $selector.c
 
 
 
--- component button:
-caption name:
-string url:
-boolean $is-active: false
+-- component blog-4:
+caption title:
+string head:
+string cta-text:
+body body:
 
--- ftd.text: $button.name
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.px: 380
+padding.px: 24
+
+-- ftd.text: $blog-4.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.three
+margin-bottom.px: 4
+padding.px: 4
+background.solid: $inherited.colors.cta-tertiary.base
+
+-- ftd.text: $blog-4.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $blog-4.body
 role: $inherited.types.label-large
-text-align: center
-padding-vertical.px: 12
-padding-horizontal.px: 32
-border-width.px: 1
-border-radius.px: 4
-background.solid: $inherited.colors.cta-primary.base
-border-color: $inherited.colors.cta-primary.base
-border-color if {button.is-active}: $inherited.colors.cta-primary.hover
-$on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
-color: $inherited.colors.cta-primary.text
-link: $button.url
 
--- end: button
+-- ftd.text: $blog-4.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: blog-4
+
+
+
+
+
+
+
+
+
+
+-- component blog-5:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.row:
+background.solid: $inherited.colors.background.step-1
+padding.px: 24
+
+-- ftd.text: $blog-5.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.column:
+ 
+-- ftd.text: $blog-5.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $blog-5.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $blog-5.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: blog-5
+
+
+
+
+
+
+
+
+
+
+-- component content-1:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.px: 380
+padding.px: 24
+
+-- ftd.text: $content-1.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $content-1.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $content-1.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $content-1.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: content-1
+
+
+
+
+
+
+
+
+
+
+-- component content-2:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.px: 380
+padding.px: 24
+
+-- ftd.text: $content-2.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $content-2.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $content-2.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $content-2.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: content-2
+
+
+
+
+
+
+
+
+
+
+-- component content-3:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.px: 380
+padding.px: 24
+
+-- ftd.text: $content-3.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $content-3.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $content-3.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $content-3.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: content-3
+
+
+
+
+
+
+
+
+
+
+-- component content-4:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.px: 380
+padding.px: 24
+
+-- ftd.text: $content-4.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $content-4.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $content-4.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $content-4.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: content-4
+
+
+
+
+
+
+
+
+
+
+-- component content-5:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.px: 380
+padding.px: 24
+
+-- ftd.text: $content-5.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $content-5.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $content-5.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $content-5.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: content-5
