@@ -62,6 +62,7 @@ role: $inherited.types.copy-regular
 style: bold
 color: $inherited.colors.text
 margin-vertical.px: 3
+link: index.html
 
 -- end: ftd.row
 
