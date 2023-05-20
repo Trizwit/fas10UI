@@ -46,7 +46,7 @@ width: fill-container
 height: hug-content
 spacing: space-between
 padding.px: 20
-background.solid: $inherited.colors.background.step-1
+background.solid: $inherited.colors.background.step-2
 
 -- ftd.row:
 
