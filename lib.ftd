@@ -67,7 +67,6 @@ link: index.html
 -- end: ftd.row
 
 -- ftd.row:
-margin-left.percent: 80
 
 -- ftd.image: 
 if: { !navbar.mode }
