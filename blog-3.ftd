@@ -22,7 +22,7 @@ url: blog-5
 
 -- end: lib.selector
 
--- lib.row-container:
+-- lib.container-wrapper:
 
 -- lib.blog-3: Raclette Blueberry Nextious Level
 head: Category
@@ -45,6 +45,6 @@ cta-text: Learn more
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
 
--- end: lib.row-container
+-- end: lib.container-wrapper
 
 -- end: lib.page

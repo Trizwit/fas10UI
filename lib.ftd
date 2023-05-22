@@ -13,6 +13,8 @@ types: $opensans-typography.types
 background.solid: $inherited.colors.background.base
 
 -- navbar: Component Library
+text-1: View Code
+text-2: Preview
 menu: $assets.files.images.menu.png
 toggle: $assets.files.images.toggle.png
 
@@ -34,9 +36,12 @@ children: $page.c
 
 
 
+-- boolean $code-open: false
 
 -- component navbar:
 caption title:
+string text-1:
+string text-2:
 ftd.image-src menu:
 ftd.image-src toggle:
 boolean $mode: false
@@ -67,6 +72,23 @@ link: index.html
 -- end: ftd.row
 
 -- ftd.row:
+align-self: center
+
+-- ftd.text: $navbar.text-1
+if: { !code-open }
+role: $inherited.types.copy-regular
+style: semi-bold
+color: $inherited.colors.text
+margin-right.px: 5
+$on-click$: $ftd.set-bool($a = $code-open, v = true)
+
+-- ftd.text: $navbar.text-2
+if: { code-open }
+role: $inherited.types.copy-regular
+style: semi-bold
+color: $inherited.colors.text
+margin-right.px: 5
+$on-click$: $ftd.set-bool($a = $code-open, v = false)
 
 -- ftd.image: 
 if: { !navbar.mode }
@@ -99,7 +121,7 @@ $on-click$: $ftd.enable-light-mode()
 
 
 
--- component row-container:
+-- component container-wrapper:
 children c:
 
 -- ftd.row:
@@ -107,13 +129,13 @@ margin-vertical.px: 56
 margin-horizontal.px: 32
 align-self: center
 align-content: center
-children: $row-container.c
+children: $container-wrapper.c
 spacing.fixed.px: 25
 wrap: true
 
 -- end: ftd.row
 
--- end: row-container
+-- end: container-wrapper
 
 
 
@@ -145,7 +167,6 @@ margin-top.px: 25
 margin-bottom.px: 25
 spacing.fixed.px: 10
 children: $selector.c
-
 
 -- end: ftd.column
 
@@ -653,3 +674,14 @@ color: $inherited.colors.text
 -- end: ftd.column
 
 -- end: content-5
+
+
+
+
+
+
+
+
+
+
+-- 

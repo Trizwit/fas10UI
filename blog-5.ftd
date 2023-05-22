@@ -22,7 +22,7 @@ url: blog-5
 
 -- end: lib.selector
 
--- lib.row-container:
+-- lib.container-wrapper:
 
 -- lib.blog-5: Shooting Stars
 head: Category
@@ -48,6 +48,6 @@ Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snac
 ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha 
 lumbersexual pork belly polaroid hoodie portland craft beer.
 
--- end: lib.row-container
+-- end: lib.container-wrapper
 
 -- end: lib.page
