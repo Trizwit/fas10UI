@@ -79,7 +79,7 @@ if: { !code-open }
 role: $inherited.types.copy-regular
 style: semi-bold
 color: $inherited.colors.text
-margin-right.px: 5
+margin-right.px: 15
 $on-click$: $ftd.set-bool($a = $code-open, v = true)
 
 -- ftd.text: $navbar.text-2
@@ -87,7 +87,7 @@ if: { code-open }
 role: $inherited.types.copy-regular
 style: semi-bold
 color: $inherited.colors.text
-margin-right.px: 5
+margin-right.px: 15
 $on-click$: $ftd.set-bool($a = $code-open, v = false)
 
 -- ftd.image: 
