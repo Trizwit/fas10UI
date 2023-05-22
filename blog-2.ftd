@@ -23,6 +23,7 @@ url: blog-5
 -- end: lib.selector
 
 -- lib.container-wrapper:
+if: { !lib.code-open }
 
 -- lib.blog-2: Raclette Blueberry Nextious Level
 head: Category
@@ -48,30 +49,47 @@ waistcoat.
 -- end: lib.container-wrapper
 
 -- lib.container-wrapper:
+if: { lib.code-open }
 
 -- ftd.code:
 lang: ftd
 
-\-- lib.blog-2: Raclette Blueberry Nextious Level
-head: Category
-cta-text: Learn more
+\-- component blog-2:
+caption title:
+string head:
+string cta-text:
+body body:
 
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
+\-- ftd.column:
+align-content: center
+align-self: center
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
 
-\-- lib.blog-2: Raclette Blueberry Nextious Level
-head: Category
-cta-text: Learn more
+\-- ftd.text: $blog-2.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.text
+margin-bottom.px: 4
 
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
+\-- ftd.text: $blog-2.title
+style: bold
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-bottom.px: 12
 
-\-- lib.blog-2: Raclette Blueberry Nextious Level
-head: Category
-cta-text: Learn more
+\-- ftd.text: $blog-2.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
 
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
+\-- ftd.text: $blog-2.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+\-- end: ftd.column
+
+\-- end: blog-2
 
 -- end: ftd.code
 
