@@ -24,6 +24,13 @@ children: $page.c
 
 -- end: ftd.row
 
+-- footer: Trizwit
+icon: $assets.files.images.love.png
+text-1: Made with 
+text-2: by
+text-3: for FASTN Community
+
+
 -- end: ftd.column
 
 -- end: page
@@ -111,6 +118,56 @@ $on-click$: $ftd.enable-light-mode()
 -- end: ftd.row
 
 -- end: navbar
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+ftd.image-src icon:
+caption heading:
+string text-1:
+string text-2:
+string text-3:
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+padding.px: 16
+
+-- ftd.text: $footer.text-1
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-right.px: 5
+
+-- ftd.image:
+src: $footer.icon
+height.fixed.px: 24
+margin-right.px: 5
+
+-- ftd.text: $footer.text-2
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-right.px: 5
+
+-- ftd.text: $footer.heading
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-right.px: 5
+
+-- ftd.text: $footer.text-3
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: footer
 
 
 
