@@ -22,11 +22,29 @@ url: blog-4
 -- lib.button: Blog-5
 url: blog-5
 
--- lib.button: Content-1
-url: content-1
+-- lib.button: Header-1
+url: header-1
 
--- lib.button: Content-2
-url: content-2
+-- lib.button: Header-2
+url: header-2
+
+-- lib.button: Header-3
+url: header-3
+
+-- lib.button: Header-4
+url: header-4
+
+-- lib.button: Hero-1
+url: hero-1
+
+-- lib.button: Hero-2
+url: hero-2
+
+-- lib.button: Hero-3
+url: hero-3
+
+-- lib.button: Hero-4
+url: hero-4
 
 -- end: lib.selector
 
