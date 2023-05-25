@@ -1,5 +1,6 @@
 -- import: sarvom.github.io/component-library-tailblocks/assets
 -- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastn-community.github.io/code-block as cb
 
 -- lib.page:
 
@@ -19,6 +20,30 @@ url: blog-4
 
 -- lib.button: Blog-5
 url: blog-5
+
+-- lib.button: Header-1
+url: header-1
+
+-- lib.button: Header-2
+url: header-2
+
+-- lib.button: Header-3
+url: header-3
+
+-- lib.button: Header-4
+url: header-4
+
+-- lib.button: Hero-1
+url: hero-1
+
+-- lib.button: Hero-2
+url: hero-2
+
+-- lib.button: Hero-3
+url: hero-3
+
+-- lib.button: Hero-4
+url: hero-4
 
 -- end: lib.selector
 
@@ -54,7 +79,7 @@ lumbersexual pork belly polaroid hoodie portland craft beer.
 -- lib.container-wrapper:
 if: { lib.code-open }
 
--- ftd.code:
+-- cb.code:
 lang: ftd
 
 \-- component blog-5:
@@ -96,7 +121,7 @@ color: $inherited.colors.text
 
 \-- end: blog-5
 
--- end: ftd.code
+-- end: cb.code
 
 -- end: lib.container-wrapper
 
