@@ -1,0 +1,45 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: sarvom.github.io/component-library-tailblocks/lib
+
+-- lib.page:
+
+-- lib.selector:
+
+-- lib.button: Blog-1
+url: blog-1
+
+-- lib.button: Blog-2
+url: blog-2
+
+-- lib.button: Blog-3
+url: blog-3
+
+-- lib.button: Blog-4
+url: blog-4
+
+-- lib.button: Blog-5
+url: blog-5
+
+-- lib.button: Content-1
+url: content-1
+
+-- lib.button: Content-2
+url: content-2
+
+-- end: lib.selector
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- lib.content-1: Master Cleanse Reliac Heirloom
+head: ROOF PARTY POLAROID
+cta-text: button
+
+Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke 
+farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies 
+heirloom prism food truck ugh squid celiac humblebrag.
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+

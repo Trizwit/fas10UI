@@ -30,7 +30,6 @@ text-1: Made with
 text-2: by
 text-3: for FASTN Community
 
-
 -- end: ftd.column
 
 -- end: page
@@ -61,19 +60,27 @@ padding.px: 20
 background.solid: $inherited.colors.background.step-2
 
 -- ftd.row:
+margin-vertical.px: 3
 
 -- ftd.image:
-src: $navbar.menu
-height.fixed.px: 20
-width.fixed.px: 20
-margin-right.px: 5
-margin-vertical.px: 5
+if: { !$push-left }
+src: $assets.files.images.menu.png
+width.fixed.px: 24
+height.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $push-left, v = true)
+
+-- ftd.image:
+if: { $push-left }
+src: $assets.files.images.push-right.png
+width.fixed.px: 24
+height.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $push-left, v = false)
 
 -- ftd.text: $navbar.title
 role: $inherited.types.copy-regular
 style: bold
 color: $inherited.colors.text
-margin-vertical.px: 3
+margin-left.px: 8
 link: index.html
 
 -- end: ftd.row
@@ -212,13 +219,11 @@ min-height.fixed.calc: 100vh - 0px
 height.fixed.vh: 100
 overflow-y: auto
 width.fixed.percent if { !$push-left }: 20
-width.fixed.percent if { $push-left }: 1
-align-content: top-left
+width.fixed.percent if { $push-left }: 0
+align-content: top-center
 background.solid: $inherited.colors.background.step-1
 border-radius.px: 8
-padding-left.px: 24
 padding-top.px: 36
-padding-right.px: 16
 padding-bottom.px: 32
 margin-top.px: 25
 margin-bottom.px: 25
@@ -741,4 +746,24 @@ color: $inherited.colors.text
 
 
 
--- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
