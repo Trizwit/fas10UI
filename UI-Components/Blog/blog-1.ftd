@@ -7,43 +7,43 @@
 -- lib.selector:
 
 -- lib.button: Blog-1
-url: blog-1
+url: UI-Components/Blog/blog-1
 
 -- lib.button: Blog-2
-url: blog-2
+url: UI-Components/Blog/blog-2
 
 -- lib.button: Blog-3
-url: blog-3
+url: UI-Components/Blog/blog-3
 
 -- lib.button: Blog-4
-url: blog-4
+url: UI-Components/Blog/blog-4
 
 -- lib.button: Blog-5
-url: blog-5
+url: UI-Components/Blog/blog-5
 
 -- lib.button: Header-1
-url: header-1
+url: UI-Components/Header/header-1
 
 -- lib.button: Header-2
-url: header-2
+url: UI-Components/Header/header-2
 
 -- lib.button: Header-3
-url: header-3
+url: UI-Components/Header/header-3
 
 -- lib.button: Header-4
-url: header-4
+url: UI-Components/Header/header-4
 
 -- lib.button: Hero-1
-url: hero-1
+url: UI-Components/Hero/hero-1
 
 -- lib.button: Hero-2
-url: hero-2
+url: UI-Components/Hero/hero-2
 
 -- lib.button: Hero-3
-url: hero-3
+url: UI-Components/Hero/hero-3
 
 -- lib.button: Hero-4
-url: hero-4
+url: UI-Components/Hero/hero-4
 
 -- end: lib.selector
 
@@ -51,7 +51,7 @@ url: hero-4
 if: { !lib.code-open }
 
 -- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.720x400.png
+pic: $assets.files.images.Blog.blog-1.720x400.png
 head: Category
 cta-text: Learn more
 
@@ -59,7 +59,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- lib.blog-1: Keyvalue Interview and Test on May 22 
-pic: $assets.files.images.720x400.png
+pic: $assets.files.images.Blog.blog-1.721x401.png
 head: Category
 cta-text: Learn more
 
@@ -67,7 +67,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.720x400.png
+pic: $assets.files.images.Blog.blog-1.722x402.png
 head: Category
 cta-text: Learn more
 
@@ -85,7 +85,7 @@ lang: ftd
 \-- lib.container-wrapper:
 
 \-- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.720x400.png
+pic: $assets.files.images.Blog.blog-1.721x401.png
 head: Category
 cta-text: Learn more
 
@@ -93,7 +93,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 \-- lib.blog-1: Keyvalue Interview and Test on May 22 
-pic: $assets.files.images.720x400.png
+pic: $assets.files.images.Blog.blog-1.721x401.png
 head: Category
 cta-text: Learn more
 
@@ -101,7 +101,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 \-- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.720x400.png
+pic: $assets.files.images.Blog.blog-1.722x402.png
 head: Category
 cta-text: Learn more
 
