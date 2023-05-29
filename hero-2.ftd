@@ -1,0 +1,179 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.selector:
+
+-- lib.button: Blog-1
+url: blog-1
+
+-- lib.button: Blog-2
+url: blog-2
+
+-- lib.button: Blog-3
+url: blog-3
+
+-- lib.button: Blog-4
+url: blog-4
+
+-- lib.button: Blog-5
+url: blog-5
+
+-- lib.button: Header-1
+url: header-1
+
+-- lib.button: Header-2
+url: header-2
+
+-- lib.button: Header-3
+url: header-3
+
+-- lib.button: Header-4
+url: header-4
+
+-- lib.button: Hero-1
+url: hero-1
+
+-- lib.button: Hero-2
+url: hero-2
+
+-- lib.button: Hero-3
+url: hero-3
+
+-- lib.button: Hero-4
+url: hero-4
+
+-- end: lib.selector
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- lib.hero-2: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-button-2: Button
+link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.siz.png
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- lib.hero-2: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-button-2: Button
+link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.siz.png
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+\-- end: lib.container-wrapper
+
+\-- component hero-2:
+ftd.image-src cover:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+string cta-button-2:
+string link-2:
+boolean $is-active-2: false
+
+\-- ftd.column:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: #111827
+
+
+\-- ftd.image:
+src: $hero-2.cover   
+width.fixed.percent: 45
+height: auto 
+
+
+\-- ftd.column:
+width.fixed.percent: 60
+align-content: center
+align-self: center
+margin-top.px: 60
+
+\-- ftd.text: $hero-2.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+text-align: center
+color: #ffffff
+
+\-- ftd.text: $hero-2.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+text-align: center
+color: #ffffff
+
+
+\-- ftd.row:
+
+\-- ftd.text: $hero-2.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {hero-2.is-active-1}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-1, v = false)
+color: #ffffff
+link: $hero-2.link-1
+
+\-- ftd.text: $hero-2.cta-button-2
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-left.px: 16
+border-radius.px: 5
+background.solid: #6366f1
+background.solid if {hero-2.is-active-2}: #4f46e5
+$on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-2, v = false)
+color: #ffffff
+link: $hero-2.link-2
+
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+
+\-- end: hero-2
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+

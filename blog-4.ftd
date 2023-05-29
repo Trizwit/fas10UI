@@ -1,0 +1,124 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.selector:
+
+-- lib.button: Blog-1
+url: blog-1
+
+-- lib.button: Blog-2
+url: blog-2
+
+-- lib.button: Blog-3
+url: blog-3
+
+-- lib.button: Blog-4
+url: blog-4
+
+-- lib.button: Blog-5
+url: blog-5
+
+-- lib.button: Header-1
+url: header-1
+
+-- lib.button: Header-2
+url: header-2
+
+-- lib.button: Header-3
+url: header-3
+
+-- lib.button: Header-4
+url: header-4
+
+-- lib.button: Hero-1
+url: hero-1
+
+-- lib.button: Hero-2
+url: hero-2
+
+-- lib.button: Hero-3
+url: hero-3
+
+-- lib.button: Hero-4
+url: hero-4
+
+-- end: lib.selector
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- lib.blog-4: Shooting Stars
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- lib.blog-4: Shooting Stars
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- lib.blog-4: Shooting Stars
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- component blog-4:
+caption title:
+string head:
+string cta-text:
+body body:
+
+\-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
+
+\-- ftd.text: $blog-4.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.three
+margin-bottom.px: 4
+padding.px: 4
+background.solid: $inherited.colors.cta-tertiary.base
+
+\-- ftd.text: $blog-4.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+\-- ftd.text: $blog-4.body
+role: $inherited.types.label-large
+
+\-- ftd.text: $blog-4.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+\-- end: ftd.column
+
+\-- end: blog-4
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page

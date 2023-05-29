@@ -1,0 +1,1613 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/tailblocks-cs
+-- import: fastn/processors as pr
+
+-- component page:
+children c:
+
+-- ftd.column:
+width: fill-container
+colors: $tailblocks-cs.main
+types: $opensans-typography.types
+background.solid: $inherited.colors.background.base
+
+-- navbar: Component Library
+text-1: View Code
+text-2: Preview
+menu: $assets.files.images.menu.png
+toggle: $assets.files.images.toggle.png
+
+-- ftd.row:
+width: fill-container
+children: $page.c
+
+-- end: ftd.row
+
+-- footer: Trizwit
+icon: $assets.files.images.love.png
+text-1: Made with 
+text-2: by
+text-3: for FASTN Community
+
+-- end: ftd.column
+
+-- end: page
+
+
+
+
+
+
+
+
+
+-- boolean $code-open: false
+
+-- component navbar:
+caption title:
+string text-1:
+string text-2:
+ftd.image-src menu:
+ftd.image-src toggle:
+boolean $mode: false
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+spacing: space-between
+padding.px: 20
+background.solid: $inherited.colors.background.step-2
+
+-- ftd.row:
+margin-vertical.px: 3
+
+-- ftd.image:
+if: { !$push-left }
+src: $assets.files.images.menu.png
+width.fixed.px: 24
+height.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $push-left, v = true)
+
+-- ftd.image:
+if: { $push-left }
+src: $assets.files.images.push-right.png
+width.fixed.px: 24
+height.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $push-left, v = false)
+
+-- ftd.text: $navbar.title
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.text
+margin-left.px: 8
+link: index.html
+
+-- end: ftd.row
+
+-- ftd.row:
+align-self: center
+
+-- ftd.text: $navbar.text-1
+if: { !code-open }
+role: $inherited.types.copy-regular
+style: semi-bold
+color: $inherited.colors.text
+margin-right.px: 15
+$on-click$: $ftd.set-bool($a = $code-open, v = true)
+
+-- ftd.text: $navbar.text-2
+if: { code-open }
+role: $inherited.types.copy-regular
+style: semi-bold
+color: $inherited.colors.text
+margin-right.px: 15
+$on-click$: $ftd.set-bool($a = $code-open, v = false)
+
+-- ftd.image: 
+if: { !navbar.mode }
+src: $navbar.toggle
+height.fixed.px: 24
+width.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $navbar.mode, v = true)
+$on-click$: $ftd.enable-dark-mode()
+
+-- ftd.image: 
+if: { navbar.mode }
+src: $navbar.toggle
+height.fixed.px: 24
+width.fixed.px: 24
+$on-click$: $ftd.set-bool($a = $navbar.mode, v = false)
+$on-click$: $ftd.enable-light-mode()
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: navbar
+
+
+
+
+
+
+
+
+
+
+-- component footer:
+ftd.image-src icon:
+caption heading:
+string text-1:
+string text-2:
+string text-3:
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+padding.px: 16
+
+-- ftd.text: $footer.text-1
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-right.px: 5
+
+-- ftd.image:
+src: $footer.icon
+height.fixed.px: 24
+margin-right.px: 5
+
+-- ftd.text: $footer.text-2
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-right.px: 5
+
+-- ftd.text: $footer.heading
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-right.px: 5
+
+-- ftd.text: $footer.text-3
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.row
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+
+-- component container-wrapper:
+children c:
+
+-- ftd.row:
+width: fill-container   
+margin-vertical.px: 56
+margin-horizontal.px: 32
+align-self: center
+align-content: center
+children: $container-wrapper.c
+spacing.fixed.px: 25
+wrap: true
+
+-- end: ftd.row
+
+-- end: container-wrapper
+
+
+
+
+
+
+
+
+-- boolean $push-left: false
+
+-- component selector:
+children c:
+
+-- ftd.column:
+min-width.fixed.percent if { !$push-left }: 20
+min-height.fixed.calc: 100vh - 0px
+height.fixed.vh: 100
+overflow-y: auto
+width.fixed.percent if { !$push-left }: 20
+width.fixed.percent if { $push-left }: 0
+align-content: top-center
+background.solid: $inherited.colors.background.step-1
+border-radius.px: 8
+padding-top.px: 36
+padding-bottom.px: 32
+margin-top.px: 25
+margin-bottom.px: 25
+spacing.fixed.px: 10
+children: $selector.c
+
+-- end: ftd.column
+
+-- end: selector
+
+
+
+
+
+
+
+
+
+
+
+
+-- component button:
+caption name:
+boolean $is-active: false
+string url:
+
+-- ftd.text: $button.name
+width.fixed.percent: 85
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-width.px: 1
+border-radius.px: 4
+background.solid: $inherited.colors.cta-primary.base
+border-color: $inherited.colors.cta-primary.base
+border-color if {button.is-active}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
+color: $inherited.colors.cta-primary.text
+link: $button.url
+
+-- end: button
+
+
+
+
+
+
+
+
+
+
+-- component blog-1:
+caption title:
+string head:
+ftd.image-src pic:
+string cta-text:
+body body:
+
+
+-- ftd.column:
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+
+-- ftd.image:
+src: $blog-1.pic
+width: fill-container
+
+-- ftd.column:
+padding.px: 24
+
+-- ftd.text: $blog-1.head
+role: $inherited.types.label-small
+color: $inherited.colors.text
+margin-bottom.px: 4
+
+-- ftd.text: $blog-1.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $blog-1.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $blog-1.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: blog-1
+
+
+
+
+
+
+
+
+
+
+-- component blog-2:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: center
+align-self: center
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
+
+-- ftd.text: $blog-2.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.text
+margin-bottom.px: 4
+
+-- ftd.text: $blog-2.title
+style: bold
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $blog-2.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $blog-2.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: blog-2
+
+
+
+
+
+
+
+
+
+
+-- component blog-3:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
+
+-- ftd.text: $blog-3.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $blog-3.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $blog-3.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $blog-3.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: blog-3
+
+
+
+
+
+
+
+
+
+
+-- component blog-4:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
+
+-- ftd.text: $blog-4.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.three
+margin-bottom.px: 4
+padding.px: 4
+background.solid: $inherited.colors.cta-tertiary.base
+
+-- ftd.text: $blog-4.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $blog-4.body
+role: $inherited.types.label-large
+
+-- ftd.text: $blog-4.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: blog-4
+
+
+
+
+
+
+
+
+
+
+-- component blog-5:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.row:
+background.solid: $inherited.colors.background.step-1
+padding.px: 24
+
+-- ftd.text: $blog-5.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+margin-right.px: 8
+
+-- ftd.column:
+ 
+-- ftd.text: $blog-5.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $blog-5.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $blog-5.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: blog-5
+
+
+
+
+
+
+
+
+
+
+-- component content-1:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
+
+-- ftd.text: $content-1.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $content-1.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $content-1.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $content-1.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: content-1
+
+
+
+
+
+
+
+
+
+
+-- component content-2:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
+
+-- ftd.text: $content-2.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $content-2.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $content-2.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $content-2.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: content-2
+
+
+
+
+
+
+
+
+
+
+-- component content-3:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
+
+-- ftd.text: $content-3.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $content-3.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $content-3.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $content-3.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: content-3
+
+
+
+
+
+
+
+
+
+
+-- component content-4:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
+
+-- ftd.text: $content-4.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $content-4.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $content-4.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $content-4.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: content-4
+
+
+
+
+
+
+
+
+
+
+-- component content-5:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.column:
+align-content: left
+align-self: start
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
+
+-- ftd.text: $content-5.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+-- ftd.text: $content-5.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $content-5.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $content-5.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: content-5
+
+
+
+
+
+
+
+
+
+
+
+-- component header-1:
+ftd.image-src logo:
+string logo-test:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-button-1:
+
+-- ftd.row:
+width: fill-container
+sticky: true
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px:20
+align-self: center
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+-- ftd.image:
+src: $header-1.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+-- ftd.text: $header-1.logo-test
+margin-horizontal.px: 10
+color: $inherited.colors.custom.four
+text-align: center
+margin-vertical.px: 28
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: right
+
+-- ftd.text: $header-1.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-secondary.text
+
+-- ftd.text: $header-1.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.cta-secondary.text
+
+-- ftd.text: $header-1.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-secondary.text
+
+-- ftd.text: $header-1.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 15
+padding-horizontal.px: 24
+border-radius.px: 10
+background.solid: $inherited.colors.custom.seven
+color: #ffffff
+link: https://tailblocks.cc/
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: header-1
+
+
+
+
+
+
+
+
+
+
+
+-- component header-2:
+ftd.image-src logo:
+string logo-test:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-button-1:
+
+-- ftd.row:
+width: fill-container
+sticky: true
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px:20
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+-- ftd.image:
+src: $header-2.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+margin-right.px: 10
+
+-- ftd.text: $header-2.logo-test
+margin-right.px: 10
+color: $inherited.colors.custom.four
+text-align: center
+margin-vertical.px: 28
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: left
+
+-- ftd.text: $header-2.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-secondary.text
+
+-- ftd.text: $header-2.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.cta-secondary.text
+
+-- ftd.text: $header-2.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-secondary.text
+
+-- end: ftd.row
+
+-- ftd.row:
+align-self: center
+
+-- ftd.text: $header-2.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 15
+padding-horizontal.px: 24
+border-radius.px: 10
+background.solid: $inherited.colors.custom.seven
+color: #ffffff
+link: https://tailblocks.cc/
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: header-2
+
+
+
+
+
+
+
+
+
+
+-- component header-3:
+string logo-test:
+ftd.image-src logo:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-button-1:
+
+-- ftd.row:
+width: fill-container
+sticky: true
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px:20
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: left
+
+
+-- ftd.text: $header-3.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-right.px: 32
+color: $inherited.colors.cta-secondary.text
+
+-- ftd.text: $header-3.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.cta-secondary.text
+
+-- ftd.text: $header-3.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-secondary.text
+
+-- end: ftd.row
+
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: left
+
+
+
+-- ftd.image:
+src: $header-3.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+margin-right.px: 10
+margin-left.px: 38
+
+-- ftd.text: $header-3.logo-test
+color: $inherited.colors.custom.four
+text-align: center
+margin-vertical.px: 28
+margin-right.px: 30
+
+-- end: ftd.row
+
+-- ftd.row:
+align-self: center
+
+-- ftd.text: $header-3.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 15
+padding-horizontal.px: 24
+border-radius.px: 10
+background.solid: $inherited.colors.custom.seven
+color: #ffffff
+link: https://tailblocks.cc/
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: header-3
+
+
+
+
+
+
+
+
+
+
+
+-- component header-4:
+ftd.image-src logo:
+string logo-test:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-button-1:
+
+
+-- ftd.row:
+width: fill-container
+sticky: true
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px:20
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+
+-- ftd.image:
+src: $header-4.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+margin-right.px: 10
+
+-- ftd.text: $header-4.logo-test
+margin-right.px: 10
+color: $inherited.colors.custom.four
+text-align: center
+margin-vertical.px: 28
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: center
+
+
+-- ftd.text: $header-4.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-secondary.text
+
+-- ftd.text: $header-4.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.cta-secondary.text
+
+-- ftd.text: $header-4.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-secondary.text
+
+-- end: ftd.row
+
+
+-- ftd.text: $header-4.cta-button-1
+align-self: center
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 15
+padding-horizontal.px: 24
+border-radius.px: 10
+background.solid: $inherited.colors.custom.seven
+color: #ffffff
+link: https://tailblocks.cc/
+
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: header-4
+
+
+
+
+
+
+
+
+
+
+-- component hero-1:
+ftd.image-src cover:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+string cta-button-2:
+string link-2:
+boolean $is-active-2: false
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: #111827
+
+-- ftd.column:
+width.fixed.percent: 40
+align-content: left
+align-self: center
+margin-right.px: 60
+
+-- ftd.text: $hero-1.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: #ffffff
+
+-- ftd.text: $hero-1.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: #ffffff
+
+
+-- ftd.row:
+
+-- ftd.text: $hero-1.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {hero-1.is-active-1}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-1.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-1.is-active-1, v = false)
+color: #ffffff
+link: $hero-1.link-1
+
+-- ftd.text: $hero-1.cta-button-2
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-left.px: 16
+border-radius.px: 5
+background.solid: #6366f1
+background.solid if {hero-1.is-active-2}: #4f46e5
+$on-mouse-enter$: $ftd.set-bool($a = $hero-1.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-1.is-active-2, v = false)
+color: #ffffff
+link: $hero-1.link-2
+
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width.fixed.percent: 50
+height: auto
+align-content: center
+
+-- ftd.image:
+src: $hero-1.cover   
+width.fixed.percent: 100
+height: auto 
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: hero-1
+
+
+
+
+
+
+
+
+
+
+-- component hero-2:
+ftd.image-src cover:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+string cta-button-2:
+string link-2:
+boolean $is-active-2: false
+
+-- ftd.column:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: #111827
+
+-- ftd.image:
+src: $hero-2.cover   
+width.fixed.percent: 45
+height: auto 
+
+-- ftd.column:
+width.fixed.percent: 60
+align-content: center
+align-self: center
+margin-top.px: 60
+
+-- ftd.text: $hero-2.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+text-align: center
+color: #ffffff
+
+-- ftd.text: $hero-2.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+text-align: center
+color: #ffffff
+
+-- ftd.row:
+
+-- ftd.text: $hero-2.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {hero-2.is-active-1}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-1, v = false)
+color: #ffffff
+link: $hero-2.link-1
+
+-- ftd.text: $hero-2.cta-button-2
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-left.px: 16
+border-radius.px: 5
+background.solid: #6366f1
+background.solid if {hero-2.is-active-2}: #4f46e5
+$on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-2, v = false)
+color: #ffffff
+link: $hero-2.link-2
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-2
+
+
+
+
+
+
+
+
+
+
+-- component hero-3:
+ftd.image-src cover:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+string cta-button-2:
+string link-2:
+boolean $is-active-2: false
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: #111827
+
+
+-- ftd.column:
+width.fixed.percent: 50
+height: auto
+align-content: center
+
+-- ftd.image:
+src: $hero-3.cover   
+width.fixed.percent: 100
+height: auto 
+-- end: ftd.column
+
+
+-- ftd.column:
+width.fixed.percent: 40
+align-content: left
+align-self: center
+margin-left.px: 60
+
+-- ftd.text: $hero-3.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: #ffffff
+
+-- ftd.text: $hero-3.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: #ffffff
+
+
+-- ftd.row:
+
+-- ftd.text: $hero-3.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {hero-3.is-active-1}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-1, v = false)
+color: #ffffff
+link: $hero-3.link-1
+
+-- ftd.text: $hero-3.cta-button-2
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-left.px: 16
+border-radius.px: 5
+background.solid: #6366f1
+background.solid if {hero-3.is-active-2}: #4f46e5
+$on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-2, v = false)
+color: #ffffff
+link: $hero-3.link-2
+
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+-- end: hero-3
+
+
+
+
+
+
+
+
+
+
+-- component hero-4:
+ftd.image-src cover:
+ftd.image-src playstore:
+ftd.image-src appstore:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: #111827
+
+-- ftd.column:
+width.fixed.percent: 40
+align-content: left
+align-self: center
+margin-right.px: 60
+
+-- ftd.text: $hero-4.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: #ffffff
+
+-- ftd.text: $hero-4.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: #ffffff
+
+
+-- ftd.row:
+width: fill-container 
+align-content: center
+margin-bottom.px: 30
+
+-- ftd.text-input:
+placeholder: Placeholder
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-right.px: 16  
+width: fill-container 
+border-radius.px: 5
+border-width.px: 1
+border-color: #4f46e5
+type: text
+role: $inherited.types.copy-small
+background.solid: #1F2937
+color: #ffffff
+
+-- ftd.text: $hero-4.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: #6366f1
+background.solid if {hero-4.is-active-1}: #4f46e5
+$on-mouse-enter$: $ftd.set-bool($a = $hero-4.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-4.is-active-1, v = false)
+color: #ffffff
+link: $hero-4.link-1
+
+-- end: ftd.row
+
+-- ftd.row:
+
+-- ftd.row:
+height: hug-content
+padding-vertical.px: 12
+padding-horizontal.px: 20
+border-radius.px: 8
+background.solid: #1F2937
+
+-- ftd.image:
+src: $hero-4.playstore
+width.fixed.px: 24
+height.fixed.px: 24
+align-self: center
+
+-- ftd.column:
+margin-left.px: 16
+align-content: left
+
+-- ftd.text: GET IT ON
+role: $inherited.types.label-small
+margin-bottom.px: 4
+color: #ffffff
+
+-- ftd.text: Google Play
+role: $inherited.types.label-large
+color: #ffffff
+
+-- end: ftd.column
+-- end: ftd.row
+
+
+-- ftd.row:
+height: hug-content
+padding-vertical.px: 12
+padding-horizontal.px: 20
+margin-left.px: 16
+border-radius.px: 8
+background.solid: #1F2937
+
+-- ftd.image:
+src: $hero-4.appstore
+width.fixed.px: 24
+height.fixed.px: 24
+align-self: center
+
+-- ftd.column:
+margin-left.px: 16
+align-content: left
+
+-- ftd.text: Download on the
+role: $inherited.types.label-small
+margin-bottom.px: 4
+color: #ffffff
+
+-- ftd.text: App Store
+role: $inherited.types.label-large
+color: #ffffff
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width.fixed.percent: 50
+height: auto
+align-content: center
+
+-- ftd.image:
+src: $hero-4.cover   
+width.fixed.percent: 100
+height: auto 
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+-- end: hero-4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

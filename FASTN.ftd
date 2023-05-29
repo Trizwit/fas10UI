@@ -1,0 +1,21 @@
+-- import: fastn
+
+-- fastn.package: sarvom.github.io/component-library-tailblocks
+
+-- fastn.dependency: fifthtry.github.io/doc-site as ds
+-- fastn.dependency: fastn-community.github.io/opensans-typography
+-- fastn.dependency: sarvom.github.io/tailblocks-cs
+-- fastn.dependency: fastn-community.github.io/code-block as cb
+
+
+
+
+
+
+-- fastn.sitemap:
+
+# Home: index.html
+
+- Blog-1: /
+
+- Blog-2: /
