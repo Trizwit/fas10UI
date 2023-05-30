@@ -47,6 +47,21 @@ url: UI-Components/Hero/hero-3
 -- lib.button: Hero-4
 url: UI-Components/Hero/hero-4
 
+-- lib.button: Footer-1
+url: UI-Components/Footer/footer-1
+
+-- lib.button: Footer-2
+url: UI-Components/Footer/footer-2
+
+-- lib.button: Footer-3
+url: UI-Components/Footer/footer-3
+
+-- lib.button: Contact-1
+url: UI-Components/Contact/contact-1
+
+-- lib.button: Contact-2
+url: UI-Components/Contact/contact-2
+
 -- end: lib.selector
 
 -- lib.container-wrapper:
@@ -95,6 +110,8 @@ body content:
 string cta-button-1:
 string link-1:
 boolean $is-active-1: false
+string link-playstore:
+string link-appstore: 
 
 \-- ftd.row:
 width: fill-container
@@ -102,7 +119,7 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 100
 padding-vertical.px: 96
-background.solid: #111827
+background.solid: $inherited.colors.background.base
 
 \-- ftd.column:
 width.fixed.percent: 40
@@ -113,12 +130,12 @@ margin-right.px: 60
 \-- ftd.text: $hero-4.headline
 margin-bottom.px: 16
 role: $inherited.types.heading-medium
-color: #ffffff
+color: $inherited.colors.border
 
 \-- ftd.text: $hero-4.content
 margin-bottom.px: 32
 role: $inherited.types.copy-regular
-color: #ffffff
+color: $inherited.colors.border
 
 
 \-- ftd.row:
@@ -134,11 +151,11 @@ margin-right.px: 16
 width: fill-container 
 border-radius.px: 5
 border-width.px: 1
-border-color: #4f46e5
+border-color: $inherited.colors.border
 type: text
 role: $inherited.types.copy-small
-background.solid: #1F2937
-color: #ffffff
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
 
 \-- ftd.text: $hero-4.cta-button-1
 role: $inherited.types.label-large
@@ -146,11 +163,11 @@ text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
 border-radius.px: 5
-background.solid: #6366f1
-background.solid if {hero-4.is-active-1}: #4f46e5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-4.is-active-1}: $inherited.colors.info.text
 $on-mouse-enter$: $ftd.set-bool($a = $hero-4.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-4.is-active-1, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-4.link-1
 
 \-- end: ftd.row
@@ -162,7 +179,8 @@ height: hug-content
 padding-vertical.px: 12
 padding-horizontal.px: 20
 border-radius.px: 8
-background.solid: #1F2937
+background.solid: $inherited.colors.cta-tertiary.hover
+link: $hero-4.link-playstore
 
 \-- ftd.image:
 src: $hero-4.playstore
@@ -177,11 +195,11 @@ align-content: left
 \-- ftd.text: GET IT ON
 role: $inherited.types.label-small
 margin-bottom.px: 4
-color: #ffffff
+color: $inherited.colors.border
 
 \-- ftd.text: Google Play
 role: $inherited.types.label-large
-color: #ffffff
+color: $inherited.colors.border
 
 \-- end: ftd.column
 \-- end: ftd.row
@@ -193,7 +211,8 @@ padding-vertical.px: 12
 padding-horizontal.px: 20
 margin-left.px: 16
 border-radius.px: 8
-background.solid: #1F2937
+background.solid: $inherited.colors.cta-tertiary.hover
+link: $hero-4.link-appstore
 
 \-- ftd.image:
 src: $hero-4.appstore
@@ -208,11 +227,11 @@ align-content: left
 \-- ftd.text: Download on the
 role: $inherited.types.label-small
 margin-bottom.px: 4
-color: #ffffff
+color: $inherited.colors.border
 
 \-- ftd.text: App Store
 role: $inherited.types.label-large
-color: #ffffff
+color: $inherited.colors.border
 
 \-- end: ftd.column
 

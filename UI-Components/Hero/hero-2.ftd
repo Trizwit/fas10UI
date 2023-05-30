@@ -45,6 +45,21 @@ url: UI-Components/Hero/hero-3
 -- lib.button: Hero-4
 url: UI-Components/Hero/hero-4
 
+-- lib.button: Footer-1
+url: UI-Components/Footer/footer-1
+
+-- lib.button: Footer-2
+url: UI-Components/Footer/footer-2
+
+-- lib.button: Footer-3
+url: UI-Components/Footer/footer-3
+
+-- lib.button: Contact-1
+url: UI-Components/Contact/contact-1
+
+-- lib.button: Contact-2
+url: UI-Components/Contact/contact-2
+
 -- end: lib.selector
 
 -- lib.container-wrapper:
@@ -99,14 +114,12 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 100
 padding-vertical.px: 96
-background.solid: #111827
-
+background.solid: $inherited.colors.background.base
 
 \-- ftd.image:
 src: $hero-2.cover   
 width.fixed.percent: 45
 height: auto 
-
 
 \-- ftd.column:
 width.fixed.percent: 60
@@ -118,14 +131,13 @@ margin-top.px: 60
 margin-bottom.px: 16
 role: $inherited.types.heading-medium
 text-align: center
-color: #ffffff
+color: $inherited.colors.border
 
 \-- ftd.text: $hero-2.content
 margin-bottom.px: 32
 role: $inherited.types.copy-regular
 text-align: center
-color: #ffffff
-
+color: $inherited.colors.border
 
 \-- ftd.row:
 
@@ -139,7 +151,7 @@ background.solid: $inherited.colors.cta-primary.base
 background.solid if {hero-2.is-active-1}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-1, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-2.link-1
 
 \-- ftd.text: $hero-2.cta-button-2
@@ -149,20 +161,18 @@ padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-left.px: 16
 border-radius.px: 5
-background.solid: #6366f1
-background.solid if {hero-2.is-active-2}: #4f46e5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-2.is-active-2}: $inherited.colors.info.text
 $on-mouse-enter$: $ftd.set-bool($a = $hero-2.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-2.is-active-2, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-2.link-2
-
 
 \-- end: ftd.row
 
 \-- end: ftd.column
 
 \-- end: ftd.column
-
 
 \-- end: hero-2
 
