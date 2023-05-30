@@ -51,7 +51,7 @@ url: UI-Components/Hero/hero-4
 if: { !lib.code-open }
 
 -- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.Blog.blog-1.720x400.png
+pic: $assets.files.images.Blog.Blog-1.720x400.png
 head: Category
 cta-text: Learn more
 
@@ -59,7 +59,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- lib.blog-1: Keyvalue Interview and Test on May 22 
-pic: $assets.files.images.Blog.blog-1.721x401.png
+pic: $assets.files.images.Blog.Blog-1.721x401.png
 head: Category
 cta-text: Learn more
 
@@ -101,7 +101,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 \-- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.Blog.blog-1.722x402.png
+pic: $assets.files.images.Blog.Blog-1.722x402.png
 head: Category
 cta-text: Learn more
 
