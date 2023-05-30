@@ -45,6 +45,21 @@ url: UI-Components/Hero/hero-3
 -- lib.button: Hero-4
 url: UI-Components/Hero/hero-4
 
+-- lib.button: Footer-1
+url: UI-Components/Footer/footer-1
+
+-- lib.button: Footer-2
+url: UI-Components/Footer/footer-2
+
+-- lib.button: Footer-3
+url: UI-Components/Footer/footer-3
+
+-- lib.button: Contact-1
+url: UI-Components/Contact/contact-1
+
+-- lib.button: Contact-2
+url: UI-Components/Contact/contact-2
+
 -- end: lib.selector
 
 -- lib.container-wrapper:
