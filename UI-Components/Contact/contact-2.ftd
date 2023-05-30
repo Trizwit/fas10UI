@@ -1,0 +1,462 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/tailblocks-cs
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.selector:
+
+-- lib.button: Blog-1
+url: UI-Components/Blog/blog-1
+
+-- lib.button: Blog-2
+url: UI-Components/Blog/blog-2
+
+-- lib.button: Blog-3
+url: UI-Components/Blog/blog-3
+
+-- lib.button: Blog-4
+url: UI-Components/Blog/blog-4
+
+-- lib.button: Blog-5
+url: UI-Components/Blog/blog-5
+
+-- lib.button: Header-1
+url: UI-Components/Header/header-1
+
+-- lib.button: Header-2
+url: UI-Components/Header/header-2
+
+-- lib.button: Header-3
+url: UI-Components/Header/header-3
+
+-- lib.button: Header-4
+url: UI-Components/Header/header-4
+
+-- lib.button: Hero-1
+url: UI-Components/Hero/hero-1
+
+-- lib.button: Hero-2
+url: UI-Components/Hero/hero-2
+
+-- lib.button: Hero-3
+url: UI-Components/Hero/hero-3
+
+-- lib.button: Hero-4
+url: UI-Components/Hero/hero-4
+
+-- lib.button: Footer-1
+url: UI-Components/Footer/footer-1
+
+-- lib.button: Footer-2
+url: UI-Components/Footer/footer-2
+
+-- lib.button: Footer-3
+url: UI-Components/Footer/footer-3
+
+-- lib.button: Contact-1
+url: UI-Components/Contact/contact-1
+
+-- lib.button: Contact-2
+url: UI-Components/Contact/contact-2
+
+-- end: lib.selector
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- contact-2: Contact Us
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+facebook: $assets.files.images.Footer.facebook.svg
+twitter: $assets.files.images.Footer.twitter.svg
+instagram: $assets.files.images.Footer.instagram.svg
+linkedin: $assets.files.images.Footer.linkedin.svg
+
+Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- contact-2: Contact Us
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+facebook: $assets.files.images.facebook.svg
+twitter: $assets.files.images.twitter.svg
+instagram: $assets.files.images.instagram.svg
+linkedin: $assets.files.images.linkedin.svg
+
+Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.
+
+\-- end: lib.container-wrapper
+
+\-- component contact-2:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+ftd.image-src facebook:
+ftd.image-src twitter:
+ftd.image-src instagram:
+ftd.image-src linkedin:
+
+\-- ftd.column:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: $inherited.colors.background.base
+
+\-- ftd.text: $contact-2.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: $inherited.colors.border
+
+\-- ftd.text: $contact-2.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+
+
+\-- ftd.column:
+padding-bottom.px: 32
+border-bottom-width.px: 1
+border-bottom-color: $inherited.colors.border
+
+\-- ftd.row:
+margin-bottom.px: 32
+
+\-- ftd.column:
+margin-right.px: 8
+
+\-- ftd.text: Name
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+\-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+\-- end: ftd.column
+
+\-- ftd.column:
+margin-left.px: 8
+
+\-- ftd.text: Email
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+\-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+
+\-- ftd.text: Message
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+\-- ftd.text-input:
+width: fill-container
+height.fixed.px: 150
+multiline: true
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 20
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+
+\-- ftd.text: $contact-2.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+align-self: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {contact-2.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $contact-2.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-2.is-active-1, v = false)
+color: $inherited.colors.border
+link: $contact-2.link-1
+
+
+\-- end: ftd.column
+
+\-- ftd.column:
+padding-top.px: 32
+align-content: center
+
+\-- ftd.text: example@email.com
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 20
+
+\-- ftd.text: 123-456-7890
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+\-- ftd.text: TRIZWIT, Ernakulam, Kerala, India
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+
+\-- ftd.row:
+align-content: center
+margin-top.px: 20
+
+\-- ftd.image:
+src: $contact-2.facebook
+width.fixed.percent: 2
+
+\-- ftd.image:
+src: $contact-2.twitter
+width.fixed.percent: 2
+margin-left.px: 12
+margin-top.px: 3
+
+\-- ftd.image:
+src: $contact-2.instagram
+width.fixed.percent: 2
+margin-left.px: 12
+margin-top.px: 3
+
+\-- ftd.image:
+src: $contact-2.linkedin
+width.fixed.percent: 2
+margin-left.px: 12
+
+\-- end: ftd.row
+
+
+\-- end: ftd.column
+
+
+\-- end: ftd.column
+
+\-- end: contact-2
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+-- component contact-2:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+ftd.image-src facebook:
+ftd.image-src twitter:
+ftd.image-src instagram:
+ftd.image-src linkedin:
+
+-- ftd.column:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: $inherited.colors.background.base
+
+-- ftd.text: $contact-2.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: $inherited.colors.border
+
+-- ftd.text: $contact-2.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+
+
+-- ftd.column:
+padding-bottom.px: 32
+border-bottom-width.px: 1
+border-bottom-color: $inherited.colors.border
+
+-- ftd.row:
+margin-bottom.px: 32
+
+-- ftd.column:
+margin-right.px: 8
+
+-- ftd.text: Name
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+-- end: ftd.column
+
+-- ftd.column:
+margin-left.px: 8
+
+-- ftd.text: Email
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+-- ftd.text: Message
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+width: fill-container
+height.fixed.px: 150
+multiline: true
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 20
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+
+-- ftd.text: $contact-2.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+align-self: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {contact-2.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $contact-2.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-2.is-active-1, v = false)
+color: $inherited.colors.border
+link: $contact-2.link-1
+
+
+-- end: ftd.column
+
+-- ftd.column:
+padding-top.px: 32
+align-content: center
+
+-- ftd.text: example@email.com
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 20
+
+-- ftd.text: 123-456-7890
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: TRIZWIT, Ernakulam, Kerala, India
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+
+-- ftd.row:
+align-content: center
+margin-top.px: 20
+
+-- ftd.image:
+src: $contact-2.facebook
+width.fixed.percent: 2
+
+-- ftd.image:
+src: $contact-2.twitter
+width.fixed.percent: 2
+margin-left.px: 12
+margin-top.px: 3
+
+-- ftd.image:
+src: $contact-2.instagram
+width.fixed.percent: 2
+margin-left.px: 12
+margin-top.px: 3
+
+-- ftd.image:
+src: $contact-2.linkedin
+width.fixed.percent: 2
+margin-left.px: 12
+
+-- end: ftd.row
+
+
+-- end: ftd.column
+
+
+-- end: ftd.column
+
+-- end: contact-2

@@ -1,0 +1,268 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/tailblocks-cs
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.selector:
+
+-- lib.button: Blog-1
+url: UI-Components/Blog/blog-1
+
+-- lib.button: Blog-2
+url: UI-Components/Blog/blog-2
+
+-- lib.button: Blog-3
+url: UI-Components/Blog/blog-3
+
+-- lib.button: Blog-4
+url: UI-Components/Blog/blog-4
+
+-- lib.button: Blog-5
+url: UI-Components/Blog/blog-5
+
+-- lib.button: Header-1
+url: UI-Components/Header/header-1
+
+-- lib.button: Header-2
+url: UI-Components/Header/header-2
+
+-- lib.button: Header-3
+url: UI-Components/Header/header-3
+
+-- lib.button: Header-4
+url: UI-Components/Header/header-4
+
+-- lib.button: Hero-1
+url: UI-Components/Hero/hero-1
+
+-- lib.button: Hero-2
+url: UI-Components/Hero/hero-2
+
+-- lib.button: Hero-3
+url: UI-Components/Hero/hero-3
+
+-- lib.button: Hero-4
+url: UI-Components/Hero/hero-4
+
+-- lib.button: Footer-1
+url: UI-Components/Footer/footer-1
+
+-- lib.button: Footer-2
+url: UI-Components/Footer/footer-2
+
+-- lib.button: Footer-3
+url: UI-Components/Footer/footer-3
+
+-- lib.button: Contact-1
+url: UI-Components/Contact/contact-1
+
+-- lib.button: Contact-2
+url: UI-Components/Contact/contact-2
+
+-- end: lib.selector
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- contact-1: Feedback
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+
+Post-ironic portland shabby chic echo park, banjo fashion axe
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- contact-1: Feedback
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+
+Post-ironic portland shabby chic echo park, banjo fashion axe
+
+\-- end: lib.container-wrapper
+
+\-- component contact-1:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+
+\-- ftd.column:
+width.fixed.percent: 27
+padding.px: 32  
+background.solid: $inherited.colors.background.code
+
+\-- ftd.text: $contact-1.headline
+margin-bottom.px: 4
+role: $inherited.types.heading-tiny
+color: $inherited.colors.border
+
+\-- ftd.text: $contact-1.content
+margin-bottom.px: 20
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+\-- ftd.text: Email
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+\-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 16
+width: fill-container
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+\-- ftd.text: Message
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+\-- ftd.text-input:
+placeholder: 
+multiline: true
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 20
+width: fill-container
+height.fixed.px: 150
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+\-- ftd.text: $contact-1.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+width: fill-container
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {contact-1.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.is-active-1, v = false)
+color: $inherited.colors.border
+link: $contact-1.link-1
+
+\-- end: ftd.column
+
+
+\-- end: contact-1
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+-- component contact-1:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+
+-- ftd.column:
+width.fixed.percent: 27
+padding.px: 32  
+background.solid: $inherited.colors.background.code
+
+-- ftd.text: $contact-1.headline
+margin-bottom.px: 4
+role: $inherited.types.heading-tiny
+color: $inherited.colors.border
+
+-- ftd.text: $contact-1.content
+margin-bottom.px: 20
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text: Email
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+;;placeholder: example@domain.com
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 16
+width: fill-container
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+-- ftd.text: Message
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+-- ftd.text-input:
+placeholder: 
+multiline: true
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-bottom.px: 20
+width: fill-container
+height.fixed.px: 150
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+-- ftd.text: $contact-1.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+width: fill-container
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {contact-1.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $contact-1.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-1.is-active-1, v = false)
+color: $inherited.colors.border
+link: $contact-1.link-1
+
+-- end: ftd.column
+
+
+
+-- end: contact-1
