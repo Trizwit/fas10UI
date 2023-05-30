@@ -8,7 +8,7 @@
 
 ## About
 
-**OPEN FASTN** will be a two week long open source contribution to FASTN Web Components Library for supporting the next generation of programmers to build their projects more easily. 
+`OPEN FASTN` will be a two week long open source contribution to FASTN Web Components Library for supporting the next generation of programmers to build their projects more easily. 
 
 We expect this campaign will have a participation of 50+ new opensource contributors will create 250+ unique components for FASTN Component Library.
 
@@ -31,3 +31,18 @@ We expect this campaign will have a participation of 50+ new opensource contribu
 3. Build 5 Web Components using FASTN as per standards (To be eligible for Swag)
 4. Create Pull Request to **[Trizwit/FastnUI](https://github.com/Trizwit/FastnUI)** Library Repository
 5. Share your work in OPEN FASTN Channel in FASTN Discord Server.
+
+
+## How to contribute to `Trizwit/FastnUI` Repo
+1. Fork this repo to your Github.
+2. Create a new folder to store your components in [**UI-Components**](https://github.com/Trizwit/FastnUI/tree/main/UI-Components) folder
+3. In the now created folder add a new your component_name.ftd file.
+4. In the Index.ftd page add a button inside the **-- lib.selector:** section like below
+```
+    -- lib.button: Button_name
+    url: UI-Components/Your_Created_Folder/Your_Component_name
+```
+5.     
+
+
+
