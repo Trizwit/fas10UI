@@ -1,0 +1,128 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.selector:
+
+-- lib.button: Blog-1
+url: UI-Components/Blog/blog-1
+
+-- lib.button: Blog-2
+url: UI-Components/Blog/blog-2
+
+-- lib.button: Blog-3
+url: UI-Components/Blog/blog-3
+
+-- lib.button: Blog-4
+url: UI-Components/Blog/blog-4
+
+-- lib.button: Blog-5
+url: UI-Components/Blog/blog-5
+
+-- lib.button: Header-1
+url: UI-Components/Header/header-1
+
+-- lib.button: Header-2
+url: UI-Components/Header/header-2
+
+-- lib.button: Header-3
+url: UI-Components/Header/header-3
+
+-- lib.button: Header-4
+url: UI-Components/Header/header-4
+
+-- lib.button: Hero-1
+url: UI-Components/Hero/hero-1
+
+-- lib.button: Hero-2
+url: UI-Components/Hero/hero-2
+
+-- lib.button: Hero-3
+url: UI-Components/Hero/hero-3
+
+-- lib.button: Hero-4
+url: UI-Components/Hero/hero-4
+
+-- end: lib.selector
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- lib.blog-5: Shooting Stars
+head: Category
+cta-text: Learn more
+
+Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave 
+ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha 
+lumbersexual pork belly polaroid hoodie portland craft beer.
+
+-- lib.blog-5: Shooting Stars
+head: Category
+cta-text: Learn more
+
+Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave 
+ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha 
+lumbersexual pork belly polaroid hoodie portland craft beer.
+
+-- lib.blog-5: Shooting Stars
+head: Category
+cta-text: Learn more
+
+Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave 
+ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha 
+lumbersexual pork belly polaroid hoodie portland craft beer.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- component blog-5:
+caption title:
+string head:
+string cta-text:
+body body:
+
+\-- ftd.row:
+background.solid: $inherited.colors.background.step-1
+padding.px: 24
+
+\-- ftd.text: $blog-5.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+margin-right.px: 8
+
+\-- ftd.column:
+ 
+\-- ftd.text: $blog-5.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+\-- ftd.text: $blog-5.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+\-- ftd.text: $blog-5.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: blog-5
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page

@@ -1,0 +1,189 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.selector:
+
+-- lib.button: Blog-1
+url: UI-Components/Blog/blog-1
+
+-- lib.button: Blog-2
+url: UI-Components/Blog/blog-2
+
+-- lib.button: Blog-3
+url: UI-Components/Blog/blog-3
+
+-- lib.button: Blog-4
+url: UI-Components/Blog/blog-4
+
+-- lib.button: Blog-5
+url: UI-Components/Blog/blog-5
+
+-- lib.button: Header-1
+url: UI-Components/Header/header-1
+
+-- lib.button: Header-2
+url: UI-Components/Header/header-2
+
+-- lib.button: Header-3
+url: UI-Components/Header/header-3
+
+-- lib.button: Header-4
+url: UI-Components/Header/header-4
+
+-- lib.button: Hero-1
+url: UI-Components/Hero/hero-1
+
+-- lib.button: Hero-2
+url: UI-Components/Hero/hero-2
+
+-- lib.button: Hero-3
+url: UI-Components/Hero/hero-3
+
+-- lib.button: Hero-4
+url: UI-Components/Hero/hero-4
+
+-- end: lib.selector
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- lib.header-3: 
+logo: $assets.files.images.Header.header-3.trizwit.jpeg
+logo-test: TRIZWIT
+cta-text-1: First Link
+cta-text-2: Second Link
+cta-text-3: Third Link
+cta-button-1: Button
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- lib.header-3: 
+logo: $assets.files.images.Header.header-3.trizwit.jpeg
+logo-test: TRIZWIT
+cta-text-1: First Link
+cta-text-2: Second Link
+cta-text-3: Third Link
+cta-button-1: Button
+
+\-- end: lib.container-wrapper
+
+\-- component header-3:
+string logo-test:
+ftd.image-src logo:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-button-1:
+
+\-- ftd.row:
+width: fill-container
+sticky: true
+
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px:20
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: left
+
+
+\-- ftd.text: $header-3.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-right.px: 32
+color: $inherited.colors.cta-secondary.text
+
+\-- ftd.text: $header-3.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.cta-secondary.text
+
+\-- ftd.text: $header-3.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-secondary.text
+
+\-- end: ftd.row
+
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: left
+
+
+
+\-- ftd.image:
+src: $header-3.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+margin-right.px: 10
+margin-left.px: 38
+
+\-- ftd.text: $header-3.logo-test
+color: $inherited.colors.custom.four
+text-align: center
+margin-vertical.px: 28
+margin-right.px: 30
+
+\-- end: ftd.row
+
+\-- ftd.row:
+align-self: center
+
+\-- ftd.text: $header-3.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 15
+padding-horizontal.px: 24
+border-radius.px: 10
+background.solid: $inherited.colors.custom.seven
+color: #ffffff
+link: https://tailblocks.cc/
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: header-3
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
