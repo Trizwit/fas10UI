@@ -264,7 +264,7 @@ border-color: $inherited.colors.cta-primary.base
 border-color if {button.is-active}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
-color: $inherited.colors.cta-primary.text
+color: $inherited.colors.text-strong
 link: $button.url
 
 -- end: button
