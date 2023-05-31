@@ -1,0 +1,282 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/tailblocks-cs
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.selector:
+
+-- lib.button: Blog-1
+url: UI-Components/Blog/blog-1
+
+-- lib.button: Blog-2
+url: UI-Components/Blog/blog-2
+
+-- lib.button: Blog-3
+url: UI-Components/Blog/blog-3
+
+-- lib.button: Blog-4
+url: UI-Components/Blog/blog-4
+
+-- lib.button: Blog-5
+url: UI-Components/Blog/blog-5
+
+-- lib.button: Header-1
+url: UI-Components/Header/header-1
+
+-- lib.button: Header-2
+url: UI-Components/Header/header-2
+
+-- lib.button: Header-3
+url: UI-Components/Header/header-3
+
+-- lib.button: Header-4
+url: UI-Components/Header/header-4
+
+-- lib.button: Hero-1
+url: UI-Components/Hero/hero-1
+
+-- lib.button: Hero-2
+url: UI-Components/Hero/hero-2
+
+-- lib.button: Hero-3
+url: UI-Components/Hero/hero-3
+
+-- lib.button: Hero-4
+url: UI-Components/Hero/hero-4
+
+-- lib.button: Footer-1
+url: UI-Components/Footer/footer-1
+
+-- lib.button: Footer-2
+url: UI-Components/Footer/footer-2
+
+-- lib.button: Footer-3
+url: UI-Components/Footer/footer-3
+
+-- lib.button: Contact-1
+url: UI-Components/Contact/contact-1
+
+-- lib.button: Contact-2
+url: UI-Components/Contact/contact-2
+
+-- end: lib.selector
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- footer-3:
+logo: $assets.files.images.trizwit.jpeg
+facebook: $assets.files.images.Footer.facebook.svg
+twitter: $assets.files.images.Footer.twitter.svg
+instagram: $assets.files.images.Footer.instagram.svg
+linkedin: $assets.files.images.Footer.linkedin.svg
+logo-test: Trizwit
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- footer-3:
+logo: $assets.files.images.trizwit.jpeg
+facebook: $assets.files.images.Footer.facebook.svg
+twitter: $assets.files.images.Footer.twitter.svg
+instagram: $assets.files.images.Footer.instagram.svg
+linkedin: $assets.files.images.Footer.linkedin.svg
+logo-test: TRIZWIT
+
+\-- end: lib.container-wrapper
+
+\-- component footer-3:
+ftd.image-src logo:
+ftd.image-src facebook:
+ftd.image-src twitter:
+ftd.image-src instagram:
+ftd.image-src linkedin:
+string logo-test:
+
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.percent: 10
+padding-vertical.px: 16
+background.solid: $inherited.colors.cta-tertiary.hover
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: left
+border-right-width.px: 3
+border-right-color: $inherited.colors.border
+
+\-- ftd.image:
+src: $footer-3.logo  
+width.fixed.percent: 30
+height: auto 
+border-radius.px: 45
+
+\-- ftd.text: $footer-3.logo-test
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+width: fill-container
+margin-left.px: 12
+
+
+\-- end: ftd.row
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+margin-left.px: 10
+align-self: center
+
+\-- ftd.text: © 2023 Trizwit — 
+role: $inherited.types.copy-small
+color: $inherited.colors.scrim
+width: fill-container
+height: fill-container
+align-self: center
+
+\-- end: ftd.row
+
+\-- ftd.row:
+height: fill-container
+align-content: right
+align-self: center
+
+\-- ftd.image:
+src: $footer-3.facebook
+width.fixed.percent: 3.5
+
+\-- ftd.image:
+src: $footer-3.twitter
+width.fixed.percent: 3.5
+margin-left.px: 16
+margin-top.px: 3
+
+\-- ftd.image:
+src: $footer-3.instagram
+width.fixed.percent: 3.5
+margin-left.px: 16
+margin-top.px: 3
+
+\-- ftd.image:
+src: $footer-3.linkedin
+width.fixed.percent: 3.5
+margin-left.px: 16
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: footer-3
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+-- component footer-3:
+ftd.image-src logo:
+ftd.image-src facebook:
+ftd.image-src twitter:
+ftd.image-src instagram:
+ftd.image-src linkedin:
+string logo-test:
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.percent: 10
+padding-vertical.px: 16
+background.solid: $inherited.colors.cta-tertiary.hover
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+;;padding-right.px: 10
+align-content: left
+border-right-width.px: 3
+border-right-color: $inherited.colors.border
+
+-- ftd.image:
+src: $footer-3.logo  
+width.fixed.percent: 30
+height: auto 
+;;align-self: center
+border-radius.px: 45
+
+-- ftd.text: $footer-3.logo-test
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+width: fill-container
+margin-left.px: 12
+
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+margin-left.px: 10
+align-self: center
+
+-- ftd.text: © 2023 Trizwit — 
+role: $inherited.types.copy-small
+color: $inherited.colors.scrim
+width: fill-container
+height: fill-container
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.row:
+height: fill-container
+align-content: right
+align-self: center
+
+-- ftd.image:
+src: $footer-3.facebook
+width.fixed.percent: 3.5
+
+-- ftd.image:
+src: $footer-3.twitter
+width.fixed.percent: 3.5
+margin-left.px: 16
+margin-top.px: 3
+
+-- ftd.image:
+src: $footer-3.instagram
+width.fixed.percent: 3.5
+margin-left.px: 16
+margin-top.px: 3
+
+-- ftd.image:
+src: $footer-3.linkedin
+width.fixed.percent: 3.5
+margin-left.px: 16
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: footer-3

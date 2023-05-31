@@ -45,12 +45,27 @@ url: UI-Components/Hero/hero-3
 -- lib.button: Hero-4
 url: UI-Components/Hero/hero-4
 
+-- lib.button: Footer-1
+url: UI-Components/Footer/footer-1
+
+-- lib.button: Footer-2
+url: UI-Components/Footer/footer-2
+
+-- lib.button: Footer-3
+url: UI-Components/Footer/footer-3
+
+-- lib.button: Contact-1
+url: UI-Components/Contact/contact-1
+
+-- lib.button: Contact-2
+url: UI-Components/Contact/contact-2
+
 -- end: lib.selector
 
 -- lib.container-wrapper:
 if: { !lib.code-open }
 
--- lib.header-1: 
+-- header-1: 
 logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
@@ -68,7 +83,7 @@ lang: ftd
 
 \-- lib.container-wrapper:
 
-\-- lib.header-1: 
+\-- header-1: 
 logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
@@ -86,11 +101,9 @@ string cta-text-2:
 string cta-text-3:
 string cta-button-1:
 
-
 \-- ftd.row:
 width: fill-container
 sticky: true
-
 
 \-- ftd.row:
 width: fill-container
@@ -98,10 +111,10 @@ height: hug-content
 padding-horizontal.px: 50
 margin-vertical.px: 20
 margin-horizontal.px:20
+align-self: center
 spacing: space-between
 border-radius.px: 20
 background.solid: $inherited.colors.border
-
 
 \-- ftd.image:
 src: $header-1.logo
@@ -109,10 +122,9 @@ width.fixed.px: 55
 height: auto
 border-radius.px: 20
 margin-vertical.px: 10
-margin-right.px: 10
 
 \-- ftd.text: $header-1.logo-test
-margin-right.px: 10
+margin-horizontal.px: 10
 color: $inherited.colors.custom.four
 text-align: center
 margin-vertical.px: 28
@@ -122,28 +134,26 @@ width: fill-container
 height: fill-container
 align-content: right
 
-
 \-- ftd.text: $header-1.cta-text-1
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 \-- ftd.text: $header-1.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.cta-secondary.text
+color: $inherited.colors.background.base
 
 \-- ftd.text: $header-1.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.cta-secondary.text
-
+color: $inherited.colors.background.base
 
 \-- ftd.text: $header-1.cta-button-1
 role: $inherited.types.label-large
@@ -152,16 +162,14 @@ padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
 background.solid: $inherited.colors.custom.seven
-color: #ffffff
+color: $inherited.colors.background.base
 link: https://tailblocks.cc/
 
-
 \-- end: ftd.row
 
 \-- end: ftd.row
 
 \-- end: ftd.row
-
 
 \-- end: header-1
 
@@ -176,3 +184,85 @@ link: https://tailblocks.cc/
 
 
 
+
+
+
+-- component header-1:
+ftd.image-src logo:
+string logo-test:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-button-1:
+
+-- ftd.row:
+width: fill-container
+sticky: true
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px:20
+align-self: center
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+-- ftd.image:
+src: $header-1.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+-- ftd.text: $header-1.logo-test
+margin-horizontal.px: 10
+color: $inherited.colors.custom.four
+text-align: center
+margin-vertical.px: 28
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: right
+
+-- ftd.text: $header-1.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.background.base
+
+-- ftd.text: $header-1.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.background.base
+
+-- ftd.text: $header-1.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.background.base
+
+-- ftd.text: $header-1.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 15
+padding-horizontal.px: 24
+border-radius.px: 10
+background.solid: $inherited.colors.custom.seven
+color: $inherited.colors.background.base
+link: https://tailblocks.cc/
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: header-1

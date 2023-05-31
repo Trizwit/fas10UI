@@ -45,12 +45,27 @@ url: UI-Components/Hero/hero-3
 -- lib.button: Hero-4
 url: UI-Components/Hero/hero-4
 
+-- lib.button: Footer-1
+url: UI-Components/Footer/footer-1
+
+-- lib.button: Footer-2
+url: UI-Components/Footer/footer-2
+
+-- lib.button: Footer-3
+url: UI-Components/Footer/footer-3
+
+-- lib.button: Contact-1
+url: UI-Components/Contact/contact-1
+
+-- lib.button: Contact-2
+url: UI-Components/Contact/contact-2
+
 -- end: lib.selector
 
 -- lib.container-wrapper:
 if: { !lib.code-open }
 
--- lib.hero-3: Before they sold out readymade gluten
+-- hero-3: Before they sold out readymade gluten
 cta-button-1: Button
 link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-2: Button
@@ -70,7 +85,7 @@ lang: ftd
 
 \-- lib.container-wrapper:
 
-\-- lib.hero-3: Before they sold out readymade gluten
+\-- hero-3: Before they sold out readymade gluten
 cta-button-1: Button
 link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-2: Button
@@ -99,7 +114,7 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 100
 padding-vertical.px: 96
-background.solid: #111827
+background.solid: $inherited.colors.background.base
 
 
 \-- ftd.column:
@@ -123,12 +138,12 @@ margin-left.px: 60
 \-- ftd.text: $hero-3.headline
 margin-bottom.px: 16
 role: $inherited.types.heading-medium
-color: #ffffff
+color: $inherited.colors.border
 
 \-- ftd.text: $hero-3.content
 margin-bottom.px: 32
 role: $inherited.types.copy-regular
-color: #ffffff
+color: $inherited.colors.border
 
 
 \-- ftd.row:
@@ -143,7 +158,7 @@ background.solid: $inherited.colors.cta-primary.base
 background.solid if {hero-3.is-active-1}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-1, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-3.link-1
 
 \-- ftd.text: $hero-3.cta-button-2
@@ -153,11 +168,11 @@ padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-left.px: 16
 border-radius.px: 5
-background.solid: #6366f1
-background.solid if {hero-3.is-active-2}: #4f46e5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-3.is-active-2}: $inherited.colors.info.text
 $on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-2, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-3.link-2
 
 
@@ -181,3 +196,94 @@ link: $hero-3.link-2
 
 
 
+
+
+
+
+-- component hero-3:
+ftd.image-src cover:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+string cta-button-2:
+string link-2:
+boolean $is-active-2: false
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: $inherited.colors.background.base
+
+
+-- ftd.column:
+width.fixed.percent: 50
+height: auto
+align-content: center
+
+-- ftd.image:
+src: $hero-3.cover   
+width.fixed.percent: 100
+height: auto 
+-- end: ftd.column
+
+
+-- ftd.column:
+width.fixed.percent: 40
+align-content: left
+align-self: center
+margin-left.px: 60
+
+-- ftd.text: $hero-3.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: $inherited.colors.border
+
+-- ftd.text: $hero-3.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+
+
+-- ftd.row:
+
+-- ftd.text: $hero-3.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {hero-3.is-active-1}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-1, v = false)
+color: $inherited.colors.border
+link: $hero-3.link-1
+
+-- ftd.text: $hero-3.cta-button-2
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-left.px: 16
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-3.is-active-2}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-2, v = false)
+color: $inherited.colors.border
+link: $hero-3.link-2
+
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+-- end: hero-3
