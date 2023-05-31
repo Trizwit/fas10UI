@@ -57,7 +57,7 @@ width: fill-container
 height: hug-content
 spacing: space-between
 padding.px: 20
-background.solid: $inherited.colors.custom.one
+background.solid: $inherited.colors.custom.three
 
 -- ftd.row:
 margin-vertical.px: 3
@@ -79,7 +79,7 @@ $on-click$: $ftd.set-bool($a = $push-left, v = false)
 -- ftd.text: $navbar.title
 role: $inherited.types.copy-regular
 style: bold
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 margin-left.px: 8
 link: index.html
 
@@ -92,7 +92,7 @@ align-self: center
 if: { !code-open }
 role: $inherited.types.copy-regular
 style: semi-bold
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 margin-right.px: 15
 $on-click$: $ftd.set-bool($a = $code-open, v = true)
 
@@ -100,7 +100,7 @@ $on-click$: $ftd.set-bool($a = $code-open, v = true)
 if: { code-open }
 role: $inherited.types.copy-regular
 style: semi-bold
-color: $inherited.colors.text
+color: $inherited.colors.text-strong
 margin-right.px: 15
 $on-click$: $ftd.set-bool($a = $code-open, v = false)
 
