@@ -257,10 +257,9 @@ role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 12
 padding-horizontal.px: 32
-border-width.px: 3
+border-width.px if {button.is-active}: 3
 border-radius.px: 4
 background.solid: $inherited.colors.custom.three
-border-color: $inherited.colors.cta-primary.base
 border-color if {button.is-active}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
