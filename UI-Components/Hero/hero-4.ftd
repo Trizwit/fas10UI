@@ -1,5 +1,7 @@
 -- import: sarvom.github.io/component-library-tailblocks/assets
 -- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/tailblocks-cs
 -- import: fastn-community.github.io/code-block as cb
 
 -- lib.page:
@@ -45,17 +47,34 @@ url: UI-Components/Hero/hero-3
 -- lib.button: Hero-4
 url: UI-Components/Hero/hero-4
 
+-- lib.button: Footer-1
+url: UI-Components/Footer/footer-1
+
+-- lib.button: Footer-2
+url: UI-Components/Footer/footer-2
+
+-- lib.button: Footer-3
+url: UI-Components/Footer/footer-3
+
+-- lib.button: Contact-1
+url: UI-Components/Contact/contact-1
+
+-- lib.button: Contact-2
+url: UI-Components/Contact/contact-2
+
 -- end: lib.selector
 
 -- lib.container-wrapper:
 if: { !lib.code-open }
 
--- lib.hero-4: Before they sold out readymade gluten
+-- hero-4: Before they sold out readymade gluten
 cta-button-1: Button
 link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cover: $assets.files.images.Hero.hero-4.siz.png
 playstore: $assets.files.images.Hero.hero-4.playstore.svg
 appstore: $assets.files.images.Hero.hero-4.appstore.svg
+link-playstore: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+link-appstore: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag.
 Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
@@ -70,7 +89,7 @@ lang: ftd
 
 \-- lib.container-wrapper:
 
-\-- lib.hero-4: Before they sold out readymade gluten
+\-- hero-4: Before they sold out readymade gluten
 cta-button-1: Button
 link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cover: $assets.files.images.Hero.hero-4.siz.png
@@ -91,6 +110,8 @@ body content:
 string cta-button-1:
 string link-1:
 boolean $is-active-1: false
+string link-playstore:
+string link-appstore: 
 
 \-- ftd.row:
 width: fill-container
@@ -98,7 +119,7 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 100
 padding-vertical.px: 96
-background.solid: #111827
+background.solid: $inherited.colors.background.base
 
 \-- ftd.column:
 width.fixed.percent: 40
@@ -109,12 +130,12 @@ margin-right.px: 60
 \-- ftd.text: $hero-4.headline
 margin-bottom.px: 16
 role: $inherited.types.heading-medium
-color: #ffffff
+color: $inherited.colors.border
 
 \-- ftd.text: $hero-4.content
 margin-bottom.px: 32
 role: $inherited.types.copy-regular
-color: #ffffff
+color: $inherited.colors.border
 
 
 \-- ftd.row:
@@ -130,11 +151,11 @@ margin-right.px: 16
 width: fill-container 
 border-radius.px: 5
 border-width.px: 1
-border-color: #4f46e5
+border-color: $inherited.colors.border
 type: text
 role: $inherited.types.copy-small
-background.solid: #1F2937
-color: #ffffff
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
 
 \-- ftd.text: $hero-4.cta-button-1
 role: $inherited.types.label-large
@@ -142,11 +163,11 @@ text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
 border-radius.px: 5
-background.solid: #6366f1
-background.solid if {hero-4.is-active-1}: #4f46e5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-4.is-active-1}: $inherited.colors.info.text
 $on-mouse-enter$: $ftd.set-bool($a = $hero-4.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-4.is-active-1, v = false)
-color: #ffffff
+color: $inherited.colors.border
 link: $hero-4.link-1
 
 \-- end: ftd.row
@@ -158,7 +179,8 @@ height: hug-content
 padding-vertical.px: 12
 padding-horizontal.px: 20
 border-radius.px: 8
-background.solid: #1F2937
+background.solid: $inherited.colors.cta-tertiary.hover
+link: $hero-4.link-playstore
 
 \-- ftd.image:
 src: $hero-4.playstore
@@ -173,11 +195,11 @@ align-content: left
 \-- ftd.text: GET IT ON
 role: $inherited.types.label-small
 margin-bottom.px: 4
-color: #ffffff
+color: $inherited.colors.border
 
 \-- ftd.text: Google Play
 role: $inherited.types.label-large
-color: #ffffff
+color: $inherited.colors.border
 
 \-- end: ftd.column
 \-- end: ftd.row
@@ -189,7 +211,8 @@ padding-vertical.px: 12
 padding-horizontal.px: 20
 margin-left.px: 16
 border-radius.px: 8
-background.solid: #1F2937
+background.solid: $inherited.colors.cta-tertiary.hover
+link: $hero-4.link-appstore
 
 \-- ftd.image:
 src: $hero-4.appstore
@@ -204,11 +227,11 @@ align-content: left
 \-- ftd.text: Download on the
 role: $inherited.types.label-small
 margin-bottom.px: 4
-color: #ffffff
+color: $inherited.colors.border
 
 \-- ftd.text: App Store
 role: $inherited.types.label-large
-color: #ffffff
+color: $inherited.colors.border
 
 \-- end: ftd.column
 
@@ -247,3 +270,163 @@ height: auto
 
 
 
+
+
+
+-- component hero-4:
+ftd.image-src cover:
+ftd.image-src playstore:
+ftd.image-src appstore:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+string link-playstore:
+string link-appstore: 
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: $inherited.colors.background.base
+
+-- ftd.column:
+width.fixed.percent: 40
+align-content: left
+align-self: center
+margin-right.px: 60
+
+-- ftd.text: $hero-4.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: $inherited.colors.border
+
+-- ftd.text: $hero-4.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+
+
+-- ftd.row:
+width: fill-container 
+align-content: center
+margin-bottom.px: 30
+
+-- ftd.text-input:
+placeholder: Placeholder
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-right.px: 16  
+width: fill-container 
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+-- ftd.text: $hero-4.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-4.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $hero-4.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-4.is-active-1, v = false)
+color: $inherited.colors.border
+link: $hero-4.link-1
+
+-- end: ftd.row
+
+-- ftd.row:
+
+-- ftd.row:
+height: hug-content
+padding-vertical.px: 12
+padding-horizontal.px: 20
+border-radius.px: 8
+background.solid: $inherited.colors.cta-tertiary.hover
+link: $hero-4.link-playstore
+
+-- ftd.image:
+src: $hero-4.playstore
+width.fixed.px: 24
+height.fixed.px: 24
+align-self: center
+
+-- ftd.column:
+margin-left.px: 16
+align-content: left
+
+-- ftd.text: GET IT ON
+role: $inherited.types.label-small
+margin-bottom.px: 4
+color: $inherited.colors.border
+
+-- ftd.text: Google Play
+role: $inherited.types.label-large
+color: $inherited.colors.border
+
+-- end: ftd.column
+-- end: ftd.row
+
+
+-- ftd.row:
+height: hug-content
+padding-vertical.px: 12
+padding-horizontal.px: 20
+margin-left.px: 16
+border-radius.px: 8
+background.solid: $inherited.colors.cta-tertiary.hover
+link: $hero-4.link-appstore
+
+-- ftd.image:
+src: $hero-4.appstore
+width.fixed.px: 24
+height.fixed.px: 24
+align-self: center
+
+-- ftd.column:
+margin-left.px: 16
+align-content: left
+
+-- ftd.text: Download on the
+role: $inherited.types.label-small
+margin-bottom.px: 4
+color: $inherited.colors.border
+
+-- ftd.text: App Store
+role: $inherited.types.label-large
+color: $inherited.colors.border
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width.fixed.percent: 50
+height: auto
+align-content: center
+
+-- ftd.image:
+src: $hero-4.cover   
+width.fixed.percent: 100
+height: auto 
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+-- end: hero-4
