@@ -261,8 +261,8 @@ border-width.px: 3
 border-radius.px: 4
 background.solid: $inherited.colors.custom.three
 border-color: $inherited.colors.custom.three
-background.solid if {button.is-active}: $inherited.colors.custom.two
-border-color if {button.is-active}: $inherited.colors.custom.two
+background.solid if {button.is-active}: $inherited.colors.custom.one
+border-color if {button.is-active}: $inherited.colors.custom.one
 $on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
 color: $inherited.colors.text-strong
