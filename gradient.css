@@ -7,6 +7,12 @@
 .color-2 {
     background-image: linear-gradient(180deg, #012091 13.78%, #081900 100%);
     color: transparent;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text;    
+
+}
+.color-3 {
+    background-image: linear-gradient(180deg, #87fc89 13.78%, #0f76f4 100%);
+    color: transparent;
+    -webkit-background-clip: text;    
 
 }
