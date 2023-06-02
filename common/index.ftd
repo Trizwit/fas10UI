@@ -1,0 +1,15 @@
+-- ftd.shadow bar:
+color: #dddddd
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 10
+spread.px: 1
+inset: false
+
+-- ftd.shadow box:
+color: #eeeeee
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 30
+spread.px: 5
+inset: false
