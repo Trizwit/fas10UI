@@ -7,7 +7,7 @@
 -- lib.container-wrapper:
 if: { !lib.code-open }
 
--- lib.blog-5: Shooting Stars
+-- blog-5: Shooting Stars
 head: Category
 cta-text: Learn more
 
@@ -15,7 +15,7 @@ Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snac
 ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha 
 lumbersexual pork belly polaroid hoodie portland craft beer.
 
--- lib.blog-5: Shooting Stars
+-- blog-5: Shooting Stars
 head: Category
 cta-text: Learn more
 
@@ -23,7 +23,7 @@ Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snac
 ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha 
 lumbersexual pork belly polaroid hoodie portland craft beer.
 
--- lib.blog-5: Shooting Stars
+-- blog-5: Shooting Stars
 head: Category
 cta-text: Learn more
 
@@ -83,3 +83,51 @@ color: $inherited.colors.text
 -- end: lib.container-wrapper
 
 -- end: lib.page
+
+
+
+
+
+
+
+
+
+
+-- component blog-5:
+caption title:
+string head:
+string cta-text:
+body body:
+
+-- ftd.row:
+background.solid: $inherited.colors.background.step-1
+padding.px: 24
+
+-- ftd.text: $blog-5.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+margin-right.px: 8
+
+-- ftd.column:
+ 
+-- ftd.text: $blog-5.title
+style: bold
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+-- ftd.text: $blog-5.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- ftd.text: $blog-5.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: blog-5
