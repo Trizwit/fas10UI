@@ -1,4 +1,5 @@
 -- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: sarvom.github.io/component-library-tailblocks/common
 -- import: fastn-community.github.io/opensans-typography
 -- import: sarvom.github.io/tailblocks-cs
 -- import: fastn/processors as pr
@@ -79,6 +80,7 @@ width: fill-container
 -- navbar: Component Library
 text-1: View Code
 text-2: Preview
+heading: Components
 menu: $assets.files.images.menu.png
 toggle: $assets.files.images.toggle.png
 
@@ -122,6 +124,7 @@ text-3: for FASTN Community
 caption title:
 string text-1:
 string text-2:
+string heading:
 ftd.image-src menu:
 ftd.image-src toggle:
 boolean $mode: false
@@ -131,6 +134,7 @@ width: fill-container
 height: hug-content
 spacing: space-between
 padding.px: 20
+shadow: $common.bar
 background.solid: $inherited.colors.custom.three
 
 -- ftd.row:
@@ -138,7 +142,7 @@ margin-vertical.px: 3
 
 -- ftd.image:
 if: { !$push-left }
-src: $assets.files.images.menu.png
+src: $assets.files.images.push-left.png
 width.fixed.px: 24
 height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $push-left, v = true)
@@ -150,14 +154,30 @@ width.fixed.px: 24
 height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $push-left, v = false)
 
--- ftd.text: $navbar.title
+-- ftd.text: $navbar.heading
+if: { !$push-left }
 role: $inherited.types.copy-regular
 style: bold
 color: $inherited.colors.text-strong
 margin-left.px: 8
-link: index.html
+$on-click$: $ftd.set-bool($a = $push-left, v = true)
+
+-- ftd.text: $navbar.heading
+if: { $push-left }
+role: $inherited.types.copy-regular
+style: bold
+color: $inherited.colors.text-strong
+margin-left.px: 8
+$on-click$: $ftd.set-bool($a = $push-left, v = false)
 
 -- end: ftd.row
+
+-- ftd.text: $navbar.title
+role: $inherited.types.heading-small
+style: bold
+css: [ $assets.files.gradient.css ]
+classes: color-2
+link: index.html
 
 -- ftd.row:
 align-self: center
@@ -264,12 +284,12 @@ children c:
 
 -- ftd.row:
 width: fill-container   
-margin-vertical.px: 56
+margin-vertical.px: 64
 margin-horizontal.px: 32
 align-self: center
 align-content: center
 children: $container-wrapper.c
-spacing.fixed.px: 25
+spacing.fixed.px: 24
 wrap: true
 
 -- end: ftd.row
@@ -283,7 +303,7 @@ wrap: true
 
 
 
--- boolean $push-left: false
+-- boolean $push-left: true
 
 -- component selector:
 children c:
@@ -302,6 +322,7 @@ padding-top.px: 36
 padding-bottom.px: 32
 spacing.fixed.px: 10
 children: $selector.c
+shadow: $common.bar
 
 -- end: ftd.column
 
