@@ -108,7 +108,7 @@ margin-left.px: 38
 \-- ftd.text: $header-3.logo-test
 color: $inherited.colors.custom.four
 text-align: center
-margin-vertical.px: 28
+align-self: center
 margin-right.px: 30
 
 \-- end: ftd.row
@@ -221,7 +221,7 @@ margin-left.px: 38
 -- ftd.text: $header-3.logo-test
 color: $inherited.colors.custom.four
 text-align: center
-margin-vertical.px: 28
+align-self: center
 margin-right.px: 30
 
 -- end: ftd.row
