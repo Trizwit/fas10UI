@@ -157,7 +157,7 @@ align-self: center
 
 \-- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
 role: $inherited.types.copy-small
-color: $inherited.colors.cta-tertiary.hover
+color: $inherited.colors.text
 margin-top.px: 8
 
 \-- end: ftd.column
@@ -347,7 +347,7 @@ align-self: center
 
 -- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
 role: $inherited.types.copy-small
-color: $inherited.colors.cta-tertiary.hover
+color: $inherited.colors.text
 margin-top.px: 8
 
 -- end: ftd.column

@@ -44,6 +44,9 @@ boolean $is-active-1: false
 width.fixed.percent: 27
 padding.px: 32  
 background.solid: $inherited.colors.background.code
+border-radius.px: 5
+border-width.px: 1  
+border-color: $inherited.colors.border
 
 \-- ftd.text: $contact-1.headline
 margin-bottom.px: 4
@@ -138,6 +141,9 @@ boolean $is-active-1: false
 width.fixed.percent: 27
 padding.px: 32  
 background.solid: $inherited.colors.background.code
+border-radius.px: 5     
+border-width.px: 1  
+border-color: $inherited.colors.border
 
 -- ftd.text: $contact-1.headline
 margin-bottom.px: 4

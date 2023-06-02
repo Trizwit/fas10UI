@@ -69,7 +69,7 @@ margin-vertical.px: 10
 margin-horizontal.px: 10
 color: $inherited.colors.custom.four
 text-align: center
-margin-vertical.px: 28
+align-self: center
 
 \-- ftd.row:
 width: fill-container
@@ -163,7 +163,7 @@ margin-vertical.px: 10
 margin-horizontal.px: 10
 color: $inherited.colors.custom.four
 text-align: center
-margin-vertical.px: 28
+align-self: center
 
 -- ftd.row:
 width: fill-container
