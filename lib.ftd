@@ -12,6 +12,70 @@ colors: $tailblocks-cs.main
 types: $opensans-typography.types
 background.solid: $inherited.colors.background.base
 
+-- ftd.row: 
+width: fill-container
+
+-- selector:
+
+-- button: Blog-1
+url: UI-Components/Blog/blog-1
+
+-- button: Blog-2
+url: UI-Components/Blog/blog-2
+
+-- button: Blog-3
+url: UI-Components/Blog/blog-3
+
+-- button: Blog-4
+url: UI-Components/Blog/blog-4
+
+-- button: Blog-5
+url: UI-Components/Blog/blog-5
+
+-- button: Header-1
+url: UI-Components/Header/header-1
+
+-- button: Header-2
+url: UI-Components/Header/header-2
+
+-- button: Header-3
+url: UI-Components/Header/header-3
+
+-- button: Header-4
+url: UI-Components/Header/header-4
+
+-- button: Hero-1
+url: UI-Components/Hero/hero-1
+
+-- button: Hero-2
+url: UI-Components/Hero/hero-2
+
+-- button: Hero-3
+url: UI-Components/Hero/hero-3
+
+-- button: Hero-4
+url: UI-Components/Hero/hero-4
+
+-- button: Footer-1
+url: UI-Components/Footer/footer-1
+
+-- button: Footer-2
+url: UI-Components/Footer/footer-2
+
+-- button: Footer-3
+url: UI-Components/Footer/footer-3
+
+-- button: Contact-1
+url: UI-Components/Contact/contact-1
+
+-- button: Contact-2
+url: UI-Components/Contact/contact-2
+
+-- end: selector
+
+-- ftd.column:
+width: fill-container
+
 -- navbar: Component Library
 text-1: View Code
 text-2: Preview
@@ -24,11 +88,21 @@ children: $page.c
 
 -- end: ftd.row
 
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+align-content: center
+
 -- footer: Trizwit
 icon: $assets.files.images.love.png
 text-1: Made with 
 text-2: by
 text-3: for FASTN Community
+
+-- end: ftd.row
 
 -- end: ftd.column
 
