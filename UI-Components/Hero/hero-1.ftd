@@ -205,11 +205,9 @@ $on-mouse-leave$: $ftd.set-bool($a = $hero-1.is-active-2, v = false)
 color: $inherited.colors.border
 link: $hero-1.link-2
 
-
 -- end: ftd.row
 
 -- end: ftd.column
-
 
 -- ftd.column:
 width.fixed.percent: 50
