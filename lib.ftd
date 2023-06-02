@@ -218,7 +218,7 @@ children c:
 min-width.fixed.percent if { !$push-left }: 20
 min-height.fixed.calc: 100vh - 0px
 height.fixed.vh: 100
-overflow: scroll
+overflow-y: scroll
 width.fixed.percent if { !$push-left }: 20
 width.fixed.percent if { $push-left }: 0
 align-content: top-center
@@ -263,7 +263,7 @@ background.solid if {button.is-active}: $inherited.colors.custom.one
 border-color if {button.is-active}: $inherited.colors.custom.one
 $on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
-color: $inherited.colors.text-strong
+color: $inherited.colors.text
 link: $button.url
 
 -- end: button
