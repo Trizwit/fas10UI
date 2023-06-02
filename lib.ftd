@@ -135,7 +135,7 @@ height: hug-content
 spacing: space-between
 padding.px: 20
 shadow: $common.bar
-background.solid: $inherited.colors.custom.three
+background.linear-gradient: $lg
 
 -- ftd.row:
 margin-vertical.px: 3
@@ -362,6 +362,27 @@ color: $inherited.colors.text
 link: $button.url
 
 -- end: button
+
+
+
+
+
+
+
+
+
+
+-- ftd.linear-gradient lg:
+direction: top-left
+colors: $color-values-2
+
+-- ftd.linear-gradient-color list color-values-2:
+
+-- ftd.linear-gradient-color: #FF7F7F   
+
+-- ftd.linear-gradient-color: #8080FF  
+
+-- end: color-values-2
 
 
 
