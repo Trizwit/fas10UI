@@ -72,6 +72,9 @@ url: UI-Components/Contact/contact-1
 -- button: Contact-2
 url: UI-Components/Contact/contact-2
 
+-- button: Content-1
+url: UI-Components/Content/content-1
+
 -- end: selector
 
 -- ftd.column:

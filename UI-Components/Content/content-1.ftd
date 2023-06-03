@@ -1,0 +1,364 @@
+-- import: sarvom.github.io/component-library-tailblocks/assets
+-- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- content-1: Master Cleanse Reliac Heirloom
+kicker-1: ROOF PARTY POLAROID
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+
+Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. 
+Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- component content-1:
+caption headline:
+body content:
+string kicker-1:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+
+\-- ftd.column:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: $inherited.colors.background.base
+
+\-- ftd.text: $content-1.kicker-1
+margin-bottom.px: 8
+text-align: center
+role: $inherited.types.heading-tiny
+color: $inherited.colors.custom.one
+
+\-- ftd.text: $content-1.headline
+margin-bottom.px: 16
+text-align: center
+role: $inherited.types.heading-medium
+color: $inherited.colors.border
+
+\-- ftd.text: $content-1.content
+margin-bottom.px: 32
+padding-horizontal.px: 100
+text-align: center
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+
+
+\-- ftd.row:
+
+\-- ftd.column:
+border-left-width.px: 1
+border-left-color: $inherited.colors.border
+
+\-- ftd.column:
+padding-horizontal.px: 32   
+padding-vertical.px: 24
+
+\-- ftd.text: Shooting Stars
+role: $inherited.types.heading-tiny
+text-align: start
+margin-bottom.px: 8
+
+\-- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+role: $inherited.types.copy-regular
+text-align: start
+margin-bottom.px: 16
+
+\-- ftd.text: Learn More
+role: $inherited.types.copy-regular
+text-align: start
+color: $inherited.colors.custom.one
+link: $content-1.link-1
+
+\-- end: ftd.column
+
+\-- ftd.column:
+padding-horizontal.px: 32   
+padding-vertical.px: 24
+
+\-- ftd.text: Shooting Stars
+role: $inherited.types.heading-tiny
+text-align: start
+margin-bottom.px: 8
+
+\-- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+role: $inherited.types.copy-regular
+text-align: start
+margin-bottom.px: 16
+
+\-- ftd.text: Learn More
+role: $inherited.types.copy-regular
+text-align: start
+color: $inherited.colors.custom.one
+link: $content-1.link-1
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+
+\-- ftd.column:
+border-left-width.px: 1
+border-left-color: $inherited.colors.border
+
+\-- ftd.column:
+padding-horizontal.px: 32   
+padding-vertical.px: 24
+
+\-- ftd.text: Shooting Stars
+role: $inherited.types.heading-tiny
+text-align: start
+margin-bottom.px: 8
+
+\-- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+role: $inherited.types.copy-regular
+text-align: start
+margin-bottom.px: 16
+
+\-- ftd.text: Learn More
+role: $inherited.types.copy-regular
+text-align: start
+color: $inherited.colors.custom.one
+link: $content-1.link-1
+
+\-- end: ftd.column
+
+\-- ftd.column:
+padding-horizontal.px: 32   
+padding-vertical.px: 24
+
+\-- ftd.text: Shooting Stars
+role: $inherited.types.heading-tiny
+text-align: start
+margin-bottom.px: 8
+
+\-- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+role: $inherited.types.copy-regular
+text-align: start
+margin-bottom.px: 16
+
+\-- ftd.text: Learn More
+role: $inherited.types.copy-regular
+text-align: start
+color: $inherited.colors.custom.one
+link: $content-1.link-1
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+
+\-- end: ftd.row
+
+
+\-- ftd.text: $content-1.cta-button-1
+role: $inherited.types.button-large
+text-align: center
+align-self: center
+margin-top.px: 64
+padding-vertical.px: 8
+padding-horizontal.px: 32
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {content-1.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $content-1.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $content-1.is-active-1, v = false)
+color: $inherited.colors.border
+link: $content-1.link-1
+
+
+\-- end: ftd.column
+
+\-- end: content-1
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+-- component content-1:
+caption headline:
+body content:
+string kicker-1:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+
+-- ftd.column:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: $inherited.colors.background.base
+
+-- ftd.text: $content-1.kicker-1
+margin-bottom.px: 8
+text-align: center
+role: $inherited.types.heading-tiny
+color: $inherited.colors.custom.one
+
+-- ftd.text: $content-1.headline
+margin-bottom.px: 16
+text-align: center
+role: $inherited.types.heading-medium
+color: $inherited.colors.border
+
+-- ftd.text: $content-1.content
+margin-bottom.px: 32
+padding-horizontal.px: 100
+text-align: center
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+
+
+-- ftd.row:
+
+-- ftd.column:
+border-left-width.px: 1
+border-left-color: $inherited.colors.border
+
+-- ftd.column:
+padding-horizontal.px: 32   
+padding-vertical.px: 24
+
+-- ftd.text: Shooting Stars
+role: $inherited.types.heading-tiny
+text-align: start
+margin-bottom.px: 8
+
+-- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+role: $inherited.types.copy-regular
+text-align: start
+margin-bottom.px: 16
+
+-- ftd.text: Learn More
+role: $inherited.types.copy-regular
+text-align: start
+color: $inherited.colors.custom.one
+link: $content-1.link-1
+
+-- end: ftd.column
+
+-- ftd.column:
+padding-horizontal.px: 32   
+padding-vertical.px: 24
+
+-- ftd.text: Shooting Stars
+role: $inherited.types.heading-tiny
+text-align: start
+margin-bottom.px: 8
+
+-- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+role: $inherited.types.copy-regular
+text-align: start
+margin-bottom.px: 16
+
+-- ftd.text: Learn More
+role: $inherited.types.copy-regular
+text-align: start
+color: $inherited.colors.custom.one
+link: $content-1.link-1
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+
+-- ftd.column:
+border-left-width.px: 1
+border-left-color: $inherited.colors.border
+
+-- ftd.column:
+padding-horizontal.px: 32   
+padding-vertical.px: 24
+
+-- ftd.text: Shooting Stars
+role: $inherited.types.heading-tiny
+text-align: start
+margin-bottom.px: 8
+
+-- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+role: $inherited.types.copy-regular
+text-align: start
+margin-bottom.px: 16
+
+-- ftd.text: Learn More
+role: $inherited.types.copy-regular
+text-align: start
+color: $inherited.colors.custom.one
+link: $content-1.link-1
+
+-- end: ftd.column
+
+-- ftd.column:
+padding-horizontal.px: 32   
+padding-vertical.px: 24
+
+-- ftd.text: Shooting Stars
+role: $inherited.types.heading-tiny
+text-align: start
+margin-bottom.px: 8
+
+-- ftd.text: Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+role: $inherited.types.copy-regular
+text-align: start
+margin-bottom.px: 16
+
+-- ftd.text: Learn More
+role: $inherited.types.copy-regular
+text-align: start
+color: $inherited.colors.custom.one
+link: $content-1.link-1
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+
+-- ftd.text: $content-1.cta-button-1
+role: $inherited.types.button-large
+text-align: center
+align-self: center
+margin-top.px: 64
+padding-vertical.px: 8
+padding-horizontal.px: 32
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {content-1.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $content-1.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $content-1.is-active-1, v = false)
+color: $inherited.colors.border
+link: $content-1.link-1
+
+
+-- end: ftd.column
+
+-- end: content-1
