@@ -13,7 +13,7 @@
 We expect this campaign will have a participation of 50+ new opensource contributors will create 250+ unique components for FASTN Component Library.
 
 ### Event timeline 
-> From June 5th to June 19th 2023    
+> From June 7th to June 21th 2023    
 
 ### Who can participate?
 > Anyone who is interested in open source contribution can participate in OPEN FASTN.   
