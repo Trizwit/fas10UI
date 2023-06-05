@@ -27,7 +27,7 @@ We expect this campaign will have a participation of 50+ new opensource contribu
 
 ## How to participate in OPEN FASTN?
 1. Join [FASTN Discord Community](https://discord.com/channels/793929082483769345/1115150105411063902)
-2. Learn how to build components
+2. Learn how to [build components](https://fastn.com/frontend/)
 3. Build 5 Web Components using FASTN as per standards (To be eligible for Swag)
 4. Create Pull Request to **[Trizwit/FastnUI](https://github.com/Trizwit/FastnUI)** Library Repository
 5. Share your work in OPEN FASTN Channel in FASTN Discord Server.
