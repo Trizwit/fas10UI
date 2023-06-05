@@ -7,9 +7,6 @@
 -- lib.container-wrapper:
 if: { !lib.code-open }
 
--- ftd.row:
-spacing: space-evenly
-
 -- blog-4: Shooting Stars
 head: Category
 cta-text: Learn more
@@ -30,8 +27,6 @@ cta-text: Learn more
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
-
--- end: ftd.row
 
 -- end: lib.container-wrapper
 

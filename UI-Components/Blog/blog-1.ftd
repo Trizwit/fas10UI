@@ -7,9 +7,6 @@
 -- lib.container-wrapper:
 if: { !lib.code-open }
 
--- ftd.row:
-spacing: space-evenly
-
 -- lib.blog-1: Raclette Blueberry Nextious Level
 pic: $assets.files.images.Blog.Blog-1.720x400.png
 head: Category
@@ -33,8 +30,6 @@ cta-text: Learn more
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
-
--- end: ftd.row
 
 -- end: lib.container-wrapper
 
