@@ -134,15 +134,14 @@ width: fill-container
 height: hug-content
 spacing: space-between
 padding.px: 20
-shadow: $common.bar
-background.linear-gradient: $lg
+background.solid: $inherited.colors.accent.primary
 
 -- ftd.row:
 margin-vertical.px: 3
 
 -- ftd.image:
 if: { !$push-left }
-src: $assets.files.images.push-left.png
+src: $assets.files.images.menu.png
 width.fixed.px: 24
 height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $push-left, v = true)
@@ -321,7 +320,6 @@ padding-top.px: 36
 padding-bottom.px: 32
 spacing.fixed.px: 10
 children: $selector.c
-shadow: $common.bar
 
 -- end: ftd.column
 
@@ -353,7 +351,7 @@ border-width.px: 3
 border-radius.px: 4
 background.solid: $inherited.colors.background.step-1
 border-color: $inherited.colors.background.step-1
-background.solid if {button.is-active}: $inherited.colors.custom.one
+background.solid if {button.is-active}: $inherited.colors.accent.primary
 border-color if {button.is-active}: $inherited.colors.custom.one
 $on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
