@@ -78,7 +78,7 @@ url: UI-Components/Contact/contact-2
 width: fill-container
 
 -- navbar: Component Library
-text-1: View Code
+text-1: <> View Code
 text-2: Preview
 heading: Components
 menu: $assets.files.images.menu.png
@@ -134,15 +134,14 @@ width: fill-container
 height: hug-content
 spacing: space-between
 padding.px: 20
-shadow: $common.bar
-background.linear-gradient: $lg
+background.solid: $inherited.colors.accent.primary
 
 -- ftd.row:
 margin-vertical.px: 3
 
 -- ftd.image:
 if: { !$push-left }
-src: $assets.files.images.push-left.png
+src: $assets.files.images.menu.png
 width.fixed.px: 24
 height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $push-left, v = true)
@@ -187,6 +186,10 @@ role: $inherited.types.copy-regular
 style: semi-bold
 color: $inherited.colors.text-strong
 margin-right.px: 15
+border-width.px: 1
+border-radius.px: 10
+padding-horizontal.px: 8
+padding-vertical.px: 8
 $on-click$: $ftd.set-bool($a = $code-open, v = true)
 
 -- ftd.text: $navbar.text-2
@@ -195,6 +198,9 @@ role: $inherited.types.copy-regular
 style: semi-bold
 color: $inherited.colors.text-strong
 margin-right.px: 15
+border-width.px: 1
+border-radius.px: 50
+padding.px: 15
 $on-click$: $ftd.set-bool($a = $code-open, v = false)
 
 -- ftd.image: 
@@ -321,7 +327,6 @@ padding-top.px: 36
 padding-bottom.px: 32
 spacing.fixed.px: 10
 children: $selector.c
-shadow: $common.bar
 
 -- end: ftd.column
 
@@ -353,8 +358,8 @@ border-width.px: 3
 border-radius.px: 4
 background.solid: $inherited.colors.background.step-1
 border-color: $inherited.colors.background.step-1
-background.solid if {button.is-active}: $inherited.colors.custom.one
-border-color if {button.is-active}: $inherited.colors.custom.one
+background.solid if {button.is-active}: $inherited.colors.accent.primary
+border-color if {button.is-active}: $inherited.colors.accent.primary
 $on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
 color: $inherited.colors.text
