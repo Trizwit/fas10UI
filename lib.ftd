@@ -98,6 +98,14 @@ children: $page.c
 
 -- ftd.row:
 width: fill-container
+align-content: right
+
+-- github-button:
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
 align-content: center
 
 -- footer: Trizwit
@@ -190,10 +198,13 @@ role: $inherited.types.copy-regular
 style: semi-bold
 color: $inherited.colors.cta-primary.text
 margin-right.px: 15
+width.fixed.px: 120
+align-self: center
+text-align: center
 border-width.px: 1
-border-radius.px: 10
+border-radius.px: 35
 padding-horizontal.px: 8
-padding-vertical.px: 8
+padding-vertical.px: 4
 $on-click$: $ftd.set-bool($a = $code-open, v = true)
 
 -- ftd.text: $navbar.text-2
@@ -202,9 +213,13 @@ role: $inherited.types.copy-regular
 style: semi-bold
 color: $inherited.colors.cta-primary.text
 margin-right.px: 15
+width.fixed.px: 120
+align-self: center
+text-align: center
 border-width.px: 1
-border-radius.px: 50
-padding.px: 15
+border-radius.px: 35
+padding-horizontal.px: 8
+padding-vertical.px: 4
 $on-click$: $ftd.set-bool($a = $code-open, v = false)
 
 -- ftd.image: 
@@ -324,7 +339,7 @@ children c:
 min-width.fixed.percent if { !$push-left }: 20
 min-height.fixed.calc: 100vh - 0px
 height.fixed.vh: 100
-overflow-y: scroll
+overflow-y: auto
 width.fixed.percent if { !$push-left }: 20
 width.fixed.percent if { $push-left }: 0
 align-content: top-center
@@ -334,10 +349,13 @@ padding-top.px: 36
 padding-bottom.px: 32
 spacing.fixed.px: 10
 children: $selector.c
+css: [ $assets.files.scroll.css ]
+classes: body
 
 -- end: ftd.column
 
 -- end: selector
+
 
 
 
@@ -373,6 +391,43 @@ color: $inherited.colors.text
 link: $button.url
 
 -- end: button
+
+
+
+
+
+
+
+
+
+
+-- component github-button:
+ftd.image-src icon: $assets.files.images.github.png
+
+-- ftd.row: 
+anchor: parent
+padding-horizontal.px: 4
+padding-vertical.px: 6
+margin.px: 8
+align-self: center
+align-content: center
+border-width.px: 1
+border-radius.px: 20
+background.solid: #FFFFFF
+z-index: 9999999
+link: https://github.com/Trizwit/FastnUI
+
+-- ftd.image:
+src: $assets.files.images.github-dark.png
+height.fixed.px: 32
+margin-right.px: 4
+
+-- ftd.text: Github
+role: $inherited.types.label-large
+
+-- end: ftd.row
+
+-- end: github-button
 
 
 
