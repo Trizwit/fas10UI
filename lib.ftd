@@ -136,7 +136,7 @@ width: fill-container
 height: hug-content
 spacing: space-between
 padding.px: 20
-background.solid: $inherited.colors.accent.primary
+background.solid: #007bff
 
 -- ftd.row:
 margin-vertical.px: 3
