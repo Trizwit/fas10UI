@@ -1,5 +1,5 @@
--- import: sarvom.github.io/component-library-tailblocks/assets
--- import: sarvom.github.io/component-library-tailblocks/lib
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
 -- import: fastn-community.github.io/code-block as cb
 
 -- lib.page:

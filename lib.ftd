@@ -1,5 +1,5 @@
--- import: sarvom.github.io/component-library-tailblocks/assets
--- import: sarvom.github.io/component-library-tailblocks/common
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/common
 -- import: fastn-community.github.io/opensans-typography
 -- import: shaheen-senpai.github.io/fastn-cs-tail
 -- import: fastn/processors as pr
@@ -83,7 +83,8 @@ text-1: <> View Code
 text-2: Preview
 heading: Components
 menu: $assets.files.images.menu.png
-toggle: $assets.files.images.toggle.png
+toggle: $assets.files.images.dark-mode.png
+toggle-2: $assets.files.images.light-mode.png
 
 -- ftd.row:
 width: fill-container
@@ -128,6 +129,7 @@ string text-2:
 string heading:
 ftd.image-src menu:
 ftd.image-src toggle:
+ftd.image-src toggle-2:
 boolean $mode: false
 
 -- ftd.row:
@@ -142,14 +144,14 @@ margin-vertical.px: 3
 
 -- ftd.image:
 if: { !$push-left }
-src: $assets.files.images.menu.png
+src: $assets.files.images.push-left.png
 width.fixed.px: 24
 height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $push-left, v = true)
 
 -- ftd.image:
 if: { $push-left }
-src: $assets.files.images.push-right.png
+src: $assets.files.images.menu.png
 width.fixed.px: 24
 height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $push-left, v = false)
@@ -210,14 +212,16 @@ if: { !navbar.mode }
 src: $navbar.toggle
 height.fixed.px: 24
 width.fixed.px: 24
+align-self: center
 $on-click$: $ftd.set-bool($a = $navbar.mode, v = true)
 $on-click$: $ftd.enable-dark-mode()
 
 -- ftd.image: 
 if: { navbar.mode }
-src: $navbar.toggle
+src: $navbar.toggle-2
 height.fixed.px: 24
 width.fixed.px: 24
+align-self: center
 $on-click$: $ftd.set-bool($a = $navbar.mode, v = false)
 $on-click$: $ftd.enable-light-mode()
 
