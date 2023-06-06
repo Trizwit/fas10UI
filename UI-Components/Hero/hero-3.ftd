@@ -159,7 +159,7 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 100
 padding-vertical.px: 96
-background.solid: $inherited.colors.background.base
+background.solid: $inherited.colors.cta-secondary.base
 
 
 -- ftd.column:
@@ -199,7 +199,7 @@ text-align: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
 border-radius.px: 5
-background.solid: $inherited.colors.cta-primary.base
+background.solid: $inherited.colors.background.base
 background.solid if {hero-3.is-active-1}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-1, v = false)
@@ -213,8 +213,8 @@ padding-vertical.px: 8
 padding-horizontal.px: 24
 margin-left.px: 16
 border-radius.px: 5
-background.solid: $inherited.colors.custom.one
-background.solid if {hero-3.is-active-2}: $inherited.colors.info.text
+background.solid: $inherited.colors.background.base
+background.solid if {hero-3.is-active-2}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-2, v = false)
 color: $inherited.colors.border

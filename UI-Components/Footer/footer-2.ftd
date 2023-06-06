@@ -309,7 +309,7 @@ width: fill-container
 height: auto
 padding-horizontal.percent: 10
 padding-vertical.px: 16
-background.solid: $inherited.colors.background.base
+background.solid: $inherited.colors.cta-secondary.base
 
 
 -- ftd.row:
@@ -347,7 +347,7 @@ align-self: center
 
 -- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
 role: $inherited.types.copy-small
-color: $inherited.colors.text
+color: $inherited.colors.cta-tertiary.hover
 margin-top.px: 8
 
 -- end: ftd.column

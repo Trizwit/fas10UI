@@ -167,7 +167,7 @@ margin-right.px: 10
 
 -- ftd.text: $header-2.logo-test
 margin-right.px: 10
-color: $inherited.colors.custom.four
+color: $inherited.colors.background.base
 text-align: center
 align-self: center
 
@@ -181,21 +181,21 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
 
 -- ftd.text: $header-2.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
 
 -- ftd.text: $header-2.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
 
 -- end: ftd.row
 
@@ -208,9 +208,9 @@ text-align: center
 padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
-background.solid: $inherited.colors.custom.seven
-color: $inherited.colors.background.base
-link: https://tailblocks.cc/
+background.solid: $inherited.colors.background.base
+color: $inherited.colors.border
+link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 -- end: ftd.row
 
