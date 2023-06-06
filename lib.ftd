@@ -1,7 +1,7 @@
 -- import: fastnui.trizwit.com/assets
 -- import: fastnui.trizwit.com/common
 -- import: fastn-community.github.io/opensans-typography
--- import: sarvom.github.io/tailblocks-cs
+-- import: shaheen-senpai.github.io/fastn-cs-tail
 -- import: fastn/processors as pr
 
 -- component page:
@@ -9,12 +9,13 @@ children c:
 
 -- ftd.column:
 width: fill-container
-colors: $tailblocks-cs.main
+colors: $fastn-cs-tail.main  
 types: $opensans-typography.types
-background.solid: $inherited.colors.background.base
+ 
 
 -- ftd.row: 
 width: fill-container
+background.solid: $inherited.colors.cta-primary.base 
 
 -- selector:
 
@@ -144,7 +145,7 @@ width: fill-container
 height: hug-content
 spacing: space-between
 padding.px: 20
-background.solid: #007bff
+background.solid: $inherited.colors.background.base
 
 -- ftd.row:
 margin-vertical.px: 3
@@ -167,7 +168,7 @@ $on-click$: $ftd.set-bool($a = $push-left, v = false)
 if: { !$push-left }
 role: $inherited.types.copy-regular
 style: bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 margin-left.px: 8
 $on-click$: $ftd.set-bool($a = $push-left, v = true)
 
@@ -175,7 +176,7 @@ $on-click$: $ftd.set-bool($a = $push-left, v = true)
 if: { $push-left }
 role: $inherited.types.copy-regular
 style: bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 margin-left.px: 8
 $on-click$: $ftd.set-bool($a = $push-left, v = false)
 
@@ -184,17 +185,18 @@ $on-click$: $ftd.set-bool($a = $push-left, v = false)
 -- ftd.text: $navbar.title
 role: $inherited.types.heading-small
 style: bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 link: index.html
 
 -- ftd.row:
 align-self: center
+align-content: center
 
 -- ftd.text: $navbar.text-1
 if: { !code-open }
 role: $inherited.types.copy-regular
 style: semi-bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 margin-right.px: 15
 width.fixed.px: 120
 align-self: center
@@ -209,7 +211,7 @@ $on-click$: $ftd.set-bool($a = $code-open, v = true)
 if: { code-open }
 role: $inherited.types.copy-regular
 style: semi-bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 margin-right.px: 15
 width.fixed.px: 120
 align-self: center
@@ -265,10 +267,11 @@ width: fill-container
 height: hug-content
 align-content: center
 padding.px: 16
+background.solid: #EEEEEE
 
 -- ftd.text: $footer.text-1
 role: $inherited.types.copy-regular
-color: $inherited.colors.text
+color: $inherited.colors.cta-tertiary.text
 margin-right.px: 5
 
 -- ftd.image:
@@ -278,17 +281,17 @@ margin-right.px: 5
 
 -- ftd.text: $footer.text-2
 role: $inherited.types.copy-regular
-color: $inherited.colors.text
+color: $inherited.colors.cta-tertiary.text
 margin-right.px: 5
 
 -- ftd.text: $footer.heading
 role: $inherited.types.copy-regular
-color: $inherited.colors.text
+color: $inherited.colors.cta-tertiary.text
 margin-right.px: 5
 
 -- ftd.text: $footer.text-3
 role: $inherited.types.copy-regular
-color: $inherited.colors.text
+color: $inherited.colors.cta-tertiary.text
 
 -- end: ftd.row
 
@@ -340,7 +343,7 @@ overflow-y: auto
 width.fixed.percent if { !$push-left }: 20
 width.fixed.percent if { $push-left }: 0
 align-content: top-center
-background.solid: $inherited.colors.background.step-1
+background.solid: $inherited.colors.cta-primary.base
 border-radius.px: 8
 padding-top.px: 36
 padding-bottom.px: 32
@@ -376,11 +379,11 @@ role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 12
 padding-horizontal.px: 32
-border-width.px: 3
+border-width.px: 0
 border-radius.px: 4
-background.solid: $inherited.colors.background.step-1
+background.solid: $inherited.colors.cta-secondary.base
 border-color: $inherited.colors.background.step-1
-background.solid if {button.is-active}: $inherited.colors.accent.primary
+background.solid if {button.is-active}: $inherited.colors.background.base
 border-color if {button.is-active}: $inherited.colors.accent.primary
 $on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
@@ -466,7 +469,7 @@ body body:
 
 
 -- ftd.column:
-background.solid: $inherited.colors.background.step-1
+background.solid: $inherited.colors.cta-secondary.base
 max-width.fixed.percent: 25
 
 -- ftd.image:
@@ -478,7 +481,7 @@ padding.px: 24
 
 -- ftd.text: $blog-1.head
 role: $inherited.types.label-small
-color: $inherited.colors.custom.one
+color: $inherited.colors.background.base
 margin-bottom.px: 4
 
 -- ftd.text: $blog-1.title
@@ -500,235 +503,3 @@ link: $blog-1.cta-link
 -- end: ftd.column
 
 -- end: blog-1
-
-
-
-
-
-
-
-
-
-
--- component content-1:
-caption title:
-string head:
-string cta-text:
-body body:
-
--- ftd.column:
-align-content: left
-align-self: start
-background.solid: $inherited.colors.background.step-1
-max-width.fixed.percent: 25
-padding.px: 24
-
--- ftd.text: $content-1.head
-style: semi-bold
-role: $inherited.types.label-small
-color: $inherited.colors.custom.one
-margin-bottom.px: 4
-
--- ftd.text: $content-1.title
-style: bold
-role: $inherited.types.heading-tiny
-color: $inherited.colors.text
-margin-bottom.px: 12
-
--- ftd.text: $content-1.body
-role: $inherited.types.label-large
-color: $inherited.colors.text
-
--- ftd.text: $content-1.cta-text
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-
--- end: ftd.column
-
--- end: content-1
-
-
-
-
-
-
-
-
-
-
--- component content-2:
-caption title:
-string head:
-string cta-text:
-body body:
-
--- ftd.column:
-align-content: left
-align-self: start
-background.solid: $inherited.colors.background.step-1
-max-width.fixed.percent: 25
-padding.px: 24
-
--- ftd.text: $content-2.head
-style: semi-bold
-role: $inherited.types.label-small
-color: $inherited.colors.custom.one
-margin-bottom.px: 4
-
--- ftd.text: $content-2.title
-style: bold
-role: $inherited.types.heading-tiny
-color: $inherited.colors.text
-margin-bottom.px: 12
-
--- ftd.text: $content-2.body
-role: $inherited.types.label-large
-color: $inherited.colors.text
-
--- ftd.text: $content-2.cta-text
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-
--- end: ftd.column
-
--- end: content-2
-
-
-
-
-
-
-
-
-
-
--- component content-3:
-caption title:
-string head:
-string cta-text:
-body body:
-
--- ftd.column:
-align-content: left
-align-self: start
-background.solid: $inherited.colors.background.step-1
-max-width.fixed.percent: 25
-padding.px: 24
-
--- ftd.text: $content-3.head
-style: semi-bold
-role: $inherited.types.label-small
-color: $inherited.colors.custom.one
-margin-bottom.px: 4
-
--- ftd.text: $content-3.title
-style: bold
-role: $inherited.types.heading-tiny
-color: $inherited.colors.text
-margin-bottom.px: 12
-
--- ftd.text: $content-3.body
-role: $inherited.types.label-large
-color: $inherited.colors.text
-
--- ftd.text: $content-3.cta-text
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-
--- end: ftd.column
-
--- end: content-3
-
-
-
-
-
-
-
-
-
-
--- component content-4:
-caption title:
-string head:
-string cta-text:
-body body:
-
--- ftd.column:
-align-content: left
-align-self: start
-background.solid: $inherited.colors.background.step-1
-max-width.fixed.percent: 25
-padding.px: 24
-
--- ftd.text: $content-4.head
-style: semi-bold
-role: $inherited.types.label-small
-color: $inherited.colors.custom.one
-margin-bottom.px: 4
-
--- ftd.text: $content-4.title
-style: bold
-role: $inherited.types.heading-tiny
-color: $inherited.colors.text
-margin-bottom.px: 12
-
--- ftd.text: $content-4.body
-role: $inherited.types.label-large
-color: $inherited.colors.text
-
--- ftd.text: $content-4.cta-text
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-
--- end: ftd.column
-
--- end: content-4
-
-
-
-
-
-
-
-
-
-
--- component content-5:
-caption title:
-string head:
-string cta-text:
-body body:
-
--- ftd.column:
-align-content: left
-align-self: start
-background.solid: $inherited.colors.background.step-1
-max-width.fixed.percent: 25
-padding.px: 24
-
--- ftd.text: $content-5.head
-style: semi-bold
-role: $inherited.types.label-small
-color: $inherited.colors.custom.one
-margin-bottom.px: 4
-
--- ftd.text: $content-5.title
-style: bold
-role: $inherited.types.heading-tiny
-color: $inherited.colors.text
-margin-bottom.px: 12
-
--- ftd.text: $content-5.body
-role: $inherited.types.label-large
-color: $inherited.colors.text
-
--- ftd.text: $content-5.cta-text
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-
--- end: ftd.column
-
--- end: content-5
-
-
