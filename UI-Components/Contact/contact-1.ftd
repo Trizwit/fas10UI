@@ -202,8 +202,8 @@ width: fill-container
 padding-vertical.px: 8
 padding-horizontal.px: 24
 border-radius.px: 5
-background.solid: $inherited.colors.custom.one
-background.solid if {contact-1.is-active-1}: $inherited.colors.info.text
+background.solid: $inherited.colors.background.base
+background.solid if {contact-1.is-active-1}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $contact-1.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-1.is-active-1, v = false)
 color: $inherited.colors.border

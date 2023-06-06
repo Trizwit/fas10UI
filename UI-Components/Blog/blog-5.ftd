@@ -100,13 +100,13 @@ string cta-text:
 body body:
 
 -- ftd.row:
-background.solid: $inherited.colors.background.step-1
+background.solid: $inherited.colors.cta-secondary.base
 padding.px: 24
 
 -- ftd.text: $blog-5.head
 style: semi-bold
 role: $inherited.types.label-small
-color: $inherited.colors.custom.one
+color: $inherited.colors.background.base
 margin-bottom.px: 4
 margin-right.px: 8
 
