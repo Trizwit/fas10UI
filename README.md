@@ -18,7 +18,6 @@ We expect this campaign will have a participation of 50+ new opensource contribu
 ### Who can participate?
 > Anyone who is interested in open source contribution can participate in OPEN FASTN.   
 
-
 ## Why OPEN FASTN?
 - Great opportunity to contribute to the community.
 - Win exciting swags.
