@@ -160,7 +160,7 @@ $on-click$: $ftd.set-bool($a = $push-left, v = false)
 if: { !$push-left }
 role: $inherited.types.copy-regular
 style: bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 margin-left.px: 8
 $on-click$: $ftd.set-bool($a = $push-left, v = true)
 
@@ -168,7 +168,7 @@ $on-click$: $ftd.set-bool($a = $push-left, v = true)
 if: { $push-left }
 role: $inherited.types.copy-regular
 style: bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 margin-left.px: 8
 $on-click$: $ftd.set-bool($a = $push-left, v = false)
 
@@ -177,7 +177,7 @@ $on-click$: $ftd.set-bool($a = $push-left, v = false)
 -- ftd.text: $navbar.title
 role: $inherited.types.heading-small
 style: bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 link: index.html
 
 -- ftd.row:
@@ -188,7 +188,7 @@ align-content: center
 if: { !code-open }
 role: $inherited.types.copy-regular
 style: semi-bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 margin-right.px: 15
 border-width.px: 1
 border-radius.px: 10
@@ -200,7 +200,7 @@ $on-click$: $ftd.set-bool($a = $code-open, v = true)
 if: { code-open }
 role: $inherited.types.copy-regular
 style: semi-bold
-color: $inherited.colors.text-strong
+color: $inherited.colors.cta-primary.text
 margin-right.px: 15
 border-width.px: 1
 border-radius.px: 50
@@ -256,7 +256,7 @@ background.solid: #EEEEEE
 
 -- ftd.text: $footer.text-1
 role: $inherited.types.copy-regular
-color: $inherited.colors.cta-primary.base
+color: $inherited.colors.cta-tertiary.text
 margin-right.px: 5
 
 -- ftd.image:
@@ -266,17 +266,17 @@ margin-right.px: 5
 
 -- ftd.text: $footer.text-2
 role: $inherited.types.copy-regular
-color: $inherited.colors.cta-primary.base
+color: $inherited.colors.cta-tertiary.text
 margin-right.px: 5
 
 -- ftd.text: $footer.heading
 role: $inherited.types.copy-regular
-color: $inherited.colors.cta-primary.base
+color: $inherited.colors.cta-tertiary.text
 margin-right.px: 5
 
 -- ftd.text: $footer.text-3
 role: $inherited.types.copy-regular
-color: $inherited.colors.cta-primary.base
+color: $inherited.colors.cta-tertiary.text
 
 -- end: ftd.row
 
