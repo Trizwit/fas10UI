@@ -96,7 +96,7 @@ border-width.px: 1
 border-color: $inherited.colors.border
 type: text
 role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.code
+background.solid: $inherited.colors.cta-primary.base
 color: $inherited.colors.border
 \-- end: ftd.column
 
@@ -117,7 +117,7 @@ border-width.px: 1
 border-color: $inherited.colors.border
 type: text
 role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.code
+background.solid: $inherited.colors.cta-primary.base
 color: $inherited.colors.border
 \-- end: ftd.column
 
@@ -246,7 +246,7 @@ height: hug-content
 align-content: center
 padding-horizontal.px: 100
 padding-vertical.px: 96
-background.solid: $inherited.colors.background.base
+background.solid: $inherited.colors.cta-secondary.base
 
 -- ftd.text: $contact-2.headline
 margin-bottom.px: 16
@@ -284,7 +284,7 @@ border-width.px: 1
 border-color: $inherited.colors.border
 type: text
 role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.code
+background.solid: $inherited.colors.cta-primary.base
 color: $inherited.colors.border
 -- end: ftd.column
 
@@ -305,7 +305,7 @@ border-width.px: 1
 border-color: $inherited.colors.border
 type: text
 role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.code
+background.solid: $inherited.colors.cta-primary.base
 color: $inherited.colors.border
 -- end: ftd.column
 
@@ -329,7 +329,7 @@ border-width.px: 1
 border-color: $inherited.colors.border
 type: text
 role: $inherited.types.copy-small
-background.solid: $inherited.colors.background.code
+background.solid: $inherited.colors.cta-primary.base
 color: $inherited.colors.border
 
 
@@ -340,8 +340,8 @@ align-self: center
 padding-vertical.px: 8
 padding-horizontal.px: 24
 border-radius.px: 5
-background.solid: $inherited.colors.custom.one
-background.solid if {contact-2.is-active-1}: $inherited.colors.info.text
+background.solid: $inherited.colors.background.base
+background.solid if {contact-2.is-active-1}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $contact-2.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $contact-2.is-active-1, v = false)
 color: $inherited.colors.border
@@ -356,7 +356,7 @@ align-content: center
 
 -- ftd.text: example@email.com
 role: $inherited.types.copy-small
-color: $inherited.colors.border
+color: $inherited.colors.background.base 
 margin-bottom.px: 20
 
 -- ftd.text: 123-456-7890

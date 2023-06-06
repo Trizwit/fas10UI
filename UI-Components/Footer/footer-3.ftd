@@ -150,7 +150,7 @@ width: fill-container
 height: hug-content
 padding-horizontal.percent: 10
 padding-vertical.px: 16
-background.solid: $inherited.colors.cta-tertiary.hover
+background.solid: $inherited.colors.cta-tertiary.base
 
 -- ftd.row:
 width: fill-container
@@ -158,7 +158,7 @@ height: fill-container
 ;;padding-right.px: 10
 align-content: left
 border-right-width.px: 3
-border-right-color: $inherited.colors.border
+border-right-color: $inherited.colors.cta-primary.base
 
 -- ftd.image:
 src: $footer-3.logo  
@@ -169,7 +169,7 @@ border-radius.px: 45
 
 -- ftd.text: $footer-3.logo-test
 role: $inherited.types.copy-regular
-color: $inherited.colors.border
+color: $inherited.colors.background.base
 width: fill-container
 margin-left.px: 12
 

@@ -97,14 +97,14 @@ body body:
 -- ftd.column:
 align-content: center
 align-self: center
-background.solid: $inherited.colors.background.step-1
+background.solid: $inherited.colors.cta-secondary.base
 max-width.fixed.percent: 25
 padding.px: 24
 
 -- ftd.text: $blog-2.head
 style: semi-bold
 role: $inherited.types.label-small
-color: $inherited.colors.custom.one
+color: $inherited.colors.background.base
 margin-bottom.px: 4
 
 -- ftd.text: $blog-2.title
