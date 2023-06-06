@@ -1,5 +1,5 @@
--- import: sarvom.github.io/component-library-tailblocks/assets
--- import: sarvom.github.io/component-library-tailblocks/common
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/common
 -- import: fastn-community.github.io/opensans-typography
 -- import: sarvom.github.io/tailblocks-cs
 -- import: fastn/processors as pr
