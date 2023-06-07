@@ -108,6 +108,3 @@ url: UI-Components/Content/content-1
 This will notify the repository maintainers of your contribution. They will review your changes, and if everything is in order, your changes will be merged into the main repository.
 
 # Happy contributing ..!
-
-
-
