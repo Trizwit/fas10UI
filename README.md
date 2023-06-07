@@ -7,7 +7,6 @@
 # OPEN FASTN - A platform to develop your skills through contributing to community
 
 ## About
-
 `OPEN FASTN` will be a two week long open source contribution to FASTN Web Components Library for supporting the next generation of programmers to build their projects more easily. 
 
 We expect this campaign will have a participation of 50+ new opensource contributors will create 250+ unique components for FASTN Component Library.
