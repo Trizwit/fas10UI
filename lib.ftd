@@ -330,7 +330,7 @@ wrap: true
 
 
 
--- boolean $push-left: true
+-- boolean $push-left: false
 
 -- component selector:
 children c:
