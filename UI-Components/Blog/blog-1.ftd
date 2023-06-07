@@ -15,7 +15,7 @@ cta-text: Learn more
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
 
--- lib.blog-1: Keyvalue Interview and Test on May 22 
+-- lib.blog-1: Raclette Blueberry Nextious Level
 pic: $assets.files.images.Blog.Blog-1.721x401.png
 head: Category
 cta-text: Learn more
@@ -49,7 +49,7 @@ cta-text: Learn more
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
 
-\-- lib.blog-1: Keyvalue Interview and Test on May 22 
+\-- lib.blog-1: Raclette Blueberry Nextious Level
 pic: $assets.files.images.Blog.Blog-1.721x401.png
 head: Category
 cta-text: Learn more
@@ -114,9 +114,3 @@ color: $inherited.colors.text
 -- end: lib.container-wrapper
 
 -- end: lib.page
-
-
-
-
-
-
