@@ -2,9 +2,8 @@
 
 -- fastn.package: fastnui.trizwit.com
 
--- fastn.dependency: fifthtry.github.io/doc-site as ds
+-- fastn.dependency: fastn-community.github.io/doc-site as ds
 -- fastn.dependency: fastn-community.github.io/opensans-typography
-;;-- fastn.dependency: sarvom.github.io/tailblocks-cs
 -- fastn.dependency: shaheen-senpai.github.io/fastn-cs-tail
 -- fastn.dependency: fastn-community.github.io/code-block as cb
 
