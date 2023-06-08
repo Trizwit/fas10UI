@@ -1,0 +1,181 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- blog-6: Raclette Blueberry Nextious Level
+tag: Category
+date: January 20, 2022
+image: $assets.files.images.Blog.Blog-1.720x400.png
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- blog-6: Keyvalue Interview and Test on May 22
+tag: Category
+date: January 20, 2022
+image: $assets.files.images.Blog.Blog-1.720x400.png
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- blog-6: Raclette Blueberry Nextious Level
+tag: Category
+date: January 20, 2022
+image: $assets.files.images.Blog.Blog-1.720x400.png
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+\-- blog-6: Keyvalue Interview and Test on May 22
+tag: Category
+date: January 20, 2022
+image: $assets.files.images.Blog.Blog-1.720x400.png
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+\-- end: lib.container-wrapper
+
+\-- component blog-6:
+caption title:
+body body:
+string tag:
+string date:
+ftd.image-src image:
+
+\-- ftd.column:
+width.fixed.px: 550
+padding-vertical.px: 24
+padding-horizontal.px: 24
+spacing.fixed.px: 16
+background.solid: $inherited.colors.background.code
+align-self: center
+
+\-- ftd.image:
+src: $blog-6.image
+width.fixed.px: 480
+
+\-- ftd.column:
+anchor: parent
+top.px: 35
+right.px: 55
+width: hug-content
+background.solid: $inherited.colors.background.code
+border-radius.px: 24
+padding-vertical.px: 12
+padding-horizontal.px: 12
+align-content: center
+
+\-- ftd.text: $blog-6.tag
+role: $inherited.types.copy-small
+color: $inherited.colors.background.overlay
+
+\-- end: ftd.column
+
+\-- ftd.text: $blog-6.date
+role: $inherited.types.copy-large
+color: $inherited.colors.background.overlay
+style: medium
+
+\-- ftd.text: $blog-6.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.background.overlay
+style: bold
+
+\-- ftd.text:
+role: $inherited.types.copy-large
+color: $inherited.colors.background.overlay
+style: bold
+
+$blog-6.body
+
+\-- end: ftd.column
+
+\-- end: blog-6
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+-- component blog-6:
+caption title:
+body body:
+string tag:
+string date:
+ftd.image-src image:
+
+-- ftd.column:
+width.fixed.px: 550
+padding-vertical.px: 24
+padding-horizontal.px: 24
+spacing.fixed.px: 16
+background.solid: $inherited.colors.cta-tertiary.base
+align-self: center
+
+-- ftd.image:
+src: $blog-6.image
+width.fixed.px: 480
+
+-- ftd.column:
+anchor: parent
+top.px: 35
+right.px: 55
+width: hug-content
+background.solid: $inherited.colors.cta-tertiary.base
+border-radius.px: 24
+padding-vertical.px: 12
+padding-horizontal.px: 12
+align-content: center
+
+-- ftd.text: $blog-6.tag
+role: $inherited.types.copy-small
+color: $inherited.colors.background.overlay
+
+-- end: ftd.column
+
+-- ftd.text: $blog-6.date
+role: $inherited.types.copy-large
+color: $inherited.colors.background.overlay
+style: medium
+
+-- ftd.text: $blog-6.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.background.overlay
+style: bold
+
+-- ftd.text:
+role: $inherited.types.copy-large
+color: $inherited.colors.background.overlay
+style: bold
+
+$blog-6.body
+
+-- end: ftd.column
+
+-- end: blog-6
