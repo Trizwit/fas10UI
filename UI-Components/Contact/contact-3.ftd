@@ -1,0 +1,593 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/opensans-typography
+-- import: sarvom.github.io/tailblocks-cs
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- contact-3: Send a Message
+address: TRIZWIT, Ernakulam, Kerala, India
+email: example@gmail.com
+phone: 22558899
+facebook: $assets.files.images.Footer.facebook.svg
+twitter: $assets.files.images.Footer.twitter.svg
+instagram: $assets.files.images.Footer.instagram.svg
+linkedin: $assets.files.images.Footer.linkedin.svg
+cta-button: Button
+cta-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- contact-3: Send a Message
+address: TRIZWIT, Ernakulam, Kerala, India
+email: example@gmail.com
+phone: 22558899
+facebook: $assets.files.images.Footer.facebook.svg
+twitter: $assets.files.images.Footer.twitter.svg
+instagram: $assets.files.images.Footer.instagram.svg
+linkedin: $assets.files.images.Footer.linkedin.svg
+cta-button: Button
+cta-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+
+\-- end: lib.container-wrapper
+
+\-- component contact-3:
+caption title:
+optional string address:
+optional string email:
+optional string phone:
+optional string cta-button:
+optional string cta-link:
+boolean $is-active: false
+optional ftd.image-src facebook:
+optional ftd.image-src twitter:
+optional ftd.image-src instagram:
+optional ftd.image-src linkedin:
+
+\-- ftd.row:
+width: fill-container
+height.fixed.px: 564
+background.linear-gradient: $lg
+spacing.fixed.px: 8
+padding-horizontal.px: 42
+padding-vertical.px: 82
+z-index: 2
+
+\-- ftd.column:
+width.fixed.px: 280
+height.fixed.px: 400
+padding-horizontal.px: 18
+padding-vertical.px: 18
+background.solid: $inherited.colors.success.text
+z-index: 10
+shadow: $shadow
+spacing: space-between
+
+\-- ftd.column:
+spacing.fixed.px: 16
+
+\-- ftd.text: Contact Info
+role: $inherited.types.heading-small
+color: $inherited.colors.cta-primary.text
+style: bold
+
+\-- ftd.row:
+margin-top.px: 24
+spacing.fixed.px: 8
+align-content: center
+
+\-- ftd.image:
+src: $assets.files.images.address.svg
+width.fixed.px: 26
+height.fixed.px: 26
+
+\-- ftd.text: $contact-3.address
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.text
+
+\-- end: ftd.row
+
+\-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+
+\-- ftd.image:
+src: $assets.files.images.email.svg
+width: auto
+
+\-- ftd.text: $contact-3.email
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.text
+link: disable
+
+\-- end: ftd.row
+
+\-- ftd.row:
+spacing.fixed.px: 10
+align-content: center
+
+\-- ftd.image:
+src: $assets.files.images.phone.svg
+width: auto
+
+\-- ftd.text: $contact-3.phone
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.text
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- ftd.row:
+spacing.fixed.px: 12
+
+\-- ftd.image:
+src: $contact-3.facebook
+width.fixed.px: 18
+
+\-- ftd.image:
+src: $contact-3.twitter
+width.fixed.px: 18
+
+\-- ftd.image:
+src: $contact-3.instagram
+width.fixed.px: 18
+
+\-- ftd.image:
+src: $contact-3.linkedin
+width.fixed.px: 18
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- ftd.column:
+width.fixed.px: 984
+height: hug-content
+padding-left.px: 250
+padding-right.px: 36
+padding-vertical.px: 64
+spacing.fixed.px: 24
+background.solid: $inherited.colors.cta-secondary.text
+z-index: 8
+anchor: parent
+left.px: 115
+top.px: 52
+shadow: $shadow
+
+\-- ftd.text: $contact-3.title
+role: $inherited.types.heading-small
+color: $inherited.colors.background.overlay
+
+\-- ftd.row:
+spacing.fixed.px: 32
+
+\-- ftd.column:
+spacing.fixed.px: 8
+
+\-- ftd.text: First Name
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+\-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+\-- end: ftd.column
+
+\-- ftd.column:
+spacing.fixed.px: 8
+
+\-- ftd.text: Last Name
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+\-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- ftd.row:
+spacing.fixed.px: 32
+
+\-- ftd.text-input:
+placeholder: Email Address
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+\-- ftd.text-input:
+placeholder: Mobile Number
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+\-- end: ftd.row
+
+\-- ftd.column:
+spacing.fixed.px: 32
+width: fill-container
+
+\-- ftd.text: Write your message here...
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+margin-bottom.px: 4
+
+\-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+\-- end: ftd.column
+
+\-- ftd.text: $contact-3.cta-button
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.solid: $inherited.colors.success.text
+background.solid if { contact-3.is-active }: $inherited.colors.success.border
+$on-mouse-enter$: $ftd.set-bool($a = $contact-3.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-3.is-active, v = false)
+color: $inherited.colors.border
+link: $contact-3.cta-link
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: contact-3
+
+
+
+
+
+\-- ftd.linear-gradient lg:
+direction: bottom-left
+colors: $color-values-2
+
+\-- ftd.linear-gradient-color list color-values-2:
+
+\-- ftd.linear-gradient-color: #3E8D61
+
+\-- ftd.linear-gradient-color: #F3DB5F
+
+\-- end: color-values-2
+
+
+
+
+
+\-- ftd.shadow shadow:
+color: #a9a7a5ba
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 24
+inset-body: false
+spread.px: 0
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+-- component contact-3:
+caption title:
+optional string address:
+optional string email:
+optional string phone:
+optional string cta-button:
+optional string cta-link:
+boolean $is-active: false
+optional ftd.image-src facebook:
+optional ftd.image-src twitter:
+optional ftd.image-src instagram:
+optional ftd.image-src linkedin:
+
+-- ftd.row:
+width: fill-container
+height.fixed.px: 564
+background.linear-gradient: $lg
+spacing.fixed.px: 8
+padding-horizontal.px: 42
+padding-vertical.px: 82
+z-index: 2
+
+-- ftd.column:
+width.fixed.px: 280
+height.fixed.px: 400
+padding-horizontal.px: 18
+padding-vertical.px: 18
+background.solid: $inherited.colors.success.text
+z-index: 10
+shadow: $shadow
+spacing: space-between
+
+-- ftd.column:
+spacing.fixed.px: 16
+
+-- ftd.text: Contact Info
+role: $inherited.types.heading-small
+color: $inherited.colors.cta-primary.text
+style: bold
+
+-- ftd.row:
+margin-top.px: 24
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.address.svg
+width.fixed.px: 26
+height.fixed.px: 26
+
+-- ftd.text: $contact-3.address
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.email.svg
+width: auto
+
+-- ftd.text: $contact-3.email
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.text
+link: disable
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 10
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.phone.svg
+width: auto
+
+-- ftd.text: $contact-3.phone
+role: $inherited.types.fine-print
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.row:
+spacing.fixed.px: 12
+
+-- ftd.image:
+src: $contact-3.facebook
+width.fixed.px: 18
+
+-- ftd.image:
+src: $contact-3.twitter
+width.fixed.px: 18
+
+-- ftd.image:
+src: $contact-3.instagram
+width.fixed.px: 18
+
+-- ftd.image:
+src: $contact-3.linkedin
+width.fixed.px: 18
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width: hug-content
+height: hug-content
+padding-left.px: 250
+padding-right.px: 36
+padding-vertical.px: 64
+spacing.fixed.px: 24
+background.solid: $inherited.colors.cta-secondary.text
+z-index: 8
+anchor: parent
+left.px: 115
+top.px: 52
+shadow: $shadow
+
+-- ftd.text: $contact-3.title
+role: $inherited.types.heading-small
+color: $inherited.colors.background.overlay
+
+-- ftd.row:
+spacing.fixed.px: 32
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text: First Name
+role: $inherited.types.copy-small
+color: $inherited.colors.background.overlay
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text: Last Name
+role: $inherited.types.copy-small
+color: $inherited.colors.background.overlay
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 32
+
+-- ftd.text-input:
+placeholder: Email Address
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text-input:
+placeholder: Mobile Number
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width.fixed.px: 332
+border-bottom-width.px: 1
+border-color: $inherited.colors.cta-tertiary.focused
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- end: ftd.row
+
+-- ftd.column:
+spacing.fixed.px: 32
+width: fill-container
+
+-- ftd.text: Write your message here...
+role: $inherited.types.copy-small
+color: $inherited.colors.background.overlay
+margin-bottom.px: 4
+
+-- ftd.text-input:
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-bottom-width.px: 1
+type: text
+role: $inherited.types.copy-small
+border-color: $inherited.colors.cta-tertiary.focused
+color: $inherited.colors.border
+
+-- end: ftd.column
+
+-- ftd.text: $contact-3.cta-button
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.solid: $inherited.colors.success.text
+background.solid if {contact-3.is-active}: $inherited.colors.success.border
+$on-mouse-enter$: $ftd.set-bool($a = $contact-3.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $contact-3.is-active, v = false)
+color: $inherited.colors.border
+link: $contact-3.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: contact-3
+
+
+
+
+
+
+
+
+
+-- ftd.linear-gradient lg:
+direction: bottom-left
+colors: $color-values-2
+
+-- ftd.linear-gradient-color list color-values-2:
+
+-- ftd.linear-gradient-color: #3E8D61
+
+-- ftd.linear-gradient-color: #F3DB5F
+
+-- end: color-values-2
+
+
+
+
+
+-- ftd.shadow shadow:
+color: #a9a7a5ba
+x-offset.px: 0
+y-offset.px: 0
+blur.px: 24
+inset-body: false
+spread.px: 0
