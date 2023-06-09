@@ -37,6 +37,9 @@ url: UI-Components/Blog/blog-5
 -- button: Blog-6
 url: UI-Components/Blog/blog-6
 
+-- button: Blog-7
+url: UI-Components/Blog/blog-7
+
 -- button: Header-1
 url: UI-Components/Header/header-1
 
@@ -60,6 +63,9 @@ url: UI-Components/Hero/hero-3
 
 -- button: Hero-4
 url: UI-Components/Hero/hero-4
+
+-- button: Hero-5
+url: UI-Components/Hero/hero-5
 
 -- button: Footer-1
 url: UI-Components/Footer/footer-1
