@@ -8,19 +8,19 @@
 if: { !lib.code-open }
 
 -- blog-7: Raclette Blueberry Nextious Level
-pic: $assets.files.images.Blog.blog-1.720x400.png
+pic: $assets.files.images.Blog.Blog-1.720x400.png
 head: Category
 user-name: Raclette
-user-image: $assets.files.images.Blog.blog-1.avatar.jpg
+user-image: $assets.files.images.Blog.Blog-1.avatar.jpg
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
 
 -- blog-7: Raclette Blueberry Nextious Level
-pic: $assets.files.images.Blog.blog-1.721x401.png
+pic: $assets.files.images.Blog.Blog-1.721x401.png
 head: Category
 user-name: Raclette
-user-image: $assets.files.images.Blog.blog-1.avatar.jpg
+user-image: $assets.files.images.Blog.Blog-1.avatar.jpg
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
