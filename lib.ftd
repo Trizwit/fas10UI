@@ -4,6 +4,10 @@
 -- import: shaheen-senpai.github.io/fastn-cs-tail
 -- import: fastn/processors as pr
 
+-- boolean $color-mode: false
+
+-- boolean $code-open: false
+
 -- component page:
 children c:
 
@@ -15,7 +19,9 @@ types: $opensans-typography.types
 
 -- ftd.row: 
 width: fill-container
-background.solid: $inherited.colors.cta-primary.base 
+background.image if { !color-mode }: $assets.files.images.wallpaper-light.jpg
+background.image if { color-mode }: $assets.files.images.wallpaper-dark.jpg
+
 
 -- selector:
 
@@ -36,6 +42,9 @@ url: UI-Components/Blog/blog-5
 
 -- button: Blog-6
 url: UI-Components/Blog/blog-6
+
+-- button: Blog-7
+url: UI-Components/Blog/blog-7
 
 -- button: Header-1
 url: UI-Components/Header/header-1
@@ -60,6 +69,9 @@ url: UI-Components/Hero/hero-3
 
 -- button: Hero-4
 url: UI-Components/Hero/hero-4
+
+-- button: Hero-5
+url: UI-Components/Hero/hero-5
 
 -- button: Hero-6
 url: UI-Components/Hero/hero-6
@@ -137,7 +149,6 @@ text-3: for FASTN Community
 
 
 
--- boolean $code-open: false
 
 -- component navbar:
 caption title:
@@ -234,19 +245,21 @@ $on-click$: $ftd.set-bool($a = $code-open, v = false)
 -- ftd.image: 
 if: { !navbar.mode }
 src: $navbar.toggle
-height.fixed.px: 24
-width.fixed.px: 24
+height.fixed.px: 32
+width.fixed.px: 32
 align-self: center
 $on-click$: $ftd.set-bool($a = $navbar.mode, v = true)
+$on-click$: $ftd.set-bool($a = $color-mode, v = true)
 $on-click$: $ftd.enable-dark-mode()
 
 -- ftd.image: 
 if: { navbar.mode }
 src: $navbar.toggle-2
-height.fixed.px: 24
-width.fixed.px: 24
+height.fixed.px: 32
+width.fixed.px: 32
 align-self: center
 $on-click$: $ftd.set-bool($a = $navbar.mode, v = false)
+$on-click$: $ftd.set-bool($a = $color-mode, v = false)
 $on-click$: $ftd.enable-light-mode()
 
 -- end: ftd.row
@@ -348,7 +361,7 @@ children c:
 min-width.fixed.percent if { !$push-left }: 20
 min-height.fixed.calc: 100vh - 0px
 height.fixed.vh: 100
-overflow-y: auto
+overflow-y: scroll
 width.fixed.percent if { !$push-left }: 20
 width.fixed.percent if { $push-left }: 0
 align-content: top-center

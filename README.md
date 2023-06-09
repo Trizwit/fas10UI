@@ -7,7 +7,6 @@
 # OPEN FASTN - A platform to develop your skills through contributing to community
 
 ## About
-
 `OPEN FASTN` will be a two week long open source contribution to FASTN Web Components Library for supporting the next generation of programmers to build their projects more easily. 
 
 We expect this campaign will have a participation of 50+ new opensource contributors will create 250+ unique components for FASTN Component Library.
@@ -25,7 +24,7 @@ We expect this campaign will have a participation of 50+ new opensource contribu
 - Strengthen your skill by learning a powerful web development framework.
 
 ## How to participate in OPEN FASTN?
-1. Join [FASTN Discord Community](https://discord.com/channels/793929082483769345/1115150105411063902)
+1. Join [FASTN Discord Community](https://discord.com/invite/a7eBUeutWD) and join [OPEN FASTN Channel](https://discord.com/channels/793929082483769345/1115150105411063902)
 2. Learn how to [build components](https://fastn.com/frontend/)
 3. Build 5 Web Components using FASTN as per standards (To be eligible for Swag)
 4. Create Pull Request to **[Trizwit/FastnUI](https://github.com/Trizwit/FastnUI)** Library Repository
@@ -109,6 +108,3 @@ url: UI-Components/Content/content-1
 This will notify the repository maintainers of your contribution. They will review your changes, and if everything is in order, your changes will be merged into the main repository.
 
 # Happy contributing ..!
-
-
-

@@ -1,0 +1,211 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- blog-7: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.720x400.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-1.avatar.jpg
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- blog-7: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.721x401.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-1.avatar.jpg
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- blog-7: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.722x402.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-1.avatar.jpg
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- lib.blog-7: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.blog-1.721x401.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.blog.blog-1.avatar.jpg
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+\-- lib.blog-7: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.blog-1.721x401.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.blog.blog-1.avatar.jpg
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+\-- lib.blog-7: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.blog-1.722x402.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.blog.blog-1.avatar.jpg
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+\-- end: lib.container-wrapper
+
+\-- component blog-7:
+caption title:
+string head:
+ftd.image-src pic:
+string user-name:
+ftd.image-src user-image:
+optional string user-profile-link:
+body body:
+
+\-- ftd.column:
+background.solid: $inherited.colors.cta-secondary.base
+max-width.fixed.percent: 25
+
+\-- ftd.image:
+src: $blog-7.pic
+width: fill-container
+
+\-- ftd.column:
+padding.px: 24
+color: $inherited.colors.text
+
+\-- ftd.text: $blog-7.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.background.base
+margin-bottom.px: 8
+padding.px: 4
+background.solid: $inherited.colors.cta-tertiary.base
+
+\-- ftd.text: $blog-7.title
+role: $inherited.types.heading-tiny
+margin-bottom.px: 8
+
+\-- ftd.text: $blog-7.body
+role: $inherited.types.label-large
+margin-bottom.px: 12
+
+\-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+link if { blog-7.user-profile-link != NULL }: $blog-7.user-profile-link
+
+\-- ftd.image:
+src: $blog-7.user-image
+width.fixed.px: 16
+height: auto
+border-radius.px: 100
+
+\-- ftd.text: $blog-7.user-name
+role: $inherited.types.fine-print
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+\-- end: blog-7
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component blog-7:
+caption title:
+string head:
+ftd.image-src pic:
+string user-name:
+ftd.image-src user-image:
+optional string user-profile-link:
+body body:
+
+-- ftd.column:
+background.solid: $inherited.colors.cta-secondary.base
+max-width.fixed.percent: 25
+
+-- ftd.image:
+src: $blog-7.pic
+width: fill-container
+
+-- ftd.column:
+padding.px: 24
+color: $inherited.colors.text
+
+-- ftd.text: $blog-7.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.background.base
+margin-bottom.px: 8
+padding.px: 4
+background.solid: $inherited.colors.cta-tertiary.base
+
+-- ftd.text: $blog-7.title
+role: $inherited.types.heading-tiny
+margin-bottom.px: 8
+
+-- ftd.text: $blog-7.body
+role: $inherited.types.label-large
+margin-bottom.px: 12
+
+-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+link if { blog-7.user-profile-link != NULL }: $blog-7.user-profile-link
+
+-- ftd.image:
+src: $blog-7.user-image
+width.fixed.px: 16
+height: auto
+border-radius.px: 100
+
+-- ftd.text: $blog-7.user-name
+role: $inherited.types.fine-print
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: blog-7

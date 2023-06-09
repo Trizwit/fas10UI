@@ -247,7 +247,7 @@ margin-bottom.px: 12
 -- ftd.text: First Link
 role: $inherited.types.label-small
 margin-vertical.px: 1
-color: $inherited.colors.cta-tertiary.hover
+color: $inherited.colors.text
 color if {Category.is-active-1}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-1, v = false)
@@ -256,7 +256,7 @@ link:
 -- ftd.text: Second Link
 role: $inherited.types.label-small
 margin-vertical.px: 1
-color: $inherited.colors.cta-tertiary.hover
+color: $inherited.colors.text
 color if {Category.is-active-2}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-2, v = false)
@@ -265,7 +265,7 @@ link:
 -- ftd.text: Third Link
 role: $inherited.types.label-small
 margin-vertical.px: 1
-color: $inherited.colors.cta-tertiary.hover
+color: $inherited.colors.text
 color if {Category.is-active-3}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-3, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-3, v = false)
@@ -274,7 +274,7 @@ link:
 -- ftd.text: Fourth Link
 role: $inherited.types.label-small
 margin-vertical.px: 1
-color: $inherited.colors.cta-tertiary.hover
+color: $inherited.colors.text
 color if {Category.is-active-4}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-4, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-4, v = false)
@@ -344,7 +344,7 @@ align-self: center
 
 -- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
 role: $inherited.types.copy-small
-color: $inherited.colors.cta-tertiary.hover
+color: $inherited.colors.text
 margin-top.px: 8
 
 -- end: ftd.column
