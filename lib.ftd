@@ -4,6 +4,10 @@
 -- import: shaheen-senpai.github.io/fastn-cs-tail
 -- import: fastn/processors as pr
 
+-- boolean $color-mode: false
+
+-- boolean $code-open: false
+
 -- component page:
 children c:
 
@@ -15,7 +19,9 @@ types: $opensans-typography.types
 
 -- ftd.row: 
 width: fill-container
-background.solid: $inherited.colors.cta-primary.base 
+background.image if { !color-mode }: $assets.files.images.wallpaper-light.jpg
+background.image if { color-mode }: $assets.files.images.wallpaper-dark.jpg
+
 
 -- selector:
 
@@ -140,7 +146,6 @@ text-3: for FASTN Community
 
 
 
--- boolean $code-open: false
 
 -- component navbar:
 caption title:
@@ -237,19 +242,21 @@ $on-click$: $ftd.set-bool($a = $code-open, v = false)
 -- ftd.image: 
 if: { !navbar.mode }
 src: $navbar.toggle
-height.fixed.px: 24
-width.fixed.px: 24
+height.fixed.px: 32
+width.fixed.px: 32
 align-self: center
 $on-click$: $ftd.set-bool($a = $navbar.mode, v = true)
+$on-click$: $ftd.set-bool($a = $color-mode, v = true)
 $on-click$: $ftd.enable-dark-mode()
 
 -- ftd.image: 
 if: { navbar.mode }
 src: $navbar.toggle-2
-height.fixed.px: 24
-width.fixed.px: 24
+height.fixed.px: 32
+width.fixed.px: 32
 align-self: center
 $on-click$: $ftd.set-bool($a = $navbar.mode, v = false)
+$on-click$: $ftd.set-bool($a = $color-mode, v = false)
 $on-click$: $ftd.enable-light-mode()
 
 -- end: ftd.row
