@@ -365,7 +365,6 @@ width.fixed.percent if { !$push-left }: 20
 width.fixed.percent if { $push-left }: 0
 align-content: top-center
 background.solid: $inherited.colors.cta-primary.base
-border-radius.px: 8
 padding-top.px: 36
 padding-bottom.px: 32
 spacing.fixed.px: 10
