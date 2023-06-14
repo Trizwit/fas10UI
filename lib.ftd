@@ -361,7 +361,6 @@ children c:
 min-width.fixed.percent if { !$push-left }: 20
 min-height.fixed.calc: 100vh - 0px
 height.fixed.vh: 100
-overflow-y: scroll
 width.fixed.percent if { !$push-left }: 20
 width.fixed.percent if { $push-left }: 0
 align-content: top-center
