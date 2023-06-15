@@ -1,0 +1,196 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- blog-9: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-9.sample.png
+head: Category
+updated: Updated 3 mins ago
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+-- blog-9: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-9.sample.png
+head: Category
+updated: Updated 3 mins ago
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+-- blog-9: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-9.sample.png
+head: Category
+updated: Updated 3 mins ago
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- blog-9: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-9.sample.png
+head: Category
+updated: Updated 3 mins ago
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\-- blog-9: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-9.sample.png
+head: Category
+updated: Updated 3 mins ago
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\-- blog-9: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-9.sample.png
+head: Category
+updated: Updated 3 mins ago
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+\-- end: lib.container-wrapper
+
+\-- component blog-9:
+caption title:
+string head:
+ftd.image-src pic:
+string updated:
+optional string user-profile-link:
+body body:
+
+\-- ftd.row:
+background.solid: $inherited.colors.cta-secondary.base
+max-width.fixed.percent: 45
+spacing.fixed.px: 24
+margin.px:16
+
+\-- ftd.image:
+src: $blog-9.pic
+width.fixed.percent: 40
+align-self: center
+height: fill-container
+
+\-- ftd.column:
+color: $inherited.colors.text
+align-self: center
+padding.px: 24
+
+\-- ftd.text: $blog-9.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.background.base
+margin-bottom.px: 8
+padding.px: 4
+
+\-- ftd.text: $blog-9.title
+role: $inherited.types.heading-tiny
+margin-bottom.px: 8
+
+\-- ftd.text: $blog-9.body
+role: $inherited.types.label-large
+margin-bottom.px: 12
+text-align: justify
+
+\-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+
+\-- ftd.text: $blog-9.updated
+role: $inherited.types.fine-print
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: blog-9
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component blog-9:
+caption title:
+string head:
+ftd.image-src pic:
+string updated:
+optional string user-profile-link:
+body body:
+
+-- ftd.row:
+background.solid: $inherited.colors.cta-secondary.base
+max-width.fixed.percent: 45
+spacing.fixed.px: 24
+margin.px:16
+
+-- ftd.image:
+src: $blog-9.pic
+width.fixed.percent: 40
+align-self: center
+height: fill-container
+
+-- ftd.column:
+color: $inherited.colors.text
+align-self: center
+padding.px: 24
+
+-- ftd.text: $blog-9.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.background.base
+margin-bottom.px: 8
+padding.px: 4
+
+-- ftd.text: $blog-9.title
+role: $inherited.types.heading-tiny
+margin-bottom.px: 8
+
+-- ftd.text: $blog-9.body
+role: $inherited.types.label-large
+margin-bottom.px: 12
+text-align: justify
+
+-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+
+-- ftd.text: $blog-9.updated
+role: $inherited.types.fine-print
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: blog-9

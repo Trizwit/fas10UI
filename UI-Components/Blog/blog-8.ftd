@@ -113,9 +113,7 @@ margin.px:16
 \-- ftd.image:
 src: $blog-8.pic
 max-width.fixed.percent: 30
-;;padding.px: 14
 align-self: center
-;;margin-left.px: 14
 height: fill-container
 
 \-- ftd.column:
@@ -197,9 +195,7 @@ margin.px:16
 -- ftd.image:
 src: $blog-8.pic
 max-width.fixed.percent: 30
-;;padding.px: 14
 align-self: center
-;;margin-left.px: 14
 height: fill-container
 
 -- ftd.column:
