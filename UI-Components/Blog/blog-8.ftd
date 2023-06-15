@@ -1,0 +1,262 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- blog-8: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-8.720x400.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
+Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
+Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
+vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
+purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
+Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
+Nulla at volutpat diam ut venenatis tellus in.
+
+-- blog-8: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-8.720x400.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
+Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
+Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
+vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
+purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
+Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
+Nulla at volutpat diam ut venenatis tellus in.
+
+-- blog-8: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-8.720x400.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
+Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
+Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
+vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
+purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
+Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
+Nulla at volutpat diam ut venenatis tellus in.
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- blog-8: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-8.720x400.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
+Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
+Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
+vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
+purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
+Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
+Nulla at volutpat diam ut venenatis tellus in.
+
+\-- blog-8: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-8.720x400.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
+Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
+Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
+vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
+purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
+Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
+Nulla at volutpat diam ut venenatis tellus in.
+
+\-- blog-8: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-8.720x400.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
+Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
+Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
+vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
+purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
+Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
+Nulla at volutpat diam ut venenatis tellus in.
+
+
+\-- end: lib.container-wrapper
+
+\-- component blog-8:
+caption title:
+string head:
+ftd.image-src pic:
+string user-name:
+ftd.image-src user-image:
+optional string user-profile-link:
+body body:
+
+\-- ftd.row:
+background.solid: $inherited.colors.cta-secondary.base
+max-width.fixed.percent: 100
+padding.px: 24
+spacing.fixed.px: 24
+margin.px:16
+
+\-- ftd.image:
+src: $blog-8.pic
+max-width.fixed.percent: 30
+;;padding.px: 14
+align-self: center
+;;margin-left.px: 14
+height: fill-container
+
+\-- ftd.column:
+color: $inherited.colors.text
+
+\-- ftd.text: $blog-8.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.background.base
+margin-bottom.px: 8
+padding.px: 4
+background.solid: $inherited.colors.cta-tertiary.base
+
+\-- ftd.text: $blog-8.title
+role: $inherited.types.heading-tiny
+margin-bottom.px: 8
+
+\-- ftd.text: $blog-8.body
+role: $inherited.types.label-large
+margin-bottom.px: 12
+
+\-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+link if { blog-8.user-profile-link != NULL }: $blog-8.user-profile-link
+
+\-- ftd.image:
+src: $blog-8.user-image
+width.fixed.px: 16
+height: auto
+border-radius.px: 100
+
+\-- ftd.text: $blog-8.user-name
+role: $inherited.types.fine-print
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: blog-8
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component blog-8:
+caption title:
+string head:
+ftd.image-src pic:
+string user-name:
+ftd.image-src user-image:
+optional string user-profile-link:
+body body:
+
+-- ftd.row:
+background.solid: $inherited.colors.cta-secondary.base
+max-width.fixed.percent: 100
+padding.px: 24
+spacing.fixed.px: 24
+margin.px:16
+
+-- ftd.image:
+src: $blog-8.pic
+max-width.fixed.percent: 30
+;;padding.px: 14
+align-self: center
+;;margin-left.px: 14
+height: fill-container
+
+-- ftd.column:
+color: $inherited.colors.text
+
+-- ftd.text: $blog-8.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.background.base
+margin-bottom.px: 8
+padding.px: 4
+background.solid: $inherited.colors.cta-tertiary.base
+
+-- ftd.text: $blog-8.title
+role: $inherited.types.heading-tiny
+margin-bottom.px: 8
+
+-- ftd.text: $blog-8.body
+role: $inherited.types.label-large
+margin-bottom.px: 12
+text-align: justify
+
+-- ftd.row:
+spacing.fixed.px: 8
+align-content: center
+link if { blog-8.user-profile-link != NULL }: $blog-8.user-profile-link
+
+-- ftd.image:
+src: $blog-8.user-image
+width.fixed.px: 16
+height: auto
+border-radius.px: 100
+
+-- ftd.text: $blog-8.user-name
+role: $inherited.types.fine-print
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: blog-8
