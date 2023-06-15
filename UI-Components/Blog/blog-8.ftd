@@ -13,14 +13,11 @@ head: Category
 user-name: Raclette
 user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
-Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
-Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
-vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
-purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
-Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
-Nulla at volutpat diam ut venenatis tellus in.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+ut labore et dolore magna aliqua. Fames ac turpis egestas maecenas pharetra convallis 
+posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida 
+cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus 
+mauris ultrices eros in cursus turpis.
 
 -- blog-8: Raclette Blueberry Nextious Level
 pic: $assets.files.images.Blog.Blog-8.720x400.png
@@ -28,14 +25,11 @@ head: Category
 user-name: Raclette
 user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
-Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
-Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
-vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
-purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
-Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
-Nulla at volutpat diam ut venenatis tellus in.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+ut labore et dolore magna aliqua. Fames ac turpis egestas maecenas pharetra convallis 
+posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida 
+cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus 
+mauris ultrices eros in cursus turpis.
 
 -- blog-8: Raclette Blueberry Nextious Level
 pic: $assets.files.images.Blog.Blog-8.720x400.png
@@ -43,14 +37,11 @@ head: Category
 user-name: Raclette
 user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
-Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
-Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
-vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
-purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
-Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
-Nulla at volutpat diam ut venenatis tellus in.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+ut labore et dolore magna aliqua. Fames ac turpis egestas maecenas pharetra convallis 
+posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida 
+cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus 
+mauris ultrices eros in cursus turpis.
 
 
 -- end: lib.container-wrapper
@@ -69,14 +60,11 @@ head: Category
 user-name: Raclette
 user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
-Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
-Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
-vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
-purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
-Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
-Nulla at volutpat diam ut venenatis tellus in.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+ut labore et dolore magna aliqua. Fames ac turpis egestas maecenas pharetra convallis 
+posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida 
+cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus 
+mauris ultrices eros in cursus turpis.
 
 \-- blog-8: Raclette Blueberry Nextious Level
 pic: $assets.files.images.Blog.Blog-8.720x400.png
@@ -84,14 +72,11 @@ head: Category
 user-name: Raclette
 user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
-Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
-Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
-vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
-purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
-Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
-Nulla at volutpat diam ut venenatis tellus in.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+ut labore et dolore magna aliqua. Fames ac turpis egestas maecenas pharetra convallis 
+posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida 
+cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus 
+mauris ultrices eros in cursus turpis.
 
 \-- blog-8: Raclette Blueberry Nextious Level
 pic: $assets.files.images.Blog.Blog-8.720x400.png
@@ -99,14 +84,12 @@ head: Category
 user-name: Raclette
 user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Fames ac turpis egestas maecenas pharetra convallis posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. 
-Gravida cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
-Lacinia quis vel eros donec. Nulla aliquet porttitor lacus luctus accumsan tortor. Lectus mauris ultrices eros in cursus. Congue nisi
-vitae suscipit tellus mauris a diam maecenas sed. Pharetra et ultrices neque ornare. Iaculis nunc sed augue lacus viverra vitae. Dolor
-purus non enim praesent elementum. Rhoncus est pellentesque elit ullamcorper dignissim. Quisque egestas diam in arcu cursus.
-Id semper risus in hendrerit gravida rutrum quisque non. Tincidunt eget nullam non nisi est sit amet facilisis.
-Nulla at volutpat diam ut venenatis tellus in.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+ut labore et dolore magna aliqua. Fames ac turpis egestas maecenas pharetra convallis 
+posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida 
+cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus 
+mauris ultrices eros in cursus turpis.
+
 
 
 \-- end: lib.container-wrapper
