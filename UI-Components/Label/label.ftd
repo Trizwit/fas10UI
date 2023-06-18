@@ -1,0 +1,203 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- default-label:
+content: Default
+
+-- primary-label:
+content: Primary
+
+
+-- success-label:
+content: Success
+
+
+-- danger-label:
+content: Danger
+
+
+-- warning-label:
+content: Warning
+
+
+-- info-label:
+content: Info
+
+
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- component base-label:
+string content:
+ftd.color bg-color:
+
+
+\-- ftd.row:
+
+\-- ftd.row:
+width: hug-content
+height: hug-content
+padding.px: 2
+margin.px: 20
+border-radius.rem: .3
+background.solid: $base-label.bg-color
+
+
+\-- ftd.text: $base-label.content
+role: $inherited.types.copy-regular
+style: bold
+color: #ffffff
+margin-horizontal.px: 10
+
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: base-label
+
+
+
+
+
+\-- component primary-label:
+string content:
+
+\-- base-label:
+bg-color: #337ab7
+content: $primary-label.content
+
+\-- end: primary-label
+-- end: cb.code
+
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+-- component base-label:
+string content:
+ftd.color bg-color:
+
+
+-- ftd.row:
+
+-- ftd.row:
+width: hug-content
+height: hug-content
+padding.px: 2
+margin.px: 20
+border-radius.rem: .3
+background.solid: $base-label.bg-color
+
+
+-- ftd.text: $base-label.content
+role: $inherited.types.copy-regular
+style: bold
+color: #ffffff
+margin-horizontal.px: 10
+
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: base-label
+
+
+
+-- component default-label:
+string content:
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- base-label:
+bg-color: #777
+content: $default-label.content
+
+-- end: ftd.row
+
+-- end: default-label
+
+
+-- component primary-label:
+string content:
+
+-- base-label:
+bg-color: #337ab7
+content: $primary-label.content
+
+-- end: primary-label
+
+
+
+-- component success-label:
+string content:
+
+-- base-label:
+bg-color: #5cb85c
+content: $success-label.content
+
+-- end: success-label
+
+
+
+-- component danger-label:
+string content:
+
+-- base-label:
+bg-color: #d9534f
+content: $danger-label.content
+
+-- end: danger-label
+
+
+
+
+-- component warning-label:
+string content:
+
+
+
+-- base-label:
+bg-color: #f0ad4e
+content: $warning-label.content
+
+
+
+-- end: warning-label
+
+
+
+
+-- component info-label:
+string content:
+
+
+
+-- base-label:
+bg-color: #5bc0de
+content: $info-label.content
+
+
+
+-- end: info-label
