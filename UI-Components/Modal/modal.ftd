@@ -1,0 +1,300 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- boolean $open: false
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- ftd.text: Click here to see demo
+role: $inherited.types.button-large
+color: $inherited.colors.text-strong
+background.solid: $inherited.colors.cta-secondary.base
+padding.px: 12
+border-radius.px: 4
+$on-click$: $ftd.set-bool($a = $open, v = true)
+
+-- modal: Modal title
+max-width.fixed.percent: 50
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip
+
+-- cb.code:
+lang: ftd
+
+\-- ftd.text: You can add any component inside modal
+
+-- end: modal
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- component modal:
+caption title:
+body body:
+children modal-body:
+ftd.color-scheme colors: $ftd.default-colors
+string primary-cta-text: Save Changes
+string secondary-cta-text: Close
+optional ftd.resizing max-width: 
+boolean $close-hover: false
+boolean $secondary-hover: false
+boolean $primary-hover: false
+
+\-- ftd.column:
+if: { open }
+width: fill-container
+height: fill-container
+align-content: center
+z-index: 99999999
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: $inherited.colors.background.overlay
+anchor: window
+top.px: 0
+left.px: 0
+
+\-- end: ftd.column
+
+\-- ftd.column:
+width: auto
+anchor: window
+align-content: top-center
+max-width: $modal.max-width
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 4
+
+\-- ftd.row:
+width: fill-container
+padding.px: 12
+border-bottom-width.px: 1
+border-color: $inherited.colors.border
+
+\-- ftd.text: $modal.title
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+width: fill-container
+
+\-- ftd.text: &#215;
+color: $inherited.colors.text
+color if { modal.close-hover }: $inherited.colors.text-strong
+role: $inherited.types.copy-large
+cursor: pointer
+$on-click$: $ftd.set-bool($a = $open, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $modal.close-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $modal.close-hover, v = false)
+
+\-- end: ftd.row
+
+\-- ftd.column:
+width: fill-container
+padding-horizontal.px: 12
+padding-vertical.px: 24
+
+\-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$modal.body
+
+\-- ftd.column:
+width: fill-container
+children: $modal.modal-body
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+\-- ftd.column:
+width: fill-container
+padding.px: 12
+border-top-width.px: 1
+border-color: $inherited.colors.border
+
+\-- ftd.row:
+width: fill-container
+align-content: right
+spacing.fixed.px: 16
+
+\-- ftd.text: $modal.primary-cta-text
+role: $inherited.types.button-medium
+color: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.cta-primary.base
+background.solid if { modal.primary-hover }: $inherited.colors.cta-primary.hover
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-radius.px: 4
+$on-click$: $ftd.set-bool($a = $open, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $modal.primary-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $modal.primary-hover, v = false)
+
+\-- ftd.text: $modal.secondary-cta-text
+role: $inherited.types.button-medium
+color: $inherited.colors.cta-secondary.text
+background.solid: $inherited.colors.cta-secondary.base
+background.solid if { modal.secondary-hover }: $inherited.colors.cta-secondary.border
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-radius.px: 4
+$on-click$: $ftd.set-bool($a = $open, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $modal.secondary-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $modal.secondary-hover, v = false)
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+\-- end: modal
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+-- component modal:
+caption title:
+body body:
+children modal-body:
+ftd.color-scheme colors: $ftd.default-colors
+string primary-cta-text: Save Changes
+string secondary-cta-text: Close
+optional ftd.resizing max-width: 
+boolean $close-hover: false
+boolean $secondary-hover: false
+boolean $primary-hover: false
+
+-- ftd.column:
+if: { open }
+width: fill-container
+height: fill-container
+align-content: center
+z-index: 99999999
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: $inherited.colors.background.overlay
+anchor: window
+top.px: 0
+left.px: 0
+
+-- end: ftd.column
+
+-- ftd.column:
+width: auto
+anchor: window
+align-content: top-center
+max-width: $modal.max-width
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 4
+
+-- ftd.row:
+width: fill-container
+padding.px: 12
+border-bottom-width.px: 1
+border-color: $inherited.colors.border
+
+-- ftd.text: $modal.title
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+width: fill-container
+
+-- ftd.text: &#215;
+color: $inherited.colors.text
+color if { modal.close-hover }: $inherited.colors.text-strong
+role: $inherited.types.copy-large
+cursor: pointer
+$on-click$: $ftd.set-bool($a = $open, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $modal.close-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $modal.close-hover, v = false)
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 12
+padding-vertical.px: 24
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+$modal.body
+
+-- ftd.column:
+width: fill-container
+children: $modal.modal-body
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+padding.px: 12
+border-top-width.px: 1
+border-color: $inherited.colors.border
+
+-- ftd.row:
+width: fill-container
+align-content: right
+spacing.fixed.px: 16
+
+-- ftd.text: $modal.primary-cta-text
+role: $inherited.types.button-medium
+color: $inherited.colors.cta-primary.text
+background.solid: $inherited.colors.cta-primary.base
+background.solid if { modal.primary-hover }: $inherited.colors.cta-primary.hover
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-radius.px: 4
+$on-click$: $ftd.set-bool($a = $open, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $modal.primary-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $modal.primary-hover, v = false)
+
+-- ftd.text: $modal.secondary-cta-text
+role: $inherited.types.button-medium
+color: $inherited.colors.cta-secondary.text
+background.solid: $inherited.colors.cta-secondary.base
+background.solid if { modal.secondary-hover }: $inherited.colors.cta-secondary.border
+padding-vertical.px: 8
+padding-horizontal.px: 16
+border-radius.px: 4
+$on-click$: $ftd.set-bool($a = $open, v = false)
+$on-mouse-enter$: $ftd.set-bool($a = $modal.secondary-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $modal.secondary-hover, v = false)
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: modal
