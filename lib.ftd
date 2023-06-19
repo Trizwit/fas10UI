@@ -109,6 +109,10 @@ url: UI-Components/Contact/contact-3
 -- button: Modal
 url: UI-Components/Modal/modal
 
+-- button: Pagination
+url: UI-Components/Pagination/pagination
+
+
 -- end: selector
 
 -- ftd.column:
