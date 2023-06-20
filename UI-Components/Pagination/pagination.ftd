@@ -1,0 +1,254 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- pagination:
+content: 1
+
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- component base:
+string content:
+
+
+\-- ftd.row:
+
+\-- ftd.row:
+width: hug-content
+height: hug-content
+padding.px: 1
+background.solid: white
+border-width.px: 1
+
+
+\-- ftd.image:
+src: $assets.files.images.Pagination.left.png
+width: fill-container
+padding.px: 4
+
+
+\-- end: ftd.row
+
+
+
+\-- ftd.row:
+width: hug-content
+height: hug-content
+background.solid: white
+padding.px: 1
+border-width.px: 1
+
+
+\-- ftd.text: 1
+role: $inherited.types.copy-regular
+style: bold
+margin-horizontal.px: 10
+
+\-- end: ftd.row
+
+
+
+\-- ftd.row:
+width: hug-content
+height: hug-content
+background.solid: white
+padding.px: 1
+border-width.px: 1
+
+
+\-- ftd.text: 2
+role: $inherited.types.copy-regular
+style: bold
+margin-horizontal.px: 10
+
+
+\-- end: ftd.row
+
+
+\-- ftd.row:
+width: hug-content
+height: hug-content
+background.solid: white
+padding.px: 1
+border-width.px: 1
+
+
+\-- ftd.text: 3
+role: $inherited.types.copy-regular
+style: bold
+margin-horizontal.px: 10
+
+\-- end: ftd.row
+
+
+
+\-- ftd.row:
+width: hug-content
+height: hug-content
+background.solid: white
+padding.px: 1
+border-width.px: 1
+
+
+\-- ftd.image:
+src: $assets.files.images.Pagination.right.png
+width: fill-container
+padding.px: 4
+
+\-- end: ftd.row
+
+
+\-- end: ftd.row
+
+\-- end: base
+
+
+
+\-- component pagination:
+string content:
+
+\-- ftd.row:
+spacing.fixed.px: 8
+
+\-- base:
+content: $pagination.content
+
+
+\-- end: ftd.row
+
+\-- end: pagination
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+-- component base:
+string content:
+
+
+-- ftd.row:
+
+-- ftd.row:
+width: hug-content
+height: hug-content
+padding.px: 1
+background.solid: white
+border-width.px: 1
+
+
+
+-- ftd.image:
+src: $assets.files.images.Pagination.left.png
+width: fill-container
+padding.px: 4
+
+
+-- end: ftd.row
+
+
+
+-- ftd.row:
+width: hug-content
+height: hug-content
+background.solid: white
+padding.px: 1
+border-width.px: 1
+
+
+-- ftd.text: 1
+role: $inherited.types.copy-regular
+style: bold
+margin-horizontal.px: 10
+
+-- end: ftd.row
+
+
+
+-- ftd.row:
+width: hug-content
+height: hug-content
+background.solid: white
+padding.px: 1
+border-width.px: 1
+
+
+-- ftd.text: 2
+role: $inherited.types.copy-regular
+style: bold
+margin-horizontal.px: 10
+
+
+-- end: ftd.row
+
+
+-- ftd.row:
+width: hug-content
+height: hug-content
+background.solid: white
+padding.px: 1
+border-width.px: 1
+
+
+-- ftd.text: 3
+role: $inherited.types.copy-regular
+style: bold
+margin-horizontal.px: 10
+
+-- end: ftd.row
+
+
+
+-- ftd.row:
+width: hug-content
+height: hug-content
+background.solid: white
+padding.px: 1
+border-width.px: 1
+
+
+-- ftd.image:
+src: $assets.files.images.Pagination.right.png
+width: fill-container
+padding.px: 4
+
+-- end: ftd.row
+
+
+-- end: ftd.row
+
+-- end: base
+
+
+
+-- component pagination:
+string content:
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- base:
+content: $pagination.content
+
+
+-- end: ftd.row
+
+-- end: pagination
