@@ -1,0 +1,225 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+
+-- progress-bar-primary-tiny: 
+fill-percent: 45
+
+
+-- progress-bar-success-tiny:
+fill-percent: 60
+
+
+-- progress-bar-danger-tiny:
+fill-percent: 60
+
+
+-- progress-bar-warning-tiny:
+fill-percent: 60
+
+
+-- progress-bar-info-tiny:
+fill-percent: 60
+
+
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+
+
+
+-- end: cb.code
+
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+-- component base-progress-bar:
+ftd.color bg-color:
+ftd.color fill-color:
+ftd.color border-color:
+decimal fill-percent:
+decimal bar-height:
+
+
+
+-- ftd.row:
+width: fill-container
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding.px: 5
+margin.px: 20   
+border-radius.rem: 0.5
+background.solid: $base-progress-bar.bg-color
+border-width.px: 3
+border-color: $base-progress-bar.border-color
+
+
+-- ftd.row:
+width.fixed.percent: $base-progress-bar.fill-percent
+height.fixed.vh: $base-progress-bar.bar-height
+border-radius.rem: 0.5    
+background.solid: $base-progress-bar.fill-color
+
+
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: base-progress-bar
+
+
+
+
+
+-- component base-progress-bar-tiny:
+ftd.color bg-color:
+ftd.color fill-color:
+ftd.color border-color:
+decimal fill-percent:
+
+-- ftd.row:
+width: fill-container
+
+-- base-progress-bar:
+bg-color: $base-progress-bar-tiny.bg-color
+fill-color: $base-progress-bar-tiny.fill-color
+border-color: $base-progress-bar-tiny.border-color
+fill-percent: $base-progress-bar-tiny.fill-percent
+bar-height: 0.5
+
+-- end: ftd.row
+
+-- end: base-progress-bar-tiny
+
+
+
+
+
+
+-- component progress-bar-primary-tiny:
+decimal fill-percent:
+
+-- ftd.row:
+width: fill-container
+
+-- base-progress-bar-tiny:
+bg-color: #cfe2ff
+fill-color: #337AB7
+border-color: #b6d4fe
+fill-percent: $progress-bar-primary-tiny.fill-percent
+
+-- end: ftd.row
+
+-- end: progress-bar-primary-tiny
+
+
+
+
+-- component progress-bar-success-tiny:
+decimal fill-percent:
+
+-- ftd.row:
+width: fill-container
+
+-- base-progress-bar-tiny:
+bg-color: #d4edda
+fill-color: #5CB85C
+border-color: #c3e6cb
+fill-percent: $progress-bar-success-tiny.fill-percent
+
+-- end: ftd.row
+
+-- end: progress-bar-success-tiny
+
+
+
+
+-- component progress-bar-danger-tiny:
+decimal fill-percent:
+
+-- ftd.row:
+width: fill-container
+
+-- base-progress-bar-tiny:
+bg-color: #f8d7da
+fill-color: #D9534F
+border-color: #f5c6cb
+fill-percent: $progress-bar-danger-tiny.fill-percent
+
+-- end: ftd.row
+
+-- end: progress-bar-danger-tiny
+
+
+
+
+-- component progress-bar-warning-tiny:
+decimal fill-percent:
+
+-- ftd.row:
+width: fill-container
+
+-- base-progress-bar-tiny:
+bg-color: #fff3cd
+fill-color: #F0AD4E
+border-color: #ffeeba
+fill-percent: $progress-bar-warning-tiny.fill-percent
+
+-- end: ftd.row
+
+-- end: progress-bar-warning-tiny
+
+
+
+
+-- component progress-bar-info-tiny:
+decimal fill-percent:
+
+-- ftd.row:
+width: fill-container
+
+-- base-progress-bar-tiny:
+bg-color: #d1ecf1
+fill-color: #5BC0DE
+border-color: #bee5eb
+fill-percent: $progress-bar-info-tiny.fill-percent
+
+-- end: ftd.row
+
+-- end: progress-bar-info-tiny
+
+
+
+
+
+

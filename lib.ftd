@@ -31,6 +31,18 @@ url: UI-Components/Alert/alert
 -- button: Labels
 url: UI-Components/Label/label
 
+-- button: Progress Bar Tiny
+url: UI-Components/ProgressBar/progress-bar-tiny
+
+-- button: Progress Bar Small
+url: UI-Components/ProgressBar/progress-bar-small
+
+-- button: Progress Bar Medium
+url: UI-Components/ProgressBar/progress-bar-medium
+
+-- button: Progress Bar Large
+url: UI-Components/ProgressBar/progress-bar-large
+
 -- button: Blog-1
 url: UI-Components/Blog/blog-1
 
