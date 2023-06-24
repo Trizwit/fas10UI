@@ -1,0 +1,179 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- gallery:
+
+-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-1.jpg
+
+
+-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-2.jpg
+
+
+-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-3.jpg
+
+
+-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-4.jpg
+
+
+-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-5.jpg
+
+
+-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-6.jpg
+
+
+-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-7.jpg
+
+
+-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-8.jpg
+
+
+-- end: gallery
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- gallery:
+
+\-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-1.jpg
+
+
+\-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-2.jpg
+
+
+\-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-3.jpg
+
+
+\-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-4.jpg
+
+
+\-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-5.jpg
+
+
+\-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-6.jpg
+
+
+\-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-7.jpg
+
+
+\-- gallery-image:
+img: $assets.files.images.Gallery.Gallery-1.gallery-img-8.jpg
+
+
+\-- end: gallery
+
+
+\-- end: lib.container-wrapper
+
+
+
+
+\-- component gallery-image:
+ftd.image-src img:
+
+\-- ftd.image:
+src: $gallery-image.img
+width.fixed.percent: 25
+margin.percent: 2
+
+\-- end: gallery-image
+
+
+
+
+
+
+
+
+
+
+\-- component gallery:
+children c:
+
+\-- ftd.row:
+width: fill-container
+children: $gallery.c
+overflow-x: scroll
+
+
+\-- end: ftd.row
+
+\-- end: gallery
+
+
+
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+-- component gallery-image:
+ftd.image-src img:
+
+-- ftd.image:
+src: $gallery-image.img
+width.fixed.percent: 25
+margin.percent: 2
+
+-- end: gallery-image
+
+
+
+
+
+
+
+
+
+
+-- component gallery:
+children c:
+
+-- ftd.row:
+width: fill-container
+children: $gallery.c
+overflow-x: scroll
+
+
+-- end: ftd.row
+
+-- end: gallery
