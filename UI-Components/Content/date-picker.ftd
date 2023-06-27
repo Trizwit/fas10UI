@@ -1,7 +1,7 @@
 -- import: fastnui.trizwit.com/assets
 -- import: fastnui.trizwit.com/lib
 -- import: fastn-community.github.io/code-block as cb
--- import: dropdown
+-- import: fastnui.trizwit.com/UI-Components/Content/dropdown
 
 -- lib.page:
 
@@ -159,6 +159,8 @@ link: $login-1.register-link
 -- string: 10
 -- string: 11
 -- string: 12
+-- string: 13
+-- string: 14
 -- end: days
 
 
@@ -177,30 +179,43 @@ link: $login-1.register-link
 -- string: December
 -- end: months
 
-
+-- string list years:
+-- string: 2020
+-- string: 2021
+-- string: 2022
+-- string: 2023
+-- string: 2024
+-- string: 2025
+-- string: 2026
+-- string: 2027
+-- string: 2028
+-- string: 2029
+-- string: 2030
+-- string: 2031
+-- end: years
 
 -- component date-picker-1:
 
 
 -- ftd.row:
--- drop-down-1:
+-- dropdown.drop-down-1:
 width.fixed.percent: 20
 $curValue: 1
 placeholder: DD
 possibleValues: $days
 
 
--- drop-down-1:
+-- dropdown.drop-down-1:
 width.fixed.percent: 40
 $curValue: January
 placeholder: MM
 possibleValues: $months
 
--- drop-down-1:
+-- dropdown.drop-down-1:
 width.fixed.percent: 40
 $curValue: 2023
 placeholder: YYYY
-possibleValues: $days
+possibleValues: $years
 
 -- end: ftd.row
 

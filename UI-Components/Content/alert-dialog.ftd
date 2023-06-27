@@ -1,0 +1,110 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- alert-dialog:
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- Hello
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+-- component alert-dialog:
+caption buttonName: View Alert Dialog
+body heading: Warning
+string message: You opened the Alert Dialog!
+boolean $isOpen: false
+
+-- ftd.column:
+
+-- ftd.container:
+$on-click$: $ftd.set-bool($a = $alert-dialog.isOpen, v = true)
+width.fixed.percent:100
+border-radius.px: 10
+border-color: #bbbbbb
+background.solid: #ffffff
+margin-vertical.px: 10
+margin-horizontal.px: 10
+padding.px:5
+
+-- ftd.text: $alert-dialog.buttonName
+role: $inherited.types.copy-regular
+align-self:center
+text-align:center
+
+-- end: ftd.container
+
+-- ftd.container:
+if: {$alert-dialog.isOpen}
+anchor:window
+top.px:0
+left.px:0
+height.fixed.vh:100
+width.fixed.vw:100
+z-index:2
+background.solid:#00000066
+
+-- ftd.container:
+top.vh:40
+left.vw:40
+z-index:3
+anchor:window
+background.solid:#ffffff
+border-radius.px:10
+padding.px:10
+
+-- ftd.column: 
+width.fixed.vw:20
+height.fixed.vh:20
+align-content:center
+spacing:space-evenly
+
+-- ftd.text: $alert-dialog.heading
+role: $inherited.types.heading-small
+color: red
+
+-- ftd.text: $alert-dialog.message
+role: $inherited.types.copy-regular
+
+
+-- ftd.text: Close
+role: $inherited.types.copy-regular
+color: #000000
+text-align: center
+padding-vertical.px: 5
+width.fixed.percent:40
+border-radius.px: 10
+background.solid: #bbbbbb
+$on-click$: $ftd.set-bool($a = $alert-dialog.isOpen, v = false)
+
+-- end: ftd.column
+-- end: ftd.container
+
+-- end: ftd.container
+
+-- end: ftd.column
+-- end: alert-dialog
+
+

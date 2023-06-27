@@ -2,12 +2,31 @@
 -- import: fastnui.trizwit.com/lib
 -- import: fastn-community.github.io/code-block as cb
 
+
+-- string list egValues:
+-- string: Item-1
+-- string: Item-2
+-- string: Item-3
+-- string: Item-4
+-- string: Item-5
+-- string: Item-6
+-- string: Item-7
+-- string: Item-8
+-- string: Item-9
+-- string: Item-10
+-- string: Item-11
+-- string: Item-12
+-- end: egValues
+
 -- lib.page:
 
 -- lib.container-wrapper:
 if: { !lib.code-open }
 
--- date-picker-1: 
+-- drop-down-1:
+width.fixed.px:200
+placeholder: Select Item
+possibleValues: $egValues 
 
 -- end: lib.container-wrapper
 
@@ -17,6 +36,7 @@ if: { lib.code-open }
 -- cb.code:
 lang: ftd
 
+\-- Hello
 
 -- end: cb.code
 
@@ -30,8 +50,8 @@ lang: ftd
 
 
 -- component drop-down-1:
-ftd.resizing width:
-string $curValue:
+ftd.resizing width: 
+string $curValue: Nill
 string placeholder: Select Value
 string list possibleValues:
 boolean $isOpen: false
@@ -59,7 +79,7 @@ margin-horizontal.px: 10
 -- ftd.text-input:
 width.fixed.percent: 90
 placeholder: $drop-down-1.curValue
-value if { $drop-down-1.curValue }: $drop-down-1.curValue
+value : $drop-down-1.curValue
 padding-horizontal.px: 10
 padding-vertical.px: 10
 background.solid: #00000000

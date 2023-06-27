@@ -25,13 +25,20 @@ background.image if { color-mode }: $assets.files.images.wallpaper-dark.jpg
 
 -- selector:
 
+-- button: DatePicker-1
+url: UI-Components/Content/date-picker
 
--- button: Alerts
-url: UI-Components/Content/alert
-
-
--- button: Alerts
+-- button: DropDownButton-1
 url: UI-Components/Content/dropdown
+
+-- button: Dialog-1
+url: UI-Components/Content/dialog-1
+
+-- button: Dialog-2
+url: UI-Components/Content/dialog-2
+
+-- button: Alert Dialog
+url: UI-Components/Content/alert-dialog
 
 -- button: Blog-1
 url: UI-Components/Blog/blog-1
