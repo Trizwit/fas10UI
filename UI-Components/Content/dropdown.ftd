@@ -1,0 +1,129 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- date-picker-1: 
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+-- component drop-down-1:
+ftd.resizing width:
+string $curValue:
+string placeholder: Select Value
+string list possibleValues:
+boolean $isOpen: false
+
+-- ftd.column:
+width: $drop-down-1.width
+margin-horizontal.px: 10
+$on-click$: $ftd.set-bool($a = $drop-down-1.isOpen, v = true)
+$on-click-outside$: $ftd.set-bool($a = $drop-down-1.isOpen, v = false)
+
+-- ftd.container:
+width.fixed.percent:100
+border-top-left-radius.px: 10
+border-top-right-radius.px: 10
+border-bottom-right-radius.px if {$drop-down-1.isOpen}: 0
+border-bottom-right-radius.px: 10
+border-bottom-left-radius.px if {$drop-down-1.isOpen}: 0
+border-bottom-left-radius.px: 10
+border-color: #bbbbbb
+background.solid: #ffffff
+margin-vertical.px: 10
+margin-horizontal.px: 10
+
+-- ftd.row:
+-- ftd.text-input:
+width.fixed.percent: 90
+placeholder: $drop-down-1.curValue
+value if { $drop-down-1.curValue }: $drop-down-1.curValue
+padding-horizontal.px: 10
+padding-vertical.px: 10
+background.solid: #00000000
+border-top-left-radius.px: 10
+border-top-right-radius.px: 10
+$on-input$: $ftd.set-string($a = $drop-down-1.curValue, v =$VALUE)
+-- ftd.image:
+src:https://icons.veryicon.com/png/256/file-type/gzdt-icon/drop-down-38.png
+alt:Drop Down
+height.fixed.px:30
+align-self:center
+padding.px: 5
+-- end: ftd.row
+-- end: ftd.container
+
+-- ftd.container:
+if: { $drop-down-1.isOpen }
+id: dropDownField
+width.fixed.percent: 100
+max-height.fixed.px: 0
+margin-horizontal.px: 10
+overflow-y: visible
+z-index: 2
+
+-- ftd.column:
+top.px: -10
+anchor.id: dropDownField
+width.fixed.percent: 100
+height.fixed.px: 150
+overflow-x: hidden
+overflow-y: scroll
+background.solid: #ffffff
+border-bottom-left-radius.px: 10
+border-bottom-right-radius.px: 10
+border-width.px: 1
+border-color: #bbbbbb
+
+-- drop-down-item-1: $obj
+$cval: $drop-down-1.curValue
+$loop$: $drop-down-1.possibleValues as $obj
+
+-- end: ftd.column
+-- end: ftd.container
+
+-- end: ftd.column
+-- end: drop-down-1
+
+-- component drop-down-item-1:
+caption content:
+boolean $isHovered: false
+string $cval:
+
+-- ftd.container:
+width.fixed.percent: 100
+background.solid if {$drop-down-item-1.isHovered}: #dddddd
+$on-mouse-enter$: $ftd.set-bool($a = $drop-down-item-1.isHovered, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $drop-down-item-1.isHovered, v = false)
+padding-vertical.px: 5
+$on-click$: $ftd.set-string($a = $drop-down-item-1.cval, v = $drop-down-item-1.content)
+
+-- ftd.text: $drop-down-item-1.content
+align-self: center
+text-align: center
+
+-- end: ftd.container
+
+-- end: drop-down-item-1

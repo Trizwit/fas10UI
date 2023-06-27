@@ -1,0 +1,35 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- content-1:
+## Define your component here !!
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+## Write your component code as \ (backward slash) comments in this section.
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+## Leave a 10 line space here : )
+
+-- component content-1:
+
+## write your component code here !!
+
+-- end: content-1
