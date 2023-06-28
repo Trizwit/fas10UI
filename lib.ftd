@@ -148,6 +148,9 @@ url: UI-Components/Pagination/pagination
 -- button: Login-1
 url: UI-Components/Login/login-1
 
+-- button: Login-2
+url: UI-Components/Login/login-2
+
 -- end: selector
 
 -- ftd.column:
