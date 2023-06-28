@@ -154,6 +154,9 @@ url: UI-Components/Login/login-2
 -- button: SearchBar-1
 url: UI-Components/SearchBar/searchbar-1
 
+-- button: SearchBar-2
+url: UI-Components/SearchBar/searchbar-2
+
 -- end: selector
 
 -- ftd.column:

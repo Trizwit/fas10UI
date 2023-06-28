@@ -29,7 +29,6 @@ search-text: Search
 
 \-- end: lib.container-wrapper
 
-
 \-- ftd.type searchStyle:
 size.px: 15
 font-family: Arial
@@ -47,47 +46,30 @@ boolean $searchHover-1: false
 string search-link:
 
 \-- ftd.column:
-background.solid: #f0f0f0
+background.solid: #222222
 align-content: center
-spacing: space-evenly
 width.fixed.percent: 80
 border-radius.px: 20
 padding.px: 20
 
-\-- ftd.row:
-align-content: center
-width.fixed.percent: 100
-border-radius.px: 10
 
 \-- ftd.text-input:
+color: #ffffff
 border-radius.px: 20
 placeholder: $searchbar-1.title
 width.fixed.percent: 100
 padding-horizontal.px: 10
 padding-vertical.px: 10
-background.solid: #ffffff
-border-color: #000000
+background.solid: #333333
+border-color: #ffffff
+border-width.px: 2
 $on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.searchHover-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.searchHover-1, v = false)
 border-color if {searchbar-1.searchHover-1}: #22d223
-border-width.px: 2
-
-\-- ftd.text: Search
-role: $searchStyle
-background.solid: #00ff00
-color: #000000
-text-align: center
-border-radius.px: 20
-margin.px: 10
-padding.px: 10
-$on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = false)
-link: $searchbar-1.search-link
-
-\-- end: ftd.row
 
 \-- ftd.row:
-margin-vertical.px: 10
+spacing: space-evenly
+margin-vertical.px: 20
 width.fixed.percent: 100
 
 \-- pill-1: All
@@ -102,9 +84,46 @@ width.fixed.percent: 100
 
 \-- end: ftd.row
 
+\-- ftd.row:
+align-content: right
+width.fixed.percent: 100
+border-radius.px: 10
+
+\-- ftd.text: Search
+role: $searchStyle
+background.solid: #333333
+color: #ffffff
+text-align: center
+border-radius.px: 20
+border-color: #ffffff
+border-width.px: 2
+margin-horizontal.px: 10
+padding.px: 10
+$on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = false)
+link: $searchbar-1.search-link
+
+\-- ftd.text: Feelin' Good
+role: $searchStyle
+background.solid: #333333
+color: #ffffff
+text-align: center
+border-radius.px: 20
+border-color: #ffffff
+border-width.px: 2
+margin-horizontal.px: 10
+padding.px: 10
+$on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = false)
+link: $searchbar-1.search-link
+
+\-- end: ftd.row
+
+
 \-- end: ftd.column
 
 \-- end: searchbar-1
+
 
 \-- component pill-1:
 caption title:
@@ -117,11 +136,12 @@ border-radius.px: 20
 padding-vertical.px: 5
 padding-horizontal.px: 15
 margin-horizontal.px: 4
-background.solid: #ffffff
-background.solid if {pill-1.pillHover-1}: #22d223
+background.solid: #444444
+background.solid if {pill-1.pillHover-1}: #888888
 $on-mouse-enter$: $ftd.set-bool($a = $pill-1.pillHover-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $pill-1.pillHover-1, v = false)
 text-align: center
+color: #ffffff
 
 \-- end: pill-1
 
@@ -157,47 +177,30 @@ boolean $searchHover-1: false
 string search-link:
 
 -- ftd.column:
-background.solid: #f0f0f0
+background.solid: #222222
 align-content: center
-spacing: space-evenly
 width.fixed.percent: 80
 border-radius.px: 20
 padding.px: 20
 
--- ftd.row:
-align-content: center
-width.fixed.percent: 100
-border-radius.px: 10
 
 -- ftd.text-input:
+color: #ffffff
 border-radius.px: 20
 placeholder: $searchbar-1.title
 width.fixed.percent: 100
 padding-horizontal.px: 10
 padding-vertical.px: 10
-background.solid: #ffffff
-border-color: #000000
+background.solid: #333333
+border-color: #ffffff
+border-width.px: 2
 $on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.searchHover-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.searchHover-1, v = false)
 border-color if {searchbar-1.searchHover-1}: #22d223
-border-width.px: 2
-
--- ftd.text: Search
-role: $searchStyle
-background.solid: #00ff00
-color: #000000
-text-align: center
-border-radius.px: 20
-margin.px: 10
-padding.px: 10
-$on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = false)
-link: $searchbar-1.search-link
-
--- end: ftd.row
 
 -- ftd.row:
-margin-vertical.px: 10
+spacing: space-evenly
+margin-vertical.px: 20
 width.fixed.percent: 100
 
 -- pill-1: All
@@ -211,6 +214,42 @@ width.fixed.percent: 100
 -- pill-1: Maps
 
 -- end: ftd.row
+
+-- ftd.row:
+align-content: right
+width.fixed.percent: 100
+border-radius.px: 10
+
+-- ftd.text: Search
+role: $searchStyle
+background.solid: #333333
+color: #ffffff
+text-align: center
+border-radius.px: 20
+border-color: #ffffff
+border-width.px: 2
+margin-horizontal.px: 10
+padding.px: 10
+$on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = false)
+link: $searchbar-1.search-link
+
+-- ftd.text: Feelin' Good
+role: $searchStyle
+background.solid: #333333
+color: #ffffff
+text-align: center
+border-radius.px: 20
+border-color: #ffffff
+border-width.px: 2
+margin-horizontal.px: 10
+padding.px: 10
+$on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = false)
+link: $searchbar-1.search-link
+
+-- end: ftd.row
+
 
 -- end: ftd.column
 
@@ -228,11 +267,12 @@ border-radius.px: 20
 padding-vertical.px: 5
 padding-horizontal.px: 15
 margin-horizontal.px: 4
-background.solid: #ffffff
-background.solid if {pill-1.pillHover-1}: #22d223
+background.solid: #444444
+background.solid if {pill-1.pillHover-1}: #888888
 $on-mouse-enter$: $ftd.set-bool($a = $pill-1.pillHover-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $pill-1.pillHover-1, v = false)
 text-align: center
+color: #ffffff
 
 -- end: pill-1
 
