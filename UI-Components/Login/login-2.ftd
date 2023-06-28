@@ -1,0 +1,310 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- login-2: Sign in
+username: Username
+$isActive-1: false
+forgot-password-link: https://static.wikia.nocookie.net/3bb36e97-fbef-4bea-9dba-637f8e6f394b
+register-link: https://static.wikia.nocookie.net/3bb36e97-fbef-4bea-9dba-637f8e6f394b
+login-link: https://static.wikia.nocookie.net/7f0c530b-b10a-41bc-b363-aa34b9fdc27e
+forgot-text: Reset Password
+login-text: Sign in
+register-text: Sign up
+new-user-text: Don't have an account?
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- login-2: Sign in
+username: Username
+$isActive-1: false
+forgot-password-link: https://static.wikia.nocookie.net/3bb36e97-fbef-4bea-9dba-637f8e6f394b
+register-link: https://static.wikia.nocookie.net/3bb36e97-fbef-4bea-9dba-637f8e6f394b
+login-link: https://static.wikia.nocookie.net/7f0c530b-b10a-41bc-b363-aa34b9fdc27e
+forgot-text: Reset Password
+login-text: Sign in
+register-text: Sign up
+new-user-text: Don't have an account?
+
+\-- end: lib.container-wrapper
+
+
+\-- ftd.type loginStyle:
+size.px: 20
+font-family: Arial
+font-align: center
+
+\-- ftd.type registerStyle:
+size.px: 15
+font-family: Arial
+font-align: center
+
+\-- ftd.type forgotStyle:
+size.px: 12
+font-family: Arial
+
+\-- component login-2:
+caption title:
+string username:
+boolean $isActive-1: false
+string forgot-password-link:
+string register-link:
+string login-link:
+string forgot-text:
+string login-text:
+string register-text:
+string new-user-text:
+
+\-- ftd.row:
+background.solid: #222222
+padding-horizontal.px: 20
+align-content: center
+border-radius.px: 20
+border-color: #ffff00
+border-width.px: 5
+
+\-- ftd.column:
+align-content: center
+padding-horizontal.px: 30
+
+\-- ftd.text: $login-2.title
+role: $inherited.types.heading-medium
+color: #ffffff
+
+\-- end: ftd.column
+
+\-- ftd.container:
+height.fixed.px: 300
+width.fixed.px: 2
+background.solid: #ffff00
+
+\-- ftd.column:
+align-content: center
+spacing: space-evenly
+width.fixed.px: 300
+border-radius.px: 20
+padding-horizontal.px: 30
+
+\-- ftd.container:
+height.fixed.px: 25
+
+\-- ftd.text-input:
+placeholder: Username
+width.fixed.percent: 100
+margin-vertical.px: 10
+padding-horizontal.px: 10
+padding-vertical.px: 10
+border-radius.px: 10
+background.solid: #333333
+color: #ffffff
+
+\-- ftd.text-input:
+border-radius.px: 10
+placeholder: Password
+width.fixed.percent: 100
+margin-vertical.px: 10
+padding-horizontal.px: 10
+padding-vertical.px: 10
+type: password
+background.solid: #333333
+color: #ffffff
+
+\-- ftd.text: $login-2.forgot-text
+width.fixed.percent: 100
+role: $forgotStyle
+text-align: end
+color: #ffff00
+link: $login-2.forgot-password-link
+
+\-- ftd.text: $login-2.login-text
+role: $loginStyle
+color: #ffffff
+text-align: center
+width.fixed.percent: 60
+margin.px: 20
+padding-vertical.px: 10
+border-radius.px: 20
+background.solid: $inherited.colors.background.base
+background.solid if {login-2.isActive-1}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $login-2.isActive-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $login-2.isActive-1, v = false)
+link: $login-2.login-link
+
+\-- ftd.row:
+margin-vertical.px: 10
+
+\-- ftd.text: $login-2.new-user-text
+role: $registerStyle
+color: #ffffff
+display: inline
+
+\-- ftd.container:
+width.fixed.px: 5
+
+\-- ftd.text: $login-2.register-text
+role: $registerStyle
+color: #ffff00
+display: inline
+link: $login-2.register-link
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: login-2
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+-- ftd.type loginStyle:
+size.px: 20
+font-family: Arial
+font-align: center
+
+-- ftd.type registerStyle:
+size.px: 15
+font-family: Arial
+font-align: center
+
+-- ftd.type forgotStyle:
+size.px: 12
+font-family: Arial
+
+-- component login-2:
+caption title:
+string username:
+boolean $isActive-1: false
+string forgot-password-link:
+string register-link:
+string login-link:
+string forgot-text:
+string login-text:
+string register-text:
+string new-user-text:
+
+-- ftd.row:
+background.solid: #222222
+padding-horizontal.px: 20
+align-content: center
+border-radius.px: 20
+border-color: #ffff00
+border-width.px: 5
+
+-- ftd.column:
+align-content: center
+padding-horizontal.px: 30
+
+-- ftd.text: $login-2.title
+role: $inherited.types.heading-medium
+color: #ffffff
+
+-- end: ftd.column
+
+-- ftd.container:
+height.fixed.px: 300
+width.fixed.px: 2
+background.solid: #ffff00
+
+-- ftd.column:
+align-content: center
+spacing: space-evenly
+width.fixed.px: 300
+border-radius.px: 20
+padding-horizontal.px: 30
+
+-- ftd.container:
+height.fixed.px: 25
+
+-- ftd.text-input:
+placeholder: Username
+width.fixed.percent: 100
+margin-vertical.px: 10
+padding-horizontal.px: 10
+padding-vertical.px: 10
+border-radius.px: 10
+background.solid: #333333
+color: #ffffff
+
+-- ftd.text-input:
+border-radius.px: 10
+placeholder: Password
+width.fixed.percent: 100
+margin-vertical.px: 10
+padding-horizontal.px: 10
+padding-vertical.px: 10
+type: password
+background.solid: #333333
+color: #ffffff
+
+-- ftd.text: $login-2.forgot-text
+width.fixed.percent: 100
+role: $forgotStyle
+text-align: end
+color: #ffff00
+link: $login-2.forgot-password-link
+
+-- ftd.text: $login-2.login-text
+role: $loginStyle
+color: #ffffff
+text-align: center
+width.fixed.percent: 60
+margin.px: 20
+padding-vertical.px: 10
+border-radius.px: 20
+background.solid: $inherited.colors.background.base
+background.solid if {login-2.isActive-1}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $login-2.isActive-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $login-2.isActive-1, v = false)
+link: $login-2.login-link
+
+-- ftd.row:
+margin-vertical.px: 10
+
+-- ftd.text: $login-2.new-user-text
+role: $registerStyle
+color: #ffffff
+display: inline
+
+-- ftd.container:
+width.fixed.px: 5
+
+-- ftd.text: $login-2.register-text
+role: $registerStyle
+color: #ffff00
+display: inline
+link: $login-2.register-link
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: login-2
