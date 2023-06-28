@@ -37,6 +37,9 @@ url: UI-Components/Content/dialog-1
 -- button: Dialog-2
 url: UI-Components/Content/dialog-2
 
+-- button: Ai Chat Dialog
+url: UI-Components/Content/ai-chat
+
 -- button: Alert Dialog
 url: UI-Components/Content/alert-dialog
 

@@ -18,13 +18,108 @@ if: { lib.code-open }
 -- cb.code:
 lang: ftd
 
-\-- Hello
+
+
+
+\-- component dialog-button-1:
+caption buttonName: View Sample Dialog
+body message: Want to Visit the developer?
+string link: https://athuljohn.engineer
+string nextButtonText: Visit
+boolean $isOpen: false
+
+\-- ftd.column:
+
+\-- ftd.container:
+$on-click$: $ftd.set-bool($a = $dialog-button-1.isOpen, v = true)
+width.fixed.percent:100
+border-radius.px: 10
+border-color: #bbbbbb
+background.solid: #ffffff
+margin-vertical.px: 10
+margin-horizontal.px: 10
+padding.px:5
+
+\-- ftd.text: $dialog-button-1.buttonName
+role: $inherited.types.copy-regular
+align-self:center
+text-align:center
+
+\-- end: ftd.container
+
+\-- ftd.container:
+if: {$dialog-button-1.isOpen}
+anchor:window
+top.px:0
+left.px:0
+height.fixed.vh:100
+width.fixed.vw:100
+z-index:2
+background.solid:#00000066
+
+\-- ftd.container:
+top.vh:43
+left.vw:40
+z-index:3
+anchor:window
+background.solid:#ffffff
+border-radius.px:10
+padding.px:10
+
+\-- ftd.column: 
+width.fixed.vw:20
+height.fixed.vh:14
+align-content:center
+spacing:space-evenly
+
+\-- ftd.text: $dialog-button-1.message
+role: $inherited.types.copy-regular
+
+\-- ftd.row: 
+align-content:center
+spacing:space-evenly
+margin-horizontal.px:10
+width.fixed.percent:100
+
+\-- ftd.text: Close
+role: $inherited.types.copy-regular
+color: #000000
+text-align: center
+padding-vertical.px: 5
+width.fixed.percent:40
+border-radius.px: 10
+background.solid: #bbbbbb
+$on-click$: $ftd.set-bool($a = $dialog-button-1.isOpen, v = false)
+
+\-- ftd.text: $dialog-button-1.nextButtonText
+role: $inherited.types.copy-regular
+color: #ffffff
+text-align: center
+padding-vertical.px: 5
+width.fixed.percent:40
+border-radius.px: 10
+background.solid: #007bff
+link: $dialog-button-1.link
+open-in-new-tab: true
+
+\-- end: ftd.row
+\-- end: ftd.column
+\-- end: ftd.container
+
+\-- end: ftd.container
+
+\-- end: ftd.column
+\-- end: dialog-button-1
 
 -- end: cb.code
 
 -- end: lib.container-wrapper
 
 -- end: lib.page
+
+
+
+
 
 
 
