@@ -1,0 +1,313 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- string list $egValues:
+-- string: Hello User,
+-- string: I am Baymax, your personal website companion
+-- string: Ask me anything that confuses you
+-- end: $egValues
+
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- ftd.column:
+-- ftd.text: Chat button at the Bottom Right Corner!
+role: $inherited.types.heading-small
+align-self:center
+-- ai-chat:
+-- end:ftd.column
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+
+\-- ftd.column:
+\-- ftd.text: Chat button at the Bottom Right Corner!
+role: $inherited.types.heading-small
+align-self:center
+\-- ai-chat:
+\-- end:ftd.column
+
+\-- component ai-chat:
+caption buttonName: Chat with Baymax
+boolean $isOpen: false
+string heading: Chat Support
+
+\-- ftd.column:
+
+\-- ftd.container:
+if: {!$ai-chat.isOpen}
+anchor:window
+bottom.px:20
+right.px:20
+z-index:2
+sticky:true
+$on-click$: $ftd.set-bool($a = $ai-chat.isOpen, v = true)
+border-radius.px: 25
+border-color: #007bff
+border-width.px:3
+background.solid:#ffffff
+padding-vertical.px: 10
+padding-horizontal.px: 20
+
+\-- ftd.text: $ai-chat.buttonName
+role: $inherited.types.copy-regular
+align-self:center
+text-align:center
+color: #007bff
+
+\-- end: ftd.container
+
+\-- ftd.container:
+if: {$ai-chat.isOpen}
+anchor:window
+bottom.px:20
+right.px:20
+max-width.fixed.vw:20
+overflow-x:
+border-radius.px: 10
+z-index:3
+background.solid: #ffffff
+
+
+\-- ftd.column: 
+
+\-- ftd.container:
+width.fixed.percent:100
+background.solid: #007bff
+border-radius.px: 10
+\-- ftd.row:
+spacing:space-between
+margin.px:10
+color: #ffffff
+
+
+\-- ftd.text: $ai-chat.heading
+role: $inherited.types.copy-regular
+\-- ftd.text: X
+role: $inherited.types.copy-regular
+$on-click$: $ftd.set-bool($a = $ai-chat.isOpen, v = false)
+
+\-- end: ftd.row
+\-- end: ftd.container
+\-- ftd.column:
+width.fixed.percent: 100
+height.fixed.px: 350
+overflow-x: hidden
+overflow-y: scroll
+background.solid: #ffffff
+border-radius.px: 10
+padding-horizontal.px:10
+
+\-- chat-bubble: 
+message:$obj
+$loop$: $egValues as $obj
+
+\-- end: ftd.column
+
+\-- ftd.row:
+width.fixed.percent: 100
+\-- ftd.text-input:
+width.fixed.percent: 100
+role: $inherited.types.copy-regular
+padding-vertical.px: 5
+border-radius.px: 10
+background.solid: #ffffff
+border-color: #bbbbbb
+border-width.px:1
+margin.px:5
+
+\-- ftd.image:
+src:https://www.transparentpng.com/thumb/send-email-button/tCjejK-send-email-button-transparent.png
+alt: Send
+width.fixed.px:20
+align-self:center
+margin-horizontal.px:10
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: ftd.container
+
+\-- end: ftd.column
+\-- end: ai-chat
+
+
+
+
+
+\-- component chat-bubble:
+boolean isSender: false
+string message: ...
+
+\-- ftd.text: $chat-bubble.message
+role: $inherited.types.copy-regular
+color if {$chat-bubble.isSender}: #ffffff
+padding-vertical.px: 5
+width.fixed.percent:70
+align-self if {$chat-bubble.isSender} :end
+align-self  :start
+border-top-right-radius.px if {$chat-bubble.isSender} :0
+border-top-left-radius.px if {!$chat-bubble.isSender} :0
+border-radius.px: 10
+background.solid if {$chat-bubble.isSender}: #007bffaa
+background.solid: #007bff88
+padding-horizontal.px:5
+margin-vertical.px:5
+overflow-x:hidden
+
+\-- end: chat-bubble
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+-- component ai-chat:
+caption buttonName: Chat with Baymax
+boolean $isOpen: false
+string heading: Chat Support
+
+-- ftd.column:
+
+-- ftd.container:
+if: {!$ai-chat.isOpen}
+anchor:window
+bottom.px:20
+right.px:20
+z-index:2
+sticky:true
+$on-click$: $ftd.set-bool($a = $ai-chat.isOpen, v = true)
+border-radius.px: 25
+border-color: #007bff
+border-width.px:3
+background.solid:#ffffff
+padding-vertical.px: 10
+padding-horizontal.px: 20
+
+-- ftd.text: $ai-chat.buttonName
+role: $inherited.types.copy-regular
+align-self:center
+text-align:center
+color: #007bff
+
+-- end: ftd.container
+
+-- ftd.container:
+if: {$ai-chat.isOpen}
+anchor:window
+bottom.px:20
+right.px:20
+max-width.fixed.vw:20
+overflow-x:
+border-radius.px: 10
+z-index:3
+background.solid: #ffffff
+
+
+-- ftd.column: 
+
+-- ftd.container:
+width.fixed.percent:100
+background.solid: #007bff
+border-radius.px: 10
+-- ftd.row:
+spacing:space-between
+margin.px:10
+color: #ffffff
+
+
+-- ftd.text: $ai-chat.heading
+role: $inherited.types.copy-regular
+-- ftd.text: X
+role: $inherited.types.copy-regular
+$on-click$: $ftd.set-bool($a = $ai-chat.isOpen, v = false)
+
+-- end: ftd.row
+-- end: ftd.container
+-- ftd.column:
+width.fixed.percent: 100
+height.fixed.px: 350
+overflow-x: hidden
+overflow-y: scroll
+background.solid: #ffffff
+border-radius.px: 10
+padding-horizontal.px:10
+
+-- chat-bubble: 
+message:$obj
+$loop$: $egValues as $obj
+
+
+-- end: ftd.column
+
+-- ftd.row:
+width.fixed.percent: 100
+-- ftd.text-input:
+width.fixed.percent: 100
+role: $inherited.types.copy-regular
+padding-vertical.px: 5
+border-radius.px: 10
+background.solid: #ffffff
+border-color: #bbbbbb
+border-width.px:1
+margin.px:5
+
+-- ftd.image:
+src:https://www.transparentpng.com/thumb/send-email-button/tCjejK-send-email-button-transparent.png
+alt: Send
+width.fixed.px:20
+align-self:center
+margin-horizontal.px:10
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.container
+
+-- end: ftd.column
+-- end: ai-chat
+
+
+-- component chat-bubble:
+boolean isSender: false
+string message: ...
+
+-- ftd.text: $chat-bubble.message
+role: $inherited.types.copy-regular
+color if {$chat-bubble.isSender}: #ffffff
+padding-vertical.px: 5
+width.fixed.percent:70
+align-self if {$chat-bubble.isSender} :end
+align-self  :start
+border-top-right-radius.px if {$chat-bubble.isSender} :0
+border-top-left-radius.px if {!$chat-bubble.isSender} :0
+border-radius.px: 10
+background.solid if {$chat-bubble.isSender}: #007bffaa
+background.solid: #007bff88
+padding-horizontal.px:5
+margin-vertical.px:5
+overflow-x:hidden
+
+-- end: chat-bubble
