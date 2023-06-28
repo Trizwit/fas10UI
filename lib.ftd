@@ -157,6 +157,9 @@ url: UI-Components/SearchBar/searchbar-1
 -- button: SearchBar-2
 url: UI-Components/SearchBar/searchbar-2
 
+-- button: VideoDetails-1
+url: UI-Components/VideoDetails/videodetails-1
+
 -- end: selector
 
 -- ftd.column:
