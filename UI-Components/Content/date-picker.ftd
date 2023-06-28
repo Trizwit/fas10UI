@@ -1,0 +1,160 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+-- import: fastnui.trizwit.com/UI-Components/Content/dropdown
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- date-picker-1: 
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- component date-picker-1:
+string $day:1
+string $month:January
+string $year:2023
+
+\-- ftd.row:
+
+\-- dropdown.drop-down-1:
+width.fixed.percent: 20
+$curValue: $date-picker-1.day
+placeholder: DD
+possibleValues: $days
+
+
+\-- dropdown.drop-down-1:
+width.fixed.percent: 40
+$curValue: $date-picker-1.month
+placeholder: MM
+possibleValues: $months
+
+\-- dropdown.drop-down-1:
+width.fixed.percent: 40
+$curValue: $date-picker-1.year
+placeholder: YYYY
+possibleValues: $years
+
+\-- end: ftd.row
+
+\-- end: date-picker-1
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+-- string list days:
+-- string: 1
+-- string: 2
+-- string: 3
+-- string: 4
+-- string: 5
+-- string: 6
+-- string: 7
+-- string: 8
+-- string: 9
+-- string: 10
+-- string: 11
+-- string: 12
+-- string: 13
+-- string: 14
+-- string: 15
+-- string: 16
+-- string: 17
+-- string: 18
+-- string: 19
+-- string: 20
+-- string: 21
+-- string: 22
+-- string: 23
+-- string: 24
+-- string: 25
+-- string: 26
+-- string: 27
+-- string: 28
+-- string: 29
+-- string: 30
+-- string: 31
+-- end: days
+
+
+-- string list months:
+-- string: January
+-- string: February
+-- string: March
+-- string: April
+-- string: May
+-- string: June
+-- string: July
+-- string: August
+-- string: September
+-- string: October
+-- string: November
+-- string: December
+-- end: months
+
+-- string list years:
+-- string: 2020
+-- string: 2021
+-- string: 2022
+-- string: 2023
+-- string: 2024
+-- string: 2025
+-- string: 2026
+-- string: 2027
+-- string: 2028
+-- string: 2029
+-- string: 2030
+-- string: 2031
+-- end: years
+
+-- component date-picker-1:
+string $day:1
+string $month:January
+string $year:2023
+
+-- ftd.row:
+
+-- dropdown.drop-down-1:
+width.fixed.percent: 20
+$curValue: $date-picker-1.day
+placeholder: DD
+possibleValues: $days
+
+
+-- dropdown.drop-down-1:
+width.fixed.percent: 40
+$curValue: $date-picker-1.month
+placeholder: MM
+possibleValues: $months
+
+-- dropdown.drop-down-1:
+width.fixed.percent: 40
+$curValue: $date-picker-1.year
+placeholder: YYYY
+possibleValues: $years
+
+-- end: ftd.row
+
+-- end: date-picker-1
+
