@@ -1,0 +1,238 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- searchbar-1: Search anything...
+$buttonHover-1: false
+search-link: https://static.wikia.nocookie.net/7f0c530b-b10a-41bc-b363-aa34b9fdc27e
+search-text: Search
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- searchbar-1: Search anything...
+$buttonHover-1: false
+search-link: https://static.wikia.nocookie.net/7f0c530b-b10a-41bc-b363-aa34b9fdc27e
+search-text: Search
+
+\-- end: lib.container-wrapper
+
+
+\-- ftd.type searchStyle:
+size.px: 15
+font-family: Arial
+font-align: center
+
+\-- ftd.type pillStyle:
+size.px: 10
+font-family: Arial
+
+\-- component searchbar-1:
+caption title:
+string search-text:
+boolean $buttonHover-1: false
+boolean $searchHover-1: false
+string search-link:
+
+\-- ftd.column:
+background.solid: #f0f0f0
+align-content: center
+spacing: space-evenly
+width.fixed.percent: 80
+border-radius.px: 20
+padding.px: 20
+
+\-- ftd.row:
+align-content: center
+width.fixed.percent: 100
+border-radius.px: 10
+
+\-- ftd.text-input:
+border-radius.px: 20
+placeholder: $searchbar-1.title
+width.fixed.percent: 100
+padding-horizontal.px: 10
+padding-vertical.px: 10
+background.solid: #ffffff
+border-color: #000000
+$on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.searchHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.searchHover-1, v = false)
+border-color if {searchbar-1.searchHover-1}: #22d223
+border-width.px: 2
+
+\-- ftd.text: Search
+role: $searchStyle
+background.solid: #00ff00
+color: #000000
+text-align: center
+border-radius.px: 20
+margin.px: 10
+padding.px: 10
+$on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = false)
+link: $searchbar-1.search-link
+
+\-- end: ftd.row
+
+\-- ftd.row:
+margin-vertical.px: 10
+width.fixed.percent: 100
+
+\-- pill-1: All
+
+\-- pill-1: Images
+
+\-- pill-1: Videos
+
+\-- pill-1: News
+
+\-- pill-1: Maps
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: searchbar-1
+
+\-- component pill-1:
+caption title:
+boolean $pillHover-1: false
+
+\-- ftd.text: $pill-1.title
+link: http://www.google.com
+role: $pillStyle
+border-radius.px: 20
+padding-vertical.px: 5
+padding-horizontal.px: 15
+margin-horizontal.px: 4
+background.solid: #ffffff
+background.solid if {pill-1.pillHover-1}: #22d223
+$on-mouse-enter$: $ftd.set-bool($a = $pill-1.pillHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $pill-1.pillHover-1, v = false)
+text-align: center
+
+\-- end: pill-1
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+-- ftd.type searchStyle:
+size.px: 15
+font-family: Arial
+font-align: center
+
+-- ftd.type pillStyle:
+size.px: 10
+font-family: Arial
+
+-- component searchbar-1:
+caption title:
+string search-text:
+boolean $buttonHover-1: false
+boolean $searchHover-1: false
+string search-link:
+
+-- ftd.column:
+background.solid: #f0f0f0
+align-content: center
+spacing: space-evenly
+width.fixed.percent: 80
+border-radius.px: 20
+padding.px: 20
+
+-- ftd.row:
+align-content: center
+width.fixed.percent: 100
+border-radius.px: 10
+
+-- ftd.text-input:
+border-radius.px: 20
+placeholder: $searchbar-1.title
+width.fixed.percent: 100
+padding-horizontal.px: 10
+padding-vertical.px: 10
+background.solid: #ffffff
+border-color: #000000
+$on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.searchHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.searchHover-1, v = false)
+border-color if {searchbar-1.searchHover-1}: #22d223
+border-width.px: 2
+
+-- ftd.text: Search
+role: $searchStyle
+background.solid: #00ff00
+color: #000000
+text-align: center
+border-radius.px: 20
+margin.px: 10
+padding.px: 10
+$on-mouse-enter$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $searchbar-1.buttonHover-1, v = false)
+link: $searchbar-1.search-link
+
+-- end: ftd.row
+
+-- ftd.row:
+margin-vertical.px: 10
+width.fixed.percent: 100
+
+-- pill-1: All
+
+-- pill-1: Images
+
+-- pill-1: Videos
+
+-- pill-1: News
+
+-- pill-1: Maps
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: searchbar-1
+
+
+-- component pill-1:
+caption title:
+boolean $pillHover-1: false
+
+-- ftd.text: $pill-1.title
+link: http://www.google.com
+role: $pillStyle
+border-radius.px: 20
+padding-vertical.px: 5
+padding-horizontal.px: 15
+margin-horizontal.px: 4
+background.solid: #ffffff
+background.solid if {pill-1.pillHover-1}: #22d223
+$on-mouse-enter$: $ftd.set-bool($a = $pill-1.pillHover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $pill-1.pillHover-1, v = false)
+text-align: center
+
+-- end: pill-1
+

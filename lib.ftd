@@ -148,6 +148,18 @@ url: UI-Components/Pagination/pagination
 -- button: Login-1
 url: UI-Components/Login/login-1
 
+-- button: Login-2
+url: UI-Components/Login/login-2
+
+-- button: SearchBar-1
+url: UI-Components/SearchBar/searchbar-1
+
+-- button: SearchBar-2
+url: UI-Components/SearchBar/searchbar-2
+
+-- button: VideoDetails-1
+url: UI-Components/VideoDetails/videodetails-1
+
 -- end: selector
 
 -- ftd.column:
