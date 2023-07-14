@@ -250,6 +250,8 @@ width.fixed.px: 24
 height.fixed.px: 24
 $on-click$: $ftd.set-bool($a = $push-left, v = false)
 
+-- ftd.desktop:
+
 -- ftd.text: $navbar.heading
 if: { !$push-left }
 role: $inherited.types.copy-regular
@@ -257,6 +259,10 @@ style: bold
 color: $inherited.colors.cta-primary.text
 margin-left.px: 8
 $on-click$: $ftd.set-bool($a = $push-left, v = true)
+
+-- end: ftd.desktop
+
+-- ftd.desktop:
 
 -- ftd.text: $navbar.heading
 if: { $push-left }
@@ -266,18 +272,32 @@ color: $inherited.colors.cta-primary.text
 margin-left.px: 8
 $on-click$: $ftd.set-bool($a = $push-left, v = false)
 
+-- end: ftd.desktop
+
 -- end: ftd.row
 
+-- ftd.desktop:
 -- ftd.text: $navbar.title
 role: $inherited.types.heading-small
 style: bold
 color: $inherited.colors.cta-primary.text
 link: index.html
+-- end: ftd.desktop
+
+-- ftd.mobile:
+-- ftd.text: $navbar.title
+role: $inherited.types.heading-tiny
+style: bold
+color: $inherited.colors.cta-primary.text
+align-self: center
+link: index.html
+-- end: ftd.mobile
 
 -- ftd.row:
 align-self: center
 align-content: center
 
+-- ftd.desktop:
 -- ftd.text: $navbar.text-1
 if: { !code-open }
 role: $inherited.types.copy-regular
@@ -292,7 +312,26 @@ border-radius.px: 35
 padding-horizontal.px: 8
 padding-vertical.px: 4
 $on-click$: $ftd.set-bool($a = $code-open, v = true)
+-- end: ftd.desktop
 
+-- ftd.mobile:
+-- ftd.text: <>
+if: { !code-open }
+role: $inherited.types.copy-regular
+style: semi-bold
+color: $inherited.colors.cta-primary.text
+margin-right.px: 10
+width.fixed.px: 50
+align-self: center
+text-align: center
+border-width.px: 1
+border-radius.px: 35
+padding-horizontal.px: 8
+padding-vertical.px: 4
+$on-click$: $ftd.set-bool($a = $code-open, v = true)
+-- end: ftd.mobile
+
+-- ftd.desktop:
 -- ftd.text: $navbar.text-2
 if: { code-open }
 role: $inherited.types.copy-regular
@@ -307,6 +346,24 @@ border-radius.px: 35
 padding-horizontal.px: 8
 padding-vertical.px: 4
 $on-click$: $ftd.set-bool($a = $code-open, v = false)
+-- end: ftd.desktop
+
+-- ftd.mobile:
+-- ftd.text: </>
+if: { code-open }
+role: $inherited.types.copy-regular
+style: semi-bold
+color: $inherited.colors.cta-primary.text
+margin-right.px: 10
+width.fixed.px: 50
+align-self: center
+text-align: center
+border-width.px: 1
+border-radius.px: 35
+padding-horizontal.px: 8
+padding-vertical.px: 4
+$on-click$: $ftd.set-bool($a = $code-open, v = false)
+-- end: ftd.mobile
 
 -- ftd.image:
 if: { !navbar.mode }
@@ -350,6 +407,7 @@ string text-1:
 string text-2:
 string text-3:
 
+
 -- ftd.row:
 width: fill-container
 height: hug-content
@@ -362,10 +420,21 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.cta-tertiary.text
 margin-right.px: 5
 
+-- ftd.desktop:
 -- ftd.image:
 src: $footer.icon
 height.fixed.px: 24
 margin-right.px: 5
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+-- ftd.image:
+src: $footer.icon
+height.fixed.px: 20
+margin-right.px: 5
+
+-- end: ftd.mobile
 
 -- ftd.text: $footer.text-2
 role: $inherited.types.copy-regular
@@ -377,9 +446,11 @@ role: $inherited.types.copy-regular
 color: $inherited.colors.cta-tertiary.text
 margin-right.px: 5
 
+-- ftd.desktop:
 -- ftd.text: $footer.text-3
 role: $inherited.types.copy-regular
 color: $inherited.colors.cta-tertiary.text
+-- end: ftd.desktop
 
 -- end: ftd.row
 
@@ -420,26 +491,44 @@ wrap: true
 
 -- boolean $push-left: false
 
+
 -- component selector:
 children c:
 
 -- ftd.column:
-min-width.fixed.percent if { !$push-left }: 20
+min-width.fixed.percent if { !$push-left && ftd.device == "desktop" }: 20
+min-width.fixed.percent if { !$push-left && ftd.device == "mobile" }: 100
 min-height.fixed.calc: 100vh - 0px
 height.fixed.vh: 100
 width.fixed.percent if { !$push-left }: 20
 width.fixed.percent if { $push-left }: 0
 align-content: top-center
 background.solid: $inherited.colors.cta-primary.base
+
+
+-- ftd.image:
+if: { !$push-left && ftd.device == "mobile" }
+src: $assets.files.images.push-left.png
+margin-top.px: 16
+margin-right.px: 20
+width.fixed.px: 45
+height.fixed.px: 45
+align-self: end
+$on-click$: $ftd.set-bool($a = $push-left, v = true)
+
+-- ftd.column:
+width: fill-container
+align-content: top-center
 padding-top.px: 36
-padding-bottom.px: 32
+padding-bottom.px: 36
 spacing.fixed.px: 10
-children: $selector.c
 css: [ $assets.files.scroll.css ]
-classes: body
+classes: body 
+children: $selector.c
 
 -- end: ftd.column
 
+-- end: ftd.column
 -- end: selector
 
 
