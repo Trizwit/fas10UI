@@ -155,6 +155,7 @@ boolean $is-active-2: false
 
 -- ftd.row:
 width: fill-container
+width.fixed.px if { ftd.device == "mobile" }: 900
 height: hug-content
 align-content: center
 padding-horizontal.px: 100

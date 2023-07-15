@@ -139,6 +139,7 @@ boolean $is-active-1: false
 
 -- ftd.column:
 width.fixed.percent: 27
+width.fixed.px if { ftd.device == "mobile" }: 320
 padding.px: 32  
 background.solid: $inherited.colors.background.code
 border-radius.px: 5     

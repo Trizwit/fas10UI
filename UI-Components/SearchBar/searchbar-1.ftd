@@ -157,6 +157,7 @@ boolean $searchHover-1: false
 string search-link:
 
 -- ftd.column:
+width.fixed.px if { ftd.device == "mobile" }: 900
 background.solid: #f0f0f0
 align-content: center
 spacing: space-evenly

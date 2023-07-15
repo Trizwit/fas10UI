@@ -210,6 +210,7 @@ string register-text:
 string new-user-text:
 
 -- ftd.row:
+width.fixed.px if { ftd.device == "mobile" }: 550
 background.solid: #222222
 padding-horizontal.px: 20
 align-content: center

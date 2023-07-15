@@ -131,7 +131,9 @@ string date:
 ftd.image-src image:
 
 -- ftd.column:
-width.fixed.px: 550
+margin-bottom.px: 32
+min-width.fixed.px: 300
+max-width.fixed.percent: 40
 padding-vertical.px: 24
 padding-horizontal.px: 24
 spacing.fixed.px: 16
@@ -140,7 +142,7 @@ align-self: center
 
 -- ftd.image:
 src: $blog-6.image
-width.fixed.px: 480
+width.fixed.percent: 100
 
 -- ftd.column:
 anchor: parent
