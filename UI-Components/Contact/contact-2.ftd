@@ -242,6 +242,7 @@ ftd.image-src linkedin:
 
 -- ftd.column:
 width: fill-container
+width.fixed.px if { ftd.device == "mobile" }: 700
 height: hug-content
 align-content: center
 padding-horizontal.px: 100

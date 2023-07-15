@@ -158,6 +158,7 @@ string channelImgLink:
 string videoLink:
 
 -- ftd.row:
+width.fixed.px if { ftd.device == "mobile" }: 700
 background.solid: #ffffff
 align-content: left
 width.fixed.percent: 80

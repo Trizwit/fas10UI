@@ -338,6 +338,7 @@ optional ftd.image-src linkedin:
 
 -- ftd.row:
 width: fill-container
+width.fixed.px if { ftd.device == "mobile" }: 1200
 height.fixed.px: 564
 background.linear-gradient: $lg
 spacing.fixed.px: 8

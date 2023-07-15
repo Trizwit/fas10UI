@@ -98,7 +98,9 @@ body body:
 align-content: left
 align-self: start
 background.solid: $inherited.colors.cta-secondary.base
+margin-bottom.px: 32
 max-width.fixed.percent: 25
+min-width.fixed.px: 300
 padding.px: 24
 
 -- ftd.text: $blog-3.head
