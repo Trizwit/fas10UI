@@ -175,6 +175,7 @@ toggle-2: $assets.files.images.light-mode.png
 
 -- ftd.row:
 width: fill-container
+overflow-x if { ftd.device == "mobile" }: auto
 children: $page.c
 
 -- end: ftd.row
@@ -469,7 +470,8 @@ color: $inherited.colors.cta-tertiary.text
 children c:
 
 -- ftd.row:
-width: fill-container
+max-width: fill-container
+min-width if { ftd.device == "mobile" }: hug-content
 margin-vertical.px: 64
 margin-horizontal.px: 32
 align-self: center
@@ -489,7 +491,7 @@ wrap: true
 
 
 
--- boolean $push-left: false
+-- boolean $push-left: true
 
 
 -- component selector:
@@ -645,7 +647,9 @@ body body:
 
 -- ftd.column:
 background.solid: $inherited.colors.cta-secondary.base
+margin-bottom.px: 32
 max-width.fixed.percent: 25
+min-width.fixed.px: 300
 
 -- ftd.image:
 src: $blog-1.pic

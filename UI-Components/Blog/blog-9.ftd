@@ -150,6 +150,7 @@ body body:
 -- ftd.row:
 background.solid: $inherited.colors.cta-secondary.base
 max-width.fixed.percent: 45
+min-width.fixed.px: 300
 spacing.fixed.px: 24
 margin.px:16
 
