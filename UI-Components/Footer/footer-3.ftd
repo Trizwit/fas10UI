@@ -147,6 +147,7 @@ string logo-test:
 
 -- ftd.row:
 width: fill-container
+width.fixed.px if { ftd.device == "mobile" }: 900
 height: hug-content
 padding-horizontal.percent: 10
 padding-vertical.px: 16
