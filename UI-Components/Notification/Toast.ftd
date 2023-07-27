@@ -340,7 +340,7 @@ height.fixed.px: 45
 z-index: 9999999999
 anchor: window
 sticky: true
-margin-top.vh: 3
+margin-top.vh: 10
 margin-left.vw: 80
 margin-left.vw if { ftd.device == "mobile" }: 40
 align-content: center
