@@ -1,0 +1,443 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
+-- toast-alerts:
+menu: $assets.files.images.menu.svg
+tick-green: $assets.files.images.tick-green.svg
+exclamation-orange: $assets.files.images.exclamation.png
+information: $assets.files.images.information.svg
+
+-- toast-alerts-message:
+tick-green: $assets.files.images.tick-green.svg
+exclamation-orange: $assets.files.images.exclamation.png
+information: $assets.files.images.information.svg
+cross: $assets.files.images.cross.svg
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { lib.code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- toast-alerts:
+menu: $assets.files.images.menu.svg
+tick-green: $assets.files.images.tick-green.svg
+exclamation-orange: $assets.files.images.exclamation.png
+information: $assets.files.images.information.svg
+
+\-- toast-alerts-message:
+tick-green: $assets.files.images.tick-green.svg
+exclamation-orange: $assets.files.images.exclamation.png
+information: $assets.files.images.information.svg
+cross: $assets.files.images.cross.svg
+
+\-- end: lib.container-wrapper
+
+\-- boolean $open-success: false
+\-- boolean $open-information: false
+\-- boolean $open-exclamation: false
+
+\-- component toast-alerts:
+boolean $open: false
+ftd.image-src menu:
+ftd.image-src tick-green:
+ftd.image-src exclamation-orange:
+ftd.image-src information:
+
+\-- ftd.row:
+width.fixed.px: 160
+height.fixed.px: 35
+z-index: 999999999
+anchor: window
+sticky: true
+margin-top.vh: 85
+margin-left.vw: 85
+margin-left.vw if { ftd.device == "mobile" }: 55
+align-self: center
+border-radius.px: 5    
+spacing: space-evenly
+
+
+\-- ftd.image: 
+height: fill-container
+src: $toast-alerts.menu
+padding.px: 5
+background.solid: #fdfdbe
+border-radius.px: 5
+$on-click$: $ftd.toggle($a = $toast-alerts.open)
+
+\-- ftd.row:
+if: { toast-alerts.open }
+height: fill-container
+width: fill-container
+spacing: space-evenly
+
+\-- ftd.image: 
+height: fill-container
+width: hug-content
+src: $toast-alerts.tick-green
+padding.px: 5
+background.solid: #13be55
+border-radius.px: 10
+$on-click$: $ftd.set-bool($a = $open-success, v = true)
+
+\-- ftd.image:
+height: fill-container
+width: hug-content
+src: $toast-alerts.information
+padding.px: 5
+background.solid: #0b6eef
+border-radius.px: 10
+$on-click$: $ftd.set-bool($a = $open-information, v = true)
+
+\-- ftd.image: 
+height: fill-container
+width: hug-content
+src: $toast-alerts.exclamation-orange
+background.solid: #ff8e00
+border-radius.px: 10
+$on-click$: $ftd.set-bool($a = $open-exclamation, v = true)
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+
+\-- end: toast-alerts
+
+
+
+
+
+
+\-- component toast-alerts-message:
+ftd.image-src tick-green:
+ftd.image-src exclamation-orange:
+ftd.image-src information:
+ftd.image-src cross:
+
+\-- ftd.row:
+min-width.fixed.px: 200
+width: hug-content
+height.fixed.px: 45
+z-index: 9999999999
+anchor: window
+sticky: true
+margin-top.vh: 3
+margin-left.vw: 80
+margin-left.vw if { ftd.device == "mobile" }: 40
+align-content: center
+
+
+
+\-- ftd.row:
+if: { open-success }
+height: fill-container
+width: fill-container
+padding-horizontal.px: 10
+padding-vertical.px: 5
+spacing: space-between  
+border-radius.px: 5
+background.solid: #D1FAD7
+
+\-- ftd.image: 
+height: fill-container
+width: hug-content
+src: $toast-alerts-message.tick-green
+padding.px: 5
+background.solid: #13be55
+border-radius.px: 10
+
+\-- ftd.text:  A Successful Toast
+align-self: center
+padding-horizontal.px: 5  
+
+\-- ftd.image:
+height.fixed.px: 15
+src: $toast-alerts-message.cross
+$on-click$: $ftd.set-bool($a = $open-success, v = false)
+
+\-- end: ftd.row
+
+
+
+\-- ftd.row:
+if: { open-information }
+height: fill-container
+width: fill-container
+padding-horizontal.px: 10
+padding-vertical.px: 5
+spacing: space-between  
+border-radius.px: 5
+background.solid: #B4D1E1
+
+\-- ftd.image:
+height: fill-container
+width: hug-content
+src: $toast-alerts-message.information
+padding.px: 5
+background.solid: #0b6eef
+border-radius.px: 10
+
+\-- ftd.text:  An Informational Toast
+align-self: center
+padding-horizontal.px: 5    
+
+\-- ftd.image:
+height.fixed.px: 15
+src: $toast-alerts-message.cross
+$on-click$: $ftd.set-bool($a = $open-information, v = false)
+
+\-- end: ftd.row
+
+
+
+\-- ftd.row:
+if: { open-exclamation }
+height: fill-container
+width: fill-container
+padding-horizontal.px: 10
+padding-vertical.px: 5
+spacing: space-between  
+border-radius.px: 5
+background.solid: #F1D4AB
+
+\-- ftd.image: 
+height: fill-container
+width: hug-content
+src: $toast-alerts-message.exclamation-orange
+background.solid: #ff8e00
+border-radius.px: 10
+
+\-- ftd.text:  A warning Toast
+align-self: center
+padding-horizontal.px: 5    
+
+\-- ftd.image:
+height.fixed.px: 15
+src: $toast-alerts-message.cross
+$on-click$: $ftd.set-bool($a = $open-exclamation, v = false)
+
+\-- end: ftd.row
+
+
+\-- end: ftd.row
+
+\-- end: toast-alerts-message
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: lib.page
+
+
+
+
+
+
+
+
+
+
+-- boolean $open-success: false
+-- boolean $open-information: false
+-- boolean $open-exclamation: false
+
+-- component toast-alerts:
+boolean $open: false
+ftd.image-src menu:
+ftd.image-src tick-green:
+ftd.image-src exclamation-orange:
+ftd.image-src information:
+
+-- ftd.row:
+width.fixed.px: 160
+height.fixed.px: 35
+z-index: 999999999
+anchor: window
+sticky: true
+margin-top.vh: 85
+margin-left.vw: 85
+margin-left.vw if { ftd.device == "mobile" }: 55
+align-self: center
+border-radius.px: 5    
+spacing: space-evenly
+
+
+-- ftd.image: 
+height: fill-container
+src: $toast-alerts.menu
+padding.px: 5
+background.solid: #fdfdbe
+border-radius.px: 5
+$on-click$: $ftd.toggle($a = $toast-alerts.open)
+
+-- ftd.row:
+if: { toast-alerts.open }
+height: fill-container
+width: fill-container
+spacing: space-evenly
+
+-- ftd.image: 
+height: fill-container
+width: hug-content
+src: $toast-alerts.tick-green
+padding.px: 5
+background.solid: #13be55
+border-radius.px: 10
+$on-click$: $ftd.set-bool($a = $open-success, v = true)
+
+-- ftd.image:
+height: fill-container
+width: hug-content
+src: $toast-alerts.information
+padding.px: 5
+background.solid: #0b6eef
+border-radius.px: 10
+$on-click$: $ftd.set-bool($a = $open-information, v = true)
+
+-- ftd.image: 
+height: fill-container
+width: hug-content
+src: $toast-alerts.exclamation-orange
+background.solid: #ff8e00
+border-radius.px: 10
+$on-click$: $ftd.set-bool($a = $open-exclamation, v = true)
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+
+-- end: toast-alerts
+
+
+
+
+
+
+-- component toast-alerts-message:
+ftd.image-src tick-green:
+ftd.image-src exclamation-orange:
+ftd.image-src information:
+ftd.image-src cross:
+
+-- ftd.row:
+min-width.fixed.px: 200
+width: hug-content
+height.fixed.px: 45
+z-index: 9999999999
+anchor: window
+sticky: true
+margin-top.vh: 3
+margin-left.vw: 80
+margin-left.vw if { ftd.device == "mobile" }: 40
+align-content: center
+
+
+
+-- ftd.row:
+if: { open-success }
+height: fill-container
+width: fill-container
+padding-horizontal.px: 10
+padding-vertical.px: 5
+spacing: space-between  
+border-radius.px: 5
+background.solid: #D1FAD7
+
+-- ftd.image: 
+height: fill-container
+width: hug-content
+src: $toast-alerts-message.tick-green
+padding.px: 5
+background.solid: #13be55
+border-radius.px: 10
+
+-- ftd.text:  A Successful Toast
+align-self: center
+padding-horizontal.px: 5  
+
+-- ftd.image:
+height.fixed.px: 15
+src: $toast-alerts-message.cross
+$on-click$: $ftd.set-bool($a = $open-success, v = false)
+
+-- end: ftd.row
+
+
+
+-- ftd.row:
+if: { open-information }
+height: fill-container
+width: fill-container
+padding-horizontal.px: 10
+padding-vertical.px: 5
+spacing: space-between  
+border-radius.px: 5
+background.solid: #B4D1E1
+
+-- ftd.image:
+height: fill-container
+width: hug-content
+src: $toast-alerts-message.information
+padding.px: 5
+background.solid: #0b6eef
+border-radius.px: 10
+
+-- ftd.text:  An Informational Toast
+align-self: center
+padding-horizontal.px: 5    
+
+-- ftd.image:
+height.fixed.px: 15
+src: $toast-alerts-message.cross
+$on-click$: $ftd.set-bool($a = $open-information, v = false)
+
+-- end: ftd.row
+
+
+
+-- ftd.row:
+if: { open-exclamation }
+height: fill-container
+width: fill-container
+padding-horizontal.px: 10
+padding-vertical.px: 5
+spacing: space-between  
+border-radius.px: 5
+background.solid: #F1D4AB
+
+-- ftd.image: 
+height: fill-container
+width: hug-content
+src: $toast-alerts-message.exclamation-orange
+background.solid: #ff8e00
+border-radius.px: 10
+
+-- ftd.text:  A warning Toast
+align-self: center
+padding-horizontal.px: 5    
+
+-- ftd.image:
+height.fixed.px: 15
+src: $toast-alerts-message.cross
+$on-click$: $ftd.set-bool($a = $open-exclamation, v = false)
+
+-- end: ftd.row
+
+
+-- end: ftd.row
+
+-- end: toast-alerts-message

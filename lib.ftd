@@ -25,6 +25,9 @@ background.image if { color-mode }: $assets.files.images.wallpaper-dark.jpg
 
 -- selector:
 
+-- button: Notification Toast
+url: UI-Components/Notification/Toast
+
 -- button: DatePicker-1
 url: UI-Components/Content/date-picker
 
