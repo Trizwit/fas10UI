@@ -1,116 +1,323 @@
--- import: fastnui.trizwit.com/assets
--- import: fastnui.trizwit.com/lib
--- import: fastn-community.github.io/code-block as cb
+-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+
+-- page:
 
 
--- lib.page:
+-- component page:
 
--- lib.container-wrapper:
-if: { !lib.code-open }
 
--- lib.blog-1: OPEN FASTN Campaign
-pic: $assets.files.images.openfastn.png
-head: Open Source Contribution
-cta-text: Learn more
-cta-link: https://trizwit.github.io/OpenFASTN/
-
-Open FASTN is a two week long open source contribution by FASTN Community and Trizwit Labs
-
--- lib.blog-1: Coming Soon
-pic: $assets.files.images.coming-soon.png
-head: Category
-cta-text: Learn more
-
-Some exciting Hackathons, Workshops, Open Source Contributions, Competitions are coming soon
-
--- lib.blog-1: Coming Soon
-pic: $assets.files.images.coming-soon.png
-head: Category
-cta-text: Learn more
-
-Some exciting Hackathons, Workshops, Open Source Contributions, Competitions are coming soon
-
--- end: lib.container-wrapper
-
--- lib.container-wrapper:
-if: { lib.code-open }
-
--- cb.code:
-lang: ftd
-
-\-- lib.container-wrapper:
-
-\-- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.720x400.png
-head: Category
-cta-text: Learn more
-
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
-
-\-- lib.blog-1: Keyvalue Interview and Test on May 22 2023
-pic: $assets.files.images.720x400.png
-head: Category
-cta-text: Learn more
-
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
-
-\-- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.720x400.png
-head: Category
-cta-text: Learn more
-
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
-
-\-- end: lib.container-wrapper
-
-\-- component blog-1:
-caption title:
-string head:
-ftd.image-src pic:
-string cta-text:
-body body:
-
-\-- ftd.column:
-background.solid: $inherited.colors.background.step-1
-max-width.fixed.percent: 25
-
-\-- ftd.image:
-src: $blog-1.pic
+-- ftd.column:
 width: fill-container
+height: fill-container
+types: 
+colors: 
+background.solid: #010C15
 
-\-- ftd.column:
-padding.px: 24
+-- ftd.column:
+width: fill-container
+height: auto
+background.image: $bg-blur
 
-\-- ftd.text: $blog-1.head
-role: $inherited.types.label-small
-color: $inherited.colors.text
-margin-bottom.px: 4
+-- ftd.row:
+width: fill-container
+height: auto
+padding-vertical.px: 5
+border-bottom-width.px: 1
+border-bottom-color: #1E2D3D
 
-\-- ftd.text: $blog-1.title
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
-margin-bottom.px: 12
+-- navbar:
 
-\-- ftd.text: $blog-1.body
-role: $inherited.types.label-large
-color: $inherited.colors.text
+-- end: ftd.row
 
-\-- ftd.text: $blog-1.cta-text
-role: $inherited.types.copy-regular
-color: $inherited.colors.text
 
-\-- end: ftd.column
+-- ftd.column:
+width: fill-container
+height: fill-container
+padding-horizontal.percent: 12  
 
-\-- end: ftd.column
 
-\-- end: blog-1
+-- hero:
 
--- end: cb.code
+-- template-holder:
 
--- end: lib.container-wrapper
+-- end: ftd.column
 
--- end: lib.page
+-- end: ftd.column
 
+-- end: ftd.column
+
+-- end: page
+
+
+
+
+
+
+
+
+
+-- component navbar:
+
+-- ftd.row:
+width: fill-container
+height.fixed.px: 40
+
+-- ftd.text: FASTN UI
+role: $fira-code-size-14-400
+color: #607B96
+align-self: center
+margin-left.percent: 7
+margin-right.percent: 14
+
+-- ftd.text: _Home
+role: $fira-code-size-14-400
+color: #607B96
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-color: #1E2D3D
+border-left-width.px: 1
+border-right-width.px: 1
+
+-- ftd.text: _About
+role: $fira-code-size-14-400
+color: #607B96
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-color: #1E2D3D
+border-left-width.px: 1
+border-right-width.px: 1
+
+-- ftd.text: _Components
+role: $fira-code-size-14-400
+color: #607B96
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-color: #1E2D3D
+border-left-width.px: 1
+border-right-width.px: 1
+link: components/
+
+-- end: ftd.row
+
+-- end: navbar
+
+
+
+
+
+
+
+
+
+-- component hero:
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-vertical.px: 20
+spacing: space-between
+
+
+-- ftd.column:
+padding-top.px: 20
+
+-- ftd.text: Welcome to
+role: $fira-code-size-56-400
+color: #E5E9F0
+
+-- ftd.text: **FASTN UI** library
+role: $fira-code-size-56-400
+color: #E5E9F0
+
+-- ftd.text: ⇒ Building using FASTN is more
+role: $fira-code-size-30-400
+color: #4D5BCE
+margin-top.px: 15
+
+-- ftd.text:    easy now!!
+role: $fira-code-size-30-400
+color: #4D5BCE
+
+-- end: ftd.column
+
+
+-- ftd.image:
+src: $assets.files.assets.Onlineclass.png
+width.fixed.percent: 48
+
+-- end: ftd.row
+
+-- end: hero
+
+
+
+
+
+
+
+
+
+-- component template-holder:
+
+
+-- ftd.row:
+width: fill-container
+height: auto
+spacing: space-between
+
+
+-- template:
+cover: $assets.files.assets.image1.png
+cta-button: Component Library
+text: // Use these components to build your custom websites
+link: components/
+
+-- template:
+cover: $assets.files.assets.image2.png
+cta-button: Frontend Templates
+text: // Use these templates to create landing pages
+link: components/
+
+-- template:
+cover: $assets.files.assets.image3.png
+cta-button: Portfolio Templates
+text: // Build Portfolio websites hustle free using our templates
+link: components/
+
+-- end: ftd.row
+
+-- end: template-holder
+
+
+
+
+
+
+
+-- component template:
+ftd.image-src cover:
+string cta-button:
+string text:
+string link:
+
+-- ftd.column:
+width.fixed.percent: 30
+
+
+-- ftd.column:
+padding.px: 10
+spacing: space-between
+border-radius.px: 8
+background.solid: #092A38
+
+-- ftd.image:
+src: $template.cover
+width.fixed.percent: 100
+align-self: center
+
+-- ftd.text: $template.cta-button
+role: $fira-code-size-14-400
+color: #FFFFFF
+padding-horizontal.px: 14
+padding-vertical.px: 10
+border-radius.px: 8
+background.solid: #1C2B3A
+link: $template.link
+
+-- end: ftd.column
+
+
+-- ftd.text: $template.text
+role: $fira-code-size-14-400
+color: #607B96
+padding-horizontal.px: 8
+padding-vertical.px: 16
+
+
+-- end: ftd.column
+
+-- end: template
+
+
+
+
+
+
+
+
+
+-- ftd.background-image bg-blur:
+src: $assets.files.assets.Background.png
+repeat: no-repeat
+position: right-bottom
+size: cover
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-14-desktop:
+size.px: 14
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-14-mobile:
+size.px: 14
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-14-400:
+desktop: $fira-code-size-14-desktop
+mobile: $fira-code-size-14-mobile
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-56-desktop:
+size.px: 56
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-56-mobile:
+size.px: 56
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-56-400:
+desktop: $fira-code-size-56-desktop
+mobile: $fira-code-size-56-mobile
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-30-desktop:
+size.px: 30
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-30-mobile:
+size.px: 30
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-30-400:
+desktop: $fira-code-size-30-desktop
+mobile: $fira-code-size-30-mobile
