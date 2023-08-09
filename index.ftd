@@ -66,14 +66,16 @@ width: fill-container
 height.fixed.px: 40
 
 -- ftd.text: FASTN UI
-role: $fira-code-size-14-400
+role: $fira-code-size-16-400
 color: #607B96
+css: [ $assets.files.logo.css]
+classes: animate-character
 align-self: center
 margin-left.percent: 7
 margin-right.percent: 14
 
 -- ftd.text: _Home
-role: $fira-code-size-14-400
+role: $fira-code-size-16-400
 color: #607B96
 padding-vertical.px: 12
 padding-horizontal.px: 32
@@ -85,7 +87,7 @@ $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-home, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-home, v = false)
 
 -- ftd.text: _About
-role: $fira-code-size-14-400
+role: $fira-code-size-16-400
 color: #607B96
 padding-vertical.px: 12
 padding-horizontal.px: 32
@@ -97,7 +99,7 @@ $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-about, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-about, v = false)
 
 -- ftd.text: _Components
-role: $fira-code-size-14-400
+role: $fira-code-size-16-400
 color: #607B96
 padding-vertical.px: 12
 padding-horizontal.px: 32
@@ -229,7 +231,7 @@ width.fixed.percent: 100
 align-self: center
 
 -- ftd.text: $template.cta-button
-role: $fira-code-size-14-400
+role: $fira-code-size-16-400
 color: #FFFFFF
 padding-horizontal.px: 14
 padding-vertical.px: 10
@@ -241,7 +243,7 @@ link: $template.link
 
 
 -- ftd.text: $template.text
-role: $fira-code-size-14-400
+role: $fira-code-size-16-400
 color: #607B96
 padding-horizontal.px: 8
 padding-vertical.px: 16
@@ -273,20 +275,20 @@ size: contain
 
 
 
--- ftd.type fira-code-size-14-desktop:
-size.px: 14
+-- ftd.type fira-code-size-16-desktop:
+size.px: 16
 weight: 400
 font-family: $fira-code-assets.fonts.Fira-Code
 
 
--- ftd.type fira-code-size-14-mobile:
-size.px: 14
+-- ftd.type fira-code-size-16-mobile:
+size.px: 16
 weight: 400
 font-family: $fira-code-assets.fonts.Fira-Code
 
--- ftd.responsive-type fira-code-size-14-400:
-desktop: $fira-code-size-14-desktop
-mobile: $fira-code-size-14-mobile
+-- ftd.responsive-type fira-code-size-16-400:
+desktop: $fira-code-size-16-desktop
+mobile: $fira-code-size-16-mobile
 
 
 
