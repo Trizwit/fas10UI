@@ -85,6 +85,7 @@ border-right-width.px: 1
 color if {navbar.hover-home}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-home, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-home, v = false)
+link: index/
 
 -- ftd.text: _About
 role: $fira-code-size-16-400
