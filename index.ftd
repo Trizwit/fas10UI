@@ -265,7 +265,7 @@ padding-vertical.px: 16
 src: $assets.files.assets.Background.png
 repeat: no-repeat
 position: right-bottom
-size: cover
+size: contain
 
 
 
