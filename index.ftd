@@ -85,6 +85,7 @@ border-right-width.px: 1
 color if {navbar.hover-home}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-home, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-home, v = false)
+link: index.html
 
 -- ftd.text: _About
 role: $fira-code-size-16-400
@@ -97,6 +98,7 @@ border-right-width.px: 1
 color if {navbar.hover-about}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-about, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-about, v = false)
+link: components/
 
 -- ftd.text: _Components
 role: $fira-code-size-16-400
@@ -109,7 +111,7 @@ border-right-width.px: 1
 color if {navbar.hover-components}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-components, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-components, v = false)    
-link: components/
+link: library/
 
 -- end: ftd.row
 
