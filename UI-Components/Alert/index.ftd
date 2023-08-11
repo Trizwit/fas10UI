@@ -1,6 +1,5 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
 -- import: fastnui.trizwit.com/UI-Components/Alert/alert
--- import: fastn/processors as pr
 
 -- page:
 
@@ -104,7 +103,9 @@ height: fill-container
 background.solid: #011627
 align-content: center
 
+
 -- ui-wrapper:
+title: Alert
 
 -- end: ftd.column
 
@@ -194,19 +195,61 @@ link: $button.url
 -- boolean $code-open: false
 
 -- component ui-wrapper:
+string title: 
+
+-- ui-1:
+title: Alert Components
+
+-- end: ui-wrapper
 
 
+
+
+
+
+
+
+
+
+
+-- component ui-1:
+string title: 
 
 -- ftd.column:
 width: fill-container
 height.fixed.percent: 100
-align-content: top-center
+;;align-content: top-center
 colors: $fastn-cs-tail.main
 types: $opensans-typography.types
-overflow: auto
+css: [ $assets.files.scroll.css ]
+classes: body 
 
--- ftd.text: xfgdf
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-1.title
 role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open)
+
+-- end: ftd.row
+
 
 -- lib.container-wrapper:
 if: { !code-open }
@@ -491,8 +534,14 @@ content: $dark-alert.content
 
 -- end: ftd.column
 
--- end: ui-wrapper
 
+
+
+
+
+
+
+-- end: ui-1
 
 
 
