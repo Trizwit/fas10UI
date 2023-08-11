@@ -246,6 +246,7 @@ padding.px: 10
 spacing: space-between
 border-radius.px: 8
 background.solid: #092A38
+link: $template.link
 
 -- ftd.image:
 src: $template.cover
@@ -259,7 +260,7 @@ padding-horizontal.px: 14
 padding-vertical.px: 10
 border-radius.px: 8
 background.solid: #1C2B3A
-link: $template.link
+;;link: $template.link
 
 -- end: ftd.column
 
