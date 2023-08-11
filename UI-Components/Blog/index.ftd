@@ -426,29 +426,27 @@ $on-click$: $ftd.toggle($a = $code-open-2)
 if: { !code-open-2 }
 
 
--- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.Blog.Blog-1.720x400.png
+-- blog-2.blog-2: Raclette Blueberry Nextious Level
 head: Category
 cta-text: Learn more
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
 
--- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.Blog.Blog-1.721x401.png
+-- blog-2.blog-2: Raclette Blueberry Nextious Level
 head: Category
 cta-text: Learn more
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
 
--- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.Blog.Blog-1.722x402.png
+-- blog-2.blog-2: Raclette Blueberry Nextious Level
 head: Category
 cta-text: Learn more
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
+
 
 
 -- end: lib.container-wrapper
