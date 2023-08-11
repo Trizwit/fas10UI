@@ -1,0 +1,228 @@
+-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+
+-- page:
+
+-- component page:
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+types: 
+colors: 
+background.solid: #011627
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-vertical.px: 5
+border-bottom-width.px: 1
+border-bottom-color: #1E2D3D
+
+-- index.navbar:
+$hover-home: false
+$hover-about: false
+$hover-components: true
+$hover-templates: false
+$hover-portfolio: false
+
+-- end: ftd.row 
+
+
+-- ftd.row:
+width: fill-container
+height.fixed.calc: 100vh - 50px
+
+
+-- ftd.column: 
+width.fixed.percent: 23
+border-right-width.px: 1
+border-right-color: #1E2D3D
+
+
+-- selector:
+
+-- button: Alert
+url: /UI-Components/Alert/
+
+-- button: Blog
+url: /UI-Components/Blog/
+
+-- button: Contact
+url: /UI-Components/Contact/
+
+-- button: Content
+url: /UI-Components/Content/
+
+-- button: Footer
+url: /UI-Components/Footer/
+
+-- button: Gallery
+url: /UI-Components/Gallery/
+
+-- button: Header
+url: /UI-Components/Header/
+
+-- button: Hero
+url: /UI-Components/Hero/
+
+-- button: Label
+url: /UI-Components/Label/
+
+-- button: Modal
+url: /UI-Components/Modal/
+
+-- button: Notification
+url: /UI-Components/Notification/
+
+-- button: Pagination
+url: /UI-Components/Pagination/
+
+-- button: ProgressBar
+url: /UI-Components/ProgressBar/
+
+-- button: SearchBar
+url: /UI-Components/SearchBar/
+
+-- button: VideoDetails
+url: /UI-Components/VideoDetails/
+
+-- end: selector
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width.fixed.percent: 77
+height: fill-container
+background.solid: #011627
+align-content: center
+
+-- ui-wrapper:
+
+-- end: ftd.column
+
+;; page container end
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: page
+
+
+
+
+
+
+
+
+
+-- component selector:
+children c:
+
+-- ftd.column:
+width: fill-container
+min-height.fixed.calc: 100vh - 0px
+height.fixed.vh: 100
+padding-bottom.px: 80
+align-content: top-center
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: top-center
+padding-top.px: 8
+spacing.fixed.px: 10
+css: [ $assets.files.scroll.css ]
+classes: body 
+children: $selector.c
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: selector
+
+
+
+
+
+
+
+
+
+-- component button:
+caption name:
+boolean $is-active: false
+string url:
+
+-- ftd.text: $button.name
+width.fixed.percent: 90
+padding-vertical.px: 32
+color: #FFF
+role: $fira-code-size-16-400
+align-self: center
+text-align: center
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid if {button.is-active}: #3D4A55
+background.solid: #011221
+$on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
+link: $button.url 
+
+-- end: button
+
+
+
+
+
+
+
+
+
+-- component ui-wrapper:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.text: Footer folder
+color: #FFF
+
+
+-- end: ftd.column
+
+-- end: ui-wrapper
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-16-desktop:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-16-mobile:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-16-400:
+desktop: $fira-code-size-16-desktop
+mobile: $fira-code-size-16-mobile
