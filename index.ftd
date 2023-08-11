@@ -207,7 +207,7 @@ spacing: space-between
 cover: $assets.files.assets.image1.png
 cta-button: Component Library
 text: // Use these components to build your custom websites
-link: components/
+link: /UI-Components/
 
 -- template:
 cover: $assets.files.assets.image2.png
