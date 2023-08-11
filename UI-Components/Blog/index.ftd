@@ -1,4 +1,5 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+-- import: fastnui.trizwit.com/UI-Components/Blog/blog-2
 
 -- page:
 
@@ -28,7 +29,7 @@ $hover-home: false
 $hover-about: false
 $hover-components: true
 $hover-templates: false
-$hover-portfolio: false
+$hover-portfolio: false 
 
 -- end: ftd.row 
 
@@ -102,7 +103,9 @@ height: fill-container
 background.solid: #011627
 align-content: center
 
+
 -- ui-wrapper:
+;;title: Blogs
 
 -- end: ftd.column
 
@@ -189,20 +192,322 @@ link: $button.url
 
 
 
+-- boolean $code-open-1: false
+-- boolean $code-open-2: false
 
 -- component ui-wrapper:
+;;string title: 
 
 -- ftd.column:
 width: fill-container
-align-content: center
+height.fixed.percent: 100
+css: [ $assets.files.scroll.css ]
+classes: body 
 
--- ftd.text: Blog folder
-color: #FFF
+-- ui-1:
+title: Blog-1
 
+-- ui-2:
+title: Blog-2
 
 -- end: ftd.column
 
 -- end: ui-wrapper
+
+
+
+
+
+
+
+
+
+
+
+-- component ui-1:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-1.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-1}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-1)
+
+-- end: ftd.row
+
+
+-- lib.container-wrapper:
+if: { !code-open-1 }
+
+-- lib.blog-1: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.720x400.png
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- lib.blog-1: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.721x401.png
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- lib.blog-1: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.722x402.png
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-1 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- lib.blog-1: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.721x401.png
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+\-- lib.blog-1: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.721x401.png
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+\-- lib.blog-1: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.722x402.png
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+\-- end: lib.container-wrapper
+
+\-- component blog-1:
+caption title:
+string head:
+ftd.image-src pic:
+string cta-text:
+body body:
+
+\-- ftd.column:
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+
+\-- ftd.image:
+src: $blog-1.pic
+width: fill-container
+
+\-- ftd.column:
+padding.px: 24
+
+\-- ftd.text: $blog-1.head
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+\-- ftd.text: $blog-1.title
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+\-- ftd.text: $blog-1.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+\-- ftd.text: $blog-1.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+\-- end: blog-1
+
+
+-- end: cb.code
+
+
+-- end: lib.container-wrapper
+
+
+-- end: ftd.column
+
+
+
+-- end: ui-1
+
+
+
+
+
+
+
+
+
+
+-- component ui-2:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-2.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {$code-open-2}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-2)
+
+-- end: ftd.row
+
+
+-- lib.container-wrapper:
+if: { !code-open-2 }
+
+
+-- lib.blog-1: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.720x400.png
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- lib.blog-1: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.721x401.png
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- lib.blog-1: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.722x402.png
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-2 }
+
+-- cb.code:
+lang: ftd
+
+\-- component blog-2:
+caption title:
+string head:
+string cta-text:
+body body:
+
+\-- ftd.column:
+align-content: center
+align-self: center
+background.solid: $inherited.colors.background.step-1
+max-width.fixed.percent: 25
+padding.px: 24
+
+\-- ftd.text: $blog-2.head
+style: semi-bold
+role: $inherited.types.label-small
+color: $inherited.colors.custom.one
+margin-bottom.px: 4
+
+\-- ftd.text: $blog-2.title
+style: bold
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-bottom.px: 12
+
+\-- ftd.text: $blog-2.body
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+\-- ftd.text: $blog-2.cta-text
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+\-- end: ftd.column
+
+\-- end: blog-2
+
+
+-- end: cb.code
+
+
+-- end: lib.container-wrapper
+
+
+-- end: ftd.column
+
+
+
+-- end: ui-2
 
 
 
