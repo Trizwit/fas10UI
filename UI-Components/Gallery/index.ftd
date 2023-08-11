@@ -45,49 +45,49 @@ border-right-color: #1E2D3D
 -- selector:
 
 -- button: Alert
-url: /Alert/
+url: /UI-Components/Alert/
 
 -- button: Blog
-url: /Blog/
+url: /UI-Components/Blog/
 
 -- button: Contact
-url: /Contact/
+url: /UI-Components/Contact/
 
 -- button: Content
-url: /Content/
+url: /UI-Components/Content/
 
 -- button: Footer
-url: /Footer/
+url: /UI-Components/Footer/
 
 -- button: Gallery
-url: /Gallery/
+url: /UI-Components/Gallery/
 
 -- button: Header
-url: /Header/
+url: /UI-Components/Header/
 
 -- button: Hero
-url: /Hero/
+url: /UI-Components/Hero/
 
 -- button: Label
-url: /Label/
+url: /UI-Components/Label/
 
 -- button: Modal
-url: /Modal/
+url: /UI-Components/Modal/
 
 -- button: Notification
-url: /Notification/
+url: /UI-Components/Notification/
 
 -- button: Pagination
-url: /Pagination/
+url: /UI-Components/Pagination/
 
 -- button: ProgressBar
-url: /ProgressBar/
+url: /UI-Components/ProgressBar/
 
 -- button: SearchBar
-url: /SearchBar/
+url: /UI-Components/SearchBar/
 
 -- button: VideoDetails
-url: /VideoDetails/
+url: /UI-Components/VideoDetails/
 
 -- end: selector
 
@@ -174,9 +174,9 @@ border-width.px: 1
 border-color: #5F6C78
 background.solid if {button.is-active}: #3D4A55
 background.solid: #011221
-$on-click$: $ftd.set-bool($a = $button.is-active, v = true)
-$on-click-outside$: $ftd.set-bool($a = $button.is-active, v = false)
-link: 
+$on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
+link: $button.url 
 
 -- end: button
 
@@ -192,8 +192,10 @@ link:
 
 -- ftd.column:
 width: fill-container
+align-content: center
 
-
+-- ftd.text: Gallery folder
+color: #FFF
 
 
 -- end: ftd.column

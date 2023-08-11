@@ -26,6 +26,9 @@ border-bottom-width.px: 1
 border-bottom-color: #1E2D3D
 
 -- navbar:
+$hover-home: true
+$hover-about: false
+$hover-components: false
 
 -- end: ftd.row
 
@@ -57,9 +60,9 @@ padding-horizontal.percent: 12
 
 
 -- component navbar:
-boolean $hover-home: false
-boolean $hover-about: false
-boolean $hover-components: false
+boolean $hover-home: 
+boolean $hover-about: 
+boolean $hover-components: 
 
 -- ftd.row:
 width: fill-container
@@ -85,6 +88,7 @@ border-right-width.px: 1
 color if {navbar.hover-home}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-home, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-home, v = false)
+link: index.html
 
 -- ftd.text: _About
 role: $fira-code-size-16-400
@@ -110,7 +114,7 @@ border-right-width.px: 1
 color if {navbar.hover-components}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-components, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-components, v = false)    
-link: library/
+link: /UI-Components/
 
 -- end: ftd.row
 
