@@ -27,6 +27,8 @@ border-bottom-color: #1E2D3D
 $hover-home: false
 $hover-about: false
 $hover-components: true
+$hover-templates: false
+$hover-portfolio: false
 
 -- end: ftd.row 
 

@@ -1,4 +1,6 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+-- import: fastnui.trizwit.com/UI-Components/Alert/alert
+-- import: fastn/processors as pr
 
 -- page:
 
@@ -27,6 +29,8 @@ border-bottom-color: #1E2D3D
 $hover-home: false
 $hover-about: false
 $hover-components: true
+$hover-templates: false
+$hover-portfolio: false 
 
 -- end: ftd.row 
 
@@ -187,20 +191,314 @@ link: $button.url
 
 
 
+-- boolean $code-open: false
 
 -- component ui-wrapper:
 
+
+
 -- ftd.column:
 width: fill-container
-align-content: center
+height.fixed.percent: 100
+align-content: top-center
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+overflow: auto
 
--- ftd.text: Alerts folder
-color: #FFF
+-- ftd.text: xfgdf
+role: $fira-code-size-16-400
+
+-- lib.container-wrapper:
+if: { !code-open }
+
+
+-- alert.primary-alert: 
+content: A simple primary alert—check it out!
+
+
+-- alert.secondary-alert:
+content: A simple secondary alert—check it out!
+
+
+-- alert.success-alert:
+content: A simple success alert—check it out!
+
+
+-- alert.danger-alert:
+content: A simple danger alert—check it out!
+
+
+-- alert.warning-alert:
+content: A simple warning alert—check it out!
+
+
+-- alert.info-alert:
+content: A simple info alert—check it out!
+
+
+-- alert.light-alert:
+content: A simple light alert—check it out!
+
+
+-- alert.dark-alert:
+content: A simple dark alert—check it out!
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- primary-alert: 
+content: A simple primary alert—check it out!
+
+
+\-- secondary-alert:
+content: A simple secondary alert—check it out!
+
+
+\-- success-alert:
+content: A simple success alert—check it out!
+
+
+\-- danger-alert:
+content: A simple danger alert—check it out!
+
+
+\-- warning-alert:
+content: A simple warning alert—check it out!
+
+
+\-- info-alert:
+content: A simple info alert—check it out!
+
+
+\-- light-alert:
+content: A simple light alert—check it out!
+
+
+\-- dark-alert:
+content: A simple dark alert—check it out!
+
+\-- end: lib.container-wrapper
+
+
+
+\-- component base-alert:
+string content:
+ftd.color bg-color:
+ftd.color text-color:
+ftd.color border-color:
+
+
+\-- ftd.row:
+width: fill-container
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+min-height.fixed.px: 50
+padding.px: 20
+margin.px: 20   
+border-radius.rem: .25
+background.solid: $base-alert.bg-color
+border-width.px: 1
+border-color: $base-alert.border-color
+
+
+\-- ftd.text: $base-alert.content
+role: $inherited.types.copy-large
+margin-horizontal.px: 10
+color: $base-alert.text-color
+
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: base-alert
+
+
+
+
+
+\-- component primary-alert:
+string content:
+
+\-- ftd.row:
+width: fill-container
+
+\-- base-alert:
+bg-color: #cfe2ff
+text-color: #084298
+border-color: #b6d4fe
+content: $primary-alert.content
+
+\-- end: ftd.row
+
+\-- end: primary-alert
+
+
+
+
+\-- component secondary-alert:
+string content:
+
+\-- ftd.row:
+width: fill-container
+
+\-- base-alert:
+bg-color: #e2e3e5
+text-color: #41464b
+border-color: #d3d6d8
+content: $secondary-alert.content
+
+\-- end: ftd.row
+
+\-- end: secondary-alert
+
+
+
+
+\-- component success-alert:
+string content:
+
+\-- ftd.row:
+width: fill-container
+
+\-- base-alert:
+bg-color: #d4edda
+text-color: #155724
+border-color: #c3e6cb
+content: $success-alert.content
+
+\-- end: ftd.row
+
+\-- end: success-alert
+
+
+
+
+\-- component danger-alert:
+string content:
+
+\-- ftd.row:
+width: fill-container
+
+\-- base-alert:
+bg-color: #f8d7da
+text-color: #721c24
+border-color: #f5c6cb
+content: $danger-alert.content
+
+\-- end: ftd.row
+
+\-- end: danger-alert
+
+
+
+
+\-- component warning-alert:
+string content:
+
+\-- ftd.row:
+width: fill-container
+
+\-- base-alert:
+bg-color: #fff3cd
+text-color: #856404
+border-color: #ffeeba
+content: $warning-alert.content
+
+\-- end: ftd.row
+
+\-- end: warning-alert
+
+
+
+
+\-- component info-alert:
+string content:
+
+\-- ftd.row:
+width: fill-container
+
+\-- base-alert:
+bg-color: #d1ecf1
+text-color: #0c5460
+border-color: #bee5eb
+content: $info-alert.content
+
+\-- end: ftd.row
+
+\-- end: info-alert
+
+
+
+
+
+\-- component light-alert:
+string content:
+
+\-- ftd.row:
+width: fill-container
+
+\-- base-alert:
+bg-color: #fefefe
+text-color: #818182
+border-color: #fdfdfe
+content: $light-alert.content
+
+\-- end: ftd.row
+
+\-- end: light-alert
+
+
+
+
+
+\-- component dark-alert:
+string content:
+
+\-- ftd.row:
+width: fill-container
+
+\-- base-alert:
+bg-color: #d6d8d9
+text-color: #1b1e21
+border-color: #c6c8ca
+content: $dark-alert.content
+
+\-- end: ftd.row
+
+\-- end: dark-alert
+
+
+
+-- end: cb.code
+
+
+-- end: lib.container-wrapper
+
+
+
 
 
 -- end: ftd.column
 
 -- end: ui-wrapper
+
+
+
+
+
+
+
 
 
 

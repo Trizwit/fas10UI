@@ -27,6 +27,8 @@ border-bottom-color: #1E2D3D
 $hover-home: false
 $hover-about: false
 $hover-components: true
+$hover-templates: false
+$hover-portfolio: false 
 
 -- end: ftd.row 
 
@@ -194,7 +196,7 @@ link: $button.url
 width: fill-container
 align-content: center
 
--- ftd.text: UI-components folder
+-- ftd.text: UI-components folder landing customizations to be done
 color: #FFF
 
 

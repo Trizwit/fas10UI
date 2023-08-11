@@ -29,6 +29,8 @@ border-bottom-color: #1E2D3D
 $hover-home: true
 $hover-about: false
 $hover-components: false
+$hover-templates: false
+$hover-portfolio: false
 
 -- end: ftd.row
 
@@ -63,6 +65,8 @@ padding-horizontal.percent: 12
 boolean $hover-home: 
 boolean $hover-about: 
 boolean $hover-components: 
+boolean $hover-templates:
+boolean $hover-portfolio: false
 
 -- ftd.row:
 width: fill-container
@@ -90,19 +94,6 @@ $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-home, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-home, v = false)
 link: index.html
 
--- ftd.text: _About
-role: $fira-code-size-16-400
-color: #607B96
-padding-vertical.px: 12
-padding-horizontal.px: 32
-border-color: #1E2D3D
-border-left-width.px: 1
-border-right-width.px: 1
-color if {navbar.hover-about}: #FCFCFC
-$on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-about, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-about, v = false)
-link: components/
-
 -- ftd.text: _Components
 role: $fira-code-size-16-400
 color: #607B96
@@ -115,6 +106,32 @@ color if {navbar.hover-components}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-components, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-components, v = false)    
 link: /UI-Components/
+
+-- ftd.text: _Templates
+role: $fira-code-size-16-400
+color: #607B96
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-color: #1E2D3D
+border-left-width.px: 1
+border-right-width.px: 1
+color if {navbar.hover-templates}: #FCFCFC
+$on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-templates, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-templates, v = false)
+link: components/
+
+-- ftd.text: _Portfolio
+role: $fira-code-size-16-400
+color: #607B96
+padding-vertical.px: 12
+padding-horizontal.px: 32
+border-color: #1E2D3D
+border-left-width.px: 1
+border-right-width.px: 1
+color if {navbar.hover-portfolio}: #FCFCFC
+$on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-portfolio, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-portfolio, v = false)
+link: components/
 
 -- end: ftd.row
 
