@@ -504,7 +504,6 @@ children c:
 -- ftd.column:
 min-width.fixed.percent if { !$push-left && ftd.device == "desktop" }: 20
 min-width.fixed.percent if { !$push-left && ftd.device == "mobile" }: 100
-max-width.fixed.px if { !$push-left && ftd.device == "mobile" }: 108
 min-height.fixed.calc: 100vh - 0px
 height.fixed.vh: 100
 width.fixed.percent if { !$push-left }: 20
