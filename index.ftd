@@ -8,7 +8,8 @@
 
 -- ftd.column:
 width: fill-container
-height: fill-container
+height: auto
+height if {ftd.device == "mobile"}: fill-container
 types: 
 colors: 
 background.solid: #010C15
@@ -16,6 +17,7 @@ background.solid: #010C15
 -- ftd.column:
 width: fill-container
 height: auto
+height if {ftd.device == "mobile"}: fill-container
 background.image: $bg-blur
 
 -- ftd.row:
@@ -38,7 +40,8 @@ $hover-portfolio: false
 -- ftd.column:
 width: fill-container
 height: fill-container
-padding-horizontal.percent: 12  
+padding-horizontal.percent: 10
+spacing: space-around
 
 
 -- hero:
@@ -66,11 +69,14 @@ boolean $hover-home:
 boolean $hover-about: 
 boolean $hover-components: 
 boolean $hover-templates:
-boolean $hover-portfolio: false
+boolean $hover-portfolio: 
+boolean $show-menu: false
 
 -- ftd.row:
 width: fill-container
 height.fixed.px: 40
+spacing: space-between
+
 
 -- ftd.text: FASTN UI
 role: $fira-code-size-16-400
@@ -78,9 +84,12 @@ color: #607B96
 css: [ $assets.files.logo.css]
 classes: animate-character
 align-self: center
-margin-left.percent: 7
+margin-left.percent: 10
 margin-right.percent: 14
 
+-- ftd.row:
+
+-- ftd.desktop:
 -- ftd.text: _Home
 role: $fira-code-size-16-400
 color: #607B96
@@ -93,7 +102,9 @@ color if {navbar.hover-home}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-home, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-home, v = false)
 link: index.html
+-- end: ftd.desktop
 
+-- ftd.desktop:
 -- ftd.text: _Components
 role: $fira-code-size-16-400
 color: #607B96
@@ -106,7 +117,9 @@ color if {navbar.hover-components}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-components, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-components, v = false)    
 link: /UI-Components/
+-- end: ftd.desktop
 
+-- ftd.desktop:
 -- ftd.text: _Templates
 role: $fira-code-size-16-400
 color: #607B96
@@ -119,7 +132,9 @@ color if {navbar.hover-templates}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-templates, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-templates, v = false)
 link: components/
+-- end: ftd.desktop
 
+-- ftd.desktop:
 -- ftd.text: _Portfolio
 role: $fira-code-size-16-400
 color: #607B96
@@ -132,8 +147,90 @@ color if {navbar.hover-portfolio}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-portfolio, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-portfolio, v = false)
 link: components/
+-- end: ftd.desktop
 
 -- end: ftd.row
+
+-- ftd.mobile:
+-- ftd.image:
+src: $assets.files.images.menu.png
+height: fill-container
+padding.px: 10
+$on-click$: $ftd.set-bool($a = $navbar.show-menu, v = true)
+-- end: ftd.mobile
+
+-- ftd.column:
+if: {navbar.show-menu && ftd.device == "mobile"}
+height: fill-container
+background.solid: #011221
+classes: side-menubar
+anchor: window
+
+-- ftd.row:
+width: fill-container
+align-content: right
+padding.px: 10
+
+-- ftd.image:
+src: $assets.files.images.close.svg
+height.fixed.px: 30
+$on-click$: $ftd.set-bool($a = $navbar.show-menu, v = false)
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+height.fixed.percent: 50
+align-content: center
+spacing: space-around
+
+-- ftd.text: _Home
+role: $fira-code-size-30-400
+color: #607B96
+padding-vertical.px: 12
+padding-horizontal.px: 32
+color if {navbar.hover-home}: #FCFCFC
+$on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-home, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-home, v = false)
+link: index.html
+
+-- ftd.text: _Components
+role: $fira-code-size-30-400
+color: #607B96
+padding-vertical.px: 12
+padding-horizontal.px: 32
+color if {navbar.hover-components}: #FCFCFC
+$on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-components, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-components, v = false)    
+link: /UI-Components/
+
+-- ftd.text: _Templates
+role: $fira-code-size-30-400
+color: #607B96
+padding-vertical.px: 12
+padding-horizontal.px: 32
+color if {navbar.hover-templates}: #FCFCFC
+$on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-templates, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-templates, v = false)
+link: components/
+
+-- ftd.text: _Portfolio
+role: $fira-code-size-30-400
+color: #607B96
+padding-vertical.px: 12
+padding-horizontal.px: 32
+color if {navbar.hover-portfolio}: #FCFCFC
+$on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-portfolio, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-portfolio, v = false)
+link: components/
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
 
 -- end: navbar
 
@@ -181,6 +278,8 @@ color: #4D5BCE
 -- ftd.image:
 src: $assets.files.assets.Onlineclass.png
 width.fixed.percent: 48
+margin-top.px: 20
+align-self: center
 
 -- end: ftd.row
 
@@ -201,7 +300,7 @@ width.fixed.percent: 48
 width: fill-container
 height: auto
 spacing: space-between
-
+overflow if { ftd.device == "mobile" }: auto
 
 -- template:
 cover: $assets.files.assets.image1.png
@@ -238,8 +337,9 @@ string text:
 string link:
 
 -- ftd.column:
-width.fixed.percent: 30
-
+max-width.fixed.percent if { ftd.device == "desktop" }: 30
+min-width.fixed.percent if { ftd.device == "mobile" }: 85 
+padding.px if { ftd.device == "mobile" }: 5
 
 -- ftd.column:
 padding.px: 10
@@ -264,7 +364,6 @@ background.solid: #1C2B3A
 
 -- end: ftd.column
 
-
 -- ftd.text: $template.text
 role: $fira-code-size-16-400
 color: #607B96
@@ -287,8 +386,8 @@ padding-vertical.px: 16
 -- ftd.background-image bg-blur:
 src: $assets.files.assets.Background.png
 repeat: no-repeat
-position: right-bottom
-size: contain
+position: center-center
+size: auto
 
 
 
@@ -328,7 +427,7 @@ font-family: $fira-code-assets.fonts.Fira-Code
 
 
 -- ftd.type fira-code-size-56-mobile:
-size.px: 56
+size.px: 24
 weight: 400
 font-family: $fira-code-assets.fonts.Fira-Code
 
@@ -351,7 +450,7 @@ font-family: $fira-code-assets.fonts.Fira-Code
 
 
 -- ftd.type fira-code-size-30-mobile:
-size.px: 30
+size.px: 20
 weight: 400
 font-family: $fira-code-assets.fonts.Fira-Code
 
