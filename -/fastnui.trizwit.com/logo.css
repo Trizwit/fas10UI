@@ -24,3 +24,10 @@
     background-position: 200% center;
   }
 }
+
+.side-menubar
+{
+  right: 0;
+  top: 0;
+  width: min(100%,420px);
+}
