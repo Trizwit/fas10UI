@@ -1,0 +1,79 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+
+-- component header-5:
+ftd.image-src logo:
+string logo-text:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+
+-- ftd.row:
+width: fill-container
+sticky: true
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px:20
+align-self: center
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+-- ftd.image:
+src: $header-5.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+-- ftd.text: $header-5.logo-text
+margin-horizontal.px: 10
+color: $inherited.colors.background.base
+text-align: center
+align-self: center
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: right
+
+-- ftd.text: $header-5.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-primary.base
+link: $header-5.cta-text-1-url
+
+
+-- ftd.text: $header-5.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.cta-primary.base
+link: $header-5.cta-text-2-url
+
+
+-- ftd.text: $header-5.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-primary.base
+link: $header-5.cta-text-3-url
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: header-5
