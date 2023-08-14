@@ -146,7 +146,7 @@ width: fill-container
 height: hug-content
 padding-horizontal.px: 50
 margin-vertical.px: 20
-margin-horizontal.px:20
+margin-horizontal.px: 20
 align-self: center
 spacing: space-between
 border-radius.px: 20
