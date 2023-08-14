@@ -61,7 +61,7 @@ text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.cta-primary.base
-;;link: $header-5.cta-text-1-url
+link: $header-5.cta-text-1-url
 
 
 -- ftd.text: $header-5.cta-text-2
@@ -70,7 +70,7 @@ text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
 color: $inherited.colors.cta-primary.base
-;;link: $header-5.cta-text-2-url
+link: $header-5.cta-text-2-url
 
 
 -- ftd.text: $header-5.cta-text-3
@@ -79,7 +79,7 @@ text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.cta-primary.base
-;;link: $header-5.cta-text-3-url
+link: $header-5.cta-text-3-url
 
 -- end: ftd.row
 
