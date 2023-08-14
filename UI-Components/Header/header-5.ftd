@@ -4,16 +4,17 @@
 
 -- header-5:
 logo: $assets.files.assets.logo.png
-logo-text: Portfolio
-cta-text-1: Home
-cta-text-2: Second Link
-cta-text-3: Third Link
-cta-text-1-url: Home
-cta-text-2-url: Second Link
-cta-text-3-url: Third Link
+$logo-text: Portfolio
+$cta-text-1: Home
+$cta-text-2: Second Link
+$cta-text-3: Third Link
+$cta-text-1-url: Home
+$cta-text-2-url: Second Link
+$cta-text-3-url: Third Link
+
 
 -- component header-5:
-ftd.image-src $logo:
+ftd.image-src logo:
 string $logo-text:
 string $cta-text-1:
 string $cta-text-2:
