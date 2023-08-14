@@ -2,22 +2,18 @@
 
 -- page:
 
-
 -- component page:
-
 
 -- ftd.column:
 width: fill-container
 height: auto
-height if {ftd.device == "mobile"}: fill-container
-types: 
-colors: 
+;;height if {ftd.device == "mobile"}: fill-container
 background.solid: #010C15
 
 -- ftd.column:
 width: fill-container
 height: auto
-height if {ftd.device == "mobile"}: fill-container
+;;height if {ftd.device == "mobile"}: fill-container
 background.image: $bg-blur
 
 -- ftd.row:
@@ -42,7 +38,6 @@ width: fill-container
 height: fill-container
 padding-horizontal.percent: 10
 spacing: space-around
-
 
 -- hero:
 
@@ -295,12 +290,14 @@ align-self: center
 
 -- component template-holder:
 
+-- ftd.column:
+width: fill-container
 
 -- ftd.row:
+if: { ftd.device == "desktop" }
 width: fill-container
 height: auto
 spacing: space-between
-overflow if { ftd.device == "mobile" }: auto
 
 -- template:
 cover: $assets.files.assets.image1.png
@@ -321,6 +318,31 @@ text: // Build Portfolio websites hustle free using our templates
 link: components/
 
 -- end: ftd.row
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+
+-- template:
+cover: $assets.files.assets.image1.png
+cta-button: Component Library
+text: // Use these components to build your custom websites
+link: /UI-Components/
+
+-- template:
+cover: $assets.files.assets.image2.png
+cta-button: Frontend Templates
+text: // Use these templates to create landing pages
+link: components/
+
+-- template:
+cover: $assets.files.assets.image3.png
+cta-button: Portfolio Templates
+text: // Build Portfolio websites hustle free using our templates
+link: components/
+
+-- end: ftd.column
+
+-- end: ftd.column
 
 -- end: template-holder
 
@@ -369,7 +391,6 @@ role: $fira-code-size-16-400
 color: #607B96
 padding-horizontal.px: 8
 padding-vertical.px: 16
-
 
 -- end: ftd.column
 
