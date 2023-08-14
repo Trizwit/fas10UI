@@ -13,8 +13,8 @@ cta-text-2-url: Second Link
 cta-text-3-url: Third Link
 
 -- component header-5:
-ftd.image-src logo:
-string logo-text:
+ftd.image-src $logo:
+string $logo-text:
 string $cta-text-1:
 string $cta-text-2:
 string $cta-text-3:
