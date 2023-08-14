@@ -8,9 +8,9 @@ $logo-text: Portfolio
 $cta-text-1: Home
 $cta-text-2: Second Link
 $cta-text-3: Third Link
-$cta-text-1-url: Home
-$cta-text-2-url: Second Link
-$cta-text-3-url: Third Link
+;;$cta-text-1-url: Home
+;;$cta-text-2-url: Second Link
+;;$cta-text-3-url: Third Link
 
 
 -- component header-5:
