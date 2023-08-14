@@ -10,6 +10,9 @@ string logo-text:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
+string cta-text-1-url:
+string cta-text-2-url:
+string cta-text-3-url:
 
 -- ftd.row:
 width: fill-container
