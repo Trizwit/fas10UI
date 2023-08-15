@@ -3,14 +3,12 @@
 -- import: fastn-community.github.io/code-block as cb
 
 -- header-5:
-logo: $assets.files.assets.logo.png
+logo: $assets.files.assets.logo.jpg
 logo-text: Portfolio
 cta-text-1: Home
 cta-text-2: Second Link
 cta-text-3: Third Link
-$cta-text-url-1: Home
-$cta-text-url-2: Second Link
-$cta-text-url-3: Third Link
+
 
 
 -- component header-5:
@@ -19,9 +17,7 @@ string logo-text:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
-string $cta-text-url-1:
-string $cta-text-url-2:
-string $cta-text-url-3:
+
 
 -- ftd.row:
 width: fill-container
@@ -62,7 +58,6 @@ text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.cta-primary.base
-link: $header-5.cta-text-url-1
 
 
 -- ftd.text: $header-5.cta-text-2
@@ -71,7 +66,6 @@ text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
 color: $inherited.colors.cta-primary.base
-link: $header-5.cta-text-url-2
 
 
 -- ftd.text: $header-5.cta-text-3
@@ -80,7 +74,6 @@ text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.cta-primary.base
-link: $header-5.cta-text-url-3
 
 -- end: ftd.row
 
