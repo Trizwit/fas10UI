@@ -54,7 +54,7 @@ width: fill-container
 height: hug-content
 padding-horizontal.px: 50
 margin-vertical.px: 20
-margin-horizontal.px:20
+margin-horizontal.px: 20
 spacing: space-between
 border-radius.px: 20
 background.solid: $inherited.colors.border
@@ -157,7 +157,7 @@ width: fill-container
 height: hug-content
 padding-horizontal.px: 50
 margin-vertical.px: 20
-margin-horizontal.px:20
+margin-horizontal.px: 20
 spacing: space-between
 border-radius.px: 20
 background.solid: $inherited.colors.border
