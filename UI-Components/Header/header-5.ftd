@@ -2,13 +2,21 @@
 -- import: fastnui.trizwit.com/lib
 -- import: fastn-community.github.io/code-block as cb
 
+-- lib.page:
+
+-- lib.container-wrapper:
+if: { !lib.code-open }
+
 -- header-5:
-logo: $assets.files.assets.logo.jpg
+logo: $assets.files.assets.logo.jpg 
 logo-text: Portfolio
 cta-text-1: Home
 cta-text-2: Second Link
 cta-text-3: Third Link
 
+-- end: lib.container-wrapper
+
+-- end: lib.page
 
 
 -- component header-5:
