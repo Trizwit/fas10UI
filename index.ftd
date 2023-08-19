@@ -6,8 +6,8 @@
 
 -- ftd.column:
 width: fill-container
-height: fill-container
-height if {ftd.device == "mobile"}: fill-container
+height if {ftd.device == "desktop"}: hug-content
+height if {ftd.device == "mobile"}: auto
 types: 
 colors: 
 background.solid: #010C15
@@ -15,7 +15,7 @@ background.solid: #010C15
 -- ftd.column:
 width: fill-container
 height: fill-container
-height if {ftd.device == "mobile"}: fill-container
+height if {ftd.device == "mobile"}: auto
 background.image: $bg-blur
 
 -- ftd.row:
