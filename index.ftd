@@ -8,7 +8,7 @@
 
 -- ftd.column:
 width: fill-container
-height: auto
+height: fill-container
 height if {ftd.device == "mobile"}: fill-container
 types: 
 colors: 
@@ -16,13 +16,13 @@ background.solid: #010C15
 
 -- ftd.column:
 width: fill-container
-height: auto
+height: fill-container
 height if {ftd.device == "mobile"}: fill-container
 background.image: $bg-blur
 
 -- ftd.row:
 width: fill-container
-height: auto
+;;height: auto
 padding-vertical.px: 5
 border-bottom-width.px: 1
 border-bottom-color: #1E2D3D
@@ -39,7 +39,7 @@ $hover-portfolio: false
 
 -- ftd.column:
 width: fill-container
-height: fill-container
+;;height: fill-container
 padding-horizontal.percent: 10
 spacing: space-around
 
