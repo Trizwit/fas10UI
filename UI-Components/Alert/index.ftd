@@ -105,7 +105,6 @@ align-content: center
 
 
 -- ui-wrapper:
-title: Alert
 
 -- end: ftd.column
 
@@ -196,7 +195,6 @@ link: $button.url
 -- boolean $use-open: false
 
 -- component ui-wrapper:
-string title: 
 
 -- ui-1:
 title: Alert
