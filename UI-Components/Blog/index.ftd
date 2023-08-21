@@ -194,6 +194,8 @@ link: $button.url
 
 -- boolean $code-open-1: false
 -- boolean $code-open-2: false
+-- boolean $use-open-1: false
+-- boolean $use-open-2: false
 
 -- component ui-wrapper:
 ;;string title: 
@@ -256,8 +258,54 @@ background.solid: #011221
 background.solid if {code-open-1}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-1)
 
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-1}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-1)
+
 -- end: ftd.row
 
+-- ftd.column:
+if: { use-open-1}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/lib
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- lib.blog-1: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.720x400.png
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- end: cb.code
+
+-- end: ftd.column
 
 -- lib.container-wrapper:
 if: { !code-open-1 }
@@ -419,8 +467,53 @@ background.solid: #011221
 background.solid if {$code-open-2}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-2)
 
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-2}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-2)
+
 -- end: ftd.row
 
+-- ftd.column:
+if: { use-open-2}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Blog/blog-2
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- blog-2.blog-2: Raclette Blueberry Nextious Level
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+-- end: cb.code
+
+-- end: ftd.column
 
 -- lib.container-wrapper:
 if: { !code-open-2 }
