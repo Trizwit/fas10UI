@@ -144,7 +144,7 @@ height: fill-container
 align-content: top-center
 padding-top.px: 8
 spacing.fixed.px: 10
-css: [ $assets.files.scroll.css ]
+css: [ $assets.files.style.scroll.css ]
 classes: body 
 children: $selector.c
 
@@ -193,12 +193,13 @@ link: $button.url
 
 
 -- boolean $code-open: false
+-- boolean $use-open: false
 
 -- component ui-wrapper:
 string title: 
 
 -- ui-1:
-title: Alert Components
+title: Alert
 
 -- end: ui-wrapper
 
@@ -221,7 +222,7 @@ height.fixed.percent: 100
 ;;align-content: top-center
 colors: $fastn-cs-tail.main
 types: $opensans-typography.types
-css: [ $assets.files.scroll.css ]
+css: [ $assets.files.style.scroll.css ]
 classes: body 
 
 -- ftd.row:
@@ -248,8 +249,77 @@ background.solid: #011221
 background.solid if {code-open}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open)
 
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open)
+
 -- end: ftd.row
 
+-- ftd.column:
+if: { use-open}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Alert/alert
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- alert.primary-alert: 
+content: A simple primary alert—check it out!
+
+
+\-- alert.secondary-alert:
+content: A simple secondary alert—check it out!
+
+
+\-- alert.success-alert:
+content: A simple success alert—check it out!
+
+
+\-- alert.danger-alert:
+content: A simple danger alert—check it out!
+
+
+\-- alert.warning-alert:
+content: A simple warning alert—check it out!
+
+
+\-- alert.info-alert:
+content: A simple info alert—check it out!
+
+
+\-- alert.light-alert:
+content: A simple light alert—check it out!
+
+
+\-- alert.dark-alert:
+content: A simple dark alert—check it out!
+
+-- end: cb.code
+
+-- end: ftd.column
 
 -- lib.container-wrapper:
 if: { !code-open }
@@ -527,8 +597,6 @@ content: $dark-alert.content
 
 
 -- end: lib.container-wrapper
-
-
 
 
 
