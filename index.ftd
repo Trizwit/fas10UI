@@ -6,7 +6,7 @@
 
 -- ftd.column:
 width: fill-container
-height if {ftd.device == "desktop"}: hug-content
+height if {ftd.device == "desktop"}: fill-container
 height if {ftd.device == "mobile"}: auto
 types: 
 colors: 
@@ -78,7 +78,7 @@ spacing: space-between
 -- ftd.text: FASTN UI
 role: $fira-code-size-16-400
 color: #607B96
-css: [ $assets.files.logo.css]
+css: [ $assets.files.style.logo.css]
 classes: animate-character
 align-self: center
 margin-left.percent: 10
@@ -274,7 +274,7 @@ color: #4D5BCE
 
 -- ftd.image:
 src: $assets.files.assets.Onlineclass.png
-width.fixed.percent: 48
+width.fixed.percent: 40
 margin-top.px: 20
 align-self: center
 

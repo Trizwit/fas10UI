@@ -141,7 +141,7 @@ height: fill-container
 align-content: top-center
 padding-top.px: 8
 spacing.fixed.px: 10
-css: [ $assets.files.scroll.css ]
+css: [ $assets.files.style.scroll.css ]
 classes: body 
 children: $selector.c
 
