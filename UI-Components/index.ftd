@@ -168,7 +168,7 @@ string url:
 width.fixed.percent: 90
 padding-vertical.px: 32
 color: #FFF
-role: $fira-code-size-16-400
+role: $fira-code-size-scroll-400
 align-self: center
 text-align: center
 border-radius.px: 8
@@ -226,3 +226,27 @@ font-family: $fira-code-assets.fonts.Fira-Code
 -- ftd.responsive-type fira-code-size-16-400:
 desktop: $fira-code-size-16-desktop
 mobile: $fira-code-size-16-mobile
+
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-scroll-desktop:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-scroll-mobile:
+size.px: 10
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-scroll-400:
+desktop: $fira-code-size-scroll-desktop
+mobile: $fira-code-size-scroll-mobile
