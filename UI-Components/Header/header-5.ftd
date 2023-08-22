@@ -8,7 +8,7 @@
 if: { !lib.code-open }
 
 -- header-5:
-logo: $assets.files.assets.logo.jpg 
+logo: $assets.files.images.trizwit.jpeg
 logo-text: Portfolio
 cta-text-1: Home
 cta-text-2: Second Link
