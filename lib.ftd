@@ -2,6 +2,7 @@
 -- import: fastnui.trizwit.com/common
 -- import: fastn-community.github.io/opensans-typography
 -- import: shaheen-senpai.github.io/fastn-cs-tail
+-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
 -- import: fastn/processors as pr
 
 -- boolean $color-mode: false
@@ -604,7 +605,7 @@ height.fixed.px: 32
 margin-right.px: 4
 
 -- ftd.text: Github
-role: $inherited.types.label-large
+role: $fira-code-size-16-400
 
 -- end: ftd.row
 
@@ -686,3 +687,30 @@ link: $blog-1.cta-link
 -- end: ftd.column
 
 -- end: blog-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-16-desktop:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-16-mobile:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-16-400:
+desktop: $fira-code-size-16-desktop
+mobile: $fira-code-size-16-mobile
