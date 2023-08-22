@@ -104,6 +104,15 @@ align-content: center
 
 -- ui-wrapper:
 
+-- ftd.column:
+align-self: start
+anchor: window
+bottom.percent: 12
+left.percent: 50
+
+-- lib.github-button:
+-- end: ftd.column
+
 -- end: ftd.column
 
 ;; page container end
