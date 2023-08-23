@@ -1,6 +1,10 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
 -- import: fastnui.trizwit.com/UI-Components/Hero/hero-1
 -- import: fastnui.trizwit.com/UI-Components/Hero/hero-2
+-- import: fastnui.trizwit.com/UI-Components/Hero/hero-3
+-- import: fastnui.trizwit.com/UI-Components/Hero/hero-4
+-- import: fastnui.trizwit.com/UI-Components/Hero/hero-5
+-- import: fastnui.trizwit.com/UI-Components/Hero/hero-6
 
 -- page:
 
@@ -194,8 +198,17 @@ link: $button.url
 
 -- boolean $code-open-1: false
 -- boolean $code-open-2: false
+-- boolean $code-open-3: false
+-- boolean $code-open-4: false
+-- boolean $code-open-5: false
+-- boolean $code-open-6: false
+
 -- boolean $use-open-1: false
 -- boolean $use-open-2: false
+-- boolean $use-open-3: false
+-- boolean $use-open-4: false
+-- boolean $use-open-5: false
+-- boolean $use-open-6: false
 
 -- component ui-wrapper:
 
@@ -210,6 +223,18 @@ title: Hero-1
 
 -- ui-2:
 title: Hero-2
+
+-- ui-3:
+title: Hero-3
+
+-- ui-4:
+title: Hero-4
+
+-- ui-5:
+title: Hero-5
+
+-- ui-6:
+title: Hero-6
 
 -- end: ftd.column
 
@@ -650,12 +675,1091 @@ link: $hero-2.link-2
 
 -- end: lib.container-wrapper
 
+-- end: ftd.column
+
+-- end: ui-2
+
+
+
+
+
+
+
+
+
+
+
+-- component ui-3:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-3.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-3}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-3)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-3}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-3)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-3}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Hero/hero-3
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- hero-3.hero-3: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-button-2: Button
+link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.Hero.hero-3.siz.png
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+-- end: cb.code
 
 -- end: ftd.column
 
+-- lib.container-wrapper:
+if: { !code-open-3 }
+
+-- hero-3.hero-3: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-button-2: Button
+link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.Hero.hero-3.siz.png
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-3 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- hero-3: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-button-2: Button
+link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.Hero.hero-3.siz.png
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+\-- end: lib.container-wrapper
+
+\-- component hero-3:
+ftd.image-src cover:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+string cta-button-2:
+string link-2:
+boolean $is-active-2: false
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: $inherited.colors.background.base
 
 
--- end: ui-2
+\-- ftd.column:
+width.fixed.percent: 50
+height: auto
+align-content: center
+
+\-- ftd.image:
+src: $hero-3.cover   
+width.fixed.percent: 100
+height: auto 
+\-- end: ftd.column
+
+
+\-- ftd.column:
+width.fixed.percent: 40
+align-content: left
+align-self: center
+margin-left.px: 60
+
+\-- ftd.text: $hero-3.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: $inherited.colors.border
+
+\-- ftd.text: $hero-3.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+
+
+\-- ftd.row:
+
+\-- ftd.text: $hero-3.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {hero-3.is-active-1}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-1, v = false)
+color: $inherited.colors.border
+link: $hero-3.link-1
+
+\-- ftd.text: $hero-3.cta-button-2
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-left.px: 16
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-3.is-active-2}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $hero-3.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-3.is-active-2, v = false)
+color: $inherited.colors.border
+link: $hero-3.link-2
+
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+
+\-- end: ftd.row
+
+\-- end: hero-3
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-3
+
+
+
+
+
+
+
+
+
+-- component ui-4:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-4.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-4}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-4)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-4}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-4)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-4}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Hero/hero-4
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- hero-4.hero-4: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.Hero.hero-4.siz.png
+playstore: $assets.files.images.Hero.hero-4.playstore.svg
+appstore: $assets.files.images.Hero.hero-4.appstore.svg
+link-playstore: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+link-appstore: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag.
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-4 }
+
+-- hero-4.hero-4: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.Hero.hero-4.siz.png
+playstore: $assets.files.images.Hero.hero-4.playstore.svg
+appstore: $assets.files.images.Hero.hero-4.appstore.svg
+link-playstore: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+link-appstore: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag.
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-4 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- hero-4: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.Hero.hero-4.siz.png
+playstore: $assets.files.images.Hero.hero-4.playstore.svg
+appstore: $assets.files.images.Hero.hero-4.appstore.svg
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag.
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+\-- end: lib.container-wrapper
+
+\-- component hero-4:
+ftd.image-src cover:
+ftd.image-src playstore:
+ftd.image-src appstore:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+string link-playstore:
+string link-appstore: 
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: $inherited.colors.background.base
+
+\-- ftd.column:
+width.fixed.percent: 40
+align-content: left
+align-self: center
+margin-right.px: 60
+
+\-- ftd.text: $hero-4.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: $inherited.colors.border
+
+\-- ftd.text: $hero-4.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+
+
+\-- ftd.row:
+width: fill-container 
+align-content: center
+margin-bottom.px: 30
+
+\-- ftd.text-input:
+placeholder: Placeholder
+padding-vertical.px: 4
+padding-horizontal.px: 8
+margin-right.px: 16  
+width: fill-container 
+border-radius.px: 5
+border-width.px: 1
+border-color: $inherited.colors.border
+type: text
+role: $inherited.types.copy-small
+background.solid: $inherited.colors.background.code
+color: $inherited.colors.border
+
+\-- ftd.text: $hero-4.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-4.is-active-1}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $hero-4.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-4.is-active-1, v = false)
+color: $inherited.colors.border
+link: $hero-4.link-1
+
+\-- end: ftd.row
+
+\-- ftd.row:
+
+\-- ftd.row:
+height: hug-content
+padding-vertical.px: 12
+padding-horizontal.px: 20
+border-radius.px: 8
+background.solid: $inherited.colors.cta-tertiary.hover
+link: $hero-4.link-playstore
+
+\-- ftd.image:
+src: $hero-4.playstore
+width.fixed.px: 24
+height.fixed.px: 24
+align-self: center
+
+\-- ftd.column:
+margin-left.px: 16
+align-content: left
+
+\-- ftd.text: GET IT ON
+role: $inherited.types.label-small
+margin-bottom.px: 4
+color: $inherited.colors.border
+
+\-- ftd.text: Google Play
+role: $inherited.types.label-large
+color: $inherited.colors.border
+
+\-- end: ftd.column
+\-- end: ftd.row
+
+
+\-- ftd.row:
+height: hug-content
+padding-vertical.px: 12
+padding-horizontal.px: 20
+margin-left.px: 16
+border-radius.px: 8
+background.solid: $inherited.colors.cta-tertiary.hover
+link: $hero-4.link-appstore
+
+\-- ftd.image:
+src: $hero-4.appstore
+width.fixed.px: 24
+height.fixed.px: 24
+align-self: center
+
+\-- ftd.column:
+margin-left.px: 16
+align-content: left
+
+\-- ftd.text: Download on the
+role: $inherited.types.label-small
+margin-bottom.px: 4
+color: $inherited.colors.border
+
+\-- ftd.text: App Store
+role: $inherited.types.label-large
+color: $inherited.colors.border
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+
+\-- ftd.column:
+width.fixed.percent: 50
+height: auto
+align-content: center
+
+\-- ftd.image:
+src: $hero-4.cover   
+width.fixed.percent: 100
+height: auto 
+
+\-- end: ftd.column
+
+
+\-- end: ftd.row
+
+\-- end: hero-4
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-4
+
+
+
+
+
+
+
+
+
+
+-- component ui-5:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-5.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-5}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-5)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-5}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-5)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-5}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Hero/hero-5
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- hero-5.hero-5: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-button-2: Button
+link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.Hero.hero-2.siz.png
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-5 }
+
+-- hero-5.hero-5: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-button-2: Button
+link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.Hero.hero-2.siz.png
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-5 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- hero-5: Before they sold out readymade gluten
+cta-button-1: Button
+link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-button-2: Button
+link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cover: $assets.files.images.Hero.hero-5.siz.png
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
+Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+\-- end: lib.container-wrapper
+
+\-- component hero-5:
+ftd.image-src cover:
+caption headline:
+body content:
+string cta-button-1:
+string link-1:
+boolean $is-active-1: false
+string cta-button-2:
+string link-2:
+boolean $is-active-2: false
+
+\-- ftd.column:
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 100
+padding-vertical.px: 96
+background.solid: $inherited.colors.background.base
+color: $inherited.colors.border
+
+\-- ftd.text: $hero-5.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+
+\-- ftd.text: $hero-5.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+
+\-- ftd.row:
+
+\-- ftd.text: $hero-5.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {hero-5.is-active-1}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-5.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-5.is-active-1, v = false)
+color: $inherited.colors.border
+link: $hero-5.link-1
+
+\-- ftd.text: $hero-5.cta-button-2
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-left.px: 16
+border-radius.px: 5
+background.solid: $inherited.colors.custom.one
+background.solid if {hero-5.is-active-2}: $inherited.colors.info.text
+$on-mouse-enter$: $ftd.set-bool($a = $hero-5.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-5.is-active-2, v = false)
+color: $inherited.colors.border
+link: $hero-5.link-2
+
+\-- end: ftd.row
+
+\-- ftd.image:
+src: $hero-5.cover   
+width.fixed.percent: 45
+height: auto 
+
+\-- end: ftd.column
+
+\-- end: hero-5
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-5
+
+
+
+
+
+
+
+
+
+-- component ui-6:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-6.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-6}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-6)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-6}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-6)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-6}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Hero/hero-6
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- hero-6.hero-6: Hello I'm Petrica AVA
+role1: Designer
+role2: Developer
+role3: Freelancer
+facebook: $assets.files.images.Footer.facebook.svg
+twitter: $assets.files.images.Footer.twitter.svg
+instagram: $assets.files.images.Footer.instagram.svg
+linkedin: $assets.files.images.Footer.linkedin.svg
+cta-primary-btn: Button
+cta-primary-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-secondary-btn: Button
+cta-secondary-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+sub-text: Welcome to my template
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant
+cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag
+selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-6 }
+
+-- hero-6.hero-6: Hello I'm Petrica AVA
+role1: Designer
+role2: Developer
+role3: Freelancer
+facebook: $assets.files.images.Footer.facebook.svg
+twitter: $assets.files.images.Footer.twitter.svg
+instagram: $assets.files.images.Footer.instagram.svg
+linkedin: $assets.files.images.Footer.linkedin.svg
+cta-primary-btn: Button
+cta-primary-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-secondary-btn: Button
+cta-secondary-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+sub-text: Welcome to my template
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant
+cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag
+selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-6 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- hero-6: Hello I'm Petrica AVA
+role1: Designer
+role2: Developer
+role3: Freelancer
+facebook: $assets.files.images.Footer.facebook.svg
+twitter: $assets.files.images.Footer.twitter.svg
+instagram: $assets.files.images.Footer.instagram.svg
+linkedin: $assets.files.images.Footer.linkedin.svg
+cta-primary-btn: Button
+cta-primary-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-secondary-btn: Button
+cta-secondary-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+sub-text: Welcome to my template
+
+Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant
+cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag
+selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
+
+\-- end: lib.container-wrapper
+
+\-- component hero-6:
+caption title:
+body body:
+optional string role1:
+optional string role2:
+optional string role3:
+boolean $mouse-in: false
+boolean $mouse-enter: false
+optional ftd.image-src facebook:
+optional ftd.image-src twitter:
+optional ftd.image-src instagram:
+optional ftd.image-src linkedin:
+optional string cta-primary-btn:
+optional string cta-primary-link:
+optional string cta-secondary-btn:
+optional string cta-secondary-link:
+optional string sub-text:
+
+\-- ftd.column:
+width: fill-container
+align-self: center
+
+\-- ftd.row:
+background.image: $bg-image
+height: fill-container
+width: fill-container
+anchor: parent
+z-index: 1
+
+\-- end: ftd.row
+
+\-- ftd.column:
+spacing.fixed.px: 18
+width.fixed.px: 880
+z-index: 10
+padding-vertical.px: 42
+padding-horizontal.px: 42
+
+\-- ftd.column:
+spacing.fixed.px: 8
+
+\-- ftd.text: $hero-6.sub-text
+role: $inherited.types.copy-small
+color: $inherited.colors.background.overlay
+
+\-- ftd.row:
+width.fixed.px: 52
+border-top-width.px: 2
+border-color: $inherited.colors.background.overlay
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- ftd.text: $hero-6.title
+role: $inherited.types.heading-hero
+color: $inherited.colors.background.overlay
+
+\-- ftd.row:
+spacing.fixed.px: 12
+align-content: center
+
+\-- ftd.text: $hero-6.role1
+role: $inherited.types.copy-large
+color: $inherited.colors.background.overlay
+style: medium
+
+\-- ftd.row:
+width.fixed.px: 12
+border-top-width.px: 2
+border-color: $inherited.colors.background.overlay
+
+\-- end: ftd.row
+
+\-- ftd.text: $hero-6.role2
+role: $inherited.types.copy-large
+color: $inherited.colors.background.overlay
+style: medium
+
+\-- ftd.row:
+width.fixed.px: 12
+border-top-width.px: 2
+border-color: $inherited.colors.background.overlay
+
+\-- end: ftd.row
+
+\-- ftd.text: $hero-6.role3
+role: $inherited.types.copy-large
+color: $inherited.colors.background.overlay
+style: medium
+
+\-- end: ftd.row
+
+\-- ftd.text:
+role: $inherited.types.copy-large
+color: $inherited.colors.background.overlay
+
+$hero-6.body
+
+\-- ftd.row:
+spacing.fixed.px: 24
+padding-vertical.px: 12
+
+\-- ftd.row:
+background.solid: $inherited.colors.cta-tertiary.base
+border-radius.px: 100
+width.fixed.px: 32
+height.fixed.px: 32
+align-content: center
+
+\-- ftd.image:
+src: $hero-6.facebook
+width.fixed.px: 18
+
+\-- end: ftd.row
+
+\-- ftd.row:
+background.solid: $inherited.colors.cta-tertiary.base
+border-radius.px: 100
+width.fixed.px: 32
+height.fixed.px: 32
+align-content: center
+
+\-- ftd.image:
+src: $hero-6.twitter
+width.fixed.px: 18
+
+\-- end: ftd.row
+
+\-- ftd.row:
+background.solid: $inherited.colors.cta-tertiary.base
+border-radius.px: 100
+width.fixed.px: 32
+height.fixed.px: 32
+align-content: center
+
+\-- ftd.image:
+src: $hero-6.instagram
+width.fixed.px: 18
+
+\-- end: ftd.row
+
+\-- ftd.row:
+background.solid: $inherited.colors.cta-tertiary.base
+border-radius.px: 100
+width.fixed.px: 32
+height.fixed.px: 32
+align-content: center
+
+\-- ftd.image:
+src: $hero-6.linkedin
+width.fixed.px: 18
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- ftd.row:
+spacing.fixed.px: 12
+
+\-- ftd.text: $hero-6.cta-primary-btn
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+background.solid: $inherited.colors.background.base
+background.solid if {hero-6.mouse-in}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-6.mouse-in, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-6.mouse-in, v = false)
+color: $inherited.colors.border
+link: $hero-6.cta-primary-link
+
+\-- ftd.text: $hero-6.cta-secondary-btn
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-width.px: 1
+border-color: $inherited.colors.background.base
+background.solid if {hero-6.mouse-enter}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-6.mouse-enter, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-6.mouse-enter, v = false)
+color: $inherited.colors.cta-primary.hover
+color if {hero-6.mouse-enter}: $inherited.colors.border
+link: $hero-6.cta-secondary-link
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+\-- end: hero-6
+
+\-- ftd.background-image bg-image: 
+src: $assets.files.images.Hero.hero-6.bgimage.jpg
+repeat: no-repeat
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-6
+
+
+
 
 
 
