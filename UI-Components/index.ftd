@@ -205,11 +205,28 @@ link: $button.url
 width: fill-container
 height: fill-container
 align-content: top-center
+spacing.fixed.px: 25
 
 -- ftd.text: How To Use UI-components 
 color: #FFF
 role: $fira-code-size-56-400
-margin-top.px: 32
+css: [ $assets.files.style.logo.css]
+classes: animate-character
+text-align: center
+margin-vertical.px: 32
+
+
+-- steps: Step 1:
+
+Copy the fastn dependencies and add them in FASTN.ftd file.
+
+-- steps: Step 2:
+
+Copy the import statement and add it in the ftd file where you want to use the component.
+
+-- steps: Step 3:
+
+Copy the syntax for calling the component and add it in ftd file where you want to use the component.
 
 
 -- end: ftd.column
@@ -217,6 +234,35 @@ margin-top.px: 32
 -- end: ui-wrapper
 
 
+
+
+
+
+
+-- component steps:
+caption name:
+body text:
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+spacing.fixed.px: 20
+margin-left.percent: 8
+
+-- ftd.text: $steps.name
+width.fixed.percent: 15
+color: #FFF
+role: $fira-code-size-30-400
+
+-- ftd.text: $steps.text
+width.fixed.percent: 75
+color: #FFF
+role: $fira-code-size-30-400
+
+
+-- end: ftd.row
+
+-- end: steps
 
 
 
@@ -285,3 +331,24 @@ font-family: $fira-code-assets.fonts.Fira-Code
 -- ftd.responsive-type fira-code-size-56-400:
 desktop: $fira-code-size-56-desktop
 mobile: $fira-code-size-56-mobile
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-30-desktop:
+size.px: 30
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-30-mobile:
+size.px: 20
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-30-400:
+desktop: $fira-code-size-30-desktop
+mobile: $fira-code-size-30-mobile
