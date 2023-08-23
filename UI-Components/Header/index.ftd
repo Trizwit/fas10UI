@@ -1,6 +1,9 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
 -- import: fastnui.trizwit.com/UI-Components/Header/header-1
 -- import: fastnui.trizwit.com/UI-Components/Header/header-2
+-- import: fastnui.trizwit.com/UI-Components/Header/header-3
+-- import: fastnui.trizwit.com/UI-Components/Header/header-4
+-- import: fastnui.trizwit.com/UI-Components/Header/header-5
 
 -- page:
 
@@ -171,7 +174,7 @@ string url:
 width.fixed.percent: 90
 padding-vertical.px: 32
 color: #FFF
-role: $fira-code-size-16-400
+role: $fira-code-size-scroll-400
 align-self: center
 text-align: center
 border-radius.px: 8
@@ -194,8 +197,15 @@ link: $button.url
 
 -- boolean $code-open-1: false
 -- boolean $code-open-2: false
+-- boolean $code-open-3: false
+-- boolean $code-open-4: false
+-- boolean $code-open-5: false
+
 -- boolean $use-open-1: false
 -- boolean $use-open-2: false
+-- boolean $use-open-3: false
+-- boolean $use-open-4: false
+-- boolean $use-open-5: false
 
 -- component ui-wrapper:
 
@@ -210,6 +220,15 @@ title: Header-1
 
 -- ui-2:
 title: Header-2
+
+-- ui-3:
+title: Header-3
+
+-- ui-4:
+title: Header-4
+
+-- ui-5:
+title: Header-5
 
 -- end: ftd.column
 
@@ -647,6 +666,635 @@ link: https://tailblocks.cc/
 
 
 
+-- component ui-3:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-3.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-3}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-3)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-3}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-3)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-3}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Header/header-3
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- header-3.header-3: 
+logo: $assets.files.images.Header.header-3.trizwit.jpeg
+logo-test: TRIZWIT
+cta-text-1: First Link
+cta-text-2: Second Link
+cta-text-3: Third Link
+cta-button-1: Button
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-3 }
+
+-- header-3.header-3: 
+logo: $assets.files.images.Header.header-3.trizwit.jpeg
+logo-test: TRIZWIT
+cta-text-1: First Link
+cta-text-2: Second Link
+cta-text-3: Third Link
+cta-button-1: Button
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-3 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- header-3: 
+logo: $assets.files.images.Header.header-3.trizwit.jpeg
+logo-test: TRIZWIT
+cta-text-1: First Link
+cta-text-2: Second Link
+cta-text-3: Third Link
+cta-button-1: Button
+
+\-- end: lib.container-wrapper
+
+\-- component header-3:
+string logo-test:
+ftd.image-src logo:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-button-1:
+
+\-- ftd.row:
+width: fill-container
+sticky: true
+
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px:20
+align-content: center
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: left
+
+
+\-- ftd.text: $header-3.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-right.px: 32
+color: $inherited.colors.background.base
+
+\-- ftd.text: $header-3.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.background.base
+
+\-- ftd.text: $header-3.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.background.base
+
+\-- end: ftd.row
+
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: left
+
+
+
+\-- ftd.image:
+src: $header-3.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+margin-right.px: 10
+margin-left.px: 38
+
+\-- ftd.text: $header-3.logo-test
+color: $inherited.colors.custom.four
+text-align: center
+align-self: center
+margin-right.px: 30
+
+\-- end: ftd.row
+
+\-- ftd.row:
+align-self: center
+
+\-- ftd.text: $header-3.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 15
+padding-horizontal.px: 24
+border-radius.px: 10
+background.solid: $inherited.colors.custom.seven
+color: $inherited.colors.background.base
+link: https://tailblocks.cc/
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: header-3
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-3
+
+
+
+
+
+
+
+
+
+-- component ui-4:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-4.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-4}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-4)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-4}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-4)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-4}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Header/header-4
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- header-4.header-4: 
+logo: $assets.files.images.Header.header-4.trizwit.jpeg
+logo-test: TRIZWIT
+cta-text-1: First Link
+cta-text-2: Second Link
+cta-text-3: Third Link
+cta-button-1: Button
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-4 }
+
+-- header-4.header-4: 
+logo: $assets.files.images.Header.header-4.trizwit.jpeg
+logo-test: TRIZWIT
+cta-text-1: First Link
+cta-text-2: Second Link
+cta-text-3: Third Link
+cta-button-1: Button
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-4 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- header-4: 
+logo: $assets.files.images.Header.header-4.trizwit.jpeg
+logo-test: TRIZWIT
+cta-text-1: First Link
+cta-text-2: Second Link
+cta-text-3: Third Link
+cta-button-1: Button
+
+\-- end: lib.container-wrapper
+
+\-- component header-4:
+ftd.image-src logo:
+string logo-test:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+string cta-button-1:
+
+
+\-- ftd.row:
+width: fill-container
+sticky: true
+
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px: 20
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+
+\-- ftd.image:
+src: $header-4.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+margin-right.px: 10
+
+\-- ftd.text: $header-4.logo-test
+margin-right.px: 10
+color: $inherited.colors.custom.four
+text-align: center
+align-self: center
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: center
+
+
+\-- ftd.text: $header-4.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.background.base
+
+\-- ftd.text: $header-4.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.background.base
+
+\-- ftd.text: $header-4.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.background.base
+
+\-- end: ftd.row
+
+
+\-- ftd.text: $header-4.cta-button-1
+align-self: center
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 15
+padding-horizontal.px: 24
+border-radius.px: 10
+background.solid: $inherited.colors.custom.seven
+color: $inherited.colors.background.base
+link: https://tailblocks.cc/
+
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: header-4
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-4
+
+
+
+
+
+
+
+
+
+-- component ui-5:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-5.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-5}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-5)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-5}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-5)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-5}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Header/header-5
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- header-5.header-5:
+logo: $assets.files.images.trizwit.jpeg
+logo-text: Portfolio
+cta-text-1: Home
+cta-text-2: Second Link
+cta-text-3: Third Link
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-5 }
+
+-- header-5.header-5:
+logo: $assets.files.images.trizwit.jpeg
+logo-text: Portfolio
+cta-text-1: Home
+cta-text-2: Second Link
+cta-text-3: Third Link
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-5 }
+
+-- cb.code:
+lang: ftd
+
+\-- component header-5:
+ftd.image-src logo:
+string logo-text:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+
+
+\-- ftd.row:
+width: fill-container
+sticky: true
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px: 20
+align-self: center
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+\-- ftd.image:
+src: $header-5.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+\-- ftd.text: $header-5.logo-text
+margin-horizontal.px: 10
+color: $inherited.colors.background.base
+text-align: center
+align-self: center
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: right
+
+\-- ftd.text: $header-5.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-primary.base
+
+
+\-- ftd.text: $header-5.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.cta-primary.base
+
+
+\-- ftd.text: $header-5.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-primary.base
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: header-5
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-5
+
+
+
+
+
+
+
+
+
+
 -- ftd.type fira-code-size-16-desktop:
 size.px: 16
 weight: 400
@@ -661,3 +1309,22 @@ font-family: $fira-code-assets.fonts.Fira-Code
 -- ftd.responsive-type fira-code-size-16-400:
 desktop: $fira-code-size-16-desktop
 mobile: $fira-code-size-16-mobile
+
+
+
+
+
+-- ftd.type fira-code-size-scroll-desktop:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-scroll-mobile:
+size.px: 10
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-scroll-400:
+desktop: $fira-code-size-scroll-desktop
+mobile: $fira-code-size-scroll-mobile
