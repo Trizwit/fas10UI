@@ -3,6 +3,7 @@
 -- import: fastnui.trizwit.com/UI-Components/Header/header-2
 -- import: fastnui.trizwit.com/UI-Components/Header/header-3
 -- import: fastnui.trizwit.com/UI-Components/Header/header-4
+-- import: fastnui.trizwit.com/UI-Components/Header/header-5
 
 -- page:
 
@@ -198,11 +199,13 @@ link: $button.url
 -- boolean $code-open-2: false
 -- boolean $code-open-3: false
 -- boolean $code-open-4: false
+-- boolean $code-open-5: false
 
 -- boolean $use-open-1: false
 -- boolean $use-open-2: false
 -- boolean $use-open-3: false
 -- boolean $use-open-4: false
+-- boolean $use-open-5: false
 
 -- component ui-wrapper:
 
@@ -223,6 +226,9 @@ title: Header-3
 
 -- ui-4:
 title: Header-4
+
+-- ui-5:
+title: Header-5
 
 -- end: ftd.column
 
@@ -1096,6 +1102,189 @@ link: https://tailblocks.cc/
 
 
 
+
+
+
+
+
+
+-- component ui-5:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-5.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-5}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-5)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-5}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-5)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-5}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Header/header-5
+
+-- end: cb.code
+
+-- cb.code:
+lang: ftd
+
+\-- header-5.header-5:
+logo: $assets.files.images.trizwit.jpeg
+logo-text: Portfolio
+cta-text-1: Home
+cta-text-2: Second Link
+cta-text-3: Third Link
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-5 }
+
+-- header-5.header-5:
+logo: $assets.files.images.trizwit.jpeg
+logo-text: Portfolio
+cta-text-1: Home
+cta-text-2: Second Link
+cta-text-3: Third Link
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-5 }
+
+-- cb.code:
+lang: ftd
+
+\-- component header-5:
+ftd.image-src logo:
+string logo-text:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+
+
+\-- ftd.row:
+width: fill-container
+sticky: true
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+padding-horizontal.px: 50
+margin-vertical.px: 20
+margin-horizontal.px: 20
+align-self: center
+spacing: space-between
+border-radius.px: 20
+background.solid: $inherited.colors.border
+
+\-- ftd.image:
+src: $header-5.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+\-- ftd.text: $header-5.logo-text
+margin-horizontal.px: 10
+color: $inherited.colors.background.base
+text-align: center
+align-self: center
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: right
+
+\-- ftd.text: $header-5.cta-text-1
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-primary.base
+
+
+\-- ftd.text: $header-5.cta-text-2
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 0
+color: $inherited.colors.cta-primary.base
+
+
+\-- ftd.text: $header-5.cta-text-3
+role: $inherited.types.label-large
+text-align: center
+margin-vertical.px: 28
+margin-horizontal.px: 32
+color: $inherited.colors.cta-primary.base
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: header-5
+
+-- end: cb.code
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-5
 
 
 
