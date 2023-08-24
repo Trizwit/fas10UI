@@ -1,0 +1,50 @@
+-- boolean $open: true
+
+-- ftd.shadow s:
+color: #A3A5AD
+blur.px: 5
+
+
+-- component toast:
+optional string text: sample text
+optional integer width: 0
+optional integer height: 0
+optional integer top: 0
+optional integer left: 0
+optional integer right: 0
+optional integer bottom: 0
+optional string background_color: #fff
+optional string text_color: #000
+ftd.image-src cross:
+
+-- ftd.row:
+if: { $open }
+width.fixed.px: $toast.width
+height.fixed.px: $toast.height
+min-width: hug-content
+min-height: hug-content
+top.px: $toast.top
+left.px: $toast.left
+right.px: $toast.right
+bottom.px: $toast.bottom
+border-radius.px: 8
+;;spacing: space-between
+align-content: center
+background.solid: $toast.background_color
+anchor: window
+shadow: $s
+
+-- ftd.text: $toast.text
+width: fill-container
+align-self: center
+text-align: center 
+color: $toast.text_color
+
+-- ftd.image: $toast.cross
+width.fixed.percent: 10
+align-self: start
+$on-click$: $ftd.set-bool($a = $open, v = false)
+
+-- end: ftd.row
+
+-- end: toast
