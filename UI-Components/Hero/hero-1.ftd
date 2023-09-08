@@ -156,7 +156,6 @@ boolean $is-active-2: false
 -- ftd.row:
 if: { ftd.device == "desktop" }
 width: fill-container
-;; width.fixed.px if { ftd.device == "mobile" }: 900
 height: hug-content
 align-content: center
 padding-horizontal.px if { ftd.device == "desktop" }: 100
@@ -261,7 +260,6 @@ margin-bottom.px: 32
 role: $inherited.types.copy-regular
 color: $inherited.colors.border
 
-
 -- ftd.row:
 
 -- ftd.text: $hero-1.cta-button-1
@@ -295,14 +293,7 @@ link: $hero-1.link-2
 
 -- end: ftd.column
 
-
 -- end: ftd.column
-
-
-
-
-
-
 
 
 -- end: ftd.column
