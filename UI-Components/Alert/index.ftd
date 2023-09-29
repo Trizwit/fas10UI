@@ -48,6 +48,7 @@ border-right-color: #1E2D3D
 -- selector:
 
 -- button: Alert
+$is-open: true
 url: /UI-Components/Alert/
 
 -- button: Blog
@@ -73,6 +74,9 @@ url: /UI-Components/Hero/
 
 -- button: Label
 url: /UI-Components/Label/
+
+-- button: Login
+url: /UI-Components/Login/
 
 -- button: Modal
 url: /UI-Components/Modal/
@@ -164,6 +168,7 @@ children: $selector.c
 -- component button:
 caption name:
 boolean $is-active: false
+optional boolean $is-open: false
 string url:
 
 -- ftd.text: $button.name
@@ -177,6 +182,7 @@ border-radius.px: 8
 border-width.px: 1
 border-color: #5F6C78
 background.solid if {button.is-active}: #3D4A55
+background.solid if {button.is-open}: #3D4A55
 background.solid: #011221
 $on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)

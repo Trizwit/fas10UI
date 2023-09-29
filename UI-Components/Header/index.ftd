@@ -70,6 +70,7 @@ url: /UI-Components/Footer/
 url: /UI-Components/Gallery/
 
 -- button: Header
+$is-open: true
 url: /UI-Components/Header/
 
 -- button: Hero
@@ -77,6 +78,9 @@ url: /UI-Components/Hero/
 
 -- button: Label
 url: /UI-Components/Label/
+
+-- button: Login
+url: /UI-Components/Login/
 
 -- button: Modal
 url: /UI-Components/Modal/
@@ -168,6 +172,7 @@ children: $selector.c
 -- component button:
 caption name:
 boolean $is-active: false
+optional boolean $is-open: false
 string url:
 
 -- ftd.text: $button.name
@@ -181,6 +186,7 @@ border-radius.px: 8
 border-width.px: 1
 border-color: #5F6C78
 background.solid if {button.is-active}: #3D4A55
+background.solid if {button.is-open}: #3D4A55
 background.solid: #011221
 $on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
@@ -319,7 +325,11 @@ logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 -- end: cb.code
 
@@ -334,7 +344,11 @@ logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 -- end: lib.container-wrapper
 
@@ -344,7 +358,7 @@ if: { code-open-1 }
 -- cb.code:
 lang: ftd
 
-\-- lib.container-wrapper:
+\-- component calling...
 
 \-- header-1: 
 logo: $assets.files.images.Header.header-1.trizwit.jpeg
@@ -352,9 +366,13 @@ logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
-\-- end: lib.container-wrapper
+\-- component definition...
 
 \-- component header-1:
 ftd.image-src logo:
@@ -362,7 +380,11 @@ string logo-test:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
 string cta-button-1:
+string cta-button-1-link:
 
 \-- ftd.row:
 width: fill-container
@@ -373,7 +395,7 @@ width: fill-container
 height: hug-content
 padding-horizontal.px: 50
 margin-vertical.px: 20
-margin-horizontal.px:20
+margin-horizontal.px: 20
 align-self: center
 spacing: space-between
 border-radius.px: 20
@@ -388,7 +410,7 @@ margin-vertical.px: 10
 
 \-- ftd.text: $header-1.logo-test
 margin-horizontal.px: 10
-color: $inherited.colors.custom.four
+color: $inherited.colors.background.base
 text-align: center
 align-self: center
 
@@ -402,21 +424,24 @@ role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-1.cta-link-1
 
 \-- ftd.text: $header-1.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-1.cta-link-2
 
 \-- ftd.text: $header-1.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-1.cta-link-3
 
 \-- ftd.text: $header-1.cta-button-1
 role: $inherited.types.label-large
@@ -424,9 +449,9 @@ text-align: center
 padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
-background.solid: $inherited.colors.custom.seven
-color: $inherited.colors.background.base
-link: https://tailblocks.cc/
+background.solid: $inherited.colors.background.base
+color: $inherited.colors.border
+link: $header-1.cta-button-1-link
 
 \-- end: ftd.row
 
