@@ -273,12 +273,21 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
 \-- fastn.dependency: fastnui.trizwit.com
 
 -- end: cb.code
+
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -287,36 +296,34 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- alert.primary-alert: 
 content: A simple primary alert—check it out!
 
-
 \-- alert.secondary-alert:
 content: A simple secondary alert—check it out!
-
 
 \-- alert.success-alert:
 content: A simple success alert—check it out!
 
-
 \-- alert.danger-alert:
 content: A simple danger alert—check it out!
-
 
 \-- alert.warning-alert:
 content: A simple warning alert—check it out!
 
-
 \-- alert.info-alert:
 content: A simple info alert—check it out!
 
-
 \-- alert.light-alert:
 content: A simple light alert—check it out!
-
 
 \-- alert.dark-alert:
 content: A simple dark alert—check it out!
@@ -369,7 +376,7 @@ if: { code-open }
 -- cb.code:
 lang: ftd
 
-\-- lib.container-wrapper:
+\;; component calling syntax...
 
 \-- primary-alert: 
 content: A simple primary alert—check it out!
@@ -402,8 +409,8 @@ content: A simple light alert—check it out!
 \-- dark-alert:
 content: A simple dark alert—check it out!
 
-\-- end: lib.container-wrapper
 
+\;; component definition....
 
 
 \-- component base-alert:
