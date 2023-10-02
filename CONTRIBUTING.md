@@ -45,7 +45,7 @@ Check out our [Issue Tracker](https://github.com/Trizwit/FastnUI/issues) for a l
 
 ## Communication
 
-If you have questions or need assistance, please don't hesitate to reach out. You can join our [Community Chat](https://example-chat-link) for discussions and help.
+If you have questions or need assistance, please don't hesitate to reach out. You can join our [Community Chat](https://discord.com/invite/a7eBUeutWD) for discussions and help.
 
 
 Thank you for helping make FastnUI better!
