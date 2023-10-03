@@ -475,7 +475,7 @@ children c:
 
 -- ftd.row:
 max-width: fill-container
-min-width if { ftd.device == "mobile" }: hug-content
+min-width if { ftd.device == "mobile" }: fill-container
 min-width.fixed.px if { ftd.device == "desktop" }: 1080
 margin-vertical.px: 32
 margin-horizontal.px: 32

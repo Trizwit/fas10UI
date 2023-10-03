@@ -193,6 +193,7 @@ spacing.fixed.px: 24
 margin.px:16
 
 -- ftd.image:
+if: { ftd.device == "desktop"}
 src: $blog-8.pic
 max-width.fixed.percent: 30
 align-self: center
@@ -212,6 +213,14 @@ background.solid: $inherited.colors.cta-tertiary.base
 -- ftd.text: $blog-8.title
 role: $inherited.types.heading-tiny
 margin-bottom.px: 8
+
+-- ftd.image:
+if: { ftd.device == "mobile"}
+src: $blog-8.pic
+width: fill-container
+margin-bottom.px: 15
+align-self: center
+
 
 -- ftd.text: $blog-8.body
 role: $inherited.types.label-large

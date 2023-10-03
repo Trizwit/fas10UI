@@ -326,6 +326,11 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
+
 -- cb.code:
 lang: ftd
 
@@ -333,12 +338,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/lib
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -367,6 +382,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- lib.blog-1: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 pic: $assets.files.images.Blog.Blog-1.721x401.png
 head: Category
 cta-text: Learn more
@@ -375,6 +391,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- lib.blog-1: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 pic: $assets.files.images.Blog.Blog-1.722x402.png
 head: Category
 cta-text: Learn more
@@ -391,9 +408,9 @@ if: { code-open-1 }
 -- cb.code:
 lang: ftd
 
-\-- lib.container-wrapper:
+\;; component calling syntax...
 
-\-- lib.blog-1: Raclette Blueberry Nextious Level
+\-- blog-1: Raclette Blueberry Nextious Level
 pic: $assets.files.images.Blog.Blog-1.721x401.png
 head: Category
 cta-text: Learn more
@@ -401,23 +418,7 @@ cta-text: Learn more
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
 
-\-- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.Blog.Blog-1.721x401.png
-head: Category
-cta-text: Learn more
-
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
-
-\-- lib.blog-1: Raclette Blueberry Nextious Level
-pic: $assets.files.images.Blog.Blog-1.722x402.png
-head: Category
-cta-text: Learn more
-
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
-
-\-- end: lib.container-wrapper
+\;; component definition....
 
 \-- component blog-1:
 caption title:
@@ -535,6 +536,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -542,12 +547,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Blog/blog-2
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -575,6 +590,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- blog-2.blog-2: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
 
@@ -582,12 +598,12 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- blog-2.blog-2: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
-
 
 
 -- end: lib.container-wrapper
@@ -597,6 +613,17 @@ if: { code-open-2 }
 
 -- cb.code:
 lang: ftd
+
+\;; component calling syntax...
+
+\-- blog-2.blog-2: Raclette Blueberry Nextious Level
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
+waistcoat.
+
+\;; component definition....
 
 \-- component blog-2:
 caption title:
@@ -708,6 +735,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -715,12 +746,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Blog/blog-3
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -748,6 +789,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- blog-3.blog-3: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
 
@@ -755,6 +797,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- blog-3.blog-3: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
 
@@ -769,6 +812,17 @@ if: { code-open-3 }
 
 -- cb.code:
 lang: ftd
+
+\;; component calling syntax...
+
+\-- blog-3: Raclette Blueberry Nextious Level
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled
+waistcoat.
+
+\;; component definition....
 
 \-- component blog-3:
 caption title:
@@ -880,6 +934,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -887,12 +945,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Blog/blog-4
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -919,6 +987,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- blog-4.blog-4: Shooting Stars
+if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
 
@@ -926,6 +995,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- blog-4.blog-4: Shooting Stars
+if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
 
@@ -939,6 +1009,17 @@ if: { code-open-4 }
 
 -- cb.code:
 lang: ftd
+
+\;; component calling syntax...
+
+\-- blog-4: Shooting Stars
+head: Category
+cta-text: Learn more
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled
+waistcoat.
+
+\;; component definition....
 
 \-- component blog-4:
 caption title:
@@ -1046,6 +1127,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -1053,12 +1138,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Blog/blog-5
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -1087,6 +1182,7 @@ ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware ko
 lumbersexual pork belly polaroid hoodie portland craft beer.
 
 -- blog-5.blog-5: Shooting Stars
+if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
 
@@ -1095,6 +1191,7 @@ ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware ko
 lumbersexual pork belly polaroid hoodie portland craft beer.
 
 -- blog-5.blog-5: Shooting Stars
+if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
 
@@ -1109,6 +1206,18 @@ if: { code-open-5 }
 
 -- cb.code:
 lang: ftd
+
+\;; component calling syntax...
+
+\-- blog-5: Shooting Stars
+head: Category
+cta-text: Learn more
+
+Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave
+ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha
+lumbersexual pork belly polaroid hoodie portland craft beer.
+
+\;; component definition....
 
 \-- component blog-5:
 caption title:
@@ -1217,6 +1326,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -1224,12 +1337,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Blog/blog-6
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -1258,6 +1381,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- blog-6.blog-6: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 tag: Category
 date: January 20, 2022
 image: $assets.files.images.Blog.Blog-1.720x400.png
@@ -1273,7 +1397,7 @@ if: { code-open-6 }
 -- cb.code:
 lang: ftd
 
-\-- lib.container-wrapper:
+\;; component calling syntax...
 
 \-- blog-6: Raclette Blueberry Nextious Level
 tag: Category
@@ -1283,15 +1407,7 @@ image: $assets.files.images.Blog.Blog-1.720x400.png
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
 
-\-- blog-6: Keyvalue Interview and Test on May 22
-tag: Category
-date: January 20, 2022
-image: $assets.files.images.Blog.Blog-1.720x400.png
-
-Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
-waistcoat.
-
-\-- end: lib.container-wrapper
+\;; component definition....
 
 \-- component blog-6:
 caption title:
@@ -1418,6 +1534,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -1425,12 +1545,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Blog/blog-7
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -1461,6 +1591,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- blog-7.blog-7: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 pic: $assets.files.images.Blog.Blog-1.721x401.png
 head: Category
 user-name: Raclette
@@ -1470,6 +1601,7 @@ Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tous
 waistcoat.
 
 -- blog-7.blog-7: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 pic: $assets.files.images.Blog.Blog-1.722x402.png
 head: Category
 user-name: Raclette
@@ -1485,6 +1617,19 @@ if: { code-open-7 }
 
 -- cb.code:
 lang: ftd
+
+\;; component calling syntax...
+
+\-- blog-7: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-1.720x400.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-1.avatar.jpg
+
+Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled
+waistcoat.
+
+\;; component definition....
 
 \-- component blog-7:
 caption title:
@@ -1613,6 +1758,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -1620,12 +1769,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Blog/blog-8
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -1663,6 +1822,7 @@ cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulu
 mauris ultrices eros in cursus turpis.
 
 -- blog-8.blog-8: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 pic: $assets.files.images.Blog.Blog-8.720x400.png
 head: Category
 user-name: Raclette
@@ -1675,6 +1835,7 @@ cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulu
 mauris ultrices eros in cursus turpis.
 
 -- blog-8.blog-8: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 pic: $assets.files.images.Blog.Blog-8.720x400.png
 head: Category
 user-name: Raclette
@@ -1694,6 +1855,22 @@ if: { code-open-8 }
 -- cb.code:
 lang: ftd
 
+\;; component calling syntax...
+
+\-- blog-8: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-8.720x400.png
+head: Category
+user-name: Raclette
+user-image: $assets.files.images.Blog.Blog-8.avatar.jpg
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua. Fames ac turpis egestas maecenas pharetra convallis
+posuere morbi. In ornare quam viverra orci sagittis eu volutpat odio facilisis. Gravida
+cum sociis natoque penatibus et magnis dis parturient montes. Placerat vestibulum lectus
+mauris ultrices eros in cursus turpis.
+
+\;; component definition....
+
 \-- component blog-8:
 caption title:
 string head:
@@ -1711,6 +1888,7 @@ spacing.fixed.px: 24
 margin.px:16
 
 \-- ftd.image:
+if: { ftd.device == "desktop"}
 src: $blog-8.pic
 max-width.fixed.percent: 30
 align-self: center
@@ -1731,9 +1909,18 @@ background.solid: $inherited.colors.cta-tertiary.base
 role: $inherited.types.heading-tiny
 margin-bottom.px: 8
 
+\-- ftd.image:
+if: { ftd.device == "mobile"}
+src: $blog-8.pic
+width: fill-container
+margin-bottom.px: 15
+align-self: center
+
+
 \-- ftd.text: $blog-8.body
 role: $inherited.types.label-large
 margin-bottom.px: 12
+text-align: justify
 
 \-- ftd.row:
 spacing.fixed.px: 8
@@ -1825,6 +2012,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -1832,12 +2023,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Blog/blog-9
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -1864,6 +2065,7 @@ updated: Updated 3 mins ago
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 -- blog-9.blog-9: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 pic: $assets.files.images.Blog.Blog-9.sample.png
 head: Category
 updated: Updated 3 mins ago
@@ -1871,6 +2073,7 @@ updated: Updated 3 mins ago
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 -- blog-9.blog-9: Raclette Blueberry Nextious Level
+if: { ftd.device == "desktop"}
 pic: $assets.files.images.Blog.Blog-9.sample.png
 head: Category
 updated: Updated 3 mins ago
@@ -1884,6 +2087,17 @@ if: { code-open-9 }
 
 -- cb.code:
 lang: ftd
+
+\;; component calling syntax...
+
+\-- blog-9: Raclette Blueberry Nextious Level
+pic: $assets.files.images.Blog.Blog-9.sample.png
+head: Category
+updated: Updated 3 mins ago
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\;; component definition....
 
 \-- component blog-9:
 caption title:
@@ -1900,6 +2114,7 @@ spacing.fixed.px: 24
 margin.px:16
 
 \-- ftd.image:
+if: { ftd.device == "desktop"}
 src: $blog-9.pic
 width.fixed.percent: 40
 align-self: center
@@ -1916,6 +2131,13 @@ role: $inherited.types.label-small
 color: $inherited.colors.background.base
 margin-bottom.px: 8
 padding.px: 4
+
+\-- ftd.image:
+if: { ftd.device == "mobile"}
+src: $blog-9.pic
+width: fill-container
+margin-bottom.px: 15
+align-self: center
 
 \-- ftd.text: $blog-9.title
 role: $inherited.types.heading-tiny
