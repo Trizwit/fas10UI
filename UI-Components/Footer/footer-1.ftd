@@ -16,6 +16,10 @@ twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
 logo-test: TRIZWIT
+facebook-link: https://www.facebook.com/trizwit
+twitter-link: https://twitter.com/trizwit
+instagram-link: https://www.instagram.com/trizwit/
+linkedin-link: https://www.linkedin.com/company/trizwit/
 
 -- Category:
 heading: CATEGORIES
