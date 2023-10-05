@@ -232,17 +232,22 @@ boolean $is-active-1: false
 boolean $is-active-2: false
 boolean $is-active-3: false
 boolean $is-active-4: false
+string heading: 
+string text-1:
+string text-2:
+string text-3:
+string text-4:
 
 -- ftd.column:
 padding-horizontal.px: 16
 padding-bottom.px: 40
 
--- ftd.text: CATEGORIES
+-- ftd.text: $Category.heading
 role: $inherited.types.label-large
 color: $inherited.colors.border
 margin-bottom.px: 12
 
--- ftd.text: First Link
+-- ftd.text: $Category.text-1
 role: $inherited.types.label-small
 margin-vertical.px: 1
 color: $inherited.colors.text
@@ -251,7 +256,7 @@ $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-1, v = false)
 link:
 
--- ftd.text: Second Link
+-- ftd.text: $Category.text-2
 role: $inherited.types.label-small
 margin-vertical.px: 1
 color: $inherited.colors.text
@@ -260,7 +265,7 @@ $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-2, v = false)
 link:
 
--- ftd.text: Third Link
+-- ftd.text: $Category.text-3
 role: $inherited.types.label-small
 margin-vertical.px: 1
 color: $inherited.colors.text
@@ -269,7 +274,7 @@ $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-3, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-3, v = false)
 link:
 
--- ftd.text: Fourth Link
+-- ftd.text: $Category.text-4
 role: $inherited.types.label-small
 margin-vertical.px: 1
 color: $inherited.colors.text
@@ -297,11 +302,15 @@ ftd.image-src twitter:
 ftd.image-src instagram:
 ftd.image-src linkedin:
 string logo-test:
+string facebook-link:
+string twitter-link:
+string instagram-link:
+string linkedin-link:
+children c:
 
 
 -- ftd.column:
 width: fill-container
-width.fixed.px if { ftd.device == "mobile" }: 900
 height: hug-content
 
 
@@ -317,11 +326,13 @@ background.solid: $inherited.colors.cta-secondary.base
 width: fill-container
 align-content: left
 spacing.fixed.px: 16
+children: $footer-2.c
+wrap: true
 
--- Category:
--- Category:
--- Category:
--- Category:
+;; -- Category:
+;; -- Category:
+;; -- Category:
+;; -- Category:
 
 -- end: ftd.row
 
@@ -372,25 +383,48 @@ width: fill-container
 height: fill-container
 align-content: right
 
+
+-- ftd.row:
+width: hug-content
+link: $footer-2.facebook-link
+
 -- ftd.image:
 src: $footer-2.facebook
-width.fixed.percent: 2
+width.fixed.px: 20
+
+-- end: ftd.row
+
+-- ftd.row:
+width: hug-content
+link: $footer-2.twitter-link
 
 -- ftd.image:
 src: $footer-2.twitter
-width.fixed.percent: 2
+width.fixed.px: 20
 margin-left.px: 12
 margin-top.px: 3
+
+-- end: ftd.row
+
+-- ftd.row:
+width: hug-content
+link: $footer-2.instagram-link
 
 -- ftd.image:
 src: $footer-2.instagram
-width.fixed.percent: 2
+width.fixed.px: 20
 margin-left.px: 12
 margin-top.px: 3
 
+-- end: ftd.row
+
+-- ftd.row:
+width: hug-content
+link: $footer-2.linkedin-link
+
 -- ftd.image:
 src: $footer-2.linkedin
-width.fixed.percent: 2
+width.fixed.px: 20
 margin-left.px: 12
 
 -- end: ftd.row
@@ -398,7 +432,7 @@ margin-left.px: 12
 
 -- end: ftd.row
 
-
+-- end: ftd.row
 
 -- end: ftd.column
 

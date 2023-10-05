@@ -289,6 +289,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -296,12 +300,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Contact/contact-1
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -333,7 +347,7 @@ if: { code-open-1 }
 -- cb.code:
 lang: ftd
 
-\-- lib.container-wrapper:
+\;; component call syntax...
 
 \-- contact-1: Feedback
 cta-button-1: Button
@@ -341,7 +355,7 @@ link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 Post-ironic portland shabby chic echo park, banjo fashion axe
 
-\-- end: lib.container-wrapper
+\;; component definition....
 
 \-- component contact-1:
 caption headline:
@@ -495,6 +509,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -502,12 +520,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Contact/contact-2
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -547,7 +575,7 @@ if: { code-open-2 }
 -- cb.code:
 lang: ftd
 
-\-- lib.container-wrapper:
+\;; component call syntax...
 
 \-- contact-2: Contact Us
 cta-button-1: Button
@@ -559,7 +587,7 @@ linkedin: $assets.files.images.linkedin.svg
 
 Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.
 
-\-- end: lib.container-wrapper
+\;; component definition....
 
 \-- component contact-2:
 caption headline:
@@ -576,7 +604,8 @@ ftd.image-src linkedin:
 width: fill-container
 height: hug-content
 align-content: center
-padding-horizontal.px: 100
+padding-horizontal.px if { ftd.device == "desktop" }: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 10
 padding-vertical.px: 96
 background.solid: $inherited.colors.background.base
 
@@ -805,6 +834,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -812,12 +845,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Contact/contact-3
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -859,7 +902,7 @@ if: { code-open-3 }
 -- cb.code:
 lang: ftd
 
-\-- lib.container-wrapper:
+\;; component call syntax...
 
 \-- contact-3: Send a Message
 address: TRIZWIT, Ernakulam, Kerala, India
@@ -872,7 +915,7 @@ linkedin: $assets.files.images.Footer.linkedin.svg
 cta-button: Button
 cta-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
-\-- end: lib.container-wrapper
+\;; component definition....
 
 \-- component contact-3:
 caption title:

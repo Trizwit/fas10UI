@@ -245,7 +245,8 @@ width: fill-container
 width.fixed.px if { ftd.device == "mobile" }: 700
 height: hug-content
 align-content: center
-padding-horizontal.px: 100
+padding-horizontal.px if { ftd.device == "desktop" }: 100
+padding-horizontal.px if { ftd.device == "mobile" }: 10
 padding-vertical.px: 96
 background.solid: $inherited.colors.cta-secondary.base
 
@@ -258,6 +259,7 @@ color: $inherited.colors.border
 margin-bottom.px: 32
 role: $inherited.types.copy-regular
 color: $inherited.colors.border
+text-align: center
 
 
 -- ftd.column:
