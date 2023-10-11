@@ -543,7 +543,7 @@ lang: ftd
 \-- contact-2.contact-2: Contact Us
 cta-button-1: Button
 link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
-facebook: $assets.files.images.Footer.facebook.svg
+facebook: $assets.files.images.Footer.facebook.png
 twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
@@ -560,7 +560,7 @@ if: { !code-open-2 }
 -- contact-2.contact-2: Contact Us
 cta-button-1: Button
 link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
-facebook: $assets.files.images.Footer.facebook.svg
+facebook: $assets.files.images.Footer.facebook.png
 twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
@@ -869,7 +869,7 @@ lang: ftd
 address: TRIZWIT, Ernakulam, Kerala, India
 email: example@gmail.com
 phone: 22558899
-facebook: $assets.files.images.Footer.facebook.svg
+facebook: $assets.files.images.Footer.facebook.png
 twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
@@ -887,7 +887,7 @@ if: { !code-open-3 }
 address: TRIZWIT, Ernakulam, Kerala, India
 email: example@gmail.com
 phone: 22558899
-facebook: $assets.files.images.Footer.facebook.svg
+facebook: $assets.files.images.Footer.facebook.png
 twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
@@ -908,7 +908,7 @@ lang: ftd
 address: TRIZWIT, Ernakulam, Kerala, India
 email: example@gmail.com
 phone: 22558899
-facebook: $assets.files.images.Footer.facebook.svg
+facebook: $assets.files.images.Footer.facebook.png
 twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg

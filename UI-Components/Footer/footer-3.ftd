@@ -6,125 +6,7 @@
 
 -- lib.page:
 
--- lib.container-wrapper:
-if: { !lib.code-open }
 
--- footer-3:
-logo: $assets.files.images.trizwit.jpeg
-facebook: $assets.files.images.Footer.facebook.svg
-twitter: $assets.files.images.Footer.twitter.svg
-instagram: $assets.files.images.Footer.instagram.svg
-linkedin: $assets.files.images.Footer.linkedin.svg
-logo-test: Trizwit
-
--- end: lib.container-wrapper
-
--- lib.container-wrapper:
-if: { lib.code-open }
-
--- cb.code:
-lang: ftd
-
-\-- lib.container-wrapper:
-
-\-- footer-3:
-logo: $assets.files.images.trizwit.jpeg
-facebook: $assets.files.images.Footer.facebook.svg
-twitter: $assets.files.images.Footer.twitter.svg
-instagram: $assets.files.images.Footer.instagram.svg
-linkedin: $assets.files.images.Footer.linkedin.svg
-logo-test: TRIZWIT
-
-\-- end: lib.container-wrapper
-
-\-- component footer-3:
-ftd.image-src logo:
-ftd.image-src facebook:
-ftd.image-src twitter:
-ftd.image-src instagram:
-ftd.image-src linkedin:
-string logo-test:
-
-
-\-- ftd.row:
-width: fill-container
-height: hug-content
-padding-horizontal.percent: 10
-padding-vertical.px: 16
-background.solid: $inherited.colors.cta-tertiary.hover
-
-\-- ftd.row:
-width: fill-container
-height: fill-container
-align-content: left
-border-right-width.px: 3
-border-right-color: $inherited.colors.border
-
-\-- ftd.image:
-src: $footer-3.logo  
-width.fixed.percent: 30
-height: auto 
-border-radius.px: 45
-
-\-- ftd.text: $footer-3.logo-test
-role: $inherited.types.copy-regular
-color: $inherited.colors.border
-width: fill-container
-margin-left.px: 12
-
-
-\-- end: ftd.row
-
-\-- ftd.row:
-width: fill-container
-height: fill-container
-margin-left.px: 10
-align-self: center
-
-\-- ftd.text: © 2023 Trizwit — 
-role: $inherited.types.copy-small
-color: $inherited.colors.scrim
-width: fill-container
-height: fill-container
-align-self: center
-
-\-- end: ftd.row
-
-\-- ftd.row:
-height: fill-container
-align-content: right
-align-self: center
-
-\-- ftd.image:
-src: $footer-3.facebook
-width.fixed.percent: 3.5
-
-\-- ftd.image:
-src: $footer-3.twitter
-width.fixed.percent: 3.5
-margin-left.px: 16
-margin-top.px: 3
-
-\-- ftd.image:
-src: $footer-3.instagram
-width.fixed.percent: 3.5
-margin-left.px: 16
-margin-top.px: 3
-
-\-- ftd.image:
-src: $footer-3.linkedin
-width.fixed.percent: 3.5
-margin-left.px: 16
-
-\-- end: ftd.row
-
-\-- end: ftd.row
-
-\-- end: footer-3
-
--- end: cb.code
-
--- end: lib.container-wrapper
 
 -- end: lib.page
 
@@ -143,27 +25,31 @@ ftd.image-src twitter:
 ftd.image-src instagram:
 ftd.image-src linkedin:
 string logo-test:
+string facebook-link:
+string twitter-link:
+string instagram-link:
+string linkedin-link:
 
 
 -- ftd.row:
 width: fill-container
-width.fixed.px if { ftd.device == "mobile" }: 900
 height: hug-content
-padding-horizontal.percent: 10
+padding-horizontal.px if {ftd.device == "desktop"}: 100
+padding-horizontal.px if {ftd.device == "mobile"}: 20
 padding-vertical.px: 16
 background.solid: $inherited.colors.cta-tertiary.base
 
 -- ftd.row:
-width: fill-container
+width: hug-content
 height: fill-container
-;;padding-right.px: 10
+padding-right.px: 10
 align-content: left
 border-right-width.px: 3
 border-right-color: $inherited.colors.cta-primary.base
 
 -- ftd.image:
 src: $footer-3.logo  
-width.fixed.percent: 30
+width.fixed.px: 35
 height: auto 
 ;;align-self: center
 border-radius.px: 45
@@ -171,7 +57,6 @@ border-radius.px: 45
 -- ftd.text: $footer-3.logo-test
 role: $inherited.types.copy-regular
 color: $inherited.colors.background.base
-width: fill-container
 margin-left.px: 12
 
 
@@ -184,6 +69,7 @@ margin-left.px: 10
 align-self: center
 
 -- ftd.text: © 2023 Trizwit — 
+if: { ftd.device == "desktop" }
 role: $inherited.types.copy-small
 color: $inherited.colors.scrim
 width: fill-container
@@ -197,26 +83,53 @@ height: fill-container
 align-content: right
 align-self: center
 
+
+-- ftd.row:
+width: hug-content
+link: $footer-3.facebook-link
+
 -- ftd.image:
 src: $footer-3.facebook
-width.fixed.percent: 3.5
+width.fixed.px: 20
+
+-- end: ftd.row
+
+-- ftd.row:
+width: hug-content
+link: $footer-3.twitter-link
 
 -- ftd.image:
 src: $footer-3.twitter
-width.fixed.percent: 3.5
-margin-left.px: 16
+width.fixed.px: 20
+margin-left.px: 12
 margin-top.px: 3
+
+-- end: ftd.row
+
+-- ftd.row:
+width: hug-content
+link: $footer-3.instagram-link
 
 -- ftd.image:
 src: $footer-3.instagram
-width.fixed.percent: 3.5
-margin-left.px: 16
+width.fixed.px: 20
+margin-left.px: 12
 margin-top.px: 3
+
+-- end: ftd.row
+
+-- ftd.row:
+width: hug-content
+link: $footer-3.linkedin-link
 
 -- ftd.image:
 src: $footer-3.linkedin
-width.fixed.percent: 3.5
-margin-left.px: 16
+width.fixed.px: 20
+margin-left.px: 12
+
+-- end: ftd.row
+
+
 
 -- end: ftd.row
 

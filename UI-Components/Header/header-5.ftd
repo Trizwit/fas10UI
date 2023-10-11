@@ -4,19 +4,14 @@
 
 -- lib.page:
 
--- lib.container-wrapper:
-if: { !lib.code-open }
-
--- header-5:
-logo: $assets.files.images.trizwit.jpeg
-logo-text: Portfolio
-cta-text-1: Home
-cta-text-2: Second Link
-cta-text-3: Third Link
-
--- end: lib.container-wrapper
 
 -- end: lib.page
+
+
+
+
+
+
 
 
 -- component header-5:
@@ -25,7 +20,71 @@ string logo-text:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
 
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: hug-content
+
+-- header-5-desktop:
+logo: $header-5.logo
+logo-text: $header-5.logo-text
+cta-text-1: $header-5.cta-text-1
+cta-text-2: $header-5.cta-text-2
+cta-text-3: $header-5.cta-text-3
+cta-link-1: $header-5.cta-link-1
+cta-link-2: $header-5.cta-link-2
+cta-link-3: $header-5.cta-link-3 
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+-- navbar-mobile:
+logo: $header-5.logo
+logo-test: $header-5.logo-text
+
+-- navbar-dropdown:
+cta-text-1: $header-5.cta-text-1
+cta-text-2: $header-5.cta-text-2
+cta-text-3: $header-5.cta-text-3
+cta-link-1: $header-5.cta-link-1
+cta-link-2: $header-5.cta-link-2
+cta-link-3: $header-5.cta-link-3
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: header-5
+
+
+
+
+
+
+
+
+
+-- component header-5-desktop:
+ftd.image-src logo:
+string logo-text:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
 
 -- ftd.row:
 width: fill-container
@@ -43,13 +102,13 @@ border-radius.px: 20
 background.solid: $inherited.colors.border
 
 -- ftd.image:
-src: $header-5.logo
+src: $header-5-desktop.logo
 width.fixed.px: 55
 height: auto
 border-radius.px: 20
 margin-vertical.px: 10
 
--- ftd.text: $header-5.logo-text
+-- ftd.text: $header-5-desktop.logo-text
 margin-horizontal.px: 10
 color: $inherited.colors.background.base
 text-align: center
@@ -60,28 +119,29 @@ width: fill-container
 height: fill-container
 align-content: right
 
--- ftd.text: $header-5.cta-text-1
+-- ftd.text: $header-5-desktop.cta-text-1
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.cta-primary.base
+link: $header-5-desktop.cta-link-1
 
-
--- ftd.text: $header-5.cta-text-2
+-- ftd.text: $header-5-desktop.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
 color: $inherited.colors.cta-primary.base
+link: $header-5-desktop.cta-link-2
 
-
--- ftd.text: $header-5.cta-text-3
+-- ftd.text: $header-5-desktop.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.cta-primary.base
+link: $header-5-desktop.cta-link-3
 
 -- end: ftd.row
 
@@ -89,4 +149,120 @@ color: $inherited.colors.cta-primary.base
 
 -- end: ftd.row
 
--- end: header-5
+-- end: header-5-desktop
+
+
+
+
+
+
+
+
+
+-- boolean $menu-open: false
+
+-- component navbar-mobile:
+ftd.image-src logo:
+string logo-test:
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+spacing: space-between
+border-radius.px: 20
+id: navbar-mobile-5
+background.solid: $inherited.colors.border
+
+-- ftd.row:
+height: fill-container
+width: hug-content
+margin-left.percent: 10
+
+-- ftd.image:
+src: $navbar-mobile.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+-- ftd.text: $navbar-mobile.logo-test
+margin-horizontal.px: 10
+color: $inherited.colors.background.base
+text-align: center
+align-self: center
+
+-- end: ftd.row
+
+-- ftd.image: 
+src: $assets.files.images.burger-menu.svg
+height.fixed.px: 30
+margin-left.percent: 80
+anchor.id: navbar-mobile-5
+$on-click$: $ftd.set-bool($a = $menu-open, v = true)
+
+-- end: ftd.row
+
+-- end: navbar-mobile
+
+
+
+
+
+
+
+-- component navbar-dropdown:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
+
+-- ftd.row:
+if: {menu-open}
+width: fill-container
+height: fill-container
+anchor: window
+z-index: 100
+spacing: space-between
+background.solid: #fff  
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+padding-left.px: 30
+padding-top.px: 30
+spacing.fixed.px: 30
+
+
+-- ftd.text: $navbar-dropdown.cta-text-1
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-1
+
+-- ftd.text: $navbar-dropdown.cta-text-2
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-2
+
+-- ftd.text: $navbar-dropdown.cta-text-3
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-3
+
+-- end: ftd.column
+
+
+-- ftd.image: 
+src: $assets.files.images.cross.svg
+height.fixed.px: 30
+margin-top.px: 30
+margin-right.px: 100
+z-index: 100
+$on-click$: $ftd.set-bool($a = $menu-open, v = false)
+
+-- end: ftd.row
+
+-- end: navbar-dropdown

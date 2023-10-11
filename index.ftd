@@ -162,6 +162,7 @@ height: fill-container
 background.solid: #011221
 classes: side-menubar
 anchor: window
+z-index: 1000000
 
 -- ftd.row:
 width: fill-container
