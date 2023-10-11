@@ -4,112 +4,7 @@
 
 -- lib.page:
 
--- lib.container-wrapper:
-if: { !lib.code-open }
 
--- hero-5: Before they sold out readymade gluten
-cta-button-1: Button
-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
-cta-button-2: Button
-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
-cover: $assets.files.images.Hero.hero-2.siz.png
-
-Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
-Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
-
--- end: lib.container-wrapper
-
--- lib.container-wrapper:
-if: { lib.code-open }
-
--- cb.code:
-lang: ftd
-
-\-- lib.container-wrapper:
-
-\-- hero-5: Before they sold out readymade gluten
-cta-button-1: Button
-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
-cta-button-2: Button
-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
-cover: $assets.files.images.Hero.hero-5.siz.png
-
-Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. 
-Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
-
-\-- end: lib.container-wrapper
-
-\-- component hero-5:
-ftd.image-src cover:
-caption headline:
-body content:
-string cta-button-1:
-string link-1:
-boolean $is-active-1: false
-string cta-button-2:
-string link-2:
-boolean $is-active-2: false
-
-\-- ftd.column:
-width: fill-container
-height: hug-content
-align-content: center
-padding-horizontal.px: 100
-padding-vertical.px: 96
-background.solid: $inherited.colors.background.base
-color: $inherited.colors.border
-
-\-- ftd.text: $hero-5.headline
-margin-bottom.px: 16
-role: $inherited.types.heading-medium
-
-\-- ftd.text: $hero-5.content
-margin-bottom.px: 32
-role: $inherited.types.copy-regular
-
-\-- ftd.row:
-
-\-- ftd.text: $hero-5.cta-button-1
-role: $inherited.types.label-large
-text-align: center
-padding-vertical.px: 8
-padding-horizontal.px: 24
-border-radius.px: 5
-background.solid: $inherited.colors.cta-primary.base
-background.solid if {hero-5.is-active-1}: $inherited.colors.cta-primary.hover
-$on-mouse-enter$: $ftd.set-bool($a = $hero-5.is-active-1, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $hero-5.is-active-1, v = false)
-color: $inherited.colors.border
-link: $hero-5.link-1
-
-\-- ftd.text: $hero-5.cta-button-2
-role: $inherited.types.label-large
-text-align: center
-padding-vertical.px: 8
-padding-horizontal.px: 24
-margin-left.px: 16
-border-radius.px: 5
-background.solid: $inherited.colors.custom.one
-background.solid if {hero-5.is-active-2}: $inherited.colors.info.text
-$on-mouse-enter$: $ftd.set-bool($a = $hero-5.is-active-2, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $hero-5.is-active-2, v = false)
-color: $inherited.colors.border
-link: $hero-5.link-2
-
-\-- end: ftd.row
-
-\-- ftd.image:
-src: $hero-5.cover   
-width.fixed.percent: 45
-height: auto 
-
-\-- end: ftd.column
-
-\-- end: hero-5
-
--- end: cb.code
-
--- end: lib.container-wrapper
 
 -- end: lib.page
 
@@ -134,8 +29,10 @@ string link-2:
 boolean $is-active-2: false
 
 -- ftd.column:
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
 width: fill-container
-width.fixed.px if { ftd.device == "mobile" }: 900
 height: hug-content
 align-content: center
 padding-horizontal.px: 100
@@ -187,6 +84,72 @@ link: $hero-5.link-2
 src: $hero-5.cover   
 width.fixed.percent: 45
 height: auto 
+
+-- end: ftd.column
+
+
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+height: hug-content
+align-content: center
+padding-horizontal.px: 15
+padding-vertical.px: 20
+background.solid: $inherited.colors.cta-secondary.base
+
+-- ftd.text: $hero-5.headline
+margin-bottom.px: 16
+role: $inherited.types.heading-medium
+color: $inherited.colors.border
+
+-- ftd.image:
+src: $hero-5.cover   
+width.fixed.percent: 100
+height: auto 
+margin-bottom.px: 16
+
+-- ftd.text: $hero-5.content
+margin-bottom.px: 32
+role: $inherited.types.copy-regular
+color: $inherited.colors.border
+
+
+-- ftd.row:
+margin-bottom.px: 32
+
+-- ftd.text: $hero-5.cta-button-1
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+border-radius.px: 5
+background.solid: $inherited.colors.background.base
+background.solid if {hero-5.is-active-1}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-5.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-5.is-active-1, v = false)
+color: $inherited.colors.border
+link: $hero-5.link-1
+
+-- ftd.text: $hero-5.cta-button-2
+role: $inherited.types.label-large
+text-align: center
+padding-vertical.px: 8
+padding-horizontal.px: 24
+margin-left.px: 16
+border-radius.px: 5
+background.solid: $inherited.colors.background.base
+background.solid if {hero-5.is-active-2}: $inherited.colors.cta-primary.hover
+$on-mouse-enter$: $ftd.set-bool($a = $hero-5.is-active-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero-5.is-active-2, v = false)
+color: $inherited.colors.border
+link: $hero-5.link-2
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+
 
 -- end: ftd.column
 
