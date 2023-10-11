@@ -4,132 +4,8 @@
 
 -- lib.page:
 
--- lib.container-wrapper:
-if: { !lib.code-open }
-
--- header-2: 
-logo: $assets.files.images.Header.header-2.trizwit.jpeg
-logo-test: TRIZWIT
-cta-text-1: First Link
-cta-text-2: Second Link
-cta-text-3: Third Link
-cta-button-1: Button
-
--- end: lib.container-wrapper
-
--- lib.container-wrapper:
-if: { lib.code-open }
-
--- cb.code:
-lang: ftd
-
-\-- lib.container-wrapper:
-
-\-- header-2: 
-logo: $assets.files.images.Header.header-2.trizwit.jpeg
-logo-test: TRIZWIT
-cta-text-1: First Link
-cta-text-2: Second Link
-cta-text-3: Third Link
-cta-button-1: Button
-
-\-- end: lib.container-wrapper
-
-\-- component header-2:
-ftd.image-src logo:
-string logo-test:
-string cta-text-1:
-string cta-text-2:
-string cta-text-3:
-string cta-button-1:
-
-\-- ftd.row:
-width: fill-container
-sticky: true
-
-\-- ftd.row:
-width: fill-container
-height: hug-content
-padding-horizontal.px: 50
-margin-vertical.px: 20
-margin-horizontal.px:20
-spacing: space-between
-border-radius.px: 20
-background.solid: $inherited.colors.border
-
-\-- ftd.image:
-src: $header-2.logo
-width.fixed.px: 55
-height: auto
-border-radius.px: 20
-margin-vertical.px: 10
-margin-right.px: 10
-
-\-- ftd.text: $header-2.logo-test
-margin-right.px: 10
-color: $inherited.colors.custom.four
-text-align: center
-align-self: center
-
-\-- ftd.row:
-width: fill-container
-height: fill-container
-align-content: left
-
-\-- ftd.text: $header-2.cta-text-1
-role: $inherited.types.label-large
-text-align: center
-margin-vertical.px: 28
-margin-horizontal.px: 32
-color: $inherited.colors.background.base
-
-\-- ftd.text: $header-2.cta-text-2
-role: $inherited.types.label-large
-text-align: center
-margin-vertical.px: 28
-margin-horizontal.px: 0
-color: $inherited.colors.background.base
-
-\-- ftd.text: $header-2.cta-text-3
-role: $inherited.types.label-large
-text-align: center
-margin-vertical.px: 28
-margin-horizontal.px: 32
-color: $inherited.colors.background.base
-
-\-- end: ftd.row
-
-\-- ftd.row:
-align-self: center
-
-\-- ftd.text: $header-2.cta-button-1
-role: $inherited.types.label-large
-text-align: center
-padding-vertical.px: 15
-padding-horizontal.px: 24
-border-radius.px: 10
-background.solid: $inherited.colors.custom.seven
-color: $inherited.colors.background.base
-link: https://tailblocks.cc/
-
-\-- end: ftd.row
-
-\-- end: ftd.row
-
-\-- end: ftd.row
-
-\-- end: header-2
-
--- end: cb.code
-
--- end: lib.container-wrapper
 
 -- end: lib.page
-
-
-
-
-
 
 
 
@@ -141,7 +17,82 @@ string logo-test:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
 string cta-button-1:
+string cta-button-1-link:
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: hug-content
+
+-- header-2-desktop:
+logo: $header-2.logo
+logo-test: $header-2.logo-test
+cta-text-1: $header-2.cta-text-1
+cta-text-2: $header-2.cta-text-2
+cta-text-3: $header-2.cta-text-3
+cta-link-1: $header-2.cta-link-1
+cta-link-2: $header-2.cta-link-2
+cta-link-3: $header-2.cta-link-3
+cta-button-1: $header-2.cta-button-1
+cta-button-1-link: $header-2.cta-button-1-link  
+
+-- end: ftd.column
+
+
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+-- navbar-mobile:
+logo: $header-2.logo
+logo-test: $header-2.logo-test
+
+-- navbar-dropdown:
+cta-text-1: $header-2.cta-text-1
+cta-text-2: $header-2.cta-text-2
+cta-text-3: $header-2.cta-text-3
+cta-link-1: $header-2.cta-link-1
+cta-link-2: $header-2.cta-link-2
+cta-link-3: $header-2.cta-link-3
+cta-button-1: $header-2.cta-button-1
+cta-button-1-link: $header-2.cta-button-1-link
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: header-2
+
+
+
+
+
+
+
+
+
+
+-- component header-2-desktop:
+ftd.image-src logo:
+string logo-test:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
+string cta-button-1:
+string cta-button-1-link:
 
 -- ftd.row:
 width: fill-container
@@ -158,14 +109,14 @@ border-radius.px: 20
 background.solid: $inherited.colors.border
 
 -- ftd.image:
-src: $header-2.logo
+src: $header-2-desktop.logo
 width.fixed.px: 55
 height: auto
 border-radius.px: 20
 margin-vertical.px: 10
 margin-right.px: 10
 
--- ftd.text: $header-2.logo-test
+-- ftd.text: $header-2-desktop.logo-test
 margin-right.px: 10
 color: $inherited.colors.background.base
 text-align: center
@@ -176,33 +127,36 @@ width: fill-container
 height: fill-container
 align-content: left
 
--- ftd.text: $header-2.cta-text-1
+-- ftd.text: $header-2-desktop.cta-text-1
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.cta-primary.base
+link: $header-2-desktop.cta-link-1
 
--- ftd.text: $header-2.cta-text-2
+-- ftd.text: $header-2-desktop.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
 color: $inherited.colors.cta-primary.base
+link: $header-2-desktop.cta-link-2
 
--- ftd.text: $header-2.cta-text-3
+-- ftd.text: $header-2-desktop.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.cta-primary.base
+link: $header-2-desktop.cta-link-3
 
 -- end: ftd.row
 
 -- ftd.row:
 align-self: center
 
--- ftd.text: $header-2.cta-button-1
+-- ftd.text: $header-2-desktop.cta-button-1
 role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 15
@@ -210,7 +164,7 @@ padding-horizontal.px: 24
 border-radius.px: 10
 background.solid: $inherited.colors.background.base
 color: $inherited.colors.border
-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+link: $header-2-desktop.cta-button-1-link
 
 -- end: ftd.row
 
@@ -218,4 +172,137 @@ link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 -- end: ftd.row
 
--- end: header-2
+-- end: header-2-desktop
+
+
+
+
+
+
+
+
+
+
+-- boolean $menu-open: false
+
+-- component navbar-mobile:
+ftd.image-src logo:
+string logo-test:
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+spacing: space-between
+border-radius.px: 20
+id: navbar-mobile-2
+background.solid: $inherited.colors.border
+
+
+-- ftd.row:
+height: fill-container
+width: hug-content
+margin-left.percent: 10
+
+-- ftd.image:
+src: $navbar-mobile.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+-- ftd.text: $navbar-mobile.logo-test
+margin-horizontal.px: 10
+color: $inherited.colors.background.base
+text-align: center
+align-self: center
+
+-- end: ftd.row
+
+
+
+-- ftd.image: 
+src: $assets.files.images.burger-menu.svg
+height.fixed.px: 30
+margin-left.percent: 80
+anchor.id: navbar-mobile-2
+$on-click$: $ftd.set-bool($a = $menu-open, v = true)
+
+-- end: ftd.row
+
+-- end: navbar-mobile
+
+
+
+
+
+
+
+
+
+-- component navbar-dropdown:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
+string cta-button-1:
+string cta-button-1-link:
+
+-- ftd.row:
+if: {menu-open}
+width: fill-container
+height: fill-container
+anchor: window
+z-index: 100
+spacing: space-between
+background.solid: #fff  
+
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+padding-left.px: 30
+padding-top.px: 30
+spacing.fixed.px: 30
+
+
+
+-- ftd.text: $navbar-dropdown.cta-text-1
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-1
+
+-- ftd.text: $navbar-dropdown.cta-text-2
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-2
+
+-- ftd.text: $navbar-dropdown.cta-text-3
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-3
+
+-- ftd.text: $navbar-dropdown.cta-button-1	
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-button-1-link
+
+
+-- end: ftd.column
+
+
+-- ftd.image: 
+src: $assets.files.images.cross.svg
+height.fixed.px: 30
+margin-top.px: 30
+margin-right.px: 100
+z-index: 100
+$on-click$: $ftd.set-bool($a = $menu-open, v = false)
+
+-- end: ftd.row
+
+-- end: navbar-dropdown

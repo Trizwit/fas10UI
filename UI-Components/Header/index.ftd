@@ -756,12 +756,21 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
 \-- fastn.dependency: fastnui.trizwit.com
 
 -- end: cb.code
+
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -770,16 +779,25 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- header-2.header-2: 
-logo: $assets.files.images.Header.header-2.trizwit.jpeg
+logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 -- end: cb.code
 
@@ -789,12 +807,17 @@ cta-button-1: Button
 if: { !code-open-2 }
 
 -- header-2.header-2: 
-logo: $assets.files.images.Header.header-2.trizwit.jpeg
+logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+
 
 -- end: lib.container-wrapper
 
@@ -804,17 +827,23 @@ if: { code-open-2 }
 -- cb.code:
 lang: ftd
 
-\-- lib.container-wrapper:
+\;; component calling...
 
 \-- header-2: 
-logo: $assets.files.images.Header.header-2.trizwit.jpeg
+logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
-\-- end: lib.container-wrapper
+
+\;; component definition...
+
 
 \-- component header-2:
 ftd.image-src logo:
@@ -822,7 +851,82 @@ string logo-test:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
 string cta-button-1:
+string cta-button-1-link:
+
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+
+\-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: hug-content
+
+\-- header-2-desktop:
+logo: $header-2.logo
+logo-test: $header-2.logo-test
+cta-text-1: $header-2.cta-text-1
+cta-text-2: $header-2.cta-text-2
+cta-text-3: $header-2.cta-text-3
+cta-link-1: $header-2.cta-link-1
+cta-link-2: $header-2.cta-link-2
+cta-link-3: $header-2.cta-link-3
+cta-button-1: $header-2.cta-button-1
+cta-button-1-link: $header-2.cta-button-1-link  
+
+\-- end: ftd.column
+
+
+
+\-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+\-- navbar-mobile:
+logo: $header-2.logo
+logo-test: $header-2.logo-test
+
+\-- navbar-dropdown:
+cta-text-1: $header-2.cta-text-1
+cta-text-2: $header-2.cta-text-2
+cta-text-3: $header-2.cta-text-3
+cta-link-1: $header-2.cta-link-1
+cta-link-2: $header-2.cta-link-2
+cta-link-3: $header-2.cta-link-3
+cta-button-1: $header-2.cta-button-1
+cta-button-1-link: $header-2.cta-button-1-link
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: header-2
+
+
+
+
+
+
+
+
+
+
+\-- component header-2-desktop:
+ftd.image-src logo:
+string logo-test:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
+string cta-button-1:
+string cta-button-1-link:
 
 \-- ftd.row:
 width: fill-container
@@ -839,16 +943,16 @@ border-radius.px: 20
 background.solid: $inherited.colors.border
 
 \-- ftd.image:
-src: $header-2.logo
+src: $header-2-desktop.logo
 width.fixed.px: 55
 height: auto
 border-radius.px: 20
 margin-vertical.px: 10
 margin-right.px: 10
 
-\-- ftd.text: $header-2.logo-test
+\-- ftd.text: $header-2-desktop.logo-test
 margin-right.px: 10
-color: $inherited.colors.custom.four
+color: $inherited.colors.background.base
 text-align: center
 align-self: center
 
@@ -857,49 +961,186 @@ width: fill-container
 height: fill-container
 align-content: left
 
-\-- ftd.text: $header-2.cta-text-1
+\-- ftd.text: $header-2-desktop.cta-text-1
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-2-desktop.cta-link-1
 
-\-- ftd.text: $header-2.cta-text-2
+\-- ftd.text: $header-2-desktop.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-2-desktop.cta-link-2
 
-\-- ftd.text: $header-2.cta-text-3
+\-- ftd.text: $header-2-desktop.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-2-desktop.cta-link-3
 
 \-- end: ftd.row
 
 \-- ftd.row:
 align-self: center
 
-\-- ftd.text: $header-2.cta-button-1
+\-- ftd.text: $header-2-desktop.cta-button-1
 role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
-background.solid: $inherited.colors.custom.seven
+background.solid: $inherited.colors.background.base
+color: $inherited.colors.border
+link: $header-2-desktop.cta-button-1-link
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: header-2-desktop
+
+
+
+
+
+
+
+
+
+
+\-- boolean $menu-open: false
+
+\-- component navbar-mobile:
+ftd.image-src logo:
+string logo-test:
+
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+spacing: space-between
+border-radius.px: 20
+id: navbar-mobile-2
+background.solid: $inherited.colors.border
+
+
+\-- ftd.row:
+height: fill-container
+width: hug-content
+margin-left.percent: 10
+
+\-- ftd.image:
+src: $navbar-mobile.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+\-- ftd.text: $navbar-mobile.logo-test
+margin-horizontal.px: 10
 color: $inherited.colors.background.base
-link: https://tailblocks.cc/
+text-align: center
+align-self: center
 
 \-- end: ftd.row
 
-\-- end: ftd.row
+
+
+\-- ftd.image: 
+src: $assets.files.images.burger-menu.svg
+height.fixed.px: 30
+margin-left.percent: 80
+anchor.id: navbar-mobile-2
+$on-click$: $ftd.set-bool($a = $menu-open, v = true)
 
 \-- end: ftd.row
 
-\-- end: header-2
+\-- end: navbar-mobile
+
+
+
+
+
+
+
+
+
+\-- component navbar-dropdown:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
+string cta-button-1:
+string cta-button-1-link:
+
+\-- ftd.row:
+if: {menu-open}
+width: fill-container
+height: fill-container
+anchor: window
+z-index: 100
+spacing: space-between
+background.solid: #fff  
+
+
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+padding-left.px: 30
+padding-top.px: 30
+spacing.fixed.px: 30
+
+
+
+\-- ftd.text: $navbar-dropdown.cta-text-1
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-1
+
+\-- ftd.text: $navbar-dropdown.cta-text-2
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-2
+
+\-- ftd.text: $navbar-dropdown.cta-text-3
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-3
+
+\-- ftd.text: $navbar-dropdown.cta-button-1	
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-button-1-link
+
+
+\-- end: ftd.column
+
+
+\-- ftd.image: 
+src: $assets.files.images.cross.svg
+height.fixed.px: 30
+margin-top.px: 30
+margin-right.px: 100
+z-index: 100
+$on-click$: $ftd.set-bool($a = $menu-open, v = false)
+
+\-- end: ftd.row
+
+\- end: navbar-dropdown
+
 
 -- end: cb.code
 
@@ -969,12 +1210,21 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
 \-- fastn.dependency: fastnui.trizwit.com
 
 -- end: cb.code
+
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -983,16 +1233,25 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- header-3.header-3: 
-logo: $assets.files.images.Header.header-3.trizwit.jpeg
+logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 -- end: cb.code
 
@@ -1002,13 +1261,16 @@ cta-button-1: Button
 if: { !code-open-3 }
 
 -- header-3.header-3: 
-logo: $assets.files.images.Header.header-3.trizwit.jpeg
+logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
-
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 -- end: lib.container-wrapper
 
 -- lib.container-wrapper:
@@ -1017,25 +1279,103 @@ if: { code-open-3 }
 -- cb.code:
 lang: ftd
 
-\-- lib.container-wrapper:
+\;; component calling...
 
 \-- header-3: 
-logo: $assets.files.images.Header.header-3.trizwit.jpeg
+logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
-\-- end: lib.container-wrapper
+
+\;; component definition...
+
 
 \-- component header-3:
+ftd.image-src logo:
+string logo-test:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
+string cta-button-1:
+string cta-button-1-link:
+
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+
+\-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: hug-content
+
+\-- header-3-desktop:
+logo: $header-3.logo
+logo-test: $header-3.logo-test
+cta-text-1: $header-3.cta-text-1
+cta-text-2: $header-3.cta-text-2
+cta-text-3: $header-3.cta-text-3
+cta-link-1: $header-3.cta-link-1
+cta-link-2: $header-3.cta-link-2
+cta-link-3: $header-3.cta-link-3
+cta-button-1: $header-3.cta-button-1
+cta-button-1-link: $header-3.cta-button-1-link  
+
+\-- end: ftd.column
+
+
+
+\-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+\-- navbar-mobile:
+logo: $header-3.logo
+logo-test: $header-3.logo-test
+
+\-- navbar-dropdown:
+cta-text-1: $header-3.cta-text-1
+cta-text-2: $header-3.cta-text-2
+cta-text-3: $header-3.cta-text-3
+cta-link-1: $header-3.cta-link-1
+cta-link-2: $header-3.cta-link-2
+cta-link-3: $header-3.cta-link-3
+cta-button-1: $header-3.cta-button-1
+cta-button-1-link: $header-3.cta-button-1-link
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: header-3
+
+
+
+
+
+
+
+\-- component header-3-desktop:
 string logo-test:
 ftd.image-src logo:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
 string cta-button-1:
+string cta-button-1-link:
 
 \-- ftd.row:
 width: fill-container
@@ -1059,26 +1399,29 @@ height: fill-container
 align-content: left
 
 
-\-- ftd.text: $header-3.cta-text-1
+\-- ftd.text: $header-3-desktop.cta-text-1
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-right.px: 32
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-3-desktop.cta-link-1
 
-\-- ftd.text: $header-3.cta-text-2
+\-- ftd.text: $header-3-desktop.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-3-desktop.cta-link-2
 
-\-- ftd.text: $header-3.cta-text-3
+\-- ftd.text: $header-3-desktop.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-3-desktop.cta-link-3
 
 \-- end: ftd.row
 
@@ -1091,7 +1434,7 @@ align-content: left
 
 
 \-- ftd.image:
-src: $header-3.logo
+src: $header-3-desktop.logo
 width.fixed.px: 55
 height: auto
 border-radius.px: 20
@@ -1099,8 +1442,8 @@ margin-vertical.px: 10
 margin-right.px: 10
 margin-left.px: 38
 
-\-- ftd.text: $header-3.logo-test
-color: $inherited.colors.custom.four
+\-- ftd.text: $header-3-desktop.logo-test
+color: $inherited.colors.background.base
 text-align: center
 align-self: center
 margin-right.px: 30
@@ -1110,23 +1453,157 @@ margin-right.px: 30
 \-- ftd.row:
 align-self: center
 
-\-- ftd.text: $header-3.cta-button-1
+\-- ftd.text: $header-3-desktop.cta-button-1
 role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
-background.solid: $inherited.colors.custom.seven
+background.solid: $inherited.colors.background.base
+color: $inherited.colors.border
+link: $header-3-desktop.cta-button-1-link
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: header-3-desktop
+
+
+
+
+
+
+
+
+
+\-- boolean $menu-open: false
+
+\-- component navbar-mobile:
+ftd.image-src logo:
+string logo-test:
+
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+spacing: space-between
+border-radius.px: 20
+id: navbar-mobile-3
+background.solid: $inherited.colors.border
+
+
+\-- ftd.row:
+height: fill-container
+width: hug-content
+margin-left.percent: 10
+
+\-- ftd.image:
+src: $navbar-mobile.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+\-- ftd.text: $navbar-mobile.logo-test
+margin-horizontal.px: 10
 color: $inherited.colors.background.base
-link: https://tailblocks.cc/
+text-align: center
+align-self: center
 
 \-- end: ftd.row
 
-\-- end: ftd.row
+
+
+\-- ftd.image: 
+src: $assets.files.images.burger-menu.svg
+height.fixed.px: 30
+margin-left.percent: 80
+anchor.id: navbar-mobile-3
+$on-click$: $ftd.set-bool($a = $menu-open, v = true)
 
 \-- end: ftd.row
 
-\-- end: header-3
+\-- end: navbar-mobile
+
+
+
+
+
+
+
+
+
+\-- component navbar-dropdown:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
+string cta-button-1:
+string cta-button-1-link:
+
+\-- ftd.row:
+if: {menu-open}
+width: fill-container
+height: fill-container
+anchor: window
+z-index: 100
+spacing: space-between
+background.solid: #fff  
+
+
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+padding-left.px: 30
+padding-top.px: 30
+spacing.fixed.px: 30
+
+
+
+\-- ftd.text: $navbar-dropdown.cta-text-1
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-1
+
+\-- ftd.text: $navbar-dropdown.cta-text-2
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-2
+
+\-- ftd.text: $navbar-dropdown.cta-text-3
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-3
+
+\-- ftd.text: $navbar-dropdown.cta-button-1	
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-button-1-link
+
+
+\-- end: ftd.column
+
+
+\-- ftd.image: 
+src: $assets.files.images.cross.svg
+height.fixed.px: 30
+margin-top.px: 30
+margin-right.px: 100
+z-index: 100
+$on-click$: $ftd.set-bool($a = $menu-open, v = false)
+
+\-- end: ftd.row
+
+\-- end: navbar-dropdown
+
+
 
 -- end: cb.code
 
@@ -1196,12 +1673,21 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
 \-- fastn.dependency: fastnui.trizwit.com
 
 -- end: cb.code
+
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -1210,16 +1696,25 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- header-4.header-4: 
-logo: $assets.files.images.Header.header-4.trizwit.jpeg
+logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 -- end: cb.code
 
@@ -1229,12 +1724,16 @@ cta-button-1: Button
 if: { !code-open-4 }
 
 -- header-4.header-4: 
-logo: $assets.files.images.Header.header-4.trizwit.jpeg
+logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 -- end: lib.container-wrapper
 
@@ -1244,17 +1743,24 @@ if: { code-open-4 }
 -- cb.code:
 lang: ftd
 
-\-- lib.container-wrapper:
+\;; component calling...
 
 \-- header-4: 
-logo: $assets.files.images.Header.header-4.trizwit.jpeg
+logo: $assets.files.images.Header.header-1.trizwit.jpeg
 logo-test: TRIZWIT
 cta-text-1: First Link
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 cta-button-1: Button
+cta-button-1-link: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
-\-- end: lib.container-wrapper
+
+\;; component definition...
+
+
 
 \-- component header-4:
 ftd.image-src logo:
@@ -1262,7 +1768,79 @@ string logo-test:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
 string cta-button-1:
+string cta-button-1-link:
+
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+
+\-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: hug-content
+
+\-- header-4-desktop:
+logo: $header-4.logo
+logo-test: $header-4.logo-test
+cta-text-1: $header-4.cta-text-1
+cta-text-2: $header-4.cta-text-2
+cta-text-3: $header-4.cta-text-3
+cta-link-1: $header-4.cta-link-1
+cta-link-2: $header-4.cta-link-2
+cta-link-3: $header-4.cta-link-3
+cta-button-1: $header-4.cta-button-1
+cta-button-1-link: $header-4.cta-button-1-link  
+
+\-- end: ftd.column
+
+
+
+\-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+\-- navbar-mobile:
+logo: $header-4.logo
+logo-test: $header-4.logo-test
+
+\-- navbar-dropdown:
+cta-text-1: $header-4.cta-text-1
+cta-text-2: $header-4.cta-text-2
+cta-text-3: $header-4.cta-text-3
+cta-link-1: $header-4.cta-link-1
+cta-link-2: $header-4.cta-link-2
+cta-link-3: $header-4.cta-link-3
+cta-button-1: $header-4.cta-button-1
+cta-button-1-link: $header-4.cta-button-1-link
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: header-4
+
+
+
+
+
+
+
+\-- component header-4-desktop:
+ftd.image-src logo:
+string logo-test:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
+string cta-button-1:
+string cta-button-1-link:
 
 
 \-- ftd.row:
@@ -1282,16 +1860,16 @@ background.solid: $inherited.colors.border
 
 
 \-- ftd.image:
-src: $header-4.logo
+src: $header-4-desktop.logo
 width.fixed.px: 55
 height: auto
 border-radius.px: 20
 margin-vertical.px: 10
 margin-right.px: 10
 
-\-- ftd.text: $header-4.logo-test
+\-- ftd.text: $header-4-desktop.logo-test
 margin-right.px: 10
-color: $inherited.colors.custom.four
+color: $inherited.colors.background.base
 text-align: center
 align-self: center
 
@@ -1301,47 +1879,183 @@ height: fill-container
 align-content: center
 
 
-\-- ftd.text: $header-4.cta-text-1
+\-- ftd.text: $header-4-desktop.cta-text-1
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-4-desktop.cta-link-1
 
-\-- ftd.text: $header-4.cta-text-2
+\-- ftd.text: $header-4-desktop.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-4-desktop.cta-link-2
 
-\-- ftd.text: $header-4.cta-text-3
+\-- ftd.text: $header-4-desktop.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
-color: $inherited.colors.background.base
+color: $inherited.colors.cta-primary.base
+link: $header-4-desktop.cta-link-3
 
 \-- end: ftd.row
 
 
-\-- ftd.text: $header-4.cta-button-1
+\-- ftd.text: $header-4-desktop.cta-button-1
 align-self: center
 role: $inherited.types.label-large
 text-align: center
 padding-vertical.px: 15
 padding-horizontal.px: 24
 border-radius.px: 10
-background.solid: $inherited.colors.custom.seven
+background.solid: $inherited.colors.background.base
+color: $inherited.colors.border
+link: $header-4-desktop.cta-button-1-link
+
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: header-4-desktop
+
+
+
+
+
+
+
+
+
+\-- boolean $menu-open: false
+
+\-- component navbar-mobile:
+ftd.image-src logo:
+string logo-test:
+
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+spacing: space-between
+border-radius.px: 20
+id: navbar-mobile-4
+background.solid: $inherited.colors.border
+
+
+\-- ftd.row:
+height: fill-container
+width: hug-content
+margin-left.percent: 10
+
+\-- ftd.image:
+src: $navbar-mobile.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+\-- ftd.text: $navbar-mobile.logo-test
+margin-horizontal.px: 10
 color: $inherited.colors.background.base
-link: https://tailblocks.cc/
-
-
-\-- end: ftd.row
+text-align: center
+align-self: center
 
 \-- end: ftd.row
 
-\-- end: header-4
+
+
+\-- ftd.image: 
+src: $assets.files.images.burger-menu.svg
+height.fixed.px: 30
+margin-left.percent: 80
+anchor.id: navbar-mobile-4
+$on-click$: $ftd.set-bool($a = $menu-open, v = true)
+
+\-- end: ftd.row
+
+\-- end: navbar-mobile
+
+
+
+
+
+
+
+
+
+\-- component navbar-dropdown:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
+string cta-button-1:
+string cta-button-1-link:
+
+\-- ftd.row:
+if: {menu-open}
+width: fill-container
+height: fill-container
+anchor: window
+z-index: 100
+spacing: space-between
+background.solid: #fff  
+
+
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+padding-left.px: 30
+padding-top.px: 30
+spacing.fixed.px: 30
+
+
+
+\-- ftd.text: $navbar-dropdown.cta-text-1
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-1
+
+\-- ftd.text: $navbar-dropdown.cta-text-2
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-2
+
+\-- ftd.text: $navbar-dropdown.cta-text-3
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-3
+
+\-- ftd.text: $navbar-dropdown.cta-button-1	
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-button-1-link
+
+
+\-- end: ftd.column
+
+
+\-- ftd.image: 
+src: $assets.files.images.cross.svg
+height.fixed.px: 30
+margin-top.px: 30
+margin-right.px: 100
+z-index: 100
+$on-click$: $ftd.set-bool($a = $menu-open, v = false)
+
+\-- end: ftd.row
+
+\-- end: navbar-dropdown
+
 
 -- end: cb.code
 
@@ -1411,6 +2125,10 @@ margin-left.px: 32
 margin-top.px: 32
 align-self: center
 
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
 -- cb.code:
 lang: ftd
 
@@ -1418,12 +2136,22 @@ lang: ftd
 
 -- end: cb.code
 
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
 -- cb.code:
 lang: ftd
 
 \-- import: fastnui.trizwit.com/UI-Components/Header/header-5
 
 -- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
 
 -- cb.code:
 lang: ftd
@@ -1434,6 +2162,9 @@ logo-text: Portfolio
 cta-text-1: Home
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 -- end: cb.code
 
@@ -1448,6 +2179,9 @@ logo-text: Portfolio
 cta-text-1: Home
 cta-text-2: Second Link
 cta-text-3: Third Link
+cta-link-1: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-2: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
+cta-link-3: https://media.tenor.com/t7rftXtub88AAAAC/among-us.gif
 
 -- end: lib.container-wrapper
 
@@ -1457,13 +2191,78 @@ if: { code-open-5 }
 -- cb.code:
 lang: ftd
 
+
 \-- component header-5:
 ftd.image-src logo:
 string logo-text:
 string cta-text-1:
 string cta-text-2:
 string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
 
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+
+\-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: hug-content
+
+\-- header-5-desktop:
+logo: $header-5.logo
+logo-text: $header-5.logo-text
+cta-text-1: $header-5.cta-text-1
+cta-text-2: $header-5.cta-text-2
+cta-text-3: $header-5.cta-text-3
+cta-link-1: $header-5.cta-link-1
+cta-link-2: $header-5.cta-link-2
+cta-link-3: $header-5.cta-link-3 
+
+\-- end: ftd.column
+
+\-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+\-- navbar-mobile:
+logo: $header-5.logo
+logo-test: $header-5.logo-text
+
+\-- navbar-dropdown:
+cta-text-1: $header-5.cta-text-1
+cta-text-2: $header-5.cta-text-2
+cta-text-3: $header-5.cta-text-3
+cta-link-1: $header-5.cta-link-1
+cta-link-2: $header-5.cta-link-2
+cta-link-3: $header-5.cta-link-3
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: header-5
+
+
+
+
+
+
+
+
+
+\-- component header-5-desktop:
+ftd.image-src logo:
+string logo-text:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
 
 \-- ftd.row:
 width: fill-container
@@ -1481,13 +2280,13 @@ border-radius.px: 20
 background.solid: $inherited.colors.border
 
 \-- ftd.image:
-src: $header-5.logo
+src: $header-5-desktop.logo
 width.fixed.px: 55
 height: auto
 border-radius.px: 20
 margin-vertical.px: 10
 
-\-- ftd.text: $header-5.logo-text
+\-- ftd.text: $header-5-desktop.logo-text
 margin-horizontal.px: 10
 color: $inherited.colors.background.base
 text-align: center
@@ -1498,28 +2297,29 @@ width: fill-container
 height: fill-container
 align-content: right
 
-\-- ftd.text: $header-5.cta-text-1
+\-- ftd.text: $header-5-desktop.cta-text-1
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.cta-primary.base
+link: $header-5-desktop.cta-link-1
 
-
-\-- ftd.text: $header-5.cta-text-2
+\-- ftd.text: $header-5-desktop.cta-text-2
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 0
 color: $inherited.colors.cta-primary.base
+link: $header-5-desktop.cta-link-2
 
-
-\-- ftd.text: $header-5.cta-text-3
+\-- ftd.text: $header-5-desktop.cta-text-3
 role: $inherited.types.label-large
 text-align: center
 margin-vertical.px: 28
 margin-horizontal.px: 32
 color: $inherited.colors.cta-primary.base
+link: $header-5-desktop.cta-link-3
 
 \-- end: ftd.row
 
@@ -1527,7 +2327,124 @@ color: $inherited.colors.cta-primary.base
 
 \-- end: ftd.row
 
-\-- end: header-5
+\-- end: header-5-desktop
+
+
+
+
+
+
+
+
+
+\-- boolean $menu-open: false
+
+\-- component navbar-mobile:
+ftd.image-src logo:
+string logo-test:
+
+\-- ftd.row:
+width: fill-container
+height: hug-content
+align-content: center
+spacing: space-between
+border-radius.px: 20
+id: navbar-mobile-5
+background.solid: $inherited.colors.border
+
+\-- ftd.row:
+height: fill-container
+width: hug-content
+margin-left.percent: 10
+
+\-- ftd.image:
+src: $navbar-mobile.logo
+width.fixed.px: 55
+height: auto
+border-radius.px: 20
+margin-vertical.px: 10
+
+\-- ftd.text: $navbar-mobile.logo-test
+margin-horizontal.px: 10
+color: $inherited.colors.background.base
+text-align: center
+align-self: center
+
+\-- end: ftd.row
+
+\-- ftd.image: 
+src: $assets.files.images.burger-menu.svg
+height.fixed.px: 30
+margin-left.percent: 80
+anchor.id: navbar-mobile-5
+$on-click$: $ftd.set-bool($a = $menu-open, v = true)
+
+\-- end: ftd.row
+
+\-- end: navbar-mobile
+
+
+
+
+
+
+
+\-- component navbar-dropdown:
+string cta-text-1:
+string cta-text-2:
+string cta-text-3:
+optional string cta-link-1: 
+optional string cta-link-2:
+optional string cta-link-3:
+
+\-- ftd.row:
+if: {menu-open}
+width: fill-container
+height: fill-container
+anchor: window
+z-index: 100
+spacing: space-between
+background.solid: #fff  
+
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+padding-left.px: 30
+padding-top.px: 30
+spacing.fixed.px: 30
+
+
+\-- ftd.text: $navbar-dropdown.cta-text-1
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-1
+
+\-- ftd.text: $navbar-dropdown.cta-text-2
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-2
+
+\-- ftd.text: $navbar-dropdown.cta-text-3
+role: $inherited.types.label-large
+color: #000
+link: $navbar-dropdown.cta-link-3
+
+\-- end: ftd.column
+
+
+\-- ftd.image: 
+src: $assets.files.images.cross.svg
+height.fixed.px: 30
+margin-top.px: 30
+margin-right.px: 100
+z-index: 100
+$on-click$: $ftd.set-bool($a = $menu-open, v = false)
+
+\-- end: ftd.row
+
+\-- end: navbar-dropdown
+
 
 -- end: cb.code
 
@@ -1536,6 +2453,7 @@ color: $inherited.colors.cta-primary.base
 -- end: ftd.column
 
 -- end: ui-5
+
 
 
 
