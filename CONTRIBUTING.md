@@ -26,7 +26,7 @@ git checkout -b your-username-feature
 ```
 
 
-4. Create a Component Folder:
+[4. Create a Component Folder:](https://github.com/Trizwit/FastnUI/tree/main/UI-Components)
 
 - Before submitting your pull request, create a new folder under the **UI-Components** directory. Name the folder your-username-component, where your-username is your GitHub username, and component is the name of your component.
 
