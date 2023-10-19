@@ -1,4 +1,5 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+-- import: fastnui.trizwit.com/UI-Components/lib as lib2
 
 -- page:
 
@@ -44,58 +45,58 @@ border-right-width.px: 1
 border-right-color: #1E2D3D
 
 
--- selector:
+-- lib2.selector:
 
--- button: Alert
+-- lib2.button: Alert
 url: /UI-Components/Alert/
 
--- button: Blog
+-- lib2.button: Blog
 url: /UI-Components/Blog/
 
--- button: Contact
+-- lib2.button: Contact
 url: /UI-Components/Contact/
 
--- button: Content
+-- lib2.button: Content
 $is-open: true
 url: /UI-Components/Content/
 
--- button: Footer
+-- lib2.button: Footer
 url: /UI-Components/Footer/
 
--- button: Gallery
+-- lib2.button: Gallery
 url: /UI-Components/Gallery/
 
--- button: Header
+-- lib2.button: Header
 url: /UI-Components/Header/
 
--- button: Hero
+-- lib2.button: Hero
 url: /UI-Components/Hero/
 
--- button: Label
+-- lib2.button: Label
 url: /UI-Components/Label/
 
--- button: Login
+-- lib2.button: Login
 url: /UI-Components/Login/
 
--- button: Modal
+-- lib2.button: Modal
 url: /UI-Components/Modal/
 
--- button: Notification
+-- lib2.button: Notification
 url: /UI-Components/Notification/
 
--- button: Pagination
+-- lib2.button: Pagination
 url: /UI-Components/Pagination/
 
--- button: ProgressBar
+-- lib2.button: ProgressBar
 url: /UI-Components/ProgressBar/
 
--- button: SearchBar
+-- lib2.button: SearchBar
 url: /UI-Components/SearchBar/
 
--- button: VideoDetails
+-- lib2.button: VideoDetails
 url: /UI-Components/VideoDetails/
 
--- end: selector
+-- end: lib2.selector
 
 -- end: ftd.column
 
@@ -119,74 +120,6 @@ align-content: center
 -- end: ftd.column
 
 -- end: page
-
-
-
-
-
-
-
-
-
--- component selector:
-children c:
-
--- ftd.column:
-width: fill-container
-min-height.fixed.calc: 100vh - 0px
-height.fixed.vh: 100
-padding-bottom.px: 80
-align-content: top-center
-
-
--- ftd.column:
-width: fill-container
-height: fill-container
-align-content: top-center
-padding-top.px: 8
-spacing.fixed.px: 10
-css: [ $assets.files.style.scroll.css ]
-classes: body 
-children: $selector.c
-
--- end: ftd.column
-
--- end: ftd.column
-
--- end: selector
-
-
-
-
-
-
-
-
-
--- component button:
-caption name:
-boolean $is-active: false
-optional boolean $is-open: false
-string url:
-
--- ftd.text: $button.name
-width.fixed.percent: 90
-padding-vertical.px: 32
-color: #FFF
-role: $fira-code-size-scroll-400
-align-self: center
-text-align: center
-border-radius.px: 8
-border-width.px: 1
-border-color: #5F6C78
-background.solid if {button.is-active}: #3D4A55
-background.solid if {button.is-open}: #3D4A55
-background.solid: #011221
-$on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
-$on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
-link: $button.url 
-
--- end: button
 
 
 
