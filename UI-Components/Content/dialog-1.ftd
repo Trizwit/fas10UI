@@ -147,51 +147,52 @@ padding.px:5
 
 -- ftd.text: $dialog-button-1.buttonName
 role: $inherited.types.copy-regular
-align-self:center
-text-align:center
+align-self: center
+text-align: center
 
 -- end: ftd.container
 
 -- ftd.container:
 if: {$dialog-button-1.isOpen}
-anchor:window
-top.px:0
-left.px:0
-height.fixed.vh:100
-width.fixed.vw:100
+anchor: window
+top.px: 0
+left.px: 0
+height.fixed.vh: 100
+width.fixed.vw: 100
 z-index:2
-background.solid:#00000066
+background.solid: #00000066
 
 -- ftd.container:
-top.vh:43
-left.vw:40
-z-index:3
-anchor:window
-background.solid:#ffffff
-border-radius.px:10
-padding.px:10
+top.vh: 43
+left.vw: 30
+z-index: 3
+anchor: window
+background.solid: #ffffff
+border-radius.px: 10
+padding.px: 10
 
 -- ftd.column: 
-width.fixed.vw:20
-height.fixed.vh:14
-align-content:center
-spacing:space-evenly
+width.fixed.vw if {ftd.device == "desktop"}: 20
+width.fixed.vw if {ftd.device == "mobile"}: 60
+height.fixed.vh: 14
+align-content: center
+spacing: space-evenly
 
 -- ftd.text: $dialog-button-1.message
 role: $inherited.types.copy-regular
 
 -- ftd.row: 
-align-content:center
-spacing:space-evenly
-margin-horizontal.px:10
-width.fixed.percent:100
+align-content: center
+spacing: space-evenly
+margin-horizontal.px: 10
+width.fixed.percent: 100
 
 -- ftd.text: Close
 role: $inherited.types.copy-regular
 color: #000000
 text-align: center
 padding-vertical.px: 5
-width.fixed.percent:40
+width.fixed.percent: 40
 border-radius.px: 10
 background.solid: #bbbbbb
 $on-click$: $ftd.set-bool($a = $dialog-button-1.isOpen, v = false)
