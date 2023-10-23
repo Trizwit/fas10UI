@@ -210,7 +210,6 @@ string register-text:
 string new-user-text:
 
 -- ftd.row:
-width.fixed.px if { ftd.device == "mobile" }: 550
 background.solid: #222222
 padding-horizontal.px: 20
 align-content: center
@@ -219,6 +218,7 @@ border-color: #ffff00
 border-width.px: 5
 
 -- ftd.column:
+if: { ftd.device == "desktop" }
 align-content: center
 padding-horizontal.px: 30
 
@@ -230,7 +230,7 @@ color: #ffffff
 
 -- ftd.container:
 height.fixed.px: 300
-width.fixed.px: 2
+width.fixed.px: 5
 background.solid: #ffff00
 
 -- ftd.column:
