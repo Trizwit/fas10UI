@@ -194,8 +194,8 @@ padding.px: 20
 -- ftd.text: $login-1.title
 role: $inherited.types.heading-medium
 
--- ftd.container:
-height.fixed.px: 25
+;; -- ftd.container:
+;; height.fixed.px: 25
 
 -- ftd.text-input:
 placeholder: Username
@@ -243,8 +243,8 @@ role: $registerStyle
 color: #000000
 display: inline
 
--- ftd.container:
-width.fixed.px: 5
+;; -- ftd.container:
+;; width.fixed.px: 5
 
 -- ftd.text: $login-1.register-text
 role: $registerStyle

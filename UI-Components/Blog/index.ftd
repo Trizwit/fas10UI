@@ -65,14 +65,14 @@ url: /UI-Components/Blog/
 -- lib2.button: Contact
 url: /UI-Components/Contact/
 
--- lib2.button: Content
+-- lib2.button: Dialog Box
 url: /UI-Components/Content/
 
 -- lib2.button: Footer
 url: /UI-Components/Footer/
 
--- lib2.button: Gallery
-url: /UI-Components/Gallery/
+;; -- lib2.button: Gallery
+;; url: /UI-Components/Gallery/
 
 -- lib2.button: Header
 url: /UI-Components/Header/
@@ -80,29 +80,29 @@ url: /UI-Components/Header/
 -- lib2.button: Hero
 url: /UI-Components/Hero/
 
--- lib2.button: Label
-url: /UI-Components/Label/
+;; -- lib2.button: Label
+;; url: /UI-Components/Label/
 
 -- lib2.button: Login
 url: /UI-Components/Login/
 
--- lib2.button: Modal
-url: /UI-Components/Modal/
+;; -- lib2.button: Modal
+;; url: /UI-Components/Modal/
 
 -- lib2.button: Notification
 url: /UI-Components/Notification/
 
--- lib2.button: Pagination
-url: /UI-Components/Pagination/
+;; -- lib2.button: Pagination
+;; url: /UI-Components/Pagination/
 
--- lib2.button: ProgressBar
-url: /UI-Components/ProgressBar/
+;; -- lib2.button: ProgressBar
+;; url: /UI-Components/ProgressBar/
 
--- lib2.button: SearchBar
-url: /UI-Components/SearchBar/
+;; -- lib2.button: SearchBar
+;; url: /UI-Components/SearchBar/
 
--- lib2.button: VideoDetails
-url: /UI-Components/VideoDetails/
+;; -- lib2.button: VideoDetails
+;; url: /UI-Components/VideoDetails/
 
 -- end: lib2.selector
 
