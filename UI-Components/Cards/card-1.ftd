@@ -1,0 +1,302 @@
+-- import: sarvom.github.io/poppins/assets as poppins-assets
+
+-- component card-1:
+caption heading:
+body content:
+string author:
+string date:
+ftd.image-src cover:
+boolean $click-heart: false
+boolean $hover-heading: false
+boolean $hover-content: false
+
+-- ftd.column:
+background.solid: #fff
+
+
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: hug-content
+ 
+-- ftd.image:
+src: $card-1.cover
+width.fixed.percent: 50
+
+-- ftd.column:
+width.fixed.percent: 50
+height: fill-container
+padding-horizontal.px: 50
+padding-top.px: 30
+border-top-width.px: 1
+border-right-width.px: 1
+border-bottom-width.px: 1
+border-color: #bfbfbf
+id: 3fj-card-1
+
+
+-- ftd.text: $card-1.author
+role: $poppins-size-12-400
+
+-- ftd.text: $card-1.date
+role: $poppins-size-12-400
+margin-bottom.px: 5
+
+-- ftd.text: $card-1.heading
+role: $poppins-size-28-700
+margin-bottom.px: 10
+color: #000
+color if { card-1.hover-heading }: #f1562a
+$on-mouse-enter$: $ftd.set-bool($a = $card-1.hover-heading, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $card-1.hover-heading, v = false)
+
+-- ftd.text: $card-1.content
+role: $poppins-size-16-400
+color: #000
+color if { card-1.hover-content }: #f1562a
+$on-mouse-enter$: $ftd.set-bool($a = $card-1.hover-content, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $card-1.hover-content, v = false)
+
+
+-- ftd.row:
+width.fixed.percent: 82
+padding-vertical.px: 15
+border-top-width.px: 1
+border-color: #bfbfbf
+margin-top.percent: 55
+anchor.id: 3fj-card-1
+
+-- ftd.text: 0
+role: $poppins-size-14-400
+color: #000
+margin-left.px: 10
+align-self: center
+
+-- ftd.text: comments
+role: $poppins-size-14-400
+color: #000
+margin-left.px: 10
+align-self: center
+
+-- ftd.image: 
+src: $assets.files.assets.heart-empty.svg
+if: { !card-1.click-heart }
+height.fixed.px: 20
+align-self: center
+margin-left.percent: 70
+$on-click$: $ftd.set-bool($a = $card-1.click-heart, v = true)
+
+-- ftd.image: 
+src: $assets.files.assets.heart-full.svg
+if: { card-1.click-heart }
+height.fixed.px: 20
+align-self: center
+margin-left.percent: 70
+$on-click$: $ftd.set-bool($a = $card-1.click-heart, v = false)
+
+-- end: ftd.row
+
+
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+;; mobile view............................................................
+
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+height: hug-content
+
+-- ftd.image:
+src: $card-1.cover
+width: fill-container
+
+-- ftd.column:
+width: fill-container
+height.fixed.px: 360
+padding-horizontal.px: 15
+padding-top.px: 30
+border-left-width.px: 1
+border-right-width.px: 1
+border-bottom-width.px: 1
+border-color: #bfbfbf
+id: 3fj-card-1-mobile
+
+
+-- ftd.text: $card-1.author
+role: $poppins-size-12-400
+
+-- ftd.text: $card-1.date
+role: $poppins-size-12-400
+margin-bottom.px: 5
+
+-- ftd.text: $card-1.heading
+role: $poppins-size-28-700
+margin-bottom.px: 10
+color: #000
+color if { card-1.hover-heading }: #f1562a
+$on-mouse-enter$: $ftd.set-bool($a = $card-1.hover-heading, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $card-1.hover-heading, v = false)
+
+-- ftd.text: $card-1.content
+role: $poppins-size-16-400
+color: #000
+color if { card-1.hover-content }: #f1562a
+$on-mouse-enter$: $ftd.set-bool($a = $card-1.hover-content, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $card-1.hover-content, v = false)
+margin-bottom.percent: 20
+
+
+-- ftd.row:
+width.fixed.percent: 92
+padding-vertical.px: 15
+border-top-width.px: 1
+border-color: #bfbfbf
+margin-top.percent: 75
+anchor.id: 3fj-card-1-mobile
+
+-- ftd.text: 0
+role: $poppins-size-14-400
+color: #000
+margin-left.px: 10
+align-self: center
+
+-- ftd.text: comments
+role: $poppins-size-14-400
+color: #000
+margin-left.px: 10
+align-self: center
+
+-- ftd.image: 
+src: $assets.files.assets.heart-empty.svg
+if: { !card-1.click-heart }
+height.fixed.px: 20
+align-self: center
+margin-left.percent: 60
+$on-click$: $ftd.set-bool($a = $card-1.click-heart, v = true)
+
+-- ftd.image: 
+src: $assets.files.assets.heart-full.svg
+if: { card-1.click-heart }
+height.fixed.px: 20
+align-self: center
+margin-left.percent: 60
+$on-click$: $ftd.set-bool($a = $card-1.click-heart, v = false)
+
+-- end: ftd.row
+
+
+
+-- end: ftd.column
+
+
+
+
+
+
+
+
+
+
+-- end: ftd.column
+
+
+
+-- end: ftd.column
+
+-- end: card-1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.type poppins-size-14-400-desktop:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-14-400-mobile:
+size.px: 14
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-14-400:
+desktop: $poppins-size-14-400-desktop
+mobile: $poppins-size-14-400-mobile
+
+
+
+
+
+-- ftd.type poppins-size-16-400-desktop:
+size.px: 16
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-16-400-mobile:
+size.px: 16
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-16-400:
+desktop: $poppins-size-16-400-desktop
+mobile: $poppins-size-16-400-mobile
+
+
+
+
+-- ftd.type poppins-size-28-700-desktop:
+size.px: 28
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-28-700-mobile:
+size.px: 20
+weight: 500
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-28-700:
+desktop: $poppins-size-28-700-desktop
+mobile: $poppins-size-28-700-mobile
+
+
+
+
+
+-- ftd.type poppins-size-12-400-desktop:
+size.px: 12
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.type poppins-size-12-400-mobile:
+size.px: 12
+weight: 400
+font-family: $poppins-assets.fonts.Poppins
+
+-- ftd.responsive-type poppins-size-12-400:
+desktop: $poppins-size-12-400-desktop
+mobile: $poppins-size-12-400-mobile
