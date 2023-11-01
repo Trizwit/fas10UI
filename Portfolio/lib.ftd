@@ -1,0 +1,252 @@
+-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+
+
+
+-- component selector:
+children c:
+
+-- ftd.column:
+width: fill-container
+min-height.fixed.calc: 100vh - 0px
+height.fixed.vh: 100
+padding-bottom.px: 80
+align-content: top-center
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: top-center
+padding-top.px: 8
+spacing.fixed.px: 10
+css: [ $assets.files.style.scroll.css ]
+classes: body 
+children: $selector.c
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: selector
+
+
+
+
+
+
+
+
+
+-- component button:
+caption name:
+boolean $is-active: false
+optional boolean $is-open: false
+string url:
+
+-- ftd.text: $button.name
+width.fixed.percent: 90
+padding-vertical.px: 32
+color: #FFF
+role: $fira-code-size-scroll-400
+align-self: center
+text-align: center
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid if {button.is-active}: #3D4A55
+background.solid if {button.is-open}: #3D4A55
+background.solid: #011221
+$on-mouse-enter$: $ftd.set-bool($a = $button.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $button.is-active, v = false)
+link: $button.url 
+
+-- end: button
+
+
+
+
+
+
+
+
+
+
+-- component portfolio_card:
+ftd.image-src cover:
+caption title:
+string demo_url: 
+string github_url: 
+
+-- ftd.column:
+width.fixed.percent if { ftd.device == "desktop"}: 25
+width.fixed.percent if { ftd.device == "mobile"}: 95
+height: hug-content
+border-width.px: 3
+border-color: #04dcf4
+padding.px: 2
+background.solid: #011221
+
+
+-- ftd.image: $portfolio_card.cover
+width: fill-container
+
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-content: center
+padding-horizontal.px: 16
+
+
+-- ftd.text: $portfolio_card.title
+role: $fira-code-size-20-400
+color: #fff
+text-align: center
+
+
+-- ftd.row:
+width: hug-content
+padding-vertical.px: 8
+align-content: center
+
+-- ftd.column:
+width.fixed.px: 46
+height.fixed.px: 46
+background.solid: #fff
+border-radius.px: 100
+z-index: 1
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.github-dark.svg
+width.fixed.px: 56
+padding-top.px: 1
+z-index: 2
+link: $portfolio_card.github_url
+
+-- end: ftd.column
+
+-- ftd.text: DEMO
+role: $fira-code-size-20-400
+color: #607B96
+css: [ $assets.files.style.logo.css]
+classes: animate-character
+padding-left.px: 16
+link: $portfolio_card.demo_url
+
+-- end: ftd.row
+
+
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: portfolio_card
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-16-desktop:
+size.px: 20
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-16-mobile:
+size.px: 20
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-20-400:
+desktop: $fira-code-size-16-desktop
+mobile: $fira-code-size-16-mobile
+
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-scroll-desktop:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-scroll-mobile:
+size.px: 10
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-scroll-400:
+desktop: $fira-code-size-scroll-desktop
+mobile: $fira-code-size-scroll-mobile
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-56-desktop:
+size.px: 56
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-56-mobile:
+size.px: 24
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-56-400:
+desktop: $fira-code-size-56-desktop
+mobile: $fira-code-size-56-mobile
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-30-desktop:
+size.px: 30
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-30-mobile:
+size.px: 20
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-30-400:
+desktop: $fira-code-size-30-desktop
+mobile: $fira-code-size-30-mobile

@@ -1,0 +1,102 @@
+-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+-- import: fastnui.trizwit.com/Portfolio/lib as lib3
+
+
+
+-- page:
+
+-- component page:
+
+
+-- ftd.column:
+height if {ftd.device == "desktop"}: fill-container
+height if {ftd.device == "mobile"}: auto
+types: 
+colors: 
+background.solid: #011627
+
+-- ftd.column:
+height if {ftd.device == "desktop"}: fill-container
+height if {ftd.device == "mobile"}: auto
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-vertical.px: 5
+border-bottom-width.px: 1
+border-bottom-color: #1E2D3D
+
+-- index.navbar:
+$hover-home: false
+$hover-about: false
+$hover-components: false
+$hover-templates: false
+$hover-portfolio: true
+
+-- end: ftd.row 
+
+
+-- ftd.row:
+width: fill-container
+height if {ftd.device == "desktop"}: fill-container
+height if {ftd.device == "mobile"}: auto
+
+
+-- ftd.row:
+width: fill-container
+height if {ftd.device == "desktop"}: fill-container
+height if {ftd.device == "mobile"}: auto
+padding-horizontal.vw: 7
+padding-vertical.vh: 7
+spacing.fixed.px: 100
+align-content: center
+wrap: true
+
+
+
+-- lib3.portfolio_card: Sample-1
+cover: $assets.files.assets.portfolio_template_1.png
+demo_url: https://trizwit.github.io/fastnfoliotemp/
+github_url: https://github.com/Trizwit/fastnfoliotemp
+
+
+-- lib3.portfolio_card: Sample-2
+cover: $assets.files.assets.portfolio_template_1.png
+demo_url: https://trizwit.github.io/fastnfoliotemp/
+github_url: https://github.com/Trizwit/fastnfoliotemp
+
+
+-- lib3.portfolio_card: Sample-3
+cover: $assets.files.assets.portfolio_template_1.png
+demo_url: https://trizwit.github.io/fastnfoliotemp/
+github_url: https://github.com/Trizwit/fastnfoliotemp
+
+
+-- lib3.portfolio_card: Sample-4
+cover: $assets.files.assets.portfolio_template_1.png
+demo_url: https://trizwit.github.io/fastnfoliotemp/
+github_url: https://github.com/Trizwit/fastnfoliotemp
+
+
+
+-- end: ftd.row
+
+;; page container end
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: page
+
+
+
+
+
+
+
+
+
+

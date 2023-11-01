@@ -128,7 +128,7 @@ border-right-width.px: 1
 color if {navbar.hover-templates}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-templates, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-templates, v = false)
-link: components/
+link: /Templates/
 -- end: ftd.desktop
 
 -- ftd.desktop:
@@ -143,7 +143,7 @@ border-right-width.px: 1
 color if {navbar.hover-portfolio}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-portfolio, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-portfolio, v = false)
-link: components/
+link: /Portfolio/
 -- end: ftd.desktop
 
 -- end: ftd.row
@@ -210,7 +210,7 @@ padding-horizontal.px: 32
 color if {navbar.hover-templates}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-templates, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-templates, v = false)
-link: components/
+link: /Templates/
 
 -- ftd.text: _Portfolio
 role: $fira-code-size-30-400
@@ -220,7 +220,7 @@ padding-horizontal.px: 32
 color if {navbar.hover-portfolio}: #FCFCFC
 $on-mouse-enter$: $ftd.set-bool($a = $navbar.hover-portfolio, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar.hover-portfolio, v = false)
-link: components/
+link: /Portfolio/
 
 -- end: ftd.column
 
