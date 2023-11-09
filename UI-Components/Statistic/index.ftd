@@ -167,7 +167,7 @@ title: Statistic-1
 -- ui-2:
 title: Statistic-2
 
-/-- ui-3:
+-- ui-3:
 title: Statistic-3
 
 -- end: ftd.column
@@ -704,6 +704,314 @@ margin-left.px: 2
 -- end: ftd.column
 
 -- end: ui-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component ui-3:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-3.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-3}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-3)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-3}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-3)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-3}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Statistic/statistic-3
+
+-- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
+-- cb.code:
+lang: ftd
+
+\-- statistic-3.statistic-3:
+title: Moon hashtag pop-up try hard offal
+stat-1-count: 2.7K
+stat-2-count: 1.8K
+stat-3-count: 35
+stat-4-count: 4
+stat-1-category: Users
+stat-2-category: Subscribes
+stat-3-category: Downloads
+stat-4-category: Products
+
+
+Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. 
+Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-3 }
+
+-- statistic-3.statistic-3:
+title: Moon hashtag pop-up try hard offal
+stat-1-count: 2.7K
+stat-2-count: 1.8K
+stat-3-count: 35
+stat-4-count: 4
+stat-1-category: Users
+stat-2-category: Subscribes
+stat-3-category: Downloads
+stat-4-category: Products
+
+
+Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. 
+Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.
+
+     
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-3 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- statistic-3:
+title: Moon hashtag pop-up try hard offal
+stat-1-count: 2.7K
+stat-2-count: 1.8K
+stat-3-count: 35
+stat-4-count: 4
+stat-1-category: Users
+stat-2-category: Subscribes
+stat-3-category: Downloads
+stat-4-category: Products
+
+
+Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. 
+Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.
+
+\-- end: lib.container-wrapper
+
+\-- component statistic-3:
+string title:
+body about:
+string stat-1-count:
+string stat-2-count:
+string stat-3-count:
+string stat-4-count:
+string stat-1-category:
+string stat-2-category:
+string stat-3-category:
+string stat-4-category:
+
+
+
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: center
+
+
+
+
+\-- ftd.text: $statistic-3.title
+classes: title
+css: [ $assets.files.style.statistic.css]
+margin-bottom.px: 12
+
+\-- ftd.text: $statistic-3.about
+classes: about
+css: [ $assets.files.style.statistic.css]
+margin-right.px if { ftd.device == "desktop" }: 260
+margin-left.px if { ftd.device == "desktop" }: 260
+margin-right.px if { ftd.device == "mobile" }: 50
+margin-left.px if { ftd.device == "mobile" }: 50
+text-align: center
+
+
+\-- ftd.row:
+margin-top.px if { ftd.device == "desktop" }: 100
+margin-top.px if { ftd.device == "mobile" }: 30
+spacing.fixed.px: 40
+align-content: center
+wrap: true
+
+\-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 12
+min-height.fixed.px: 160
+min-width.fixed.px:  200
+align-content: center 
+border-color: grey
+border-width.px: 2
+border-radius.px: 10
+
+\-- ftd.image:
+src: $assets.files.assets.cloud-download.svg
+width.fixed.px: 50
+height.fixed.px: 50
+
+\-- statistic-container:
+number: $statistic-3.stat-1-count
+category: $statistic-3.stat-1-category
+
+\-- end: ftd.column
+
+\-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 12
+min-height.fixed.px: 160
+min-width.fixed.px:  200
+align-content: center 
+border-color: grey
+border-width.px: 2
+border-radius.px: 10
+
+\-- ftd.image:
+src: $assets.files.assets.users.svg
+width.fixed.px: 50
+height.fixed.px: 50
+
+\-- statistic-container:
+number: $statistic-3.stat-2-count
+category: $statistic-3.stat-2-category
+
+\-- end: ftd.column
+
+\-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 12
+min-height.fixed.px: 160
+min-width.fixed.px:  200
+align-content: center 
+border-color: grey
+border-width.px: 2
+border-radius.px: 10
+
+\-- ftd.image:
+src: $assets.files.assets.headphone.svg
+width.fixed.px: 50
+height.fixed.px: 50
+
+\-- statistic-container:
+number: $statistic-3.stat-3-count
+category: $statistic-3.stat-3-category
+
+\-- end: ftd.column
+
+\-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 12
+min-height.fixed.px: 160
+min-width.fixed.px:  200
+align-content: center 
+border-color: grey
+border-width.px: 2
+border-radius.px: 10
+margin-bottom.px if { ftd.device == "desktop" }: 20
+margin-bottom.px if { ftd.device == "mobile" }: 30
+
+\-- ftd.image:
+src: $assets.files.assets.shield-check.svg
+width.fixed.px: 50
+height.fixed.px: 50
+
+\-- statistic-container:
+number: $statistic-3.stat-4-count
+category: $statistic-3.stat-4-category
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: statistic-3
+
+-- end: cb.code
+
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-3
 
 
 
