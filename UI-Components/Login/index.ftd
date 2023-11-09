@@ -98,6 +98,9 @@ url: /UI-Components/Notification/
 ;; -- lib2.button: SearchBar
 ;; url: /UI-Components/SearchBar/
 
+-- lib2.button: Statistic
+url: /UI-Components/Statistic/
+
 ;; -- lib2.button: VideoDetails
 ;; url: /UI-Components/VideoDetails/
 
