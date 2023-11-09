@@ -563,13 +563,13 @@ margin-left.px: 10
 
 \-- ftd.text: $statistic-2.title
 classes: title
-css: [ $assets.files.style.statistic.css]
+css: [ $assets.files.style.component-styles.statistic.css]
 margin-bottom.px: 16
 margin-top.px: 30
 
 \-- ftd.text: $statistic-2.about
 classes: about
-css: [ $assets.files.style.statistic.css]
+css: [ $assets.files.style.component-styles.statistic.css]
 margin-right.px: 100
 
 
@@ -637,14 +637,14 @@ margin-left.px: 10
 
 \-- ftd.text: $statistic-2.title
 classes: title
-css: [ $assets.files.style.statistic.css]
+css: [ $assets.files.style.component-styles.statistic.css]
 margin-bottom.px: 12
 margin-top.px: 10
 text-align: center
 
 \-- ftd.text: $statistic-2.about
 classes: about
-css: [ $assets.files.style.statistic.css]
+css: [ $assets.files.style.component-styles.statistic.css]
 margin-right.px: 10
 text-align: center
 
@@ -892,12 +892,12 @@ align-content: center
 
 \-- ftd.text: $statistic-3.title
 classes: title
-css: [ $assets.files.style.statistic.css]
+css: [ $assets.files.style.component-styles.statistic.css]
 margin-bottom.px: 12
 
 \-- ftd.text: $statistic-3.about
 classes: about
-css: [ $assets.files.style.statistic.css]
+css: [ $assets.files.style.component-styles.statistic.css]
 margin-right.px if { ftd.device == "desktop" }: 260
 margin-left.px if { ftd.device == "desktop" }: 260
 margin-right.px if { ftd.device == "mobile" }: 50
