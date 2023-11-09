@@ -67,7 +67,7 @@ align-self: center
 
 -- ftd.text: $statistic-container.category
 classes: text-2
-css: [ $assets.files.style.statistic.component-styles.css]
+css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
 
 -- end: ftd.column
