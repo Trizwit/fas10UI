@@ -102,6 +102,9 @@ url: /UI-Components/Notification/
 -- lib2.button: Statistic
 url: /UI-Components/Statistic/
 
+-- lib2.button: Testimonial
+url: /UI-Components/Testimonial/
+
 ;; -- lib2.button: VideoDetails
 ;; url: /UI-Components/VideoDetails/
 

@@ -1,0 +1,1164 @@
+-- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
+-- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-1
+-- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-2
+-- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-3
+-- import: fastnui.trizwit.com/UI-Components/lib as lib2
+
+
+-- page:
+
+-- component page:
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+types: 
+colors: 
+background.solid: #011627
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+padding-vertical.px: 5
+border-bottom-width.px: 1
+border-bottom-color: #1E2D3D
+
+-- index.navbar:
+$hover-home: false
+$hover-about: false
+$hover-components: true
+$hover-templates: false
+$hover-portfolio: false 
+
+-- end: ftd.row 
+
+
+-- ftd.row:
+width: fill-container
+height.fixed.calc: 100vh - 50px
+
+
+-- ftd.column: 
+width.fixed.percent: 23
+border-right-width.px: 1
+border-right-color: #1E2D3D
+
+
+-- lib2.selector:
+
+-- lib2.button: Alert
+url: /UI-Components/Alert/
+
+-- lib2.button: Blog
+url: /UI-Components/Blog/
+
+-- lib2.button: Contact
+url: /UI-Components/Contact/
+
+-- lib2.button: Content
+url: /UI-Components/Content/
+
+-- lib2.button: Footer
+url: /UI-Components/Footer/
+
+-- lib2.button: Gallery
+url: /UI-Components/Gallery/
+
+-- lib2.button: Header
+url: /UI-Components/Header/
+
+-- lib2.button: Hero
+url: /UI-Components/Hero/
+
+/-- lib2.button: Label
+url: /UI-Components/Label/
+
+-- lib2.button: Login
+url: /UI-Components/Login/
+
+/-- lib2.button: Modal
+url: /UI-Components/Modal/
+
+-- lib2.button: Notification
+url: /UI-Components/Notification/
+
+/-- lib2.button: Pagination
+url: /UI-Components/Pagination/
+
+/-- lib2.button: ProgressBar
+url: /UI-Components/ProgressBar/
+
+/-- lib2.button: SearchBar
+url: /UI-Components/SearchBar/
+
+-- lib2.button: Statistic
+url: /UI-Components/Statistic/
+
+-- lib2.button: Testimonial
+$is-open: true
+url: /UI-Components/Testimonial/
+
+/-- lib2.button: VideoDetails
+url: /UI-Components/VideoDetails/
+
+-- end: lib2.selector
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width.fixed.percent: 77
+height: fill-container
+background.solid: #011627
+align-content: center
+
+
+-- ui-wrapper:
+
+-- end: ftd.column
+
+;; page container end
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- boolean $code-open-1: false
+-- boolean $code-open-2: false
+-- boolean $code-open-3: false
+
+
+-- boolean $use-open-1: false
+-- boolean $use-open-2: false
+-- boolean $use-open-3: false
+
+
+-- component ui-wrapper:
+
+-- ftd.column:
+width: fill-container
+height.fixed.percent: 100
+css: [ $assets.files.style.scroll.css ]
+classes: body 
+
+-- ui-1:
+title: Statistic-1
+
+-- ui-2:
+title: Statistic-2
+
+-- ui-3:
+title: Statistic-3
+
+-- end: ftd.column
+
+-- end: ui-wrapper
+
+
+
+
+
+
+
+
+
+
+-- component ui-1:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-1.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-1}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-1)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-1}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-1)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-1}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-1
+
+-- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
+-- cb.code:
+lang: ftd
+
+\-- testimonial-1.testimonial-1:
+heading: Testimonials
+
+\-- testimonial-1-container:
+name: Alper Kamu
+position: DESIGNER
+pro-pic: $assets.files.images.statistics.pic1.jpg
+
+Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
+Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
+
+\-- testimonial-1-container:
+name: Holden Caulfield
+position: UI DEVELOPER
+pro-pic: $assets.files.images.statistics.pic1.jpg
+
+Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
+Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
+
+\-- end: testimonial-1
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-1 }
+
+-- testimonial-1.testimonial-1:
+heading: Testimonials
+
+-- testimonial-1.testimonial-1-container:
+name: Alper Kamu
+position: DESIGNER
+pro-pic: $assets.files.images.statistics.pic1.jpg
+
+Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
+Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
+
+-- testimonial-1.testimonial-1-container:
+name: Holden Caulfield
+position: UI DEVELOPER
+pro-pic: $assets.files.images.statistics.pic1.jpg
+
+Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
+Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
+
+-- end: testimonial-1.testimonial-1
+
+     
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-1 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- testimonial-1:
+heading: Testimonials
+
+\-- testimonial-1-container:
+name: Alper Kamu
+position: DESIGNER
+pro-pic: $assets.files.images.statistics.pic1.jpg
+
+Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
+Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
+
+\-- testimonial-1-container:
+name: Holden Caulfield
+position: UI DEVELOPER
+pro-pic: $assets.files.images.statistics.pic1.jpg
+
+Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
+Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
+
+\-- end: testimonial-1
+
+\-- end: lib.container-wrapper
+
+\-- component testimonial-1:
+caption heading:
+children card:
+
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+
+\-- ftd.row:
+width: fill-container
+align-content: center
+margin-bottom.px if { ftd.device == "desktop" }: 60
+margin-bottom.px if { ftd.device == "mobile" }: 30
+margin-top.px: 30
+
+\-- ftd.text: $testimonial-1.heading
+classes: title
+css: [ $assets.files.style.component-styles.testimonial.css]
+text-align: center
+
+\-- end: ftd.row
+
+\-- ftd.row: 
+spacing.fixed.px: 52
+align-self: center
+align-content: center
+wrap: true
+children: $testimonial-1.card
+
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: testimonial-1
+
+
+
+
+
+
+
+
+
+
+
+\-- component testimonial-1-container:
+string name:
+string position:
+body about:
+ftd.image-src pro-pic:
+
+
+\-- ftd.row:
+
+\-- ftd.row:
+if: { ftd.device == "desktop" }
+classes: container
+css: [ $assets.files.style.component-styles.testimonial.css]
+width.fixed.vw: 46
+height.fixed.vw: 18
+min-width.fixed.px: 640
+min-height.fixed.px: 260
+border-radius.px: 10
+padding.px: 20
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+
+\-- ftd.image:
+src: $assets.files.images.statistics.quotes.png
+width.fixed.px: 28
+height.fixed.px: 28
+
+\-- ftd.text: $testimonial-1-container.about
+classes: text-1
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+margin-top.px: 10
+
+\-- ftd.image:
+src: $testimonial-1-container.pro-pic
+width.fixed.px: 50
+height.fixed.px: 50
+border-radius.percent: 50
+
+\-- ftd.column:
+spacing.fixed.px: 10
+
+\-- ftd.text: $testimonial-1-container.name
+classes: text-2
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+\-- ftd.text: $testimonial-1-container.position
+classes: text-3
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+;; mobile
+
+\-- ftd.row:
+if: { ftd.device == "mobile" }
+classes: container
+css: [ $assets.files.style.component-styles.testimonial.css]
+width.fixed.vw: 46
+height.fixed.vw: 18
+min-width.fixed.px: 288
+min-height.fixed.px: 360
+border-radius.px: 10
+padding.px: 16
+margin-left.px: 20
+margin-right.px: 20
+margin-bottom.px: 10
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+
+\-- ftd.image:
+src: $assets.files.images.statistics.quotes.png
+width.fixed.px: 28
+height.fixed.px: 28
+
+\-- ftd.text: $testimonial-1-container.about
+classes: text-1
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+margin-top.px: 10
+
+\-- ftd.image:
+src: $testimonial-1-container.pro-pic
+width.fixed.px: 50
+height.fixed.px: 50
+border-radius.percent: 50
+
+\-- ftd.column:
+spacing.fixed.px: 10
+
+\-- ftd.text: $testimonial-1-container.name
+classes: text-2
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+\-- ftd.text: $testimonial-1-container.position
+classes: text-3
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: ftd.row
+
+\-- end: testimonial-1-container
+
+-- end: cb.code
+
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-1
+
+
+
+
+
+
+
+
+
+
+
+
+-- component ui-2:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-2.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-2}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-2)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-2}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-2)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-2}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-2
+
+-- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
+-- cb.code:
+lang: ftd
+
+\-- testimonial-2.testimonial-2:
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, 
+helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman 
+taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book 
+skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid 
+gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, 
+yr scenester sriracha forage franzen organic drinking vinegar.
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-2 }
+
+-- testimonial-2.testimonial-2:
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, 
+helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman 
+taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book 
+skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid 
+gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, 
+yr scenester sriracha forage franzen organic drinking vinegar.
+
+     
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-2 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- testimonial-2:
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, 
+helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman 
+taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware. Man bun next level coloring book 
+skateboard four loko knausgaard. Kitsch keffiyeh master cleanse direct trade indigo juice before they sold out gentrify plaid 
+gastropub normcore XOXO 90's pickled cindigo jean shorts. Slow-carb next level shoindigoitch ethical authentic, 
+yr scenester sriracha forage franzen organic drinking vinegar.
+
+\-- end: lib.container-wrapper
+
+\-- component testimonial-2:
+string name:
+string position:
+body about:
+
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+
+\-- ftd.column:
+align-self: center
+margin-top.px: 50
+
+\-- testimonial-2-container:
+name: $testimonial-2.name
+position: $testimonial-2.position
+about: $testimonial-2.about
+
+
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+\-- end: testimonial-2
+
+
+
+
+
+
+
+
+
+
+\-- component testimonial-2-container:
+string name:
+string position:
+body about:
+
+
+\-- ftd.row:
+width.fixed.vw: 48
+height.fixed.vw: 28
+min-width.fixed.px if { ftd.device == "desktop" }: 640
+min-height.fixed.px if { ftd.device == "desktop" }: 260
+min-width.fixed.px if { ftd.device == "mobile" }: 288
+min-height.fixed.px if { ftd.device == "mobile" }: 772
+border-radius.px: 10
+padding-left.px: 20
+padding-right.px: 20
+margin-bottom.px: 20
+
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+
+\-- ftd.image:
+src: $assets.files.images.statistics.quotes.png
+width.fixed.px: 44
+height.fixed.px: 48
+margin-bottom.px: 12
+align-self: center
+
+\-- ftd.text: $testimonial-2-container.about
+classes: text-4
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+\-- ftd.row:
+width.fixed.px: 40
+height.fixed.px: 1
+border-radius.px: 10
+border-width.px: 3
+border-color: blue
+align-self: center
+margin.px: 15
+
+\-- end: ftd.row
+
+\-- ftd.column:
+spacing.fixed.px: 10
+align-self: center
+
+\-- ftd.text: $testimonial-2-container.name
+classes: text-5
+css: [ $assets.files.style.component-styles.testimonial.css]
+text-align: center
+align-self: center
+
+\-- ftd.text: $testimonial-2-container.position
+classes: text-6
+css: [ $assets.files.style.component-styles.testimonial.css]
+text-align: center
+align-self: center
+
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: testimonial-2-container
+
+-- end: cb.code
+
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-2
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- component ui-3:
+string title: 
+
+-- ftd.column:
+width: fill-container
+colors: $fastn-cs-tail.main
+types: $opensans-typography.types
+
+-- ftd.row:
+width: fill-container
+margin-left.px: 32
+margin-top.px: 32
+spacing.fixed.px: 20
+align-content: left
+
+-- ftd.text: $ui-3.title
+role: $fira-code-size-16-400
+color: #FFF
+align-self: center
+
+-- ftd.text: CODE
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {code-open-3}: #2b303b
+$on-click$: $ftd.toggle($a = $code-open-3)
+
+-- ftd.text: Use
+role: $fira-code-size-16-400
+color: #FFF
+padding-horizontal.px: 24
+padding-vertical.px: 10
+border-radius.px: 8
+border-width.px: 1
+border-color: #5F6C78
+background.solid: #011221
+background.solid if {use-open-3}: #2b303b
+$on-click$: $ftd.toggle($a = $use-open-3)
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { use-open-3}
+margin-left.px: 32
+margin-top.px: 32
+align-self: center
+
+-- ftd.text: 1.Copy the fastn dependencies and add them in FASTN.ftd file.
+role: $fira-code-size-scroll-400
+color: #FFF
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: fastnui.trizwit.com
+
+-- end: cb.code
+
+-- ftd.text: 2.Copy the import statement and add it in the ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
+-- cb.code:
+lang: ftd
+
+\-- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-3
+
+-- end: cb.code
+
+-- ftd.text: 3.Copy the syntax for calling the component and add it in ftd file where you want to use the component.
+role: $fira-code-size-scroll-400
+color: #FFF
+margin-top.px: 5
+
+-- cb.code:
+lang: ftd
+
+\-- testimonial-3.testimonial-3:
+
+\-- testimonial-3.testimonial-3-container:
+pro-pic: $assets.files.images.statistics.pic1.jpg
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. 
+Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+
+\-- testimonial-3.testimonial-3-container:
+pro-pic: $assets.files.images.statistics.pic1.jpg
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. 
+Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+
+\-- testimonial-3.testimonial-3-container:
+pro-pic: $assets.files.images.statistics.pic1.jpg
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. 
+Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+
+
+\-- end: testimonial-3.testimonial-3
+
+-- end: cb.code
+
+-- end: ftd.column
+
+-- lib.container-wrapper:
+if: { !code-open-3 }
+
+-- testimonial-3.testimonial-3:
+
+-- testimonial-3.testimonial-3-container:
+pro-pic: $assets.files.images.statistics.pic1.jpg
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. 
+Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+
+-- testimonial-3.testimonial-3-container:
+pro-pic: $assets.files.images.statistics.pic1.jpg
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. 
+Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+
+-- testimonial-3.testimonial-3-container:
+pro-pic: $assets.files.images.statistics.pic1.jpg
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. 
+Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+
+
+-- end: testimonial-3.testimonial-3
+     
+
+
+-- end: lib.container-wrapper
+
+-- lib.container-wrapper:
+if: { code-open-3 }
+
+-- cb.code:
+lang: ftd
+
+\-- lib.container-wrapper:
+
+\-- testimonial-3:
+
+\-- testimonial-3-container:
+pro-pic: $assets.files.images.statistics.pic1.jpg
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. 
+Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+
+\-- testimonial-3-container:
+pro-pic: $assets.files.images.statistics.pic1.jpg
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. 
+Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+
+\-- testimonial-3-container:
+pro-pic: $assets.files.images.statistics.pic1.jpg
+name: HOLDEN CAULFIELD
+position: Product Designer
+
+Edison bulb retro cloud bread echo park, helvetica stumptown taiyaki taxidermy 90's cronut +1 kinfolk. 
+Single-origin coffee ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+
+
+\-- end: testimonial-3
+
+\-- end: lib.container-wrapper
+
+\-- component testimonial-3:
+children card:
+
+\-- ftd.row:
+width: fill-container
+height: fill-container
+wrap: true
+spacing.fixed.px: 10
+margin.px: 10
+align-content: center
+children: $testimonial-3.card
+
+\-- end: ftd.row
+
+\-- end: testimonial-3
+
+
+
+
+
+
+
+
+
+
+
+\-- component testimonial-3-container:
+ftd.image-src pro-pic:
+string name:
+string position:
+body about:
+
+
+
+\-- ftd.row:
+width.fixed.vw: 32
+height.fixed.vw: 28
+min-width.fixed.px if { ftd.device == "desktop" }: 440
+min-height.fixed.px if { ftd.device == "desktop" }: 420
+min-width.fixed.px if { ftd.device == "mobile" }: 288
+min-height.fixed.px if { ftd.device == "mobile" }: 494
+padding.px: 20
+
+
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+
+\-- ftd.image:
+src: $testimonial-3-container.pro-pic
+width.fixed.px: 80
+height.fixed.px: 80
+border-radius.percent: 50
+margin-bottom.px: 12
+align-self: center
+
+\-- ftd.text: $testimonial-3-container.about
+classes: text-4
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+\-- ftd.row:
+width.fixed.px: 40
+height.fixed.px: 1
+border-radius.px: 10
+border-width.px: 3
+border-color: blue
+align-self: center
+margin.px: 15
+
+\-- end: ftd.row
+
+\-- ftd.column:
+spacing.fixed.px: 10
+align-self: center
+
+\-- ftd.text: $testimonial-3-container.name
+classes: text-5
+css: [ $assets.files.style.component-styles.testimonial.css]
+text-align: center
+align-self: center
+
+\-- ftd.text: $testimonial-3-container.position
+classes: text-6
+css: [ $assets.files.style.component-styles.testimonial.css]
+text-align: center
+align-self: center
+
+
+\-- end: ftd.column
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: testimonial-3-container
+
+
+-- end: cb.code
+
+
+-- end: lib.container-wrapper
+
+-- end: ftd.column
+
+-- end: ui-3
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.type fira-code-size-16-desktop:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-16-mobile:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-16-400:
+desktop: $fira-code-size-16-desktop
+mobile: $fira-code-size-16-mobile
+
+
+
+
+
+
+-- ftd.type fira-code-size-scroll-desktop:
+size.px: 16
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-scroll-mobile:
+size.px: 10
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-scroll-400:
+desktop: $fira-code-size-scroll-desktop
+mobile: $fira-code-size-scroll-mobile
