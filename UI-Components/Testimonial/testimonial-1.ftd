@@ -1,0 +1,183 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component testimonial-1:
+caption heading:
+children card:
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.row:
+width: fill-container
+align-content: center
+margin-bottom.px if { ftd.device == "desktop" }: 60
+margin-bottom.px if { ftd.device == "mobile" }: 30
+margin-top.px: 30
+
+-- ftd.text: $testimonial-1.heading
+classes: title
+css: [ $assets.files.style.component-styles.testimonial.css]
+text-align: center
+
+-- end: ftd.row
+
+-- ftd.row: 
+spacing.fixed.px: 52
+align-self: center
+align-content: center
+wrap: true
+children: $testimonial-1.card
+
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: testimonial-1
+
+
+
+
+
+
+
+
+
+
+
+-- component testimonial-1-container:
+string name:
+string position:
+body about:
+ftd.image-src pro-pic:
+
+
+-- ftd.row:
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+classes: container
+css: [ $assets.files.style.component-styles.testimonial.css]
+width.fixed.vw: 46
+height.fixed.vw: 18
+min-width.fixed.px: 640
+min-height.fixed.px: 260
+border-radius.px: 10
+padding.px: 20
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+
+-- ftd.image:
+src: $assets.files.images.statistics.quotes.png
+width.fixed.px: 28
+height.fixed.px: 28
+
+-- ftd.text: $testimonial-1-container.about
+classes: text-1
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+margin-top.px: 10
+
+-- ftd.image:
+src: $testimonial-1-container.pro-pic
+width.fixed.px: 50
+height.fixed.px: 50
+border-radius.percent: 50
+
+-- ftd.column:
+spacing.fixed.px: 10
+
+-- ftd.text: $testimonial-1-container.name
+classes: text-2
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+-- ftd.text: $testimonial-1-container.position
+classes: text-3
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+;; mobile
+
+-- ftd.row:
+if: { ftd.device == "mobile" }
+classes: container
+css: [ $assets.files.style.component-styles.testimonial.css]
+width.fixed.vw: 46
+height.fixed.vw: 18
+min-width.fixed.px: 288
+min-height.fixed.px: 360
+border-radius.px: 10
+padding.px: 16
+margin-left.px: 20
+margin-right.px: 20
+margin-bottom.px: 10
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+
+-- ftd.image:
+src: $assets.files.images.statistics.quotes.png
+width.fixed.px: 28
+height.fixed.px: 28
+
+-- ftd.text: $testimonial-1-container.about
+classes: text-1
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+margin-top.px: 10
+
+-- ftd.image:
+src: $testimonial-1-container.pro-pic
+width.fixed.px: 50
+height.fixed.px: 50
+border-radius.percent: 50
+
+-- ftd.column:
+spacing.fixed.px: 10
+
+-- ftd.text: $testimonial-1-container.name
+classes: text-2
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+-- ftd.text: $testimonial-1-container.position
+classes: text-3
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: testimonial-1-container

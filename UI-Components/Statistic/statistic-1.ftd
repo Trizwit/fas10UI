@@ -1,0 +1,96 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component statistic-1:
+string stat-1-count:
+string stat-2-count:
+string stat-3-count:
+string stat-4-count:
+string stat-1-category:
+string stat-2-category:
+string stat-3-category:
+string stat-4-category:
+
+-- ftd.row:
+width: hug-content
+spacing.fixed.px if { ftd.device == "desktop" }: 180
+spacing.fixed.px if { ftd.device == "mobile" }: 28
+wrap: true
+
+
+
+-- statistic-container:
+number: $statistic-1.stat-1-count
+category: $statistic-1.stat-1-category
+
+-- statistic-container:
+number: $statistic-1.stat-2-count
+category: $statistic-1.stat-2-category
+
+-- statistic-container:
+number: $statistic-1.stat-3-count
+category: $statistic-1.stat-3-category
+
+-- statistic-container:
+number: $statistic-1.stat-4-count
+category: $statistic-1.stat-4-category
+
+-- end: ftd.row
+
+-- end: statistic-1
+
+
+
+
+
+
+
+
+
+
+
+-- component statistic-container:
+string number:
+string category:
+
+-- ftd.row:
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+
+-- ftd.text: $statistic-container.number
+classes: text-1
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- ftd.text: $statistic-container.category
+classes: text-2
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+spacing.fixed.px: 5
+
+-- ftd.text: $statistic-container.number
+classes: text-3
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- ftd.text: $statistic-container.category
+classes: text-4
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+-- end: statistic-container
+
+

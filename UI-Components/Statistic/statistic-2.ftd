@@ -1,0 +1,231 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component statistic-2:
+string title:
+body about:
+ftd.image-src image: 
+string stat-1-count:
+string stat-2-count:
+string stat-3-count:
+string stat-4-count:
+string stat-1-category:
+string stat-2-category:
+string stat-3-category:
+string stat-4-category:
+
+
+-- ftd.column: 
+width: fill-container
+height: fill-container
+
+
+
+-- ftd.row:
+if : { ftd.device == "desktop" }
+width: fill-container
+height: fill-container
+padding.px: 24
+spacing.fixed.px: 10
+wrap: true
+
+
+-- ftd.column:
+width.fixed.vw: 32
+height.fixed.vw: 22
+margin-top.px: 10
+margin-left.px: 10
+
+
+
+-- ftd.text: $statistic-2.title
+classes: title
+css: [ $assets.files.style.component-styles.statistic.css]
+margin-bottom.px: 16
+margin-top.px: 30
+
+-- ftd.text: $statistic-2.about
+classes: about
+css: [ $assets.files.style.component-styles.statistic.css]
+margin-right.px: 100
+
+
+-- ftd.row:
+margin-top.px: 64
+spacing.fixed.px: 48
+
+-- statistic-container:
+number: $statistic-2.stat-1-count
+category: $statistic-2.stat-1-category
+
+-- statistic-container:
+number: $statistic-2.stat-2-count
+category: $statistic-2.stat-2-category
+
+-- statistic-container:
+number: $statistic-2.stat-3-count
+category: $statistic-2.stat-3-category
+
+-- statistic-container:
+number: $statistic-2.stat-4-count
+category: $statistic-2.stat-4-category
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 32
+height.fixed.vw: 22
+min-height.fixed.px: 340
+min-width.fixed.px: 500
+margin-top.px: 10
+
+
+
+-- ftd.image:
+src: $statistic-2.image
+max-width.fixed.px: 440
+height.fixed.px: 296
+min-height.fixed.px: 200
+min-width.fixed.px: 400
+width.fixed.vw: 48
+border-radius.px: 10
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+;;mobile-view
+
+-- ftd.column:
+if : { ftd.device == "mobile" }
+width: fill-container
+height: fill-container
+padding.px: 10
+spacing.fixed.px: 30
+wrap: true
+
+
+
+-- ftd.column:
+margin-top.px: 20
+margin-left.px: 10
+
+
+-- ftd.text: $statistic-2.title
+classes: title
+css: [ $assets.files.style.component-styles.statistic.css]
+margin-bottom.px: 12
+margin-top.px: 10
+text-align: center
+
+-- ftd.text: $statistic-2.about
+classes: about
+css: [ $assets.files.style.component-styles.statistic.css]
+margin-right.px: 10
+text-align: center
+
+
+-- ftd.row:
+margin-top.px: 20
+spacing.fixed.px: 20
+
+-- statistic-container:
+number: $statistic-2.stat-1-count
+category: $statistic-2.stat-1-category
+
+-- statistic-container:
+number: $statistic-2.stat-2-count
+category: $statistic-2.stat-2-category
+
+-- statistic-container:
+number: $statistic-2.stat-3-count
+category: $statistic-2.stat-3-category
+
+-- statistic-container:
+number: $statistic-2.stat-4-count
+category: $statistic-2.stat-4-category
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+min-height.fixed.px: 120
+min-width.fixed.px: 320
+margin-left.px: 5
+
+-- ftd.image:
+src: $statistic-2.image
+width.fixed.vw: 48
+height.fixed.px: 180
+min-height.fixed.px: 100
+min-width.fixed.px: 316
+border-radius.px: 10
+margin-left.px: 2
+
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: statistic-2
+
+
+
+
+
+
+
+
+
+
+
+-- component statistic-container:
+string number:
+string category:
+
+-- ftd.row:
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+
+-- ftd.text: $statistic-container.number
+classes: text-1
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- ftd.text: $statistic-container.category
+classes: text-2
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+spacing.fixed.px: 5
+
+-- ftd.text: $statistic-container.number
+classes: text-3
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- ftd.text: $statistic-container.category
+classes: text-4
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+-- end: statistic-container
+
+

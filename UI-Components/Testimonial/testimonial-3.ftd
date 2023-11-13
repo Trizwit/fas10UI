@@ -1,0 +1,105 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+
+
+
+-- component testimonial-3:
+children card:
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+wrap: true
+spacing.fixed.px: 10
+margin.px: 10
+align-content: center
+children: $testimonial-3.card
+
+-- end: ftd.row
+
+-- end: testimonial-3
+
+
+
+
+
+
+
+
+
+
+
+-- component testimonial-3-container:
+ftd.image-src pro-pic:
+string name:
+string position:
+body about:
+
+
+
+-- ftd.row:
+width.fixed.vw: 32
+height.fixed.vw: 28
+min-width.fixed.px if { ftd.device == "desktop" }: 440
+min-height.fixed.px if { ftd.device == "desktop" }: 420
+min-width.fixed.px if { ftd.device == "mobile" }: 288
+min-height.fixed.px if { ftd.device == "mobile" }: 494
+padding.px: 20
+
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+spacing.fixed.px: 20
+
+-- ftd.image:
+src: $testimonial-3-container.pro-pic
+width.fixed.px: 80
+height.fixed.px: 80
+border-radius.percent: 50
+margin-bottom.px: 12
+align-self: center
+
+-- ftd.text: $testimonial-3-container.about
+classes: text-4
+css: [ $assets.files.style.component-styles.testimonial.css]
+
+-- ftd.row:
+width.fixed.px: 40
+height.fixed.px: 1
+border-radius.px: 10
+border-width.px: 3
+border-color: blue
+align-self: center
+margin.px: 15
+
+-- end: ftd.row
+
+-- ftd.column:
+spacing.fixed.px: 10
+align-self: center
+
+-- ftd.text: $testimonial-3-container.name
+classes: text-5
+css: [ $assets.files.style.component-styles.testimonial.css]
+text-align: center
+align-self: center
+
+-- ftd.text: $testimonial-3-container.position
+classes: text-6
+css: [ $assets.files.style.component-styles.testimonial.css]
+text-align: center
+align-self: center
+
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: testimonial-3-container
