@@ -1,0 +1,239 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+
+-- component team-2:
+caption title:
+body about:
+children card:
+
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-self: center
+
+-- ftd.column:
+align-self: center
+if: { ftd.device == "desktop" }
+
+
+-- ftd.text: $team-2.title
+margin-top.px: 80
+role: $inherited.types.heading-small
+align-self: center
+color: white
+
+-- ftd.text: $team-2.about
+classes: text
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 18
+color: grey
+text-align: center
+padding-left.px: 200
+padding-right.px: 200
+
+-- end: ftd.column
+
+-- ftd.column:
+align-self: center
+if: { ftd.device == "mobile" }
+
+
+-- ftd.text: $team-2.title
+margin-top.px: 40
+role: $inherited.types.heading-small
+align-self: center
+
+-- ftd.text: $team-2.about
+classes: text
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 18
+color: grey
+text-align: center
+padding-left.px: 50
+padding-right.px: 50
+
+-- end: ftd.column
+
+-- ftd.row:
+width: fill-container 
+align-content: center
+margin-top.px if { ftd.device == "desktop" }: 80
+margin-top.px if { ftd.device == "mobile" }: 45
+spacing.fixed.px: 8
+
+-- ftd.row:
+wrap: true
+align-content: center
+children: $team-2.card
+
+
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: team-2
+
+
+
+
+
+
+
+
+
+
+-- component profilecard-b:
+ftd.image-src pro-pic:
+string name:
+string position:
+body about:
+
+-- ftd.column:
+
+
+-- ftd.column: 
+if: { ftd.device == "desktop" }
+width.fixed.vw: 40
+height.fixed.vw: 14
+min-width.fixed.px: 396
+min-height.fixed.px: 220
+margin.px: 12
+
+-- ftd.row:
+
+-- ftd.image:
+src: $profilecard-b.pro-pic
+width.fixed.px : 176
+height.fixed.px : 176
+border-radius.percent: 4
+align-self: center
+
+
+-- ftd.column:
+margin-top.px: 10
+margin-left.px: 15
+
+
+-- ftd.text: $profilecard-b.name 
+classes: text-1
+css: [ $assets.files.style.component-styles.team.css] 
+margin-top.px: 4
+
+
+-- ftd.text: $profilecard-b.position
+classes: text-2
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 4
+margin-bottom.px: 12
+color: grey
+
+-- ftd.text: $profilecard-b.about
+classes: text-3
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 4
+margin-bottom.px: 24
+align-self: center
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $assets.files.images.statistics.facebook.svg
+width.fixed.px: 20
+
+-- ftd.image:
+src: $assets.files.images.statistics.twitter.svg
+width.fixed.px: 20
+
+-- ftd.image:
+src: $assets.files.images.statistics.whatsapp.svg
+width.fixed.px: 20
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+;;mobile
+-- ftd.column: 
+if: { ftd.device == "mobile" }
+width.fixed.vw: 40
+height.fixed.vw: 14
+min-width.fixed.px: 352
+min-height.fixed.px: 180
+margin.px: 12
+
+-- ftd.row:
+
+-- ftd.image:
+src: $profilecard-b.pro-pic
+width.fixed.px : 100
+height.fixed.px : 100
+border-radius.percent: 4
+align-self: center
+margin-left.px: 10
+
+
+-- ftd.column:
+width.fixed.vw : 66
+height.fixed.vw : 40
+margin-top.px: 10
+margin-left.px: 15
+
+
+-- ftd.text: $profilecard-b.name 
+classes: text-1
+css: [ $assets.files.style.component-styles.team.css] 
+margin-top.px: 2
+
+
+-- ftd.text: $profilecard-b.position
+classes: text-2
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 2
+margin-bottom.px: 10
+color: grey
+
+-- ftd.text: $profilecard-b.about
+classes: text-3
+css: [ $assets.files.style.component-styles.team.css]
+margin-bottom.px: 12
+align-self: center
+
+-- ftd.row:
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $assets.files.images.statistics.facebook.svg
+width.fixed.px: 20
+
+-- ftd.image:
+src: $assets.files.images.statistics.twitter.svg
+width.fixed.px: 20
+
+-- ftd.image:
+src: $assets.files.images.statistics.whatsapp.svg
+width.fixed.px: 20
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: profilecard-b

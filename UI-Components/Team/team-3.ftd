@@ -1,0 +1,177 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component team-3:
+caption title:
+body about:
+children card:
+
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-self: center
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+align-self: center
+
+
+-- ftd.text: $team-3.title
+margin-top.px: 80
+role: $inherited.types.heading-small
+align-self: center
+color: white
+
+-- ftd.text: $team-3.about
+classes: text
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 18
+color: grey
+text-align: center
+padding-left.px: 200
+padding-right.px: 200
+
+-- end: ftd.column
+
+-- ftd.column:
+align-self: center
+if: { ftd.device == "mobile" }
+
+
+-- ftd.text: $team-3.title
+margin-top.px: 40
+role: $inherited.types.heading-small
+align-self: center
+
+-- ftd.text: $team-3.about
+classes: text
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 18
+color: grey
+text-align: center
+padding-left.px: 50
+padding-right.px: 50
+
+-- end: ftd.column
+
+-- ftd.row:
+width: fill-container 
+align-content: center
+margin-top.px if { ftd.device == "desktop" }: 80
+margin-top.px if { ftd.device == "mobile" }: 45
+spacing.fixed.px: 8
+
+-- ftd.row:
+wrap: true
+align-content: center
+children: $team-3.card
+
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: team-3
+
+
+
+
+
+
+
+
+
+
+
+-- component profilecard-c:
+ftd.image-src pro-pic:
+string name:
+string position:
+body about:
+
+-- ftd.column: 
+width.fixed.vw: 20
+height.fixed.vw: 28
+min-width.fixed.px if { ftd.device == "desktop" }: 292
+min-height.fixed.px if { ftd.device == "desktop" }: 472 
+min-width.fixed.px if { ftd.device == "mobile" }: 292
+min-height.fixed.px if { ftd.device == "mobile" }: 396
+margin.px: 12
+
+
+-- ftd.column:
+
+-- ftd.image:
+if: { ftd.device == "desktop" }
+src: $profilecard-c.pro-pic
+width.fixed.px: 288
+height.fixed.px: 220
+border-radius.percent: 4
+align-self: center
+
+-- ftd.image:
+if: { ftd.device == "mobile" }
+src: $profilecard-c.pro-pic
+width.fixed.px: 244
+height.fixed.px: 164
+border-radius.percent: 4
+align-self: center
+
+
+-- ftd.column:
+margin-top.px: 10
+align-content: center
+
+
+-- ftd.text: $profilecard-c.name 
+classes: text-1
+css: [ $assets.files.style.component-styles.team.css] 
+margin-top.px: 16
+
+
+-- ftd.text: $profilecard-c.position
+classes: text-2
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 8
+color: grey
+
+-- ftd.text: $profilecard-c.about
+classes: text-3
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 24
+padding-left.px: 10
+padding-right.px: 10
+text-align: center
+
+
+-- ftd.row:
+margin-top.px: 24
+spacing.fixed.px: 8
+
+-- ftd.image:
+src: $assets.files.images.statistics.facebook.svg
+width.fixed.px: 20
+
+-- ftd.image:
+src: $assets.files.images.statistics.twitter.svg
+width.fixed.px: 20
+
+-- ftd.image:
+src: $assets.files.images.statistics.whatsapp.svg
+width.fixed.px: 20
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: profilecard-c
