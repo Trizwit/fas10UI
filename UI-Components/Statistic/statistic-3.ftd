@@ -1,0 +1,194 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+
+-- component statistic-3:
+string title:
+body about:
+string stat-1-count:
+string stat-2-count:
+string stat-3-count:
+string stat-4-count:
+string stat-1-category:
+string stat-2-category:
+string stat-3-category:
+string stat-4-category:
+
+
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: center
+
+
+
+
+-- ftd.text: $statistic-3.title
+classes: title
+css: [ $assets.files.style.component-styles.statistic.css]
+margin-bottom.px: 12
+
+-- ftd.text: $statistic-3.about
+classes: about
+css: [ $assets.files.style.component-styles.statistic.css]
+margin-right.px if { ftd.device == "desktop" }: 260
+margin-left.px if { ftd.device == "desktop" }: 260
+margin-right.px if { ftd.device == "mobile" }: 50
+margin-left.px if { ftd.device == "mobile" }: 50
+text-align: center
+
+
+-- ftd.row:
+margin-top.px if { ftd.device == "desktop" }: 100
+margin-top.px if { ftd.device == "mobile" }: 30
+spacing.fixed.px: 40
+align-content: center
+wrap: true
+
+-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 12
+min-height.fixed.px: 160
+min-width.fixed.px:  200
+align-content: center 
+border-color: grey
+border-width.px: 2
+border-radius.px: 10
+
+-- ftd.image:
+src: $assets.files.images.statistics.cloud-download.svg
+width.fixed.px: 50
+height.fixed.px: 50
+
+-- statistic-container:
+number: $statistic-3.stat-1-count
+category: $statistic-3.stat-1-category
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 12
+min-height.fixed.px: 160
+min-width.fixed.px:  200
+align-content: center 
+border-color: grey
+border-width.px: 2
+border-radius.px: 10
+
+-- ftd.image:
+src: $assets.files.images.statistics.users.svg
+width.fixed.px: 50
+height.fixed.px: 50
+
+-- statistic-container:
+number: $statistic-3.stat-2-count
+category: $statistic-3.stat-2-category
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 12
+min-height.fixed.px: 160
+min-width.fixed.px:  200
+align-content: center 
+border-color: grey
+border-width.px: 2
+border-radius.px: 10
+
+-- ftd.image:
+src: $assets.files.images.statistics.headphone.svg
+width.fixed.px: 50
+height.fixed.px: 50
+
+-- statistic-container:
+number: $statistic-3.stat-3-count
+category: $statistic-3.stat-3-category
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 12
+min-height.fixed.px: 160
+min-width.fixed.px:  200
+align-content: center 
+border-color: grey
+border-width.px: 2
+border-radius.px: 10
+margin-bottom.px if { ftd.device == "desktop" }: 20
+margin-bottom.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+src: $assets.files.images.statistics.shield-check.svg
+width.fixed.px: 50
+height.fixed.px: 50
+
+-- statistic-container:
+number: $statistic-3.stat-4-count
+category: $statistic-3.stat-4-category
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: statistic-3
+
+
+
+
+
+
+
+
+
+
+
+-- component statistic-container:
+string number:
+string category:
+
+-- ftd.row:
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+
+-- ftd.text: $statistic-container.number
+classes: text-1
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- ftd.text: $statistic-container.category
+classes: text-2
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+spacing.fixed.px: 5
+
+-- ftd.text: $statistic-container.number
+classes: text-3
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- ftd.text: $statistic-container.category
+classes: text-4
+css: [ $assets.files.style.component-styles.statistic.css]
+align-self: center
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+-- end: statistic-container

@@ -1,0 +1,147 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+
+-- component team-1:
+caption title:
+body about:
+children card:
+
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+margin.px: 20
+
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+
+
+
+-- ftd.text: $team-1.title
+margin-top.px: 80
+role: $inherited.types.heading-small
+align-self: center
+color: white
+
+-- ftd.text: $team-1.about
+classes: text
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 18
+color: grey
+text-align: center
+padding-left.px: 200
+padding-right.px: 200
+
+-- end: ftd.column
+
+
+-- ftd.column:
+align-self: center
+if: { ftd.device == "mobile" }
+
+
+-- ftd.text: $team-1.title
+margin-top.px: 40
+role: $inherited.types.heading-small
+align-self: center
+
+-- ftd.text: $team-1.about
+classes: text
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 18
+color: grey
+text-align: center
+padding-left.px: 50
+padding-right.px: 50
+
+-- end: ftd.column
+
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+margin-top.px if { ftd.device == "desktop" }: 50
+margin-top.px if { ftd.device == "mobile" }: 45
+spacing.fixed.px: 4
+
+-- ftd.row:
+wrap: true
+align-content: center
+children: $team-1.card
+
+
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: team-1
+
+
+
+
+
+
+
+
+
+
+
+-- component profilecard-a:
+ftd.image-src pro-pic:
+string name:
+string position: 
+
+-- ftd.column:
+width.fixed.vw: 24
+height.fixed.vw: 8
+min-height.fixed.px: 96
+min-width.fixed.px: 336
+border-width.px: 1
+border-radius.px: 12
+border-color: grey
+margin.px: 8
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $profilecard-a.pro-pic
+width.fixed.px: 75
+height.fixed.px: 75
+border-radius.percent: 50
+margin.px: 16
+align-self: center
+
+-- ftd.column:
+margin-top.px: 16
+margin-left.px: 16
+align-content: center
+
+-- ftd.text: $profilecard-a.name 
+classes: text
+css: [ $assets.files.style.component-styles.team.css] 
+margin-top.px: 16
+color: white
+
+-- ftd.text: $profilecard-a.position
+classes: text
+css: [ $assets.files.style.component-styles.team.css]
+margin-top.px: 5
+color: grey
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: profilecard-a

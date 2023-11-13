@@ -92,6 +92,15 @@ url: /UI-Components/ProgressBar/
 $is-open: true
 url: /UI-Components/SearchBar/
 
+-- button: Statistic
+url: /UI-Components/Statistic/
+
+-- button: Team
+url: /UI-Components/Team/
+
+-- button: Testimonial
+url: /UI-Components/Testimonial/
+
 -- button: VideoDetails
 url: /UI-Components/VideoDetails/
 
