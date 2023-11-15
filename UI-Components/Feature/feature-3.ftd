@@ -1,0 +1,175 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component feature-3:
+ftd.image-src image:
+children card:
+
+-- ftd.row:
+wrap: true
+spacing.fixed.px: 30
+align-content: center
+
+-- ftd.column:
+if : { ftd.device == "desktop" }
+
+-- ftd.image:
+src: $feature-3.image
+width.fixed.px: 460
+height.fixed.px: 500
+margin-top.px: 60
+
+-- end: ftd.column
+
+-- ftd.column:
+if : { ftd.device == "mobile" }
+
+-- ftd.image:
+src: $feature-3.image
+width.fixed.px: 300
+height.fixed.px: 400
+margin-top.px: 30
+
+-- end: ftd.column
+
+-- ftd.column:
+children: $feature-3.card
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: feature-3
+
+
+
+
+
+
+
+
+
+
+
+-- component feature-container-3:
+ftd.image-src logo:
+string title:
+body about:
+string cta-link:
+
+
+-- ftd.column:
+
+-- ftd.row:
+if : { ftd.device == "desktop" }
+min-width.fixed.px: 436
+min-height.fixed.px: 232
+width.fixed.vw: 36
+height.fixed.vw: 14
+spacing.fixed.px: 20
+padding.px: 20
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+min-width.fixed.px: 360
+min-height.fixed.px: 196
+spacing.fixed.px: 20
+
+
+-- ftd.column:
+classes: symbol
+css: [ $assets.files.style.feature.css]
+width.fixed.px: 52
+height.fixed.px: 52
+border-radius.percent: 50
+
+-- ftd.image:
+src: $feature-container-3.logo
+width.fixed.px: 40
+height.fixed.px: 40
+border-radius.percent: 50
+margin.px: 5
+
+-- end: ftd.column
+
+-- ftd.text: $feature-container-3.title
+classes: text-2
+css: [ $assets.files.style.feature.css]
+
+
+-- ftd.text: $feature-container-3.about
+classes: text-3
+css: [ $assets.files.style.feature.css]
+margin-right.px: 10
+
+-- ftd.text: Learn More ->
+classes: text-4
+css: [ $assets.files.style.feature.css]
+link: $feature-container-3.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+;;mobile
+
+-- ftd.row:
+if : { ftd.device == "mobile" }
+width.fixed.px: 356
+height.fixed.px: 224
+spacing.fixed.px: 5
+padding.px: 8
+padding-top.px: 20
+
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+min-width.fixed.px: 300
+min-height.fixed.px: 188
+spacing.fixed.px: 10
+
+
+-- ftd.column:
+classes: symbol
+css: [ $assets.files.style.feature.css]
+width.fixed.px: 52
+height.fixed.px: 52
+border-radius.percent: 50
+
+-- ftd.image:
+src: $feature-container-3.logo
+width.fixed.px: 40
+height.fixed.px: 40
+border-radius.percent: 50
+margin.px: 5
+
+-- end: ftd.column
+
+
+-- ftd.text: $feature-container-3.title
+classes: text-2
+css: [ $assets.files.style.feature.css]
+
+
+-- ftd.text: $feature-container-3.about
+classes: text-3
+css: [ $assets.files.style.feature.css]
+margin-right.px: 10
+
+-- ftd.text: Learn More ->
+classes: text-4
+css: [ $assets.files.style.feature.css]
+link: $feature-container-3.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: feature-container-3
