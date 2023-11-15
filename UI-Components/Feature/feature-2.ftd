@@ -1,0 +1,161 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component feature-2:
+children card:
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 32
+align-content: center
+wrap: true
+margin-top.px: 40
+children: $feature-2.card
+
+
+-- end: ftd.row
+
+-- end: feature-2
+
+
+
+
+
+
+
+
+
+
+-- component feature-container-2:
+ftd.image-src logo:
+string title:
+body about:
+string cta-link:
+
+
+-- ftd.column:
+
+-- ftd.row:
+if : { ftd.device == "desktop" }
+classes: feature-2-container
+css: [ $assets.files.style.component-styles.feature.css]
+min-width.fixed.px: 436
+min-height.fixed.px: 204
+width.fixed.vw: 46
+height.fixed.vw: 14
+spacing.fixed.px: 20
+border-width.px: 2
+border-radius.px: 10
+padding.px: 30
+
+
+-- ftd.column:
+classes: symbol
+css: [ $assets.files.style.component-styles.feature.css]
+width.fixed.px: 52
+height.fixed.px: 52
+border-radius.percent: 50
+
+
+
+-- ftd.image:
+src: $feature-container-2.logo
+width.fixed.px: 40
+height.fixed.px: 40
+border-radius.percent: 50
+margin.px: 5
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+min-width.fixed.px: 360
+min-height.fixed.px: 196
+spacing.fixed.px: 20
+
+
+-- ftd.text: $feature-container-2.title
+classes: text-2
+css: [ $assets.files.style.component-styles.feature.css]
+
+
+-- ftd.text: $feature-container-2.about
+classes: text-3
+css: [ $assets.files.style.component-styles.feature.css]
+margin-right.px: 10
+
+-- ftd.text: Learn More ->
+classes: text-4
+css: [ $assets.files.style.component-styles.feature.css]
+link: $feature-container-2.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+;;mobile
+
+-- ftd.row:
+if : { ftd.device == "mobile" }
+classes: feature-2-container
+css: [ $assets.files.style.component-styles.feature.css]
+width.fixed.px: 356
+height.fixed.px: 200
+spacing.fixed.px: 5
+border-width.px: 2
+border-radius.px: 10
+padding.px: 8
+padding-top.px: 20
+
+
+-- ftd.column:
+classes: symbol
+css: [ $assets.files.style.component-styles.feature.css]
+width.fixed.px: 52
+height.fixed.px: 52
+border-radius.percent: 50
+
+
+
+-- ftd.image:
+src: $feature-container-2.logo
+width.fixed.px: 40
+height.fixed.px: 40
+border-radius.percent: 50
+margin.px: 5
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+min-width.fixed.px: 300
+min-height.fixed.px: 188
+spacing.fixed.px: 10
+
+
+-- ftd.text: $feature-container-2.title
+classes: text-2
+css: [ $assets.files.style.component-styles.feature.css]
+
+
+-- ftd.text: $feature-container-2.about
+classes: text-3
+css: [ $assets.files.style.component-styles.feature.css]
+margin-right.px: 10
+
+-- ftd.text: Learn More ->
+classes: text-4
+css: [ $assets.files.style.component-styles.feature.css]
+link: $feature-container-2.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: feature-container-2

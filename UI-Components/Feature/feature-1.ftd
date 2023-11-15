@@ -1,0 +1,172 @@
+-- import: fastnui.trizwit.com/assets
+-- import: fastnui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component feature-1:
+children card:
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px if { ftd.device == "desktop" }: 56
+spacing.fixed.px if { ftd.device == "mobile" }: 20
+
+-- ftd.row:
+width.fixed.vw if { ftd.device == "desktop" }: 44
+height.fixed.vw if { ftd.device == "desktop" }: 12
+padding-left.px if { ftd.device == "desktop" }: 60
+padding-right.px if { ftd.device == "desktop" }: 60
+width.fixed.vw if { ftd.device == "mobile" }: 92
+height.fixed.vw if { ftd.device == "mobile" }: 44
+padding-left.px if { ftd.device == "mobile" }: 20
+padding-right.px if { ftd.device == "mobile" }: 20
+align-self: center
+
+
+-- ftd.text:
+classes: text-1
+css: [ $assets.files.style.component-styles.feature.css]
+text-align: center
+
+Raw Denim Heirloom Man Braid Selfies Wayfarers
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+align-content: center
+align-self: center
+spacing.fixed.px: 20
+wrap: true
+children: $feature-1.card
+
+
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: feature-1
+
+
+
+
+
+
+
+
+
+
+-- component feature-container-1:
+ftd.image-src logo:
+string title:
+body about:
+string cta-link:
+
+
+-- ftd.column:
+
+-- ftd.row:
+if : { ftd.device == "desktop" }
+min-width.fixed.px: 436
+min-height.fixed.px: 192
+width.fixed.vw: 30
+height.fixed.vw: 20
+spacing.fixed.px: 20
+
+
+-- ftd.column:
+classes: symbol
+css: [ $assets.files.style.component-styles.feature.css]
+width.fixed.px: 52
+height.fixed.px: 52
+border-radius.percent: 50
+margin-bottom.px if { ftd.device == "desktop" } : 204
+
+
+-- ftd.image:
+src: $feature-container-1.logo
+width.fixed.px: 40
+height.fixed.px: 40
+border-radius.percent: 50
+margin.px: 5
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 28
+height.fixed.vw: 16
+min-width.fixed.px: 360
+min-height.fixed.px: 196
+spacing.fixed.px: 20
+
+-- ftd.text: $feature-container-1.title
+classes: text-2
+css: [ $assets.files.style.component-styles.feature.css]
+
+-- ftd.text: $feature-container-1.about
+classes: text-3
+css: [ $assets.files.style.component-styles.feature.css]
+
+-- ftd.text: Learn More ->
+classes: text-4
+css: [ $assets.files.style.component-styles.feature.css]
+link: $feature-container-1.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+;;mobile
+-- ftd.row:
+if : { ftd.device == "mobile" }
+width.fixed.vw: 96
+height.fixed.vw: 72
+spacing.fixed.px: 20
+
+
+-- ftd.column:
+classes: symbol
+css: [ $assets.files.style.component-styles.feature.css]
+width.fixed.px: 52
+height.fixed.px: 52
+border-radius.percent: 50
+margin-bottom.px: 204
+
+
+-- ftd.image:
+src: $feature-container-1.logo
+width.fixed.px: 40
+height.fixed.px: 40
+border-radius.percent: 50
+margin.px: 5
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 80
+height.fixed.vw: 72
+spacing.fixed.px: 20
+
+
+-- ftd.text: $feature-container-1.title
+classes: text-2
+css: [ $assets.files.style.component-styles.feature.css]
+
+-- ftd.text: $feature-container-1.about
+classes: text-3
+css: [ $assets.files.style.component-styles.feature.css]
+
+-- ftd.text: Learn More ->
+classes: text-4
+css: [ $assets.files.style.component-styles.feature.css]
+link: $feature-container-1.cta-link
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+-- end: ftd.column
+
+-- end: feature-container-1

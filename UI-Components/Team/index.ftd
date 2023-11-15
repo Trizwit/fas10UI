@@ -63,6 +63,9 @@ url: /UI-Components/Contact/
 -- lib2.button: Content
 url: /UI-Components/Content/
 
+-- lib2.button: Feature
+url: /UI-Components/Feature/
+
 -- lib2.button: Footer
 url: /UI-Components/Footer/
 
@@ -325,7 +328,7 @@ pro-pic: $assets.files.images.statistics.pic9.jpg
 name: Rodrigo Monchi
 position: Product Manager
 
-\-- end: team-1
+\-- end: team-1.team-1
 
 -- end: cb.code
 
