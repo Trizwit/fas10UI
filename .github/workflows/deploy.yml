@@ -17,7 +17,8 @@ jobs:
       - name: Build the pages with fastn
         run: |
           echo "Using '$CI_REPOSITORY_NAME_SLUG/' as the base while building"
-          fastn build --base=/
+          fastn build --base=/$CI_REPOSITORY_NAME/
+          #fastn build --base=/
       - name: copy CNAME if found
         run: '(test -f CNAME && cp CNAME .build) || echo "CNAME does not exist, skipping step"'
       - uses: peaceiris/actions-gh-pages@v3
