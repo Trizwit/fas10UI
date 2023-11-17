@@ -82,7 +82,7 @@ spacing.fixed.px: 20
 
 -- ftd.column:
 classes: symbol
-css: [ $assets.files.style.feature.css]
+css: [ $assets.files.style.component-styles.feature.css]
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50
@@ -98,17 +98,17 @@ margin.px: 5
 
 -- ftd.text: $feature-container-3.title
 classes: text-2
-css: [ $assets.files.style.feature.css]
+css: [ $assets.files.style.component-styles.feature.css]
 
 
 -- ftd.text: $feature-container-3.about
 classes: text-3
-css: [ $assets.files.style.feature.css]
+css: [ $assets.files.style.component-styles.feature.css]
 margin-right.px: 10
 
 -- ftd.text: Learn More ->
 classes: text-4
-css: [ $assets.files.style.feature.css]
+css: [ $assets.files.style.component-styles.feature.css]
 link: $feature-container-3.cta-link
 
 -- end: ftd.column
@@ -136,7 +136,7 @@ spacing.fixed.px: 10
 
 -- ftd.column:
 classes: symbol
-css: [ $assets.files.style.feature.css]
+css: [ $assets.files.style.component-styles.feature.css]
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50
@@ -153,17 +153,17 @@ margin.px: 5
 
 -- ftd.text: $feature-container-3.title
 classes: text-2
-css: [ $assets.files.style.feature.css]
+css: [ $assets.files.style.component-styles.feature.css]
 
 
 -- ftd.text: $feature-container-3.about
 classes: text-3
-css: [ $assets.files.style.feature.css]
+css: [ $assets.files.style.component-styles.feature.css]
 margin-right.px: 10
 
 -- ftd.text: Learn More ->
 classes: text-4
-css: [ $assets.files.style.feature.css]
+css: [ $assets.files.style.component-styles.feature.css]
 link: $feature-container-3.cta-link
 
 -- end: ftd.column
