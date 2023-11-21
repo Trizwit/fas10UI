@@ -1,5 +1,5 @@
--- import: fastnui.trizwit.com/assets
--- import: fastnui.trizwit.com/common
+-- import: trizui.trizwit.com/assets
+-- import: trizui.trizwit.com/common
 -- import: fastn-community.github.io/opensans-typography
 -- import: shaheen-senpai.github.io/fastn-cs-tail
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
