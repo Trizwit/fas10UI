@@ -1,6 +1,6 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
--- import: fastnui.trizwit.com/UI-Components/Label/label
--- import: fastnui.trizwit.com/UI-Components/lib as lib2
+-- import: trizui.trizwit.com/UI-Components/Label/label
+-- import: trizui.trizwit.com/UI-Components/lib as lib2
 
 -- page:
 
