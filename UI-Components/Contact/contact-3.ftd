@@ -1,5 +1,5 @@
--- import: fastnui.trizwit.com/assets
--- import: fastnui.trizwit.com/lib
+-- import: trizui.trizwit.com/assets
+-- import: trizui.trizwit.com/lib
 -- import: fastn-community.github.io/opensans-typography
 -- import: sarvom.github.io/tailblocks-cs
 -- import: fastn-community.github.io/code-block as cb
