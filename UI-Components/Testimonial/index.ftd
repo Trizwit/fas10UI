@@ -171,13 +171,13 @@ css: [ $assets.files.style.scroll.css ]
 classes: body 
 
 -- ui-1:
-title: Statistic-1
+title: Testimonial-1
 
 -- ui-2:
-title: Statistic-2
+title: Testimonial-2
 
 -- ui-3:
-title: Statistic-3
+title: Testimonial-3
 
 -- end: ftd.column
 
@@ -278,7 +278,7 @@ lang: ftd
 \-- testimonial-1.testimonial-1:
 heading: Testimonials
 
-\-- testimonial-1-container:
+\-- testimonial-1.testimonial-1-container:
 name: Alper Kamu
 position: DESIGNER
 pro-pic: $assets.files.images.statistics.pic1.jpg
@@ -286,7 +286,7 @@ pro-pic: $assets.files.images.statistics.pic1.jpg
 Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
 Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
 
-\-- testimonial-1-container:
+\-- testimonial-1.testimonial-1-container:
 name: Holden Caulfield
 position: UI DEVELOPER
 pro-pic: $assets.files.images.statistics.pic1.jpg
@@ -294,7 +294,7 @@ pro-pic: $assets.files.images.statistics.pic1.jpg
 Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
 Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
 
-\-- end: testimonial-1
+\-- end: testimonial-1.testimonial-1
 
 -- end: cb.code
 
