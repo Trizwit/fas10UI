@@ -1,8 +1,8 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
--- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-1
--- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-2
--- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-3
--- import: fastnui.trizwit.com/UI-Components/lib as lib2
+-- import: trizui.trizwit.com/UI-Components/Testimonial/testimonial-1
+-- import: trizui.trizwit.com/UI-Components/Testimonial/testimonial-2
+-- import: trizui.trizwit.com/UI-Components/Testimonial/testimonial-3
+-- import: trizui.trizwit.com/UI-Components/lib as lib2
 
 
 -- page:
@@ -62,9 +62,6 @@ url: /UI-Components/Contact/
 
 -- lib2.button: Content
 url: /UI-Components/Content/
-
--- lib2.button: Feature
-url: /UI-Components/Feature/
 
 -- lib2.button: Footer
 url: /UI-Components/Footer/
@@ -251,7 +248,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -263,7 +260,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-1
+\-- import: trizui.trizwit.com/UI-Components/Testimonial/testimonial-1
 
 -- end: cb.code
 
@@ -278,7 +275,7 @@ lang: ftd
 \-- testimonial-1.testimonial-1:
 heading: Testimonials
 
-\-- testimonial-1.testimonial-1-container:
+\-- testimonial-1-container:
 name: Alper Kamu
 position: DESIGNER
 pro-pic: $assets.files.images.statistics.pic1.jpg
@@ -286,7 +283,7 @@ pro-pic: $assets.files.images.statistics.pic1.jpg
 Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
 Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
 
-\-- testimonial-1.testimonial-1-container:
+\-- testimonial-1-container:
 name: Holden Caulfield
 position: UI DEVELOPER
 pro-pic: $assets.files.images.statistics.pic1.jpg
@@ -294,7 +291,7 @@ pro-pic: $assets.files.images.statistics.pic1.jpg
 Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
 Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
 
-\-- end: testimonial-1.testimonial-1
+\-- end: testimonial-1
 
 -- end: cb.code
 
@@ -618,7 +615,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -630,7 +627,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-2
+\-- import: trizui.trizwit.com/UI-Components/Testimonial/testimonial-2
 
 -- end: cb.code
 
@@ -884,7 +881,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -896,7 +893,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Testimonial/testimonial-3
+\-- import: trizui.trizwit.com/UI-Components/Testimonial/testimonial-3
 
 -- end: cb.code
 

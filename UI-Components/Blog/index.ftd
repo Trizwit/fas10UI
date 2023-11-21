@@ -1,13 +1,13 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
--- import: fastnui.trizwit.com/UI-Components/Blog/blog-2
--- import: fastnui.trizwit.com/UI-Components/Blog/blog-3
--- import: fastnui.trizwit.com/UI-Components/Blog/blog-4
--- import: fastnui.trizwit.com/UI-Components/Blog/blog-5
--- import: fastnui.trizwit.com/UI-Components/Blog/blog-6
--- import: fastnui.trizwit.com/UI-Components/Blog/blog-7
--- import: fastnui.trizwit.com/UI-Components/Blog/blog-8
--- import: fastnui.trizwit.com/UI-Components/Blog/blog-9
--- import: fastnui.trizwit.com/UI-Components/lib as lib2
+-- import: trizui.trizwit.com/UI-Components/Blog/blog-2
+-- import: trizui.trizwit.com/UI-Components/Blog/blog-3
+-- import: trizui.trizwit.com/UI-Components/Blog/blog-4
+-- import: trizui.trizwit.com/UI-Components/Blog/blog-5
+-- import: trizui.trizwit.com/UI-Components/Blog/blog-6
+-- import: trizui.trizwit.com/UI-Components/Blog/blog-7
+-- import: trizui.trizwit.com/UI-Components/Blog/blog-8
+-- import: trizui.trizwit.com/UI-Components/Blog/blog-9
+-- import: trizui.trizwit.com/UI-Components/lib as lib2
 
 -- page:
 
@@ -284,7 +284,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -296,7 +296,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/lib
+\-- import: trizui.trizwit.com/lib
 
 -- end: cb.code
 
@@ -493,7 +493,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -505,7 +505,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Blog/blog-2
+\-- import: trizui.trizwit.com/UI-Components/Blog/blog-2
 
 -- end: cb.code
 
@@ -692,7 +692,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -704,7 +704,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Blog/blog-3
+\-- import: trizui.trizwit.com/UI-Components/Blog/blog-3
 
 -- end: cb.code
 
@@ -891,7 +891,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -903,7 +903,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Blog/blog-4
+\-- import: trizui.trizwit.com/UI-Components/Blog/blog-4
 
 -- end: cb.code
 
@@ -1084,7 +1084,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -1096,7 +1096,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Blog/blog-5
+\-- import: trizui.trizwit.com/UI-Components/Blog/blog-5
 
 -- end: cb.code
 
@@ -1283,7 +1283,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -1295,7 +1295,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Blog/blog-6
+\-- import: trizui.trizwit.com/UI-Components/Blog/blog-6
 
 -- end: cb.code
 
@@ -1491,7 +1491,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -1503,7 +1503,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Blog/blog-7
+\-- import: trizui.trizwit.com/UI-Components/Blog/blog-7
 
 -- end: cb.code
 
@@ -1715,7 +1715,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -1727,7 +1727,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Blog/blog-8
+\-- import: trizui.trizwit.com/UI-Components/Blog/blog-8
 
 -- end: cb.code
 
@@ -1969,7 +1969,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -1981,7 +1981,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Blog/blog-9
+\-- import: trizui.trizwit.com/UI-Components/Blog/blog-9
 
 -- end: cb.code
 

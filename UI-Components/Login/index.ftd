@@ -1,7 +1,7 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
--- import: fastnui.trizwit.com/UI-Components/Login/login-1 as l1
--- import: fastnui.trizwit.com/UI-Components/Login/login-2 as l2
--- import: fastnui.trizwit.com/UI-Components/lib as lib2
+-- import: trizui.trizwit.com/UI-Components/Login/login-1 as l1
+-- import: trizui.trizwit.com/UI-Components/Login/login-2 as l2
+-- import: trizui.trizwit.com/UI-Components/lib as lib2
 
 -- page:
 
@@ -247,7 +247,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -259,7 +259,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Login/login-1 as l1
+\-- import: trizui.trizwit.com/UI-Components/Login/login-1 as l1
 
 -- end: cb.code
 
@@ -502,7 +502,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -514,7 +514,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Login/login-2 as l2
+\-- import: trizui.trizwit.com/UI-Components/Login/login-2 as l2
 
 -- end: cb.code
 

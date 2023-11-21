@@ -1,6 +1,6 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
--- import: fastnui.trizwit.com/UI-Components/Alert/alert
--- import: fastnui.trizwit.com/UI-Components/lib as lib2
+-- import: trizui.trizwit.com/UI-Components/Alert/alert
+-- import: trizui.trizwit.com/UI-Components/lib as lib2
 
 -- page:
 
@@ -230,7 +230,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -242,7 +242,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Alert/alert
+\-- import: trizui.trizwit.com/UI-Components/Alert/alert
 
 -- end: cb.code
 

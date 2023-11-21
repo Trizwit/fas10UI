@@ -1,8 +1,8 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
--- import: fastnui.trizwit.com/UI-Components/Feature/feature-1
--- import: fastnui.trizwit.com/UI-Components/Feature/feature-2
--- import: fastnui.trizwit.com/UI-Components/Feature/feature-3
--- import: fastnui.trizwit.com/UI-Components/lib as lib2
+-- import: trizui.trizwit.com/UI-Components/Feature/feature-1
+-- import: trizui.trizwit.com/UI-Components/Feature/feature-2
+-- import: trizui.trizwit.com/UI-Components/Feature/feature-3
+-- import: trizui.trizwit.com/UI-Components/lib as lib2
 
 
 -- page:
@@ -255,7 +255,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -267,7 +267,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Feature/feature-1
+\-- import: trizui.trizwit.com/UI-Components/Feature/feature-1
 
 -- end: cb.code
 
@@ -284,7 +284,7 @@ lang: ftd
 \-- feature-1.feature-container-1:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, 
 ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
@@ -292,7 +292,7 @@ ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-e
 \-- feature-1.feature-container-1:
 logo: $assets.files.images.statistics.scissors.png
 title: The Catalyzer
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, 
 ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
@@ -300,7 +300,7 @@ ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-e
 \-- feature-1.feature-container-1:
 logo: $assets.files.images.statistics.user.png
 title: Neptune
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. 
 Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
@@ -319,7 +319,7 @@ if: { !code-open-1 }
 -- feature-1.feature-container-1:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, 
 ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
@@ -327,7 +327,7 @@ ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-e
 -- feature-1.feature-container-1:
 logo: $assets.files.images.statistics.scissors.png
 title: The Catalyzer
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, 
 ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
@@ -335,7 +335,7 @@ ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-e
 -- feature-1.feature-container-1:
 logo: $assets.files.images.statistics.user.png
 title: Neptune
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. 
 Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
@@ -358,7 +358,7 @@ lang: ftd
 \-- feature-container-1:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, 
 ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
@@ -366,7 +366,7 @@ ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-e
 \-- feature-container-1:
 logo: $assets.files.images.statistics.scissors.png
 title: The Catalyzer
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, 
 ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
@@ -374,7 +374,7 @@ ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-e
 \-- feature-container-1:
 logo: $assets.files.images.statistics.user.png
 title: Neptune
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. 
 Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.
@@ -631,7 +631,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -643,7 +643,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Feature/feature-2
+\-- import: trizui.trizwit.com/UI-Components/Feature/feature-2
 
 -- end: cb.code
 
@@ -660,14 +660,14 @@ lang: ftd
 \-- feature-2.feature-container-2:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
 \-- feature-2.feature-container-2:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
@@ -685,14 +685,14 @@ if: { !code-open-2 }
 -- feature-2.feature-container-2:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
 -- feature-2.feature-container-2:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
@@ -715,14 +715,14 @@ lang: ftd
 \-- feature-container-2:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
 \-- feature-container-2:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
@@ -965,7 +965,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
@@ -977,7 +977,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Feature/feature-3
+\-- import: trizui.trizwit.com/UI-Components/Feature/feature-3
 
 -- end: cb.code
 
@@ -995,21 +995,21 @@ image: $assets.files.images.statistics.pic13.jpg
 \-- feature-3.feature-container-3:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
 \-- feature-3.feature-container-3:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
 \-- feature-3.feature-container-3:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
@@ -1030,21 +1030,21 @@ image: $assets.files.images.statistics.pic13.jpg
 -- feature-3.feature-container-3:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
 -- feature-3.feature-container-3:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
 -- feature-3.feature-container-3:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
@@ -1067,21 +1067,21 @@ image: $assets.files.images.statistics.pic13.jpg
 \-- feature-container-3:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
 \-- feature-container-3:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 
 \-- feature-container-3:
 logo: $assets.files.images.statistics.graph.png
 title: Shooting Stars
-cta-link: https://fastnui.trizwit.com/
+cta-link: https://trizui.trizwit.com/
 
 Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.
 

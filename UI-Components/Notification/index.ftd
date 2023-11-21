@@ -1,6 +1,6 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
--- import: fastnui.trizwit.com/UI-Components/Notification/toast-1
--- import: fastnui.trizwit.com/UI-Components/lib as lib2
+-- import: trizui.trizwit.com/UI-Components/Notification/toast-1
+-- import: trizui.trizwit.com/UI-Components/lib as lib2
 
 -- page:
 
@@ -234,14 +234,14 @@ align-self: center
 -- cb.code:
 lang: ftd
 
-\-- fastn.dependency: fastnui.trizwit.com
+\-- fastn.dependency: trizui.trizwit.com
 
 -- end: cb.code
 
 -- cb.code:
 lang: ftd
 
-\-- import: fastnui.trizwit.com/UI-Components/Notification/toast-1
+\-- import: trizui.trizwit.com/UI-Components/Notification/toast-1
 
 -- end: cb.code
 
@@ -412,7 +412,7 @@ $on-click$: $ftd.set-bool($a = $open, v = false)
 ;; -- cb.code:
 ;; lang: ftd
 
-;; \-- fastn.dependency: fastnui.trizwit.com
+;; \-- fastn.dependency: trizui.trizwit.com
 
 ;; -- end: cb.code
 

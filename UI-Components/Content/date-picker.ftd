@@ -1,7 +1,7 @@
--- import: fastnui.trizwit.com/assets
--- import: fastnui.trizwit.com/lib
+-- import: trizui.trizwit.com/assets
+-- import: trizui.trizwit.com/lib
 -- import: fastn-community.github.io/code-block as cb
--- import: fastnui.trizwit.com/UI-Components/Content/dropdown
+-- import: trizui.trizwit.com/UI-Components/Content/dropdown
 
 -- lib.page:
 

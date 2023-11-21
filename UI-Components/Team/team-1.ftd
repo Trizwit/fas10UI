@@ -1,5 +1,10 @@
--- import: fastnui.trizwit.com/assets
--- import: fastnui.trizwit.com/lib
+<<<<<<< HEAD
+-- import: trizui.trizwit.com/assets
+-- import: trizui.trizwit.com/lib
+=======
+-- import: trizui.trizwit.com/assets
+-- import: trizui.trizwit.com/lib
+>>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 -- import: fastn-community.github.io/code-block as cb
 
 
