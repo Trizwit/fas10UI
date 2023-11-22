@@ -1,15 +1,8 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
-<<<<<<< HEAD
 -- import: trizui.trizwit.com/UI-Components/Team/team-1
 -- import: trizui.trizwit.com/UI-Components/Team/team-2
 -- import: trizui.trizwit.com/UI-Components/Team/team-3
 -- import: trizui.trizwit.com/UI-Components/lib as lib2
-=======
--- import: trizui.trizwit.com/UI-Components/Team/team-1
--- import: trizui.trizwit.com/UI-Components/Team/team-2
--- import: trizui.trizwit.com/UI-Components/Team/team-3
--- import: trizui.trizwit.com/UI-Components/lib as lib2
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 
 -- page:
@@ -261,11 +254,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- fastn.dependency: trizui.trizwit.com
-=======
-\-- fastn.dependency: trizui.trizwit.com
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -277,11 +266,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- import: trizui.trizwit.com/UI-Components/Team/team-1
-=======
-\-- import: trizui.trizwit.com/UI-Components/Team/team-1
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -346,11 +331,7 @@ pro-pic: $assets.files.images.statistics.pic9.jpg
 name: Rodrigo Monchi
 position: Product Manager
 
-<<<<<<< HEAD
 \-- end: team-1.team-1
-=======
-\-- end: team-1
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -703,11 +684,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- fastn.dependency: trizui.trizwit.com
-=======
-\-- fastn.dependency: trizui.trizwit.com
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -719,11 +696,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- import: trizui.trizwit.com/UI-Components/Team/team-2
-=======
-\-- import: trizui.trizwit.com/UI-Components/Team/team-2
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -1177,11 +1150,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- fastn.dependency: trizui.trizwit.com
-=======
-\-- fastn.dependency: trizui.trizwit.com
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -1193,11 +1162,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- import: trizui.trizwit.com/UI-Components/Team/team-3
-=======
-\-- import: trizui.trizwit.com/UI-Components/Team/team-3
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 

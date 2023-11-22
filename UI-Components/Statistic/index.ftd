@@ -1,15 +1,8 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
-<<<<<<< HEAD
 -- import: trizui.trizwit.com/UI-Components/Statistic/statistic-1
 -- import: trizui.trizwit.com/UI-Components/Statistic/statistic-2
 -- import: trizui.trizwit.com/UI-Components/Statistic/statistic-3
 -- import: trizui.trizwit.com/UI-Components/lib as lib2
-=======
--- import: trizui.trizwit.com/UI-Components/Statistic/statistic-1
--- import: trizui.trizwit.com/UI-Components/Statistic/statistic-2
--- import: trizui.trizwit.com/UI-Components/Statistic/statistic-3
--- import: trizui.trizwit.com/UI-Components/lib as lib2
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 
 -- page:
