@@ -65,12 +65,9 @@ url: /UI-Components/Contact/
 -- lib2.button: Content
 url: /UI-Components/Content/
 
-<<<<<<< HEAD
 -- lib2.button: Feature
 url: /UI-Components/Feature/
 
-=======
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 -- lib2.button: Footer
 url: /UI-Components/Footer/
 
