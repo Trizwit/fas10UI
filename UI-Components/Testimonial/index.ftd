@@ -168,13 +168,13 @@ css: [ $assets.files.style.scroll.css ]
 classes: body 
 
 -- ui-1:
-title: Statistic-1
+title: Testimonial-1
 
 -- ui-2:
-title: Statistic-2
+title: Testimonial-2
 
 -- ui-3:
-title: Statistic-3
+title: Testimonial-3
 
 -- end: ftd.column
 
