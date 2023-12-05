@@ -9,6 +9,7 @@
 
 
 -- ftd.column:
+width: fill-container
 height if {ftd.device == "desktop"}: fill-container
 height if {ftd.device == "mobile"}: auto
 types: 
@@ -16,6 +17,7 @@ colors:
 background.solid: #011627
 
 -- ftd.column:
+width: fill-container
 height if {ftd.device == "desktop"}: fill-container
 height if {ftd.device == "mobile"}: auto
 
@@ -61,15 +63,15 @@ github_url: https://github.com/Trizwit/fastnfoliotemp
 
 
 -- lib3.portfolio_card: Sample-2
-cover: $assets.files.assets.portfolio_template_1.png
-demo_url: https://trizwit.github.io/fastnfoliotemp/
-github_url: https://github.com/Trizwit/fastnfoliotemp
+cover: $assets.files.assets.portfolio_template_2.png
+demo_url: https://avgayathri.github.io/swe-folio/
+github_url: https://github.com/avGayathri/swe-folio
 
 
 -- lib3.portfolio_card: Sample-3
-cover: $assets.files.assets.portfolio_template_1.png
-demo_url: https://trizwit.github.io/fastnfoliotemp/
-github_url: https://github.com/Trizwit/fastnfoliotemp
+cover: $assets.files.assets.portfolio_template_3.png
+demo_url: https://avgayathri.github.io/swe-folio-2/
+github_url: https://github.com/avGayathri/swe-folio-2
 
 
 -- lib3.portfolio_card: Sample-4
