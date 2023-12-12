@@ -502,11 +502,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- fastn.dependency: trizui.trizwit.com
-=======
-\-- fastn.dependency: trizui.trizwit.com
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -518,11 +514,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- import: trizui.trizwit.com/UI-Components/Statistic/statistic-2
-=======
-\-- import: trizui.trizwit.com/UI-Components/Statistic/statistic-2
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -756,7 +748,7 @@ margin-left.px: 5
 
 \-- ftd.image:
 src: $statistic-2.image
-width.fixed.vw: 48
+width.fixed.vw: 88
 height.fixed.px: 180
 min-height.fixed.px: 100
 min-width.fixed.px: 316
