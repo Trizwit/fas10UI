@@ -63,6 +63,9 @@ url: /UI-Components/Cards/
 $is-open: true
 url: /UI-Components/Contact/
 
+-- lib2.button: Cta
+url: /UI-Components/Cta/
+
 -- lib2.button: Dialog Box
 url: /UI-Components/Content/
 

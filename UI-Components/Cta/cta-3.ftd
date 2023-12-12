@@ -1,0 +1,219 @@
+-- import: trizui.trizwit.com/assets
+-- import: trizui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component cta-3:
+caption login-title:
+string title:
+body about:
+string info-text-1:
+string info-text-2:
+string cta-button:
+string link-1:
+boolean $is-active-1: false
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+width: fill-container
+align-content: center
+margin-top.px: 10
+padding.px: 28
+
+-- ftd.column:
+padding-left.px: 20
+padding-right.px: 20
+spacing.fixed.px: 30
+
+-- ftd.text: $cta-3.title 
+role: $inherited.types.heading-small
+
+-- ftd.text: $cta-3.about
+role: $inherited.types.heading-tiny
+color: grey
+
+-- end: ftd.column
+
+-- ftd.column:
+border-width.px: 1
+width.fixed.vw: 28
+height.fixed.vw: 22
+min-height.fixed.px: 332
+padding.px: 22  
+border-radius.px: 10
+border-color: black
+
+-- ftd.text: $cta-3.login-title
+role: $inherited.types.heading-small
+color: black
+
+-- ftd.text: $cta-3.info-text-1
+color: grey
+margin-bottom.px: 4
+margin-top.px: 40
+role: $inherited.types.button-small
+
+-- ftd.text-input:
+;;placeholder: email
+padding-vertical.px: 8
+padding-horizontal.px: 8
+margin-bottom.px: 16
+width: fill-container
+border-radius.px: 4
+border-width.px: 1
+border-color: black
+type: text
+role: $inherited.types.label-large
+background.solid: white
+color: black
+
+-- ftd.text: $cta-3.info-text-2
+role: $inherited.types.button-small
+color: grey
+margin-bottom.px: 4
+
+
+-- ftd.text-input:
+;;placeholder: password
+padding-vertical.px: 8
+padding-horizontal.px: 8
+margin-bottom.px: 10
+width: fill-container
+border-radius.px: 4
+border-width.px: 1
+border-color: black
+role: $inherited.types.button-medium
+background.solid: white
+color: black
+type: password
+
+-- ftd.text: $cta-3.cta-button
+role: $inherited.types.button-small
+text-align: center
+width.fixed.vw: 25
+padding-vertical.px: 12
+margin-top.px: 20
+border-radius.px: 4
+background.solid: skyblue
+background.solid if {cta-3.is-active-1}: blue
+$on-mouse-enter$: $ftd.set-bool($a = $cta-3.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $cta-3.is-active-1, v = false)
+color: black
+link: $cta-3.link-1
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.row:
+if: { ftd.device == "mobile" }
+width: fill-container
+align-content: center
+margin-top.px: 10
+spacing.fixed.px: 20
+wrap: true
+
+-- ftd.column:
+padding-left.px: 10
+padding-right.px: 10
+spacing.fixed.px: 20
+
+-- ftd.text: $cta-3.title 
+role: $inherited.types.heading-small
+text-align: center
+
+-- ftd.text: $cta-3.about
+role: $inherited.types.heading-tiny
+color: grey
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.column:
+border-width.px: 1
+width.fixed.vw: 82
+height.fixed.vw: 22
+min-height.fixed.px: 332
+padding.px: 22  
+border-radius.px: 10
+border-color: black
+
+-- ftd.text: $cta-3.login-title
+role: $inherited.types.heading-small
+color: black
+
+-- ftd.text: $cta-3.info-text-1
+color: grey
+margin-bottom.px: 4
+margin-top.px: 40
+role: $inherited.types.button-small
+
+-- ftd.text-input:
+;;placeholder: email
+padding-vertical.px: 8
+padding-horizontal.px: 8
+margin-bottom.px: 16
+width: fill-container
+border-radius.px: 4
+border-width.px: 1
+border-color: black
+type: text
+role: $inherited.types.label-large
+background.solid: white
+color: black
+
+-- ftd.text: $cta-3.info-text-2
+role: $inherited.types.button-small
+color: grey
+margin-bottom.px: 4
+
+
+-- ftd.text-input:
+;;placeholder: password
+padding-vertical.px: 8
+padding-horizontal.px: 8
+margin-bottom.px: 10
+width: fill-container
+border-radius.px: 4
+border-width.px: 1
+border-color: black
+role: $inherited.types.button-medium
+background.solid: white
+color: black
+type: password
+
+-- ftd.text: $cta-3.cta-button
+role: $inherited.types.button-small
+text-align: center
+width.fixed.vw: 68
+padding-vertical.px: 12
+margin-top.px: 20
+border-radius.px: 4
+background.solid: skyblue
+background.solid if {cta-3.is-active-1}: blue
+$on-mouse-enter$: $ftd.set-bool($a = $cta-3.is-active-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $cta-3.is-active-1, v = false)
+color: black
+link: $cta-3.link-1
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: cta-3
+
+-- cta-3:
+title: **Slow-carb next level shoindcgoitch ethical authentic, poko scenester**
+login-title: Sign Up
+info-text-1: Full Name
+info-text-2: Email
+cta-button: LOGIN
+link-1: https://trizui.trizwit.com/
+
+Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.
