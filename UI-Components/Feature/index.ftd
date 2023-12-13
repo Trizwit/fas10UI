@@ -63,6 +63,9 @@ url: /UI-Components/Contact/
 -- lib2.button: Content
 url: /UI-Components/Content/
 
+-- lib2.button: Cta
+url: /UI-Components/Cta/
+
 -- lib2.button: Feature
 $is-open: true
 url: /UI-Components/Feature/
@@ -1101,6 +1104,7 @@ align-content: center
 
 \-- ftd.column:
 if : { ftd.device == "desktop" }
+padding.px: 28
 
 \-- ftd.image:
 src: $feature-3.image

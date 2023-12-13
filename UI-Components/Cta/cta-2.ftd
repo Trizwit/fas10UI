@@ -1,0 +1,167 @@
+-- import: trizui.trizwit.com/assets
+-- import: trizui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component cta-2:
+string title:
+body about:
+string info-1:
+string info-2: 
+string cta-text:
+string link:
+boolean $is-active: false
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+width: fill-container
+align-content: center
+spacing.fixed.px: 20
+
+-- ftd.text: $cta-2.title
+role: $inherited.types.heading-medium
+text-align: center
+
+-- ftd.text: $cta-2.about
+role: $inherited.types.heading-small
+text-align: center
+padding-left.px: 20
+padding-right.px: 20
+color: grey
+
+-- end: ftd.column
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+width: fill-container
+padding.px: 20
+spacing.fixed.px: 32
+align-content: center
+
+-- ftd.column:
+
+-- ftd.text: $cta-2.info-1
+role: $inherited.types.copy-small
+color: grey
+
+-- ftd.text-input:
+width.fixed.vw: 28
+height.fixed.vw: 3
+border-radius.px: 4
+border-width.px: 2
+padding.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: $cta-2.info-2
+role: $inherited.types.copy-small
+color: grey
+
+-- ftd.text-input:
+width.fixed.vw: 28
+height.fixed.vw: 3
+border-radius.px: 4
+border-width.px: 2
+padding.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+
+-- ftd.text: $cta-2.cta-text
+text-align: center
+width.fixed.vw: 10
+padding-vertical.px: 12
+padding-horizontal.px: 12
+margin-top.px: 24
+align-self: center
+border-radius.px: 5
+background.solid: skyblue
+background.solid if {$cta-2.is-active}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $cta-2.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $cta-2.is-active, v = false)
+color: black
+link: $cta-2.link
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+height: fill-container
+padding.px: 20
+spacing.fixed.px: 12
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: $cta-2.info-1
+role: $inherited.types.copy-small
+color: grey
+
+-- ftd.text-input:
+width.fixed.vw: 80
+height.fixed.vw: 10
+border-radius.px: 4
+border-width.px: 2
+padding.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: $cta-2.info-2
+role: $inherited.types.copy-small
+color: grey
+
+-- ftd.text-input:
+width.fixed.vw: 80
+height.fixed.vw: 10
+border-radius.px: 4
+border-width.px: 2
+padding.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: $cta-2.cta-text
+text-align: center
+width.fixed.percent: 36
+padding-vertical.px: 8
+padding-horizontal.px: 12
+align-self: center
+border-radius.px: 5
+background.solid: skyblue
+background.solid if {$cta-2.is-active}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $cta-2.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $cta-2.is-active, v = false)
+color: black
+link: $cta-2.link
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: cta-2
+
+-- cta-2:
+title: Master Cleanse Reliac Heirloom
+info-1: Full name
+info-2: Email
+cta-text: Button
+link: https://trizui.trizwit.com/
+
+Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
+ Franzen you probably haven't heard of them man bun deep.

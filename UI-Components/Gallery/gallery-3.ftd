@@ -1,0 +1,187 @@
+-- import: trizui.trizwit.com/assets
+-- import: trizui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component gallery-3:
+string title:
+body about:
+ftd.image-src image1: 
+ftd.image-src image2:
+ftd.image-src image3:
+ftd.image-src image4: 
+ftd.image-src image5:
+ftd.image-src image6:
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
+width: fill-container
+height: fill-container
+align-content: center
+
+-- ftd.row:
+align-content: center
+padding-vertical.vw: 2
+padding-horizontal.vw: 7
+spacing.fixed.vw: 2
+
+-- ftd.text: $gallery-3.title
+role: $inherited.types.heading-medium
+color: #000000
+
+-- ftd.text: $gallery-3.about
+role: $inherited.types.heading-tiny
+color: grey
+text-align: start
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+align-content: center
+spacing.fixed.vw: 2
+
+-- ftd.column:
+spacing.fixed.vw: 2
+
+-- ftd.row:
+spacing.fixed.vw: 2
+
+-- ftd.image:
+src: $gallery-3.image1
+width.fixed.vw: 20
+height.fixed.vw: 12
+
+-- ftd.image:
+src: $gallery-3.image2
+width.fixed.vw: 20
+height.fixed.vw: 12
+
+-- end: ftd.row
+
+-- ftd.image:
+src: $gallery-3.image3
+width.fixed.vw: 42
+height.fixed.vw: 20
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.vw: 2
+
+-- ftd.image:
+src: $gallery-3.image3
+width.fixed.vw: 42
+height.fixed.vw: 20
+
+-- ftd.row:
+spacing.fixed.vw: 2
+
+-- ftd.image:
+src: $gallery-3.image1
+width.fixed.vw: 20
+height.fixed.vw: 12
+
+-- ftd.image:
+src: $gallery-3.image2
+width.fixed.vw: 20
+height.fixed.vw: 12
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+height: fill-container
+spacing.fixed.vw: 4
+
+-- ftd.column:
+align-content: center
+padding-vertical.vw: 2
+padding-horizontal.vw: 2
+spacing.fixed.vw: 2
+
+-- ftd.text: $gallery-3.title
+role: $inherited.types.heading-medium
+color: #000000
+text-align: center
+
+-- ftd.text: $gallery-3.about
+role: $inherited.types.heading-tiny
+color: grey
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+align-content: center
+spacing.fixed.vw: 2
+
+-- ftd.column:
+spacing.fixed.vw: 2
+
+-- ftd.row:
+spacing.fixed.vw: 2
+
+-- ftd.image:
+src: $gallery-3.image1
+width.fixed.vw: 44
+height.fixed.vw: 32
+
+-- ftd.image:
+src: $gallery-3.image2
+width.fixed.vw: 44
+height.fixed.vw: 32
+
+-- end: ftd.row
+
+-- ftd.image:
+src: $gallery-3.image3
+width.fixed.vw: 90
+height.fixed.vw: 40
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.vw: 2
+
+-- ftd.image:
+src: $gallery-3.image3
+width.fixed.vw: 90
+height.fixed.vw: 40
+
+-- ftd.row:
+spacing.fixed.vw: 2
+
+-- ftd.image:
+src: $gallery-3.image1
+width.fixed.vw: 44
+height.fixed.vw: 32
+
+-- ftd.image:
+src: $gallery-3.image2
+width.fixed.vw: 44
+height.fixed.vw: 32
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: gallery-3

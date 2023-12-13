@@ -532,6 +532,8 @@ Prism.languages.ftd = {
             this.#name = name;
             this.#global = global;
         }
+
+        getName() { return this.#name; }
     
         get(function_name) {
             return this.#global[`${this.#name}__${function_name}`];
@@ -551,7 +553,8 @@ Prism.languages.ftd = {
     fastn.recordInstanceClass = RecordInstance;
     fastn.module = function (name, global) {
         return new Module(name, global);
-    }    
+    }
+    fastn.moduleClass = Module;
 
     return fastn;
 })({});
@@ -2369,7 +2372,7 @@ class Node2 {
                     this.attachCss("justify-content", staticValue[1]);
                     break;
                 case fastn_dom.Spacing.Fixed()[0]:
-                    this.attachCss("gap", staticValue[1]);
+                    this.attachCss("gap", fastn_utils.getStaticValue(staticValue[1]));
                     break;
             }
 
@@ -4125,6 +4128,7 @@ const ftd = (function() {
     exports.http = function (url, method, fastn_module, ...body) {
         if (url instanceof fastn.mutableClass) url = url.get();
         if (method instanceof fastn.mutableClass) method = method.get();
+        if (fastn_module instanceof fastn.moduleClass) fastn_module = fastn_module.getName();
         method = method.trim().toUpperCase();
         let request_json = {};
         const init = {
@@ -4179,9 +4183,9 @@ const ftd = (function() {
                             if (Array.isArray(value)) {
                                 // django returns a list of strings
                                 value = value.join(" ");
-                                // also django does not append `-error`
-                                key = key + "-error";
                             }
+                            // also django does not append `-error`
+                            key = key + "-error";
                             key = fastn_module + "#" + key;
                             data[key] = value;
                         }
@@ -4646,6 +4650,40 @@ ftd.increment_by = function (args) {
     let __args__ = fastn_utils.getArgs({
     }, args);
     let fastn_utils_val___args___a = fastn_utils.clone(fastn_utils.getter(__args__.a) + fastn_utils.getter(__args__.v));
+    if (fastn_utils_val___args___a instanceof fastn.mutableClass) {
+      fastn_utils_val___args___a = fastn_utils_val___args___a.get();
+    }
+    if (!fastn_utils.setter(__args__.a, fastn_utils_val___args___a)) {
+      __args__.a = fastn_utils_val___args___a;
+    }
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+ftd.decrement = function (args) {
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "trizui_trizwit_com";
+  try {
+    let __args__ = fastn_utils.getArgs({
+    }, args);
+    let fastn_utils_val___args___a = fastn_utils.clone(fastn_utils.getter(__args__.a) - 1);
+    if (fastn_utils_val___args___a instanceof fastn.mutableClass) {
+      fastn_utils_val___args___a = fastn_utils_val___args___a.get();
+    }
+    if (!fastn_utils.setter(__args__.a, fastn_utils_val___args___a)) {
+      __args__.a = fastn_utils_val___args___a;
+    }
+  } finally {
+    __fastn_package_name__ = __fastn_super_package_name__;
+  }
+}
+ftd.decrement_by = function (args) {
+  let __fastn_super_package_name__ = __fastn_package_name__;
+  __fastn_package_name__ = "trizui_trizwit_com";
+  try {
+    let __args__ = fastn_utils.getArgs({
+    }, args);
+    let fastn_utils_val___args___a = fastn_utils.clone(fastn_utils.getter(__args__.a) - fastn_utils.getter(__args__.v));
     if (fastn_utils_val___args___a instanceof fastn.mutableClass) {
       fastn_utils_val___args___a = fastn_utils_val___args___a.get();
     }
