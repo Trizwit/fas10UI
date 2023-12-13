@@ -311,7 +311,7 @@ if: { code-open-1 }
 -- cb.code:
 lang: ftd
 
--- lib.container-wrapper:
+\-- lib.container-wrapper:
 
 \-- gallery-1:
 title: GALLERY
@@ -325,7 +325,7 @@ photo-7: $assets.files.images.dummy-image.jpg
 photo-8: $assets.files.images.dummy-image.jpg
 photo-9: $assets.files.images.dummy-image.jpg
 
--- end: lib.container-wrapper
+\-- end: lib.container-wrapper
 
 \-- component gallery-1:
 string title:
