@@ -14,6 +14,7 @@ align-content: center
 
 -- ftd.column:
 if : { ftd.device == "desktop" }
+padding.px: 28
 
 -- ftd.image:
 src: $feature-3.image

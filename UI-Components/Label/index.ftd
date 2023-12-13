@@ -60,6 +60,9 @@ url: /UI-Components/Contact/
 -- lib2.button: Content
 url: /UI-Components/Content/
 
+-- lib2.button: Cta
+url: /UI-Components/Cta/
+
 -- lib2.button: Feature
 url: /UI-Components/Feature/
 

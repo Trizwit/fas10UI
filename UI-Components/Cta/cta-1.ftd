@@ -1,0 +1,79 @@
+-- import: trizui.trizwit.com/assets
+-- import: trizui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+
+-- component cta-1:
+string text:
+string cta-text:
+string link:
+boolean $is-active: false
+
+-- ftd.column:
+
+-- ftd.row:
+if: { ftd.device == "desktop" }
+width.fixed.percent: 80
+height.fixed.percent: 100
+padding.px: 20
+spacing.fixed.px: 20
+align-content: center
+
+-- ftd.text: $cta-1.text
+role: $inherited.types.heading-small
+margin-top.px: 20
+
+
+-- ftd.text: $cta-1.cta-text
+text-align: center
+width.fixed.percent: 24
+min-width.fixed.px: 20
+padding-vertical.px: 10
+padding-horizontal.px: 12
+align-self: center
+border-radius.px: 5
+background.solid: skyblue
+background.solid if {$cta-1.is-active}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $cta-1.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $cta-1.is-active, v = false)
+color: black
+link: $cta-1.link
+
+-- end: ftd.row
+
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+padding.px: 20
+spacing.fixed.px: 20
+align-content: center
+
+-- ftd.text: $cta-1.text
+role: $inherited.types.heading-small
+margin-top.px: 20
+
+-- ftd.text: $cta-1.cta-text
+text-align: center
+width.fixed.percent: 32
+padding-vertical.px: 10
+padding-horizontal.px: 12
+align-self: center
+border-radius.px: 5
+background.solid: skyblue
+background.solid if {$cta-1.is-active}: grey
+$on-mouse-enter$: $ftd.set-bool($a = $cta-1.is-active, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $cta-1.is-active, v = false)
+color: black
+link: $cta-1.link
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: cta-1
+
+-- cta-1:
+text: Slow-carb next level shoindxgoitch ethical authentic, scenester sriracha forage.
+cta-text: Button
+link: https://trizui.trizwit.com/

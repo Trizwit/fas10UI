@@ -1,0 +1,143 @@
+-- import: trizui.trizwit.com/assets
+-- import: trizui.trizwit.com/lib
+-- import: fastn-community.github.io/code-block as cb
+
+
+-- component gallery-2:
+string title:
+body about:
+ftd.image-src image1:
+ftd.image-src image2:
+ftd.image-src image3:
+ftd.image-src image4:
+ftd.image-src image5:
+ftd.image-src image6:
+string cta-link-1:
+string cta-link-2:
+string cta-link-3:
+string cta-link-4:
+string cta-link-5:
+string cta-link-6:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-horizontal.vw: 10
+padding-vertical.vw: 2
+spacing.fixed.vw: 1
+
+
+-- ftd.text: $gallery-2.title
+role: $inherited.types.heading-medium
+text-align: center
+color: #d6b810
+
+-- ftd.text: $gallery-2.about
+role: $inherited.types.heading-small
+color: #000000
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.row:
+width.fixed.vw: 72
+width if { ftd.device == "mobile" }: fill-container
+spacing.fixed.vw: 2
+wrap: true
+padding.vw: 2
+align-content: center
+
+
+-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 14
+width.fixed.vw if { ftd.device == "mobile" }: 88
+height.fixed.vw if { ftd.device == "mobile" }: 62
+margin-vertical.vw: 2
+
+-- ftd.image: $gallery-2.image1
+width: fill-container
+height: fill-container
+link: $gallery-2.cta-link-1
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 14
+width.fixed.vw if { ftd.device == "mobile" }: 88
+height.fixed.vw if { ftd.device == "mobile" }: 62
+margin-vertical.vw: 2
+
+-- ftd.image: $gallery-2.image2
+width: fill-container
+height: fill-container
+link: $gallery-2.cta-link-2
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 14
+width.fixed.vw if { ftd.device == "mobile" }: 88
+height.fixed.vw if { ftd.device == "mobile" }: 62
+margin-vertical.vw: 2
+
+-- ftd.image: $gallery-2.image3
+width: fill-container
+height: fill-container
+link: $gallery-2.cta-link-3
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 14
+width.fixed.vw if { ftd.device == "mobile" }: 88
+height.fixed.vw if { ftd.device == "mobile" }: 62
+margin-vertical.vw: 2
+
+-- ftd.image: $gallery-2.image4
+width: fill-container
+height: fill-container
+link: $gallery-2.cta-link-4
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 14
+width.fixed.vw if { ftd.device == "mobile" }: 88
+height.fixed.vw if { ftd.device == "mobile" }: 62
+margin-vertical.vw: 2
+
+-- ftd.image: $gallery-2.image5
+width: fill-container
+height: fill-container
+link: $gallery-2.cta-link-5
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.vw: 20
+height.fixed.vw: 14
+width.fixed.vw if { ftd.device == "mobile" }: 88
+height.fixed.vw if { ftd.device == "mobile" }: 62
+margin-vertical.vw: 2
+
+-- ftd.image: $gallery-2.image6
+width: fill-container
+height: fill-container
+link: $gallery-2.cta-link-6
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: gallery-2
