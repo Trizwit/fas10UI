@@ -696,12 +696,12 @@ lang: ftd
 
 \-- gallery-2.gallery-2:
 title: Master Cleanse Reliac Heirloom
-image1: $assets.files.assets.dummy-image.jpg
-image2: $assets.files.assets.dummy-image.jpg
-image3: $assets.files.assets.dummy-image.jpg
-image4: $assets.files.assets.dummy-image.jpg
-image5: $assets.files.assets.dummy-image.jpg
-image6: $assets.files.assets.dummy-image.jpg
+image1: $assets.files.images.dummy-image.jpg
+image2: $assets.files.images.dummy-image.jpg
+image3: $assets.files.images.dummy-image.jpg
+image4: $assets.files.images.dummy-image.jpg
+image5: $assets.files.images.dummy-image.jpg
+image6: $assets.files.images.dummy-image.jpg
 cta-link-1: trizui.trizwit.com
 cta-link-2: trizui.trizwit.com
 cta-link-3: trizui.trizwit.com
@@ -722,12 +722,12 @@ if: { !code-open-2 }
 
 -- gallery-2.gallery-2:
 title: Master Cleanse Reliac Heirloom
-image1: $assets.files.assets.dummy-image.jpg
-image2: $assets.files.assets.dummy-image.jpg
-image3: $assets.files.assets.dummy-image.jpg
-image4: $assets.files.assets.dummy-image.jpg
-image5: $assets.files.assets.dummy-image.jpg
-image6: $assets.files.assets.dummy-image.jpg
+image1: $assets.files.images.dummy-image.jpg
+image2: $assets.files.images.dummy-image.jpg
+image3: $assets.files.images.dummy-image.jpg
+image4: $assets.files.images.dummy-image.jpg
+image5: $assets.files.images.dummy-image.jpg
+image6: $assets.files.images.dummy-image.jpg
 cta-link-1: trizui.trizwit.com
 cta-link-2: trizui.trizwit.com
 cta-link-3: trizui.trizwit.com
@@ -751,12 +751,12 @@ lang: ftd
 
 \-- gallery-2.gallery-2:
 title: Master Cleanse Reliac Heirloom
-image1: $assets.files.assets.dummy-image.jpg
-image2: $assets.files.assets.dummy-image.jpg
-image3: $assets.files.assets.dummy-image.jpg
-image4: $assets.files.assets.dummy-image.jpg
-image5: $assets.files.assets.dummy-image.jpg
-image6: $assets.files.assets.dummy-image.jpg
+image1: $assets.files.images.dummy-image.jpg
+image2: $assets.files.images.dummy-image.jpg
+image3: $assets.files.images.dummy-image.jpg
+image4: $assets.files.images.dummy-image.jpg
+image5: $assets.files.images.dummy-image.jpg
+image6: $assets.files.images.dummy-image.jpg
 cta-link-1: trizui.trizwit.com
 cta-link-2: trizui.trizwit.com
 cta-link-3: trizui.trizwit.com
@@ -1012,12 +1012,12 @@ lang: ftd
 
 \-- gallery-3.gallery-3:
 title: Master Cleanse Reliac Heirloom
-image1: $assets.files.assets.dummy-image.jpg
-image2: $assets.files.assets.dummy-image.jpg
-image3: $assets.files.assets.dummy-image.jpg
-image4: $assets.files.assets.dummy-image.jpg
-image5: $assets.files.assets.dummy-image.jpg
-image6: $assets.files.assets.dummy-image.jpg
+image1: $assets.files.images.dummy-image.jpg
+image2: $assets.files.images.dummy-image.jpg
+image3: $assets.files.images.dummy-image.jpg
+image4: $assets.files.images.dummy-image.jpg
+image5: $assets.files.images.dummy-image.jpg
+image6: $assets.files.images.dummy-image.jpg
 
 Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
 Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.
@@ -1032,12 +1032,12 @@ if: { !code-open-3 }
 
 -- gallery-3.gallery-3:
 title: Master Cleanse Reliac Heirloom
-image1: $assets.files.assets.dummy-image.jpg
-image2: $assets.files.assets.dummy-image.jpg
-image3: $assets.files.assets.dummy-image.jpg
-image4: $assets.files.assets.dummy-image.jpg
-image5: $assets.files.assets.dummy-image.jpg
-image6: $assets.files.assets.dummy-image.jpg
+image1: $assets.files.images.dummy-image.jpg
+image2: $assets.files.images.dummy-image.jpg
+image3: $assets.files.images.dummy-image.jpg
+image4: $assets.files.images.dummy-image.jpg
+image5: $assets.files.images.dummy-image.jpg
+image6: $assets.files.images.dummy-image.jpg
 
 Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
 Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.
@@ -1052,12 +1052,12 @@ lang: ftd
 
 \-- gallery-3:
 title: Master Cleanse Reliac Heirloom
-image1: $assets.files.assets.dummy-image.jpg
-image2: $assets.files.assets.dummy-image.jpg
-image3: $assets.files.assets.dummy-image.jpg
-image4: $assets.files.assets.dummy-image.jpg
-image5: $assets.files.assets.dummy-image.jpg
-image6: $assets.files.assets.dummy-image.jpg
+image1: $assets.files.images.dummy-image.jpg
+image2: $assets.files.images.dummy-image.jpg
+image3: $assets.files.images.dummy-image.jpg
+image4: $assets.files.images.dummy-image.jpg
+image5: $assets.files.images.dummy-image.jpg
+image6: $assets.files.images.dummy-image.jpg
 
 Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.
 Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.
