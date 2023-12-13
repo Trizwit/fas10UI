@@ -2,178 +2,266 @@
 -- import: trizui.trizwit.com/lib
 -- import: fastn-community.github.io/code-block as cb
 
--- lib.page:
+-- component gallery-1:
+string title:
+ftd.image-src photo-1:
+ftd.image-src photo-2:
+ftd.image-src photo-3:
+ftd.image-src photo-4:
+ftd.image-src photo-5:
+ftd.image-src photo-6:
+ftd.image-src photo-7:
+ftd.image-src photo-8:
+ftd.image-src photo-9:
 
--- lib.container-wrapper:
-if: { !lib.code-open }
-
--- gallery:
-
--- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-1.jpg
-
-
--- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-2.jpg
-
-
--- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-3.jpg
-
-
--- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-4.jpg
-
-
--- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-5.jpg
-
-
--- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-6.jpg
-
-
--- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-7.jpg
-
-
--- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-8.jpg
-
-
--- end: gallery
-
-
--- end: lib.container-wrapper
-
--- lib.container-wrapper:
-if: { lib.code-open }
-
--- cb.code:
-lang: ftd
-
-\-- lib.container-wrapper:
-
-\-- gallery:
-
-\-- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-1.jpg
-
-
-\-- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-2.jpg
-
-
-\-- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-3.jpg
-
-
-\-- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-4.jpg
-
-
-\-- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-5.jpg
-
-
-\-- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-6.jpg
-
-
-\-- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-7.jpg
-
-
-\-- gallery-image:
-img: $assets.files.images.Gallery.Gallery-1.gallery-img-8.jpg
-
-
-\-- end: gallery
-
-
-\-- end: lib.container-wrapper
-
-
-
-
-\-- component gallery-image:
-ftd.image-src img:
-
-\-- ftd.image:
-src: $gallery-image.img
-width.fixed.percent: 25
-margin.percent: 2
-
-\-- end: gallery-image
-
-
-
-
-
-
-
-
-
-
-\-- component gallery:
-children c:
-
-\-- ftd.row:
+-- ftd.column: 
 width: fill-container
-children: $gallery.c
-overflow-x: scroll
+height: fill-container
 
+-- ftd.column:
+if: { ftd.device == "desktop" }
 
-\-- end: ftd.row
+;;row 1
+-- ftd.row:
+width: auto
 
-\-- end: gallery
+-- ftd.column:
+width: fill-container
 
-
-
-
--- end: cb.code
-
--- end: lib.container-wrapper
-
--- end: lib.page
-
-
-
-
-
-
-
-
-
-
--- component gallery-image:
-ftd.image-src img:
 
 -- ftd.image:
-src: $gallery-image.img
-width.fixed.percent: 25
-margin.percent: 2
+src: $gallery-1.photo-1
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 12
+margin.px: 10
 
--- end: gallery-image
+-- end: ftd.column
 
-
-
-
-
-
-
-
-
-
--- component gallery:
-children c:
-
--- ftd.row:
+-- ftd.column:
 width: fill-container
-children: $gallery.c
-overflow-x: scroll
+height: fill-container
 
+-- ftd.image:
+src: $gallery-1.photo-2
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery-1.photo-3
+classes: zoom
+width.fixed.vw: 18
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
 
 -- end: ftd.row
 
--- end: gallery
+;;row 2
+-- ftd.row:
+width: auto
+height: auto
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery-1.photo-4
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 18
+margin.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: center
+
+-- ftd.text: $gallery-1.title
+color: #d6b810
+role: $inherited.types.heading-hero
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery-1.photo-5
+classes: zoom
+width.fixed.vw: 18
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery-1.photo-6
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+;; row 3
+-- ftd.row:
+width: auto
+height: auto
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery-1.photo-7
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery-1.photo-8
+classes: zoom
+width.fixed.vw: 12
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $gallery-1.photo-9
+classes: zoom
+width.fixed.vw: 18
+height.fixed.vw: 12
+margin.px: 10
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width: fill-container
+
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+align-content: center
+
+-- ftd.text: $gallery-1.title
+align-self: center
+role: $inherited.types.heading-large
+color: #d6b810
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.image:
+src: $gallery-1.photo-1
+width.fixed.vw: 84
+height.fixed.vw: 48
+margin.px: 10
+
+-- ftd.image:
+src: $gallery-1.photo-2
+width.fixed.vw: 84
+height.fixed.vw: 48
+margin.px: 10
+
+-- ftd.image:
+src: $gallery-1.photo-3
+width.fixed.vw: 84
+height.fixed.vw: 48
+margin.px: 10
+
+-- ftd.image:
+src: $gallery-1.photo-4
+width.fixed.vw: 84
+height.fixed.vw: 48
+margin.px: 10
+
+-- ftd.image:
+src: $gallery-1.photo-5
+width.fixed.vw: 84
+height.fixed.vw: 48
+margin.px: 10
+
+-- ftd.image:
+src: $gallery-1.photo-6
+width.fixed.vw: 84
+height.fixed.vw: 48
+margin.px: 10
+
+-- ftd.image:
+src: $gallery-1.photo-7
+width.fixed.vw: 84
+height.fixed.vw: 48
+margin.px: 10
+
+-- ftd.image:
+src: $gallery-1.photo-8
+width.fixed.vw: 84
+height.fixed.vw: 48
+margin.px: 10
+
+-- ftd.image:
+src: $gallery-1.photo-9
+width.fixed.vw: 84
+height.fixed.vw: 48
+margin.px: 10
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: gallery-1
