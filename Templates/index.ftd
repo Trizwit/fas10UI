@@ -1,5 +1,7 @@
 -- import: shaheen-senpai.github.io/fira-code/assets as fira-code-assets
 -- import: trizui.trizwit.com/Templates/lib as lib3
+-- import: trizui.trizwit.com/Portfolio/lib as lib2
+
 
 
 
@@ -49,7 +51,7 @@ border-right-color: #1E2D3D
 
 -- lib3.selector:
 
--- lib3.button: demo
+-- lib3.button: Landing Pages
 url: demo
 
 -- end: lib3.selector
@@ -57,16 +59,41 @@ url: demo
 -- end: ftd.column
 
 
--- ftd.column:
+-- ftd.row:
 width.fixed.percent: 77
 height: fill-container
 background.solid: #011627
-align-content: center
+padding-horizontal.vw: 7
+padding-vertical.vh: 7
+spacing.fixed.px: 100
+align-content: top-center
+wrap: true
 
-;;-- ui-wrapper:
 
 
--- end: ftd.column
+
+
+
+-- lib2.portfolio_card: Page-1
+cover: $assets.files.assets.landing_page_1.png
+demo_url: https://shaheen-senpai.github.io/landing_page_1/
+github_url: https://github.com/shaheen-senpai/landing_page_1
+
+
+
+-- lib2.portfolio_card: Page-2
+cover: $assets.files.assets.landing_page_2.png
+demo_url: https://shaheen-senpai.github.io/landing_page_2/
+github_url: https://github.com/shaheen-senpai/landing_page_2
+
+
+
+
+
+
+
+
+-- end: ftd.row
 
 ;; page container end
 

@@ -75,7 +75,7 @@ height.fixed.px: 40
 spacing: space-between
 
 
--- ftd.text: FASTN UI
+-- ftd.text: TRIZ UI
 role: $fira-code-size-16-400
 color: #607B96
 css: [ $assets.files.style.logo.css]
@@ -83,6 +83,7 @@ classes: animate-character
 align-self: center
 margin-left.percent: 10
 margin-right.percent: 14
+link: index.html
 
 -- ftd.row:
 
@@ -257,7 +258,7 @@ padding-top.px: 20
 role: $fira-code-size-56-400
 color: #E5E9F0
 
--- ftd.text: **FASTN UI** library
+-- ftd.text: **TRIZ UI** library
 role: $fira-code-size-56-400
 color: #E5E9F0
 
@@ -312,13 +313,13 @@ link: /UI-Components/
 cover: $assets.files.assets.image2.png
 cta-button: Frontend Templates
 text: // Use these templates to create landing pages
-link: components/
+link:  /Templates/
 
 -- template:
 cover: $assets.files.assets.image3.png
 cta-button: Portfolio Templates
 text: // Build Portfolio websites hustle free using our templates
-link: components/
+link: /Portfolio/
 
 -- end: ftd.row
 
