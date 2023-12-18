@@ -78,11 +78,12 @@ string demo_url:
 string github_url: 
 
 -- ftd.column:
-width.fixed.percent if { ftd.device == "desktop"}: 25
+width.fixed.px if { ftd.device == "desktop"}: 300
 width.fixed.percent if { ftd.device == "mobile"}: 95
 height: hug-content
-border-width.px: 3
-border-color: #04dcf4
+;; border-width.px: 3
+;; border-color: #04dcf4
+shadow: $s-card
 padding.px: 2
 background.solid: #011221
 
@@ -128,9 +129,9 @@ link: $portfolio_card.github_url
 
 -- ftd.text: DEMO
 role: $fira-code-size-20-400
-color: #607B96
-css: [ $assets.files.style.logo.css]
-classes: animate-character
+color: #04dcf4
+;; css: [ $assets.files.style.logo.css]
+;; classes: animate-character
 padding-left.px: 16
 link: $portfolio_card.demo_url
 
@@ -156,6 +157,15 @@ link: $portfolio_card.demo_url
 
 
 
+
+
+;; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+-- ftd.shadow s-card: 
+color: #04dcf4
+x-offset.px: 0 
+y-offset.px: 3
+blur.px: 8 
 
 
 
