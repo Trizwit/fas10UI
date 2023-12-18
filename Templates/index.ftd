@@ -67,6 +67,7 @@ padding-horizontal.vw: 7
 padding-vertical.vh: 7
 spacing.fixed.px: 100
 align-content: top-center
+id: template
 wrap: true
 
 
@@ -74,19 +75,28 @@ wrap: true
 
 
 
--- lib2.portfolio_card: Page-1
+-- lib3.template_card: SolarLure
+cover: $assets.files.assets.landing_page_1.png
+demo_url: https://shaheen-senpai.github.io/landing_page_1/
+github_url: https://github.com/shaheen-senpai/landing_page_1
+
+-- lib3.template_card_view: SolarLure
 cover: $assets.files.assets.landing_page_1.png
 demo_url: https://shaheen-senpai.github.io/landing_page_1/
 github_url: https://github.com/shaheen-senpai/landing_page_1
 
 
 
--- lib2.portfolio_card: Page-2
+
+-- lib3.template_card: OpalPink
 cover: $assets.files.assets.landing_page_2.png
 demo_url: https://shaheen-senpai.github.io/landing_page_2/
 github_url: https://github.com/shaheen-senpai/landing_page_2
 
-
+-- lib3.template_card_view: OpalPink
+cover: $assets.files.assets.landing_page_2.png
+demo_url: https://shaheen-senpai.github.io/landing_page_2/
+github_url: https://github.com/shaheen-senpai/landing_page_2
 
 
 

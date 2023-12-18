@@ -3676,7 +3676,39 @@ fastn_utils.private = {
         while (newChildrenWrapper.firstChild) {
             parent.appendChild(newChildrenWrapper.firstChild);
         }
-    }
+    },
+
+    // Cookie related functions ----------------------------------------------
+    setCookie(cookieName, cookieValue) {
+        cookieName = fastn_utils.getStaticValue(cookieName);
+        cookieValue = fastn_utils.getStaticValue(cookieValue);
+
+        // Default expiration period of 30 days
+        var expires = "";
+        var expirationDays = 30;
+        if (expirationDays) {
+            var date = new Date();
+            date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+
+        document.cookie = cookieName + "=" + encodeURIComponent(cookieValue) + expires + "; path=/";
+    },
+    getCookie(cookieName) {
+        cookieName = fastn_utils.getStaticValue(cookieName);
+        var name = cookieName + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var cookieArray = decodedCookie.split(';');
+
+        for (var i = 0; i < cookieArray.length; i++) {
+            var cookie = cookieArray[i].trim();
+            if (cookie.indexOf(name) === 0) {
+                return cookie.substring(name.length, cookie.length);
+            }
+        }
+
+        return "None";
+    },
 }
 
 
@@ -4372,6 +4404,17 @@ const ftd = (function() {
         } else {
             return value;
         }
+    }
+
+    // Language related functions ---------------------------------------------
+    exports.set_current_language = function (language) {
+        language = fastn_utils.getStaticValue(language);
+        fastn_utils.private.setCookie("fastn-lang", language);
+        location.reload();
+    }
+
+    exports.get_current_language = function () {
+        return fastn_utils.private.getCookie("fastn-lang");
     }
 
     return exports;

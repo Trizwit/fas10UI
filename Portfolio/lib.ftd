@@ -67,8 +67,8 @@ link: $button.url
 
 
 
-
-
+-- string $portfolio_card-is-active: false
+-- string $dummy: false
 
 
 -- component portfolio_card:
@@ -86,6 +86,7 @@ height: hug-content
 shadow: $s-card
 padding.px: 2
 background.solid: #011221
+$on-click$: $ftd.set-string($a = $$portfolio_card-is-active, v = $portfolio_card.title) 
 
 
 -- ftd.image: $portfolio_card.cover
@@ -97,14 +98,14 @@ width: fill-container
 spacing: space-between
 align-content: center
 padding-horizontal.px: 16
-
+padding-vertical.px: 10
 
 -- ftd.text: $portfolio_card.title
 role: $fira-code-size-20-400
 color: #fff
 text-align: center
 
-
+-- ftd.mobile:
 -- ftd.row:
 width: hug-content
 padding-vertical.px: 8
@@ -124,6 +125,7 @@ width.fixed.px: 56
 padding-top.px: 1
 z-index: 2
 link: $portfolio_card.github_url
+open-in-new-tab: true
 
 -- end: ftd.column
 
@@ -134,16 +136,101 @@ color: #04dcf4
 ;; classes: animate-character
 padding-left.px: 16
 link: $portfolio_card.demo_url
+open-in-new-tab: true
 
 -- end: ftd.row
-
-
+-- end: ftd.mobile
 
 -- end: ftd.row
 
 -- end: ftd.column
 
 -- end: portfolio_card
+
+
+
+
+
+
+
+
+
+-- component portfolio_card_view:
+ftd.image-src cover:
+caption title:
+string demo_url: 
+string github_url: 
+
+-- ftd.column:
+if: { $portfolio_card-is-active == $portfolio_card_view.title }
+width.fixed.vw: 55
+height: hug-content 
+anchor: window
+align-self: center
+background.solid: #011221
+border-radius.px: 8
+shadow: $s-card
+
+-- ftd.row:
+width: fill-container
+align-content: right
+
+-- ftd.image:
+margin.px: 10
+src: $assets.files.images.close.svg
+width.fixed.px: 56
+padding.px: 10
+$on-click$: $ftd.set-string($a = $$portfolio_card-is-active, v = $dummy) 
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+height: auto
+padding-horizontal.percent: 5
+
+-- ftd.image: $portfolio_card_view.cover
+width: fill-container
+;; height: fill-container
+align-self: center
+border-radius.px: 8
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-content: center
+;; anchor: parent
+bottom.px: 0
+left.px: 0
+padding-vertical.px: 16
+
+-- ftd.image:
+src: $assets.files.Templates.github.svg
+width.fixed.px: 56
+padding-top.px: 1
+link: $portfolio_card_view.github_url
+open-in-new-tab: true
+
+-- ftd.text: DEMO
+role: $fira-code-size-30-400
+color: #04dcf4
+;; css: [ $assets.files.style.logo.css]
+;; classes: animate-character
+padding-left.px: 16
+link: $portfolio_card_view.demo_url
+open-in-new-tab: true
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: portfolio_card_view
+
+
+
+
 
 
 
