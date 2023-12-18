@@ -166,30 +166,35 @@ ftd.image-src cover:
 caption title:
 string demo_url: 
 string github_url: 
-  
+
 -- ftd.column:
 if: { $template_card-is-active == $template_card_view.title }
 width.fixed.vw: 55
 height: hug-content 
 anchor: window
-padding-horizontal.percent: 5
-padding-top.percent: 7
+top.vh: 10
+right.vw: 7
 background.solid: #011221
 border-radius.px: 8
 shadow: $s-card
 
--- ftd.column:
-anchor: parent
-top.px: 5
-right.px: 0
+-- ftd.row:
+width: fill-container
+align-content: right
 
 -- ftd.image:
+margin.px: 10
 src: $assets.files.images.close.svg
 width.fixed.px: 56
 padding.px: 10
 $on-click$: $ftd.set-string($a = $$template_card-is-active, v = $dummy) 
 
--- end: ftd.column
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+height: auto
+padding-horizontal.percent: 5
 
 -- ftd.image: $template_card_view.cover
 width: fill-container
@@ -223,6 +228,8 @@ link: $template_card_view.demo_url
 open-in-new-tab: true
 
 -- end: ftd.row
+
+-- end: ftd.column
 
 -- end: ftd.column
 
