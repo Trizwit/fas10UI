@@ -121,7 +121,6 @@ align-content: center
 border-color: grey
 border-width.px: 2
 border-radius.px: 10
-margin-bottom.px if { ftd.device == "desktop" }: 20
 margin-bottom.px if { ftd.device == "mobile" }: 30
 
 -- ftd.image:

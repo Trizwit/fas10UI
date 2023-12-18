@@ -254,11 +254,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- fastn.dependency: trizui.trizwit.com
-=======
-\-- fastn.dependency: trizui.trizwit.com
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -270,11 +266,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- import: trizui.trizwit.com/UI-Components/Statistic/statistic-1
-=======
-\-- import: trizui.trizwit.com/UI-Components/Statistic/statistic-1
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -899,11 +891,7 @@ color: #FFF
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- fastn.dependency: trizui.trizwit.com
-=======
-\-- fastn.dependency: trizui.trizwit.com
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -915,11 +903,7 @@ margin-top.px: 5
 -- cb.code:
 lang: ftd
 
-<<<<<<< HEAD
 \-- import: trizui.trizwit.com/UI-Components/Statistic/statistic-3
-=======
-\-- import: trizui.trizwit.com/UI-Components/Statistic/statistic-3
->>>>>>> 6410e19bb8b11b59d1206bf0cf0bcdf3831ed860
 
 -- end: cb.code
 
@@ -1115,7 +1099,6 @@ align-content: center
 border-color: grey
 border-width.px: 2
 border-radius.px: 10
-margin-bottom.px if { ftd.device == "desktop" }: 20
 margin-bottom.px if { ftd.device == "mobile" }: 30
 
 \-- ftd.image:
