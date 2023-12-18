@@ -71,8 +71,8 @@ url: /UI-Components/Feature/
 -- lib2.button: Footer
 url: /UI-Components/Footer/
 
-;; -- lib2.button: Gallery
-;; url: /UI-Components/Gallery/
+-- lib2.button: Gallery
+url: /UI-Components/Gallery/
 
 -- lib2.button: Header
 url: /UI-Components/Header/
