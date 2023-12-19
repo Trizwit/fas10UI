@@ -94,6 +94,12 @@ children: $team-2.card
 ftd.image-src pro-pic:
 string name:
 string position:
+string social-link-1:
+string social-link-2:
+string social-link-3:
+ftd.image-src social-logo-1:
+ftd.image-src social-logo-2:
+ftd.image-src social-logo-3:
 body about:
 
 -- ftd.column:
@@ -146,16 +152,19 @@ align-self: center
 spacing.fixed.px: 8
 
 -- ftd.image:
-src: $assets.files.images.statistics.facebook.svg
+src: $profilecard-b.social-logo-1
+link: $profilecard-b.social-link-1
 width.fixed.px: 20
 
 -- ftd.image:
-src: $assets.files.images.statistics.twitter.svg
+src: $profilecard-b.social-logo-2
 width.fixed.px: 20
+link: $profilecard-b.social-link-2
 
 -- ftd.image:
-src: $assets.files.images.statistics.whatsapp.svg
+src: $profilecard-b.social-logo-3
 width.fixed.px: 20
+link: $profilecard-b.social-link-3
 
 -- end: ftd.row
 
@@ -217,14 +226,20 @@ spacing.fixed.px: 8
 -- ftd.image:
 src: $assets.files.images.statistics.facebook.svg
 width.fixed.px: 20
+src: $profilecard-b.social-logo-1
+link: $profilecard-b.social-link-1
 
 -- ftd.image:
 src: $assets.files.images.statistics.twitter.svg
 width.fixed.px: 20
+src: $profilecard-b.social-logo-2
+link: $profilecard-b.social-link-2
 
 -- ftd.image:
 src: $assets.files.images.statistics.whatsapp.svg
 width.fixed.px: 20
+src: $profilecard-b.social-logo-3
+link: $profilecard-b.social-link-3
 
 -- end: ftd.row
 

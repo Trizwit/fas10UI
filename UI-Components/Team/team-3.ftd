@@ -93,6 +93,12 @@ children: $team-3.card
 ftd.image-src pro-pic:
 string name:
 string position:
+string social-link-1:
+string social-link-2:
+string social-link-3:
+ftd.image-src social-logo-1:
+ftd.image-src social-logo-2:
+ftd.image-src social-logo-3:
 body about:
 
 -- ftd.column: 
@@ -155,16 +161,19 @@ margin-top.px: 24
 spacing.fixed.px: 8
 
 -- ftd.image:
-src: $assets.files.images.statistics.facebook.svg
 width.fixed.px: 20
+src: $profilecard-c.social-logo-1
+link: $profilecard-c.social-link-1
 
 -- ftd.image:
-src: $assets.files.images.statistics.twitter.svg
 width.fixed.px: 20
+src: $profilecard-c.social-logo-2
+link: $profilecard-c.social-link-2
 
 -- ftd.image:
-src: $assets.files.images.statistics.whatsapp.svg
 width.fixed.px: 20
+src: $profilecard-c.social-logo-3
+link: $profilecard-c.social-link-3
 
 -- end: ftd.row
 
