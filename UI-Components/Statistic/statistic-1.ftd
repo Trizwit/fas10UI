@@ -64,6 +64,7 @@ if: { ftd.device == "desktop" }
 classes: text-1
 css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color: #0784c7
 
 -- ftd.text: $statistic-container.category
 classes: text-2
@@ -80,6 +81,7 @@ spacing.fixed.px: 5
 classes: text-3
 css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color: #0784c7
 
 -- ftd.text: $statistic-container.category
 classes: text-4

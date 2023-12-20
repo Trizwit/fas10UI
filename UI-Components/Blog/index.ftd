@@ -1003,6 +1003,7 @@ margin-bottom.px: 12
 
 \-- ftd.text: $blog-4.body
 role: $inherited.types.label-large
+color: $inherited.colors.text
 
 \-- ftd.text: $blog-4.cta-text
 role: $inherited.types.copy-regular

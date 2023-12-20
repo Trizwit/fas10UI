@@ -8,6 +8,7 @@
 -- fastn.dependency: fastn-community.github.io/code-block as cb
 -- fastn.dependency: shaheen-senpai.github.io/fira-code
 -- fastn.dependency: sarvom.github.io/poppins
+-- fastn.dependency: fastn-community.github.io/dark-flame-cs
 
 -- fastn.auto-import: trizui.trizwit.com/assets
 -- fastn.auto-import: trizui.trizwit.com/index

@@ -20,9 +20,9 @@ margin-bottom.px if { ftd.device == "mobile" }: 30
 margin-top.px: 30
 
 -- ftd.text: $testimonial-1.heading
-classes: title
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.heading-medium
 text-align: center
+color: #0784c7
 
 -- end: ftd.row
 
@@ -62,13 +62,13 @@ ftd.image-src pro-pic:
 -- ftd.row:
 if: { ftd.device == "desktop" }
 classes: container
-css: [ $assets.files.style.component-styles.testimonial.css]
 width.fixed.vw: 46
-height.fixed.vw: 18
+height.fixed.vh: 40
 min-width.fixed.px: 640
-min-height.fixed.px: 260
+min-height.fixed.vh: 36
 border-radius.px: 10
 padding.px: 20
+background.solid: #eff1f5
 
 -- ftd.column:
 width: fill-container
@@ -81,8 +81,8 @@ width.fixed.px: 28
 height.fixed.px: 28
 
 -- ftd.text: $testimonial-1-container.about
-classes: text-1
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.copy-large
+color: #717273
 
 -- ftd.row:
 width: fill-container
@@ -100,12 +100,12 @@ border-radius.percent: 50
 spacing.fixed.px: 10
 
 -- ftd.text: $testimonial-1-container.name
-classes: text-2
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.button-large
+color: #525050
 
 -- ftd.text: $testimonial-1-container.position
-classes: text-3
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.heading-tiny
+color: #8a8b8d
 
 
 -- end: ftd.column
@@ -120,17 +120,16 @@ css: [ $assets.files.style.component-styles.testimonial.css]
 
 -- ftd.row:
 if: { ftd.device == "mobile" }
-classes: container
-css: [ $assets.files.style.component-styles.testimonial.css]
 width.fixed.vw: 46
-height.fixed.vw: 18
+height.fixed.vh: 66
 min-width.fixed.px: 288
-min-height.fixed.px: 360
+min-height.fixed.vh: 64
 border-radius.px: 10
 padding.px: 16
 margin-left.px: 20
 margin-right.px: 20
 margin-bottom.px: 10
+background.solid: #eff1f5
 
 -- ftd.column:
 width: fill-container
@@ -143,8 +142,8 @@ width.fixed.px: 28
 height.fixed.px: 28
 
 -- ftd.text: $testimonial-1-container.about
-classes: text-1
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.copy-large
+color: #717273
 
 -- ftd.row:
 width: fill-container
@@ -162,12 +161,12 @@ border-radius.percent: 50
 spacing.fixed.px: 10
 
 -- ftd.text: $testimonial-1-container.name
-classes: text-2
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.button-large
+color: #525050
 
 -- ftd.text: $testimonial-1-container.position
-classes: text-3
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.heading-tiny
+color: #8a8b8d
 
 
 -- end: ftd.column

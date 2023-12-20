@@ -31,6 +31,7 @@ spacing.fixed.px: 30
 
 -- ftd.text: $cta-3.title 
 role: $inherited.types.heading-small
+color: #0784c7
 
 -- ftd.text: $cta-3.about
 role: $inherited.types.heading-tiny
@@ -49,7 +50,7 @@ border-color: black
 
 -- ftd.text: $cta-3.login-title
 role: $inherited.types.heading-small
-color: black
+color: #0784c7
 
 -- ftd.text: $cta-3.info-text-1
 color: grey
@@ -125,6 +126,7 @@ spacing.fixed.px: 20
 -- ftd.text: $cta-3.title 
 role: $inherited.types.heading-small
 text-align: center
+color: #0784c7
 
 -- ftd.text: $cta-3.about
 role: $inherited.types.heading-tiny
@@ -144,7 +146,7 @@ border-color: black
 
 -- ftd.text: $cta-3.login-title
 role: $inherited.types.heading-small
-color: black
+color: #0784c7
 
 -- ftd.text: $cta-3.info-text-1
 color: grey

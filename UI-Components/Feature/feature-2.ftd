@@ -80,6 +80,7 @@ spacing.fixed.px: 20
 -- ftd.text: $feature-container-2.title
 classes: text-2
 css: [ $assets.files.style.component-styles.feature.css]
+color: #0784c7
 
 
 -- ftd.text: $feature-container-2.about
@@ -140,6 +141,7 @@ spacing.fixed.px: 10
 -- ftd.text: $feature-container-2.title
 classes: text-2
 css: [ $assets.files.style.component-styles.feature.css]
+color: #0784c7
 
 
 -- ftd.text: $feature-container-2.about

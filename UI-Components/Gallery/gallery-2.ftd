@@ -34,11 +34,11 @@ spacing.fixed.vw: 1
 -- ftd.text: $gallery-2.title
 role: $inherited.types.heading-medium
 text-align: center
-color: #d6b810
+color: #0784c7
 
 -- ftd.text: $gallery-2.about
 role: $inherited.types.heading-small
-color: #000000
+color: grey
 text-align: center
 
 -- end: ftd.column

@@ -24,6 +24,7 @@ spacing.fixed.px: 20
 -- ftd.text: $cta-2.title
 role: $inherited.types.heading-medium
 text-align: center
+color: #0784c7
 
 -- ftd.text: $cta-2.about
 role: $inherited.types.heading-small

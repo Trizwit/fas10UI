@@ -1,10 +1,12 @@
 -- import: trizui.trizwit.com/assets
 -- import: trizui.trizwit.com/lib
 -- import: fastn-community.github.io/code-block as cb
+-- import: fastn-community.github.io/dark-flame-cs
 
 
 
 -- component cta-1:
+ftd.color-scheme color-scheme: $dark-flame-cs.main
 string text:
 string cta-text:
 string link:
@@ -23,6 +25,7 @@ align-content: center
 -- ftd.text: $cta-1.text
 role: $inherited.types.heading-small
 margin-top.px: 20
+color: $inherited.colors.text
 
 
 -- ftd.text: $cta-1.cta-text
@@ -33,8 +36,8 @@ padding-vertical.px: 10
 padding-horizontal.px: 12
 align-self: center
 border-radius.px: 5
-background.solid: skyblue
-background.solid if {$cta-1.is-active}: grey
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {$cta-1.is-active}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $cta-1.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-1.is-active, v = false)
 color: black
@@ -52,6 +55,7 @@ align-content: center
 -- ftd.text: $cta-1.text
 role: $inherited.types.heading-small
 margin-top.px: 20
+color: $inherited.colors.text
 
 -- ftd.text: $cta-1.cta-text
 text-align: center

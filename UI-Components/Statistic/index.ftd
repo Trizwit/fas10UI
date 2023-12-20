@@ -389,6 +389,7 @@ if: { ftd.device == "desktop" }
 classes: text-1
 css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color: #0784c7
 
 \-- ftd.text: $statistic-container.category
 classes: text-2
@@ -405,6 +406,7 @@ spacing.fixed.px: 5
 classes: text-3
 css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color: #0784c7
 
 \-- ftd.text: $statistic-container.category
 classes: text-4
@@ -629,6 +631,7 @@ classes: title
 css: [ $assets.files.style.component-styles.statistic.css]
 margin-bottom.px: 16
 margin-top.px: 30
+color: #0784c7
 
 \-- ftd.text: $statistic-2.about
 classes: about
@@ -704,6 +707,7 @@ css: [ $assets.files.style.component-styles.statistic.css]
 margin-bottom.px: 12
 margin-top.px: 10
 text-align: center
+color: #0784c7
 
 \-- ftd.text: $statistic-2.about
 classes: about
@@ -782,6 +786,7 @@ if: { ftd.device == "desktop" }
 classes: text-1
 css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color: #0784c7
 
 \-- ftd.text: $statistic-container.category
 classes: text-2
@@ -798,6 +803,7 @@ spacing.fixed.px: 5
 classes: text-3
 css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color: #0784c7
 
 \-- ftd.text: $statistic-container.category
 classes: text-4

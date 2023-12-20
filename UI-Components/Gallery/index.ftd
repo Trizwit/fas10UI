@@ -418,7 +418,7 @@ height: fill-container
 align-content: center
 
 \-- ftd.text: $gallery-1.title
-color: #d6b810
+color: #0784c7
 role: $inherited.types.heading-hero
 
 \-- end: ftd.row
@@ -520,7 +520,7 @@ align-content: center
 \-- ftd.text: $gallery-1.title
 align-self: center
 role: $inherited.types.heading-large
-color: #d6b810
+color: #0784c7
 
 \-- end: ftd.row
 
@@ -800,11 +800,11 @@ spacing.fixed.vw: 1
 \-- ftd.text: $gallery-2.title
 role: $inherited.types.heading-medium
 text-align: center
-color: #d6b810
+color: #0784c7
 
 \-- ftd.text: $gallery-2.about
 role: $inherited.types.heading-small
-color: #000000
+color: grey
 text-align: center
 
 \-- end: ftd.column
@@ -1092,7 +1092,7 @@ spacing.fixed.vw: 2
 
 \-- ftd.text: $gallery-3.title
 role: $inherited.types.heading-medium
-color: #000000
+color: #0784c7
 
 \-- ftd.text: $gallery-3.about
 role: $inherited.types.heading-tiny
@@ -1174,7 +1174,7 @@ spacing.fixed.vw: 2
 
 \-- ftd.text: $gallery-3.title
 role: $inherited.types.heading-medium
-color: #000000
+color: #0784c7
 text-align: center
 
 \-- ftd.text: $gallery-3.about

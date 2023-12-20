@@ -58,6 +58,7 @@ align-content: center
 border-color: grey
 border-width.px: 2
 border-radius.px: 10
+background.solid: #757a7a
 
 -- ftd.image:
 src: $assets.files.images.statistics.cloud-download.svg

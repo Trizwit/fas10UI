@@ -169,7 +169,7 @@ spacing.fixed.px: 25
 color: #FFF
 role: $fira-code-size-56-400
 css: [ $assets.files.style.logo.css]
-classes: animate-character
+classes: animate-character-comp
 text-align: center
 margin-vertical.px: 32
 

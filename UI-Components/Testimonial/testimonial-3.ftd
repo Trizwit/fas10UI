@@ -42,12 +42,13 @@ body about:
 
 -- ftd.row:
 width.fixed.vw: 32
-height.fixed.vw: 28
+height.fixed.vh: 66
 min-width.fixed.px if { ftd.device == "desktop" }: 440
-min-height.fixed.px if { ftd.device == "desktop" }: 420
+min-height.fixed.vh if { ftd.device == "desktop" }: 64
 min-width.fixed.px if { ftd.device == "mobile" }: 288
-min-height.fixed.px if { ftd.device == "mobile" }: 494
+min-height.fixed.vh if { ftd.device == "mobile" }: 88
 padding.px: 20
+background.solid: #eff1f5
 
 
 
@@ -65,8 +66,8 @@ margin-bottom.px: 12
 align-self: center
 
 -- ftd.text: $testimonial-3-container.about
-classes: text-4
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.copy-large
+text-align: center
 
 -- ftd.row:
 width.fixed.px: 40
@@ -84,14 +85,12 @@ spacing.fixed.px: 10
 align-self: center
 
 -- ftd.text: $testimonial-3-container.name
-classes: text-5
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.button-large
 text-align: center
 align-self: center
 
 -- ftd.text: $testimonial-3-container.position
-classes: text-6
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.button-medium
 text-align: center
 align-self: center
 

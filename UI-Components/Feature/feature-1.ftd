@@ -4,6 +4,7 @@
 
 
 -- component feature-1:
+string heading:
 children card:
 
 -- ftd.column:
@@ -23,12 +24,12 @@ padding-right.px if { ftd.device == "mobile" }: 20
 align-self: center
 
 
--- ftd.text:
+-- ftd.text: $feature-1.heading
 classes: text-1
 css: [ $assets.files.style.component-styles.feature.css]
 text-align: center
+color: #0784c7
 
-Raw Denim Heirloom Man Braid Selfies Wayfarers
 
 -- end: ftd.row
 
@@ -103,6 +104,7 @@ spacing.fixed.px: 20
 -- ftd.text: $feature-container-1.title
 classes: text-2
 css: [ $assets.files.style.component-styles.feature.css]
+color: #0784c7
 
 -- ftd.text: $feature-container-1.about
 classes: text-3
@@ -152,6 +154,7 @@ spacing.fixed.px: 20
 -- ftd.text: $feature-container-1.title
 classes: text-2
 css: [ $assets.files.style.component-styles.feature.css]
+color: #0784c7
 
 -- ftd.text: $feature-container-1.about
 classes: text-3

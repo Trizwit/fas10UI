@@ -31,7 +31,7 @@ spacing.fixed.vw: 2
 
 -- ftd.text: $gallery-3.title
 role: $inherited.types.heading-medium
-color: #000000
+color: #0784c7
 
 -- ftd.text: $gallery-3.about
 role: $inherited.types.heading-tiny
@@ -113,7 +113,7 @@ spacing.fixed.vw: 2
 
 -- ftd.text: $gallery-3.title
 role: $inherited.types.heading-medium
-color: #000000
+color: #0784c7
 text-align: center
 
 -- ftd.text: $gallery-3.about

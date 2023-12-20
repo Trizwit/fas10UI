@@ -283,6 +283,7 @@ margin-top.px: 5
 lang: ftd
 
 \-- feature-1.feature-1:
+heading: Raw Denim Heirloom Man Braid Selfies Wayfarers
 
 \-- feature-1.feature-container-1:
 logo: $assets.files.images.statistics.graph.png
@@ -318,6 +319,7 @@ Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh i
 if: { !code-open-1 }
 
 -- feature-1.feature-1:
+heading: Raw Denim Heirloom Man Braid Selfies Wayfarers
 
 -- feature-1.feature-container-1:
 logo: $assets.files.images.statistics.graph.png
@@ -357,6 +359,7 @@ lang: ftd
 \-- lib.container-wrapper:
 
 \-- feature-1:
+heading: Raw Denim Heirloom Man Braid Selfies Wayfarers
 
 \-- feature-container-1:
 logo: $assets.files.images.statistics.graph.png
@@ -410,6 +413,7 @@ align-self: center
 classes: text-1
 css: [ $assets.files.style.component-styles.feature.css]
 text-align: center
+color: #0784c7
 
 Raw Denim Heirloom Man Braid Selfies Wayfarers
 
@@ -486,6 +490,7 @@ spacing.fixed.px: 20
 \-- ftd.text: $feature-container-1.title
 classes: text-2
 css: [ $assets.files.style.component-styles.feature.css]
+color: #0784c7
 
 \-- ftd.text: $feature-container-1.about
 classes: text-3
@@ -535,6 +540,7 @@ spacing.fixed.px: 20
 \-- ftd.text: $feature-container-1.title
 classes: text-2
 css: [ $assets.files.style.component-styles.feature.css]
+color: #0784c7
 
 \-- ftd.text: $feature-container-1.about
 classes: text-3
@@ -810,6 +816,7 @@ spacing.fixed.px: 20
 \-- ftd.text: $feature-container-2.title
 classes: text-2
 css: [ $assets.files.style.component-styles.feature.css]
+color: #0784c7
 
 
 \-- ftd.text: $feature-container-2.about
@@ -870,6 +877,7 @@ spacing.fixed.px: 10
 \-- ftd.text: $feature-container-2.title
 classes: text-2
 css: [ $assets.files.style.component-styles.feature.css]
+color: #0784c7
 
 
 \-- ftd.text: $feature-container-2.about
@@ -1189,6 +1197,7 @@ margin.px: 5
 \-- ftd.text: $feature-container-3.title
 classes: text-2
 css: [ $assets.files.style.component-styles.feature.css]
+color: #0784c7
 
 
 \-- ftd.text: $feature-container-3.about
@@ -1244,6 +1253,7 @@ margin.px: 5
 \-- ftd.text: $feature-container-3.title
 classes: text-2
 css: [ $assets.files.style.component-styles.feature.css]
+color: #0784c7
 
 
 \-- ftd.text: $feature-container-3.about

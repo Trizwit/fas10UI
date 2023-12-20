@@ -278,7 +278,7 @@ lang: ftd
 \-- testimonial-1.testimonial-1:
 heading: Testimonials
 
-\-- testimonial-1-container:
+\-- testimonial-1.testimonial-1-container:
 name: Alper Kamu
 position: DESIGNER
 pro-pic: $assets.files.images.statistics.pic1.jpg
@@ -286,7 +286,7 @@ pro-pic: $assets.files.images.statistics.pic1.jpg
 Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
 Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
 
-\-- testimonial-1-container:
+\-- testimonial-1.testimonial-1-container:
 name: Holden Caulfield
 position: UI DEVELOPER
 pro-pic: $assets.files.images.statistics.pic1.jpg
@@ -294,7 +294,7 @@ pro-pic: $assets.files.images.statistics.pic1.jpg
 Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. 
 Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.
 
-\-- end: testimonial-1
+\-- end: testimonial-1.testimonial-1
 
 -- end: cb.code
 
@@ -377,9 +377,9 @@ margin-bottom.px if { ftd.device == "mobile" }: 30
 margin-top.px: 30
 
 \-- ftd.text: $testimonial-1.heading
-classes: title
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.heading-medium
 text-align: center
+color: #0784c7
 
 \-- end: ftd.row
 
@@ -405,8 +405,6 @@ children: $testimonial-1.card
 
 
 
-
-
 \-- component testimonial-1-container:
 string name:
 string position:
@@ -419,13 +417,13 @@ ftd.image-src pro-pic:
 \-- ftd.row:
 if: { ftd.device == "desktop" }
 classes: container
-css: [ $assets.files.style.component-styles.testimonial.css]
 width.fixed.vw: 46
-height.fixed.vw: 18
+height.fixed.vh: 40
 min-width.fixed.px: 640
-min-height.fixed.px: 260
+min-height.fixed.vh: 36
 border-radius.px: 10
 padding.px: 20
+background.solid: #eff1f5
 
 \-- ftd.column:
 width: fill-container
@@ -438,8 +436,8 @@ width.fixed.px: 28
 height.fixed.px: 28
 
 \-- ftd.text: $testimonial-1-container.about
-classes: text-1
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.copy-large
+color: #717273
 
 \-- ftd.row:
 width: fill-container
@@ -457,12 +455,12 @@ border-radius.percent: 50
 spacing.fixed.px: 10
 
 \-- ftd.text: $testimonial-1-container.name
-classes: text-2
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.button-large
+color: #525050
 
 \-- ftd.text: $testimonial-1-container.position
-classes: text-3
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.heading-tiny
+color: #8a8b8d
 
 
 \-- end: ftd.column
@@ -477,17 +475,16 @@ css: [ $assets.files.style.component-styles.testimonial.css]
 
 \-- ftd.row:
 if: { ftd.device == "mobile" }
-classes: container
-css: [ $assets.files.style.component-styles.testimonial.css]
 width.fixed.vw: 46
-height.fixed.vw: 18
+height.fixed.vh: 66
 min-width.fixed.px: 288
-min-height.fixed.px: 360
+min-height.fixed.vh: 64
 border-radius.px: 10
 padding.px: 16
 margin-left.px: 20
 margin-right.px: 20
 margin-bottom.px: 10
+background.solid: #eff1f5
 
 \-- ftd.column:
 width: fill-container
@@ -500,8 +497,8 @@ width.fixed.px: 28
 height.fixed.px: 28
 
 \-- ftd.text: $testimonial-1-container.about
-classes: text-1
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.copy-large
+color: #717273
 
 \-- ftd.row:
 width: fill-container
@@ -519,12 +516,12 @@ border-radius.percent: 50
 spacing.fixed.px: 10
 
 \-- ftd.text: $testimonial-1-container.name
-classes: text-2
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.button-large
+color: #525050
 
 \-- ftd.text: $testimonial-1-container.position
-classes: text-3
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.heading-tiny
+color: #8a8b8d
 
 
 \-- end: ftd.column
@@ -741,16 +738,15 @@ body about:
 
 \-- ftd.row:
 width.fixed.vw: 48
-height.fixed.vw: 28
+height.fixed.vh: 62
 min-width.fixed.px if { ftd.device == "desktop" }: 640
-min-height.fixed.px if { ftd.device == "desktop" }: 260
+min-height.fixed.vh if { ftd.device == "desktop" }: 60
 min-width.fixed.px if { ftd.device == "mobile" }: 288
-min-height.fixed.px if { ftd.device == "mobile" }: 772
+min-height.fixed.vh if { ftd.device == "mobile" }: 140
 border-radius.px: 10
 padding-left.px: 20
 padding-right.px: 20
 margin-bottom.px: 20
-
 
 \-- ftd.column:
 width: fill-container
@@ -765,8 +761,9 @@ margin-bottom.px: 12
 align-self: center
 
 \-- ftd.text: $testimonial-2-container.about
-classes: text-4
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.copy-large
+color: #717273
+text-align: center
 
 \-- ftd.row:
 width.fixed.px: 40
@@ -784,14 +781,14 @@ spacing.fixed.px: 10
 align-self: center
 
 \-- ftd.text: $testimonial-2-container.name
-classes: text-5
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.button-large
 text-align: center
 align-self: center
+color: #f5f6f8
 
 \-- ftd.text: $testimonial-2-container.position
-classes: text-6
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.button-medium
+color: #8a8b8d
 text-align: center
 align-self: center
 
@@ -1052,12 +1049,13 @@ body about:
 
 \-- ftd.row:
 width.fixed.vw: 32
-height.fixed.vw: 28
+height.fixed.vh: 66
 min-width.fixed.px if { ftd.device == "desktop" }: 440
-min-height.fixed.px if { ftd.device == "desktop" }: 420
+min-height.fixed.vh if { ftd.device == "desktop" }: 64
 min-width.fixed.px if { ftd.device == "mobile" }: 288
-min-height.fixed.px if { ftd.device == "mobile" }: 494
+min-height.fixed.vh if { ftd.device == "mobile" }: 88
 padding.px: 20
+background.solid: #eff1f5
 
 
 
@@ -1075,8 +1073,8 @@ margin-bottom.px: 12
 align-self: center
 
 \-- ftd.text: $testimonial-3-container.about
-classes: text-4
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.copy-large
+text-align: center
 
 \-- ftd.row:
 width.fixed.px: 40
@@ -1094,14 +1092,12 @@ spacing.fixed.px: 10
 align-self: center
 
 \-- ftd.text: $testimonial-3-container.name
-classes: text-5
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.button-large
 text-align: center
 align-self: center
 
 \-- ftd.text: $testimonial-3-container.position
-classes: text-6
-css: [ $assets.files.style.component-styles.testimonial.css]
+role: $inherited.types.button-medium
 text-align: center
 align-self: center
 
@@ -1113,6 +1109,7 @@ align-self: center
 \-- end: ftd.row
 
 \-- end: testimonial-3-container
+
 
 
 -- end: cb.code
