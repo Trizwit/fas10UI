@@ -336,7 +336,7 @@ align-content: center
 \-- ftd.text: $cta-1.text
 role: $inherited.types.heading-small
 margin-top.px: 20
-color: #0784c7
+color: $inherited.colors.text
 
 
 \-- ftd.text: $cta-1.cta-text
@@ -347,8 +347,8 @@ padding-vertical.px: 10
 padding-horizontal.px: 12
 align-self: center
 border-radius.px: 5
-background.solid: skyblue
-background.solid if {$cta-1.is-active}: grey
+background.solid: $inherited.colors.cta-teritiary.base
+background.solid if {$cta-1.is-active}: $inherited.colors.cta-teritiary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $cta-1.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-1.is-active, v = false)
 color: black
@@ -366,7 +366,7 @@ align-content: center
 \-- ftd.text: $cta-1.text
 role: $inherited.types.heading-small
 margin-top.px: 20
-color: #0784c7
+color: $inherited.colors.text
 
 \-- ftd.text: $cta-1.cta-text
 text-align: center
@@ -375,8 +375,8 @@ padding-vertical.px: 10
 padding-horizontal.px: 12
 align-self: center
 border-radius.px: 5
-background.solid: skyblue
-background.solid if {$cta-1.is-active}: grey
+background.solid: $inherited.colors.cta-teritiary.base
+background.solid if {$cta-1.is-active}: $inherited.colors.cta-teritiary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $cta-1.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-1.is-active, v = false)
 color: black

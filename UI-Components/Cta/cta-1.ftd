@@ -36,11 +36,11 @@ padding-vertical.px: 10
 padding-horizontal.px: 12
 align-self: center
 border-radius.px: 5
-background.solid: $inherited.colors.cta-primary.base
-background.solid if {$cta-1.is-active}: $inherited.colors.cta-primary.hover
+background.solid: $inherited.colors.cta-teritiary.base
+background.solid if {$cta-1.is-active}: $inherited.colors.cta-teritiary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $cta-1.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-1.is-active, v = false)
-color: black
+color: $inherited.colors.text
 link: $cta-1.link
 
 -- end: ftd.row
@@ -64,11 +64,11 @@ padding-vertical.px: 10
 padding-horizontal.px: 12
 align-self: center
 border-radius.px: 5
-background.solid: skyblue
-background.solid if {$cta-1.is-active}: grey
+background.solid: $inherited.colors.cta-teritiary.base
+background.solid if {$cta-1.is-active}: $inherited.colors.cta-teritiary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $cta-1.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-1.is-active, v = false)
-color: black
+color: $inherited.colors.text
 link: $cta-1.link
 
 -- end: ftd.column
