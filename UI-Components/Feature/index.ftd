@@ -390,12 +390,14 @@ Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh i
 \-- end: lib.container-wrapper
 
 \-- component feature-1:
+string heading:
 children card:
 
 \-- ftd.column:
 width: fill-container
 spacing.fixed.px if { ftd.device == "desktop" }: 56
 spacing.fixed.px if { ftd.device == "mobile" }: 20
+
 
 \-- ftd.row:
 width.fixed.vw if { ftd.device == "desktop" }: 44
@@ -409,12 +411,11 @@ padding-right.px if { ftd.device == "mobile" }: 20
 align-self: center
 
 
-\-- ftd.text:
+\-- ftd.text: $feature-1.heading
 role: $inherited.types.heading-medium
 text-align: center
 color: $inherited.colors.accent.primary
 
-Raw Denim Heirloom Man Braid Selfies Wayfarers
 
 \-- end: ftd.row
 
@@ -422,7 +423,7 @@ Raw Denim Heirloom Man Braid Selfies Wayfarers
 width: fill-container
 align-content: center
 align-self: center
-spacing.fixed.px: 20
+spacing.fixed.px: 30
 wrap: true
 children: $feature-1.card
 
@@ -455,15 +456,17 @@ string cta-link:
 \-- ftd.row:
 if : { ftd.device == "desktop" }
 min-width.fixed.px: 436
-min-height.fixed.px: 192
+min-height.fixed.vh: 44
 width.fixed.vw: 30
-height.fixed.vw: 20
+height.fixed.vh: 46
 spacing.fixed.px: 20
+border-color: $inherited.colors.info.border
+border-width.px: 2
+padding.vw: 1
 
 
 \-- ftd.column:
-classes: symbol
-css: [ $assets.files.style.component-styles.feature.css]
+background.solid: #c5cfdb
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50
@@ -487,17 +490,16 @@ min-height.fixed.px: 196
 spacing.fixed.px: 20
 
 \-- ftd.text: $feature-container-1.title
-classes: text-2
-css: [ $assets.files.style.component-styles.feature.css]
+role: $inherited.types.heading-small
 color: $inherited.colors.accent.primary
 
 \-- ftd.text: $feature-container-1.about
-classes: text-3
-css: [ $assets.files.style.component-styles.feature.css]
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 
 \-- ftd.text: Learn More ->
-classes: text-4
-css: [ $assets.files.style.component-styles.feature.css]
+role: $inherited.types.heading-tiny
+color: $inherited.colors.cta-primary.text
 link: $feature-container-1.cta-link
 
 \-- end: ftd.column
@@ -508,13 +510,15 @@ link: $feature-container-1.cta-link
 \-- ftd.row:
 if : { ftd.device == "mobile" }
 width.fixed.vw: 96
-height.fixed.vw: 72
+height.fixed.vh: 32
 spacing.fixed.px: 20
+border-color: $inherited.colors.info.border
+border-width.px: 2
+padding.vw: 2
 
 
 \-- ftd.column:
-classes: symbol
-css: [ $assets.files.style.component-styles.feature.css]
+background.solid: #c5cfdb
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50
@@ -537,17 +541,16 @@ spacing.fixed.px: 20
 
 
 \-- ftd.text: $feature-container-1.title
-classes: text-2
-css: [ $assets.files.style.component-styles.feature.css]
+role:  $inherited.types.heading-tiny
 color: $inherited.colors.accent.primary
 
 \-- ftd.text: $feature-container-1.about
-classes: text-3
-css: [ $assets.files.style.component-styles.feature.css]
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 
 \-- ftd.text: Learn More ->
-classes: text-4
-css: [ $assets.files.style.component-styles.feature.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.cta-primary.text
 link: $feature-container-1.cta-link
 
 \-- end: ftd.column
@@ -558,7 +561,6 @@ link: $feature-container-1.cta-link
 \-- end: ftd.column
 
 \-- end: feature-container-1
-
 
 -- end: cb.code
 
@@ -774,24 +776,22 @@ string cta-link:
 
 \-- ftd.row:
 if : { ftd.device == "desktop" }
-classes: feature-2-container
-css: [ $assets.files.style.component-styles.feature.css]
 min-width.fixed.px: 436
-min-height.fixed.px: 204
+min-height.fixed.vh: 30
 width.fixed.vw: 46
-height.fixed.vw: 14
+height.fixed.vh: 32
 spacing.fixed.px: 20
 border-width.px: 2
 border-radius.px: 10
-padding.px: 30
+border-color: $inherited.colors.info.border
+padding.vw: 2
 
 
 \-- ftd.column:
-classes: symbol
-css: [ $assets.files.style.component-styles.feature.css]
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50
+background.solid: #c5cfdb
 
 
 
@@ -813,20 +813,18 @@ spacing.fixed.px: 20
 
 
 \-- ftd.text: $feature-container-2.title
-classes: text-2
-css: [ $assets.files.style.component-styles.feature.css]
+role: $inherited.types.heading-small
 color: $inherited.colors.accent.primary
 
-
 \-- ftd.text: $feature-container-2.about
-classes: text-3
-css: [ $assets.files.style.component-styles.feature.css]
 margin-right.px: 10
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 
 \-- ftd.text: Learn More ->
-classes: text-4
-css: [ $assets.files.style.component-styles.feature.css]
 link: $feature-container-2.cta-link
+role: $inherited.types.heading-tiny
+color: $inherited.colors.cta-primary.text
 
 \-- end: ftd.column
 
@@ -839,7 +837,7 @@ if : { ftd.device == "mobile" }
 classes: feature-2-container
 css: [ $assets.files.style.component-styles.feature.css]
 width.fixed.px: 356
-height.fixed.px: 200
+height.fixed.vh: 28
 spacing.fixed.px: 5
 border-width.px: 2
 border-radius.px: 10
@@ -874,19 +872,17 @@ spacing.fixed.px: 10
 
 
 \-- ftd.text: $feature-container-2.title
-classes: text-2
-css: [ $assets.files.style.component-styles.feature.css]
+role:  $inherited.types.heading-tiny
 color: $inherited.colors.accent.primary
 
-
 \-- ftd.text: $feature-container-2.about
-classes: text-3
-css: [ $assets.files.style.component-styles.feature.css]
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 margin-right.px: 10
 
 \-- ftd.text: Learn More ->
-classes: text-4
-css: [ $assets.files.style.component-styles.feature.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.cta-primary.text
 link: $feature-container-2.cta-link
 
 \-- end: ftd.column
@@ -1134,12 +1130,15 @@ margin-top.px: 30
 
 \-- ftd.column:
 children: $feature-3.card
+spacing.fixed.vw: 2
+spacing.fixed.vw if { ftd.device == "mobile" }: 4
 
 \-- end: ftd.column
 
 \-- end: ftd.row
 
 \-- end: feature-3
+
 
 
 
@@ -1162,12 +1161,11 @@ string cta-link:
 \-- ftd.row:
 if : { ftd.device == "desktop" }
 min-width.fixed.px: 436
-min-height.fixed.px: 232
+min-height.fixed.vh: 38
 width.fixed.vw: 36
-height.fixed.vw: 14
+height.fixed.vh: 40
 spacing.fixed.px: 20
 padding.px: 20
-
 
 \-- ftd.column:
 width: fill-container
@@ -1178,8 +1176,7 @@ spacing.fixed.px: 20
 
 
 \-- ftd.column:
-classes: symbol
-css: [ $assets.files.style.component-styles.feature.css]
+background.solid: #c5cfdb
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50
@@ -1194,20 +1191,18 @@ margin.px: 5
 \-- end: ftd.column
 
 \-- ftd.text: $feature-container-3.title
-classes: text-2
-css: [ $assets.files.style.component-styles.feature.css]
 color: $inherited.colors.accent.primary
-
+role: $inherited.types.heading-small
 
 \-- ftd.text: $feature-container-3.about
-classes: text-3
-css: [ $assets.files.style.component-styles.feature.css]
 margin-right.px: 10
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 
 \-- ftd.text: Learn More ->
-classes: text-4
-css: [ $assets.files.style.component-styles.feature.css]
 link: $feature-container-3.cta-link
+role: $inherited.types.heading-tiny
+color: $inherited.colors.cta-primary.text
 
 \-- end: ftd.column
 
@@ -1218,7 +1213,7 @@ link: $feature-container-3.cta-link
 \-- ftd.row:
 if : { ftd.device == "mobile" }
 width.fixed.px: 356
-height.fixed.px: 224
+height.fixed.vh: 38
 spacing.fixed.px: 5
 padding.px: 8
 padding-top.px: 20
@@ -1250,19 +1245,18 @@ margin.px: 5
 
 
 \-- ftd.text: $feature-container-3.title
-classes: text-2
-css: [ $assets.files.style.component-styles.feature.css]
+role:  $inherited.types.heading-tiny
 color: $inherited.colors.accent.primary
 
 
 \-- ftd.text: $feature-container-3.about
-classes: text-3
-css: [ $assets.files.style.component-styles.feature.css]
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 margin-right.px: 10
 
 \-- ftd.text: Learn More ->
-classes: text-4
-css: [ $assets.files.style.component-styles.feature.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.cta-primary.text
 link: $feature-container-3.cta-link
 
 \-- end: ftd.column
