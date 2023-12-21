@@ -92,6 +92,7 @@ color: $inherited.colors.text
 caption title:
 string head:
 string cta-text:
+string cta-link:
 body body:
 
 -- ftd.column:
@@ -122,6 +123,7 @@ color: $inherited.colors.text
 -- ftd.text: $blog-3.cta-text
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+link: $blog-3.cta-link
 
 -- end: ftd.column
 
