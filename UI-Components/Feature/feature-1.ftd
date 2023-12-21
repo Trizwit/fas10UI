@@ -12,6 +12,7 @@ width: fill-container
 spacing.fixed.px if { ftd.device == "desktop" }: 56
 spacing.fixed.px if { ftd.device == "mobile" }: 20
 
+
 -- ftd.row:
 width.fixed.vw if { ftd.device == "desktop" }: 44
 height.fixed.vw if { ftd.device == "desktop" }: 12
@@ -25,10 +26,9 @@ align-self: center
 
 
 -- ftd.text: $feature-1.heading
-classes: text-1
-css: [ $assets.files.style.component-styles.feature.css]
+role: $inherited.types.heading-medium
 text-align: center
-color: #0784c7
+color: $inherited.colors.accent.primary
 
 
 -- end: ftd.row
@@ -37,7 +37,7 @@ color: #0784c7
 width: fill-container
 align-content: center
 align-self: center
-spacing.fixed.px: 20
+spacing.fixed.px: 30
 wrap: true
 children: $feature-1.card
 
@@ -70,15 +70,17 @@ string cta-link:
 -- ftd.row:
 if : { ftd.device == "desktop" }
 min-width.fixed.px: 436
-min-height.fixed.px: 192
+min-height.fixed.vh: 44
 width.fixed.vw: 30
-height.fixed.vw: 20
+height.fixed.vh: 46
 spacing.fixed.px: 20
+border-color: $inherited.colors.info.border
+border-width.px: 2
+padding.vw: 1
 
 
 -- ftd.column:
-classes: symbol
-css: [ $assets.files.style.component-styles.feature.css]
+background.solid: #c5cfdb
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50
@@ -102,17 +104,16 @@ min-height.fixed.px: 196
 spacing.fixed.px: 20
 
 -- ftd.text: $feature-container-1.title
-classes: text-2
-css: [ $assets.files.style.component-styles.feature.css]
-color: #0784c7
+role: $inherited.types.heading-small
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $feature-container-1.about
-classes: text-3
-css: [ $assets.files.style.component-styles.feature.css]
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 
 -- ftd.text: Learn More ->
-classes: text-4
-css: [ $assets.files.style.component-styles.feature.css]
+role: $inherited.types.heading-tiny
+color: $inherited.colors.cta-primary.text
 link: $feature-container-1.cta-link
 
 -- end: ftd.column
@@ -123,13 +124,15 @@ link: $feature-container-1.cta-link
 -- ftd.row:
 if : { ftd.device == "mobile" }
 width.fixed.vw: 96
-height.fixed.vw: 72
+height.fixed.vh: 32
 spacing.fixed.px: 20
+border-color: $inherited.colors.info.border
+border-width.px: 2
+padding.vw: 2
 
 
 -- ftd.column:
-classes: symbol
-css: [ $assets.files.style.component-styles.feature.css]
+background.solid: #c5cfdb
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50
@@ -152,17 +155,16 @@ spacing.fixed.px: 20
 
 
 -- ftd.text: $feature-container-1.title
-classes: text-2
-css: [ $assets.files.style.component-styles.feature.css]
-color: #0784c7
+role:  $inherited.types.heading-tiny
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $feature-container-1.about
-classes: text-3
-css: [ $assets.files.style.component-styles.feature.css]
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 
 -- ftd.text: Learn More ->
-classes: text-4
-css: [ $assets.files.style.component-styles.feature.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.cta-primary.text
 link: $feature-container-1.cta-link
 
 -- end: ftd.column

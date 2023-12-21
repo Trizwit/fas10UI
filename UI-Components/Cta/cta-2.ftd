@@ -24,14 +24,14 @@ spacing.fixed.px: 20
 -- ftd.text: $cta-2.title
 role: $inherited.types.heading-medium
 text-align: center
-color: #0784c7
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $cta-2.about
 role: $inherited.types.heading-small
 text-align: center
 padding-left.px: 20
 padding-right.px: 20
-color: grey
+color: $inherited.colors.text
 
 -- end: ftd.column
 
@@ -46,7 +46,7 @@ align-content: center
 
 -- ftd.text: $cta-2.info-1
 role: $inherited.types.copy-small
-color: grey
+color: $inherited.colors.text
 
 -- ftd.text-input:
 width.fixed.vw: 28
@@ -61,7 +61,7 @@ padding.px: 10
 
 -- ftd.text: $cta-2.info-2
 role: $inherited.types.copy-small
-color: grey
+color: $inherited.colors.text
 
 -- ftd.text-input:
 width.fixed.vw: 28
@@ -82,11 +82,11 @@ padding-horizontal.px: 12
 margin-top.px: 24
 align-self: center
 border-radius.px: 5
-background.solid: skyblue
-background.solid if {$cta-2.is-active}: grey
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {$cta-2.is-active}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $cta-2.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-2.is-active, v = false)
-color: black
+color: $inherited.colors.text
 link: $cta-2.link
 
 -- end: ftd.column
@@ -105,7 +105,7 @@ width: fill-container
 
 -- ftd.text: $cta-2.info-1
 role: $inherited.types.copy-small
-color: grey
+color: $inherited.colors.text
 
 -- ftd.text-input:
 width.fixed.vw: 80
@@ -121,7 +121,7 @@ width: fill-container
 
 -- ftd.text: $cta-2.info-2
 role: $inherited.types.copy-small
-color: grey
+color: $inherited.colors.text
 
 -- ftd.text-input:
 width.fixed.vw: 80
@@ -142,11 +142,11 @@ padding-vertical.px: 8
 padding-horizontal.px: 12
 align-self: center
 border-radius.px: 5
-background.solid: skyblue
-background.solid if {$cta-2.is-active}: grey
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {$cta-2.is-active}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $cta-2.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-2.is-active, v = false)
-color: black
+color: $inherited.colors.text
 link: $cta-2.link
 
 -- end: ftd.column

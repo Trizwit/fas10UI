@@ -39,24 +39,22 @@ string cta-link:
 
 -- ftd.row:
 if : { ftd.device == "desktop" }
-classes: feature-2-container
-css: [ $assets.files.style.component-styles.feature.css]
 min-width.fixed.px: 436
-min-height.fixed.px: 204
+min-height.fixed.vh: 30
 width.fixed.vw: 46
-height.fixed.vw: 14
+height.fixed.vh: 32
 spacing.fixed.px: 20
 border-width.px: 2
 border-radius.px: 10
-padding.px: 30
+border-color: $inherited.colors.info.border
+padding.vw: 2
 
 
 -- ftd.column:
-classes: symbol
-css: [ $assets.files.style.component-styles.feature.css]
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50
+background.solid: #c5cfdb
 
 
 
@@ -78,20 +76,18 @@ spacing.fixed.px: 20
 
 
 -- ftd.text: $feature-container-2.title
-classes: text-2
-css: [ $assets.files.style.component-styles.feature.css]
-color: #0784c7
-
+role: $inherited.types.heading-small
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $feature-container-2.about
-classes: text-3
-css: [ $assets.files.style.component-styles.feature.css]
 margin-right.px: 10
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 
 -- ftd.text: Learn More ->
-classes: text-4
-css: [ $assets.files.style.component-styles.feature.css]
 link: $feature-container-2.cta-link
+role: $inherited.types.heading-tiny
+color: $inherited.colors.cta-primary.text
 
 -- end: ftd.column
 
@@ -104,7 +100,7 @@ if : { ftd.device == "mobile" }
 classes: feature-2-container
 css: [ $assets.files.style.component-styles.feature.css]
 width.fixed.px: 356
-height.fixed.px: 200
+height.fixed.vh: 28
 spacing.fixed.px: 5
 border-width.px: 2
 border-radius.px: 10
@@ -139,19 +135,17 @@ spacing.fixed.px: 10
 
 
 -- ftd.text: $feature-container-2.title
-classes: text-2
-css: [ $assets.files.style.component-styles.feature.css]
-color: #0784c7
-
+role:  $inherited.types.heading-tiny
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $feature-container-2.about
-classes: text-3
-css: [ $assets.files.style.component-styles.feature.css]
+color: $inherited.colors.text
+role: $inherited.types.fine-print
 margin-right.px: 10
 
 -- ftd.text: Learn More ->
-classes: text-4
-css: [ $assets.files.style.component-styles.feature.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.cta-primary.text
 link: $feature-container-2.cta-link
 
 -- end: ftd.column
