@@ -315,6 +315,7 @@ lang: ftd
 pic: $assets.files.images.Blog.Blog-1.720x400.png
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -330,6 +331,7 @@ if: { !code-open-1 }
 pic: $assets.files.images.Blog.Blog-1.720x400.png
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -339,6 +341,7 @@ if: { ftd.device == "desktop"}
 pic: $assets.files.images.Blog.Blog-1.721x401.png
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -348,6 +351,7 @@ if: { ftd.device == "desktop"}
 pic: $assets.files.images.Blog.Blog-1.722x402.png
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -523,6 +527,7 @@ lang: ftd
 \-- blog-2.blog-2: Raclette Blueberry Nextious Level
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -538,6 +543,7 @@ if: { !code-open-2 }
 -- blog-2.blog-2: Raclette Blueberry Nextious Level
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -546,6 +552,7 @@ waistcoat.
 if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -554,6 +561,7 @@ waistcoat.
 if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -610,6 +618,7 @@ color: $inherited.colors.text
 \-- ftd.text: $blog-2.cta-text
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+link: $blog-2.cta-link
 
 \-- end: ftd.column
 
@@ -722,6 +731,7 @@ lang: ftd
 \-- blog-3.blog-3: Raclette Blueberry Nextious Level
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -737,6 +747,7 @@ if: { !code-open-3 }
 -- blog-3.blog-3: Raclette Blueberry Nextious Level
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -745,6 +756,7 @@ waistcoat.
 if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -753,6 +765,7 @@ waistcoat.
 if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -771,6 +784,7 @@ lang: ftd
 \-- blog-3: Raclette Blueberry Nextious Level
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled
 waistcoat.
@@ -809,6 +823,7 @@ color: $inherited.colors.text
 \-- ftd.text: $blog-3.cta-text
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+link: $blog-3.cta-link
 
 \-- end: ftd.column
 
@@ -921,6 +936,7 @@ lang: ftd
 \-- blog-4.blog-4: Shooting Stars
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -935,6 +951,7 @@ if: { !code-open-4 }
 -- blog-4.blog-4: Shooting Stars
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -943,6 +960,7 @@ waistcoat.
 if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -951,6 +969,7 @@ waistcoat.
 if: { ftd.device == "desktop"}
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled 
 waistcoat.
@@ -968,6 +987,7 @@ lang: ftd
 \-- blog-4: Shooting Stars
 head: Category
 cta-text: Learn more
+cta-link: https://www.google.com
 
 Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled
 waistcoat.
@@ -1008,6 +1028,7 @@ color: $inherited.colors.text
 \-- ftd.text: $blog-4.cta-text
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+link: $blog-4.cta-link
 
 \-- end: ftd.column
 
