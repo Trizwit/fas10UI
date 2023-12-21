@@ -71,7 +71,7 @@ align-self: center
 
 -- ftd.text: $testimonial-2-container.about
 role: $inherited.types.copy-large
-color: #717273
+color: $inherited.colors.text
 text-align: center
 
 -- ftd.row:
@@ -93,11 +93,11 @@ align-self: center
 role: $inherited.types.button-large
 text-align: center
 align-self: center
-color: #f5f6f8
+color: $inherited.colors.accent.tertiary
 
 -- ftd.text: $testimonial-2-container.position
 role: $inherited.types.button-medium
-color: #8a8b8d
+color: $inherited.colors.accent.tertiary
 text-align: center
 align-self: center
 

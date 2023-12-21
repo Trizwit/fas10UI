@@ -22,7 +22,7 @@ margin-top.px: 30
 -- ftd.text: $testimonial-1.heading
 role: $inherited.types.heading-medium
 text-align: center
-color: #0784c7
+color: $inherited.colors.accent.tertiary
 
 -- end: ftd.row
 
@@ -68,7 +68,7 @@ min-width.fixed.px: 640
 min-height.fixed.vh: 36
 border-radius.px: 10
 padding.px: 20
-background.solid: #eff1f5
+background.solid: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
@@ -82,7 +82,7 @@ height.fixed.px: 28
 
 -- ftd.text: $testimonial-1-container.about
 role: $inherited.types.copy-large
-color: #717273
+color: $inherited.colors.info.base
 
 -- ftd.row:
 width: fill-container
@@ -101,11 +101,11 @@ spacing.fixed.px: 10
 
 -- ftd.text: $testimonial-1-container.name
 role: $inherited.types.button-large
-color: #525050
+color: $inherited.colors.accent.tertiary
 
 -- ftd.text: $testimonial-1-container.position
 role: $inherited.types.heading-tiny
-color: #8a8b8d
+color: $inherited.colors.accent.tertiary
 
 
 -- end: ftd.column
@@ -129,7 +129,7 @@ padding.px: 16
 margin-left.px: 20
 margin-right.px: 20
 margin-bottom.px: 10
-background.solid: #eff1f5
+background.solid: $inherited.colors.background.base
 
 -- ftd.column:
 width: fill-container
@@ -143,7 +143,7 @@ height.fixed.px: 28
 
 -- ftd.text: $testimonial-1-container.about
 role: $inherited.types.copy-large
-color: #717273
+color: $inherited.colors.info.base
 
 -- ftd.row:
 width: fill-container
@@ -162,11 +162,11 @@ spacing.fixed.px: 10
 
 -- ftd.text: $testimonial-1-container.name
 role: $inherited.types.button-large
-color: #525050
+color: $inherited.colors.accent.tertiary
 
 -- ftd.text: $testimonial-1-container.position
 role: $inherited.types.heading-tiny
-color: #8a8b8d
+color: $inherited.colors.accent.tertiary
 
 
 -- end: ftd.column

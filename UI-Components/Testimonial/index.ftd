@@ -379,7 +379,7 @@ margin-top.px: 30
 \-- ftd.text: $testimonial-1.heading
 role: $inherited.types.heading-medium
 text-align: center
-color: #0784c7
+color: $inherited.colors.accent.tertiary
 
 \-- end: ftd.row
 
@@ -423,7 +423,7 @@ min-width.fixed.px: 640
 min-height.fixed.vh: 36
 border-radius.px: 10
 padding.px: 20
-background.solid: #eff1f5
+background.solid: $inherited.colors.background.base
 
 \-- ftd.column:
 width: fill-container
@@ -437,7 +437,7 @@ height.fixed.px: 28
 
 \-- ftd.text: $testimonial-1-container.about
 role: $inherited.types.copy-large
-color: #717273
+color: $inherited.colors.info.base
 
 \-- ftd.row:
 width: fill-container
@@ -456,11 +456,11 @@ spacing.fixed.px: 10
 
 \-- ftd.text: $testimonial-1-container.name
 role: $inherited.types.button-large
-color: #525050
+color: $inherited.colors.accent.tertiary
 
 \-- ftd.text: $testimonial-1-container.position
 role: $inherited.types.heading-tiny
-color: #8a8b8d
+color: $inherited.colors.accent.tertiary
 
 
 \-- end: ftd.column
@@ -498,7 +498,7 @@ height.fixed.px: 28
 
 \-- ftd.text: $testimonial-1-container.about
 role: $inherited.types.copy-large
-color: #717273
+color: $inherited.colors.info.base
 
 \-- ftd.row:
 width: fill-container
@@ -517,11 +517,11 @@ spacing.fixed.px: 10
 
 \-- ftd.text: $testimonial-1-container.name
 role: $inherited.types.button-large
-color: #525050
+color: $inherited.colors.accent.tertiary
 
 \-- ftd.text: $testimonial-1-container.position
 role: $inherited.types.heading-tiny
-color: #8a8b8d
+color: $inherited.colors.accent.tertiary
 
 
 \-- end: ftd.column
@@ -762,7 +762,7 @@ align-self: center
 
 \-- ftd.text: $testimonial-2-container.about
 role: $inherited.types.copy-large
-color: #717273
+color: $inherited.colors.text
 text-align: center
 
 \-- ftd.row:
@@ -784,11 +784,11 @@ align-self: center
 role: $inherited.types.button-large
 text-align: center
 align-self: center
-color: #f5f6f8
+color: $inherited.colors.accent.tertiary
 
 \-- ftd.text: $testimonial-2-container.position
 role: $inherited.types.button-medium
-color: #8a8b8d
+color: $inherited.colors.accent.tertiary
 text-align: center
 align-self: center
 
@@ -1055,7 +1055,7 @@ min-height.fixed.vh if { ftd.device == "desktop" }: 64
 min-width.fixed.px if { ftd.device == "mobile" }: 288
 min-height.fixed.vh if { ftd.device == "mobile" }: 88
 padding.px: 20
-background.solid: #eff1f5
+background.solid: $inherited.colors.background.base
 
 
 
@@ -1075,6 +1075,7 @@ align-self: center
 \-- ftd.text: $testimonial-3-container.about
 role: $inherited.types.copy-large
 text-align: center
+color: $inherited.colors.text
 
 \-- ftd.row:
 width.fixed.px: 40
@@ -1095,11 +1096,13 @@ align-self: center
 role: $inherited.types.button-large
 text-align: center
 align-self: center
+color: $inherited.colors.accent.tertiary
 
 \-- ftd.text: $testimonial-3-container.position
 role: $inherited.types.button-medium
 text-align: center
 align-self: center
+color: $inherited.colors.accent.tertiary
 
 
 \-- end: ftd.column

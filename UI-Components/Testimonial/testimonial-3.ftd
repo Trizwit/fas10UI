@@ -48,7 +48,7 @@ min-height.fixed.vh if { ftd.device == "desktop" }: 64
 min-width.fixed.px if { ftd.device == "mobile" }: 288
 min-height.fixed.vh if { ftd.device == "mobile" }: 88
 padding.px: 20
-background.solid: #eff1f5
+background.solid: $inherited.colors.background.base
 
 
 
@@ -68,6 +68,7 @@ align-self: center
 -- ftd.text: $testimonial-3-container.about
 role: $inherited.types.copy-large
 text-align: center
+color: $inherited.colors.text
 
 -- ftd.row:
 width.fixed.px: 40
@@ -88,11 +89,13 @@ align-self: center
 role: $inherited.types.button-large
 text-align: center
 align-self: center
+color: $inherited.colors.accent.tertiary
 
 -- ftd.text: $testimonial-3-container.position
 role: $inherited.types.button-medium
 text-align: center
 align-self: center
+color: $inherited.colors.accent.tertiary
 
 
 -- end: ftd.column
