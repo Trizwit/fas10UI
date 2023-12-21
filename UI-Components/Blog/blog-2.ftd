@@ -92,6 +92,7 @@ color: $inherited.colors.text
 caption title:
 string head:
 string cta-text:
+optional string cta-link: www.google.com
 body body:
 
 -- ftd.column:
@@ -122,6 +123,7 @@ color: $inherited.colors.text
 -- ftd.text: $blog-2.cta-text
 role: $inherited.types.copy-regular
 color: $inherited.colors.text
+link: $blog-2.cta-link
 
 -- end: ftd.column
 
