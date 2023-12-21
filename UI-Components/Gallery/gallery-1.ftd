@@ -94,7 +94,7 @@ height: fill-container
 align-content: center
 
 -- ftd.text: $gallery-1.title
-color: #0784c7
+color: $inherited.colors.accent.primary
 role: $inherited.types.heading-hero
 
 -- end: ftd.row
@@ -196,7 +196,7 @@ align-content: center
 -- ftd.text: $gallery-1.title
 align-self: center
 role: $inherited.types.heading-large
-color: #0784c7
+color: $inherited.colors.accent.primary
 
 -- end: ftd.row
 

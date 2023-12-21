@@ -418,7 +418,7 @@ height: fill-container
 align-content: center
 
 \-- ftd.text: $gallery-1.title
-color: #0784c7
+color: $inherited.colors.accent.primary
 role: $inherited.types.heading-hero
 
 \-- end: ftd.row
@@ -520,7 +520,7 @@ align-content: center
 \-- ftd.text: $gallery-1.title
 align-self: center
 role: $inherited.types.heading-large
-color: #0784c7
+color: $inherited.colors.accent.primary
 
 \-- end: ftd.row
 
@@ -800,11 +800,11 @@ spacing.fixed.vw: 1
 \-- ftd.text: $gallery-2.title
 role: $inherited.types.heading-medium
 text-align: center
-color: #0784c7
+color: $inherited.colors.accent.primary
 
 \-- ftd.text: $gallery-2.about
 role: $inherited.types.heading-small
-color: grey
+color: $inherited.colors.accent.tertiary
 text-align: center
 
 \-- end: ftd.column
@@ -1092,11 +1092,11 @@ spacing.fixed.vw: 2
 
 \-- ftd.text: $gallery-3.title
 role: $inherited.types.heading-medium
-color: #0784c7
+color: $inherited.colors.accent.primary
 
 \-- ftd.text: $gallery-3.about
 role: $inherited.types.heading-tiny
-color: grey
+color: $inherited.colors.accent.tertiary
 text-align: start
 
 \-- end: ftd.row
@@ -1174,12 +1174,12 @@ spacing.fixed.vw: 2
 
 \-- ftd.text: $gallery-3.title
 role: $inherited.types.heading-medium
-color: #0784c7
+color: $inherited.colors.accent.primary
 text-align: center
 
 \-- ftd.text: $gallery-3.about
 role: $inherited.types.heading-tiny
-color: grey
+color: $inherited.colors.accent.tertiary
 text-align: center
 
 \-- end: ftd.column

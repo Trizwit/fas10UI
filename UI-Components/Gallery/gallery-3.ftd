@@ -31,11 +31,11 @@ spacing.fixed.vw: 2
 
 -- ftd.text: $gallery-3.title
 role: $inherited.types.heading-medium
-color: #0784c7
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $gallery-3.about
 role: $inherited.types.heading-tiny
-color: grey
+color: $inherited.colors.accent.tertiary
 text-align: start
 
 -- end: ftd.row
@@ -113,12 +113,12 @@ spacing.fixed.vw: 2
 
 -- ftd.text: $gallery-3.title
 role: $inherited.types.heading-medium
-color: #0784c7
+color: $inherited.colors.accent.primary
 text-align: center
 
 -- ftd.text: $gallery-3.about
 role: $inherited.types.heading-tiny
-color: grey
+color: $inherited.colors.accent.tertiary
 text-align: center
 
 -- end: ftd.column
