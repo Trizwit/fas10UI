@@ -73,6 +73,196 @@ link: $button.url
 
 
 
+-- string $template_card-is-active: false
+-- string $dummy: false
+
+
+-- component template_card:
+ftd.image-src cover:
+caption title:
+string demo_url: 
+string github_url: 
+
+-- ftd.column:
+width.fixed.px if { ftd.device == "desktop"}: 300
+width.fixed.percent if { ftd.device == "mobile"}: 95
+height: hug-content
+;; border-width.px: 3
+;; border-color: #04dcf4
+shadow: $s-card
+padding.px: 2
+background.solid: #011221
+$on-click$: $ftd.set-string($a = $$template_card-is-active, v = $template_card.title) 
+
+
+-- ftd.image: $template_card.cover
+width: fill-container
+
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-content: center
+padding-horizontal.px: 16
+padding-vertical.px: 10
+
+-- ftd.text: $template_card.title
+role: $fira-code-size-20-400
+color: #fff
+text-align: center
+
+-- ftd.mobile:
+-- ftd.row:
+width: hug-content
+padding-vertical.px: 8
+align-content: center
+
+-- ftd.column:
+width.fixed.px: 46
+height.fixed.px: 46
+background.solid: #fff
+border-radius.px: 100
+z-index: 1
+align-content: center
+
+-- ftd.image:
+src: $assets.files.images.github-dark.svg
+width.fixed.px: 56
+padding-top.px: 1
+z-index: 2
+link: $template_card.github_url
+open-in-new-tab: true
+
+-- end: ftd.column
+
+-- ftd.text: DEMO
+role: $fira-code-size-20-400
+color: #04dcf4
+;; css: [ $assets.files.style.logo.css]
+;; classes: animate-character
+padding-left.px: 16
+link: $template_card.demo_url
+open-in-new-tab: true
+
+-- end: ftd.row
+-- end: ftd.mobile
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: template_card
+
+
+
+
+
+
+
+
+
+-- component template_card_view:
+ftd.image-src cover:
+caption title:
+string demo_url: 
+string github_url: 
+
+-- ftd.column:
+if: { $template_card-is-active == $template_card_view.title }
+width.fixed.vw: 55
+height: hug-content 
+anchor: window
+top.vh: 10
+right.vw: 7
+background.solid: #011221
+border-radius.px: 8
+shadow: $s-card
+
+-- ftd.row:
+width: fill-container
+align-content: right
+
+-- ftd.image:
+margin.px: 10
+src: $assets.files.images.close.svg
+width.fixed.px: 56
+padding.px: 10
+$on-click$: $ftd.set-string($a = $$template_card-is-active, v = $dummy) 
+
+-- end: ftd.row
+
+-- ftd.column:
+width: fill-container
+height: auto
+padding-horizontal.percent: 5
+
+-- ftd.image: $template_card_view.cover
+width: fill-container
+;; height: fill-container
+align-self: center
+border-radius.px: 8
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+align-content: center
+;; anchor: parent
+bottom.px: 0
+left.px: 0
+padding-vertical.px: 16
+
+-- ftd.image:
+src: $assets.files.Templates.github.svg
+width.fixed.px: 56
+padding-top.px: 1
+link: $template_card_view.github_url
+open-in-new-tab: true
+
+-- ftd.text: DEMO
+role: $fira-code-size-30-400
+color: #04dcf4
+;; css: [ $assets.files.style.logo.css]
+;; classes: animate-character
+padding-left.px: 16
+link: $template_card_view.demo_url
+open-in-new-tab: true
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: template_card_view
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ftd.shadow s-card: 
+color: #04dcf4
+x-offset.px: 0 
+y-offset.px: 3
+blur.px: 8 
+
+
 
 
 
@@ -92,6 +282,23 @@ weight: 400
 font-family: $fira-code-assets.fonts.Fira-Code
 
 -- ftd.responsive-type fira-code-size-16-400:
+desktop: $fira-code-size-16-desktop
+mobile: $fira-code-size-16-mobile
+
+
+
+-- ftd.type fira-code-size-16-desktop:
+size.px: 20
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+
+-- ftd.type fira-code-size-16-mobile:
+size.px: 20
+weight: 400
+font-family: $fira-code-assets.fonts.Fira-Code
+
+-- ftd.responsive-type fira-code-size-20-400:
 desktop: $fira-code-size-16-desktop
 mobile: $fira-code-size-16-mobile
 
