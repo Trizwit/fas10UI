@@ -19,8 +19,6 @@ spacing.fixed.px if { ftd.device == "desktop" }: 180
 spacing.fixed.px if { ftd.device == "mobile" }: 28
 wrap: true
 
-
-
 -- statistic-container:
 number: $statistic-1.stat-1-count
 category: $statistic-1.stat-1-category
@@ -61,15 +59,14 @@ string category:
 if: { ftd.device == "desktop" }
 
 -- ftd.text: $statistic-container.number
-classes: text-1
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
-color: #0784c7
+color: $inherited.colors.accent.primary
+role: $inherited.types.heading-medium
 
 -- ftd.text: $statistic-container.category
-classes: text-2
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 
 -- end: ftd.column
 
@@ -78,18 +75,16 @@ if: { ftd.device == "mobile" }
 spacing.fixed.px: 5
 
 -- ftd.text: $statistic-container.number
-classes: text-3
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
-color: #0784c7
+color:  $inherited.colors.accent.primary
+role: $inherited.types.heading-medium
 
 -- ftd.text: $statistic-container.category
-classes: text-4
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 
 -- end: ftd.column
-
 
 -- end: ftd.row
 
