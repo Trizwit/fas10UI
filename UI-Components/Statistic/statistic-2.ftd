@@ -21,8 +21,6 @@ string stat-4-category:
 width: fill-container
 height: fill-container
 
-
-
 -- ftd.row:
 if : { ftd.device == "desktop" }
 width: fill-container
@@ -31,25 +29,21 @@ padding.px: 24
 spacing.fixed.px: 10
 wrap: true
 
-
 -- ftd.column:
 width.fixed.vw: 32
 height.fixed.vw: 22
 margin-top.px: 10
 margin-left.px: 10
 
-
-
 -- ftd.text: $statistic-2.title
-classes: title
-css: [ $assets.files.style.component-styles.statistic.css]
 margin-bottom.px: 16
 margin-top.px: 30
-color: #0784c7
+role: $inherited.types.heading-small
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $statistic-2.about
-classes: about
-css: [ $assets.files.style.component-styles.statistic.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 margin-right.px: 100
 
 
@@ -117,16 +111,15 @@ margin-left.px: 10
 
 
 -- ftd.text: $statistic-2.title
-classes: title
-css: [ $assets.files.style.component-styles.statistic.css]
+role: $inherited.types.heading-tiny
+color: $inherited.colors.accent.primary
 margin-bottom.px: 12
 margin-top.px: 10
 text-align: center
-color: #0784c7
 
 -- ftd.text: $statistic-2.about
-classes: about
-css: [ $assets.files.style.component-styles.statistic.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 margin-right.px: 10
 text-align: center
 
@@ -198,15 +191,15 @@ string category:
 if: { ftd.device == "desktop" }
 
 -- ftd.text: $statistic-container.number
-classes: text-1
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
-color: #0784c7
+color: $inherited.colors.accent.primary
+role: $inherited.types.heading-medium
+
 
 -- ftd.text: $statistic-container.category
-classes: text-2
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 
 -- end: ftd.column
 
@@ -215,18 +208,16 @@ if: { ftd.device == "mobile" }
 spacing.fixed.px: 5
 
 -- ftd.text: $statistic-container.number
-classes: text-3
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
-color: #0784c7
+color:  $inherited.colors.accent.primary
+role: $inherited.types.heading-medium
 
 -- ftd.text: $statistic-container.category
-classes: text-4
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 
 -- end: ftd.column
-
 
 -- end: ftd.row
 

@@ -386,15 +386,14 @@ string category:
 if: { ftd.device == "desktop" }
 
 \-- ftd.text: $statistic-container.number
-classes: text-1
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
-color: #0784c7
+color: $inherited.colors.accent.primary
+role: $inherited.types.heading-medium
 
 \-- ftd.text: $statistic-container.category
-classes: text-2
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 
 \-- end: ftd.column
 
@@ -403,15 +402,14 @@ if: { ftd.device == "mobile" }
 spacing.fixed.px: 5
 
 \-- ftd.text: $statistic-container.number
-classes: text-3
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
-color: #0784c7
+color:  $inherited.colors.accent.primary
+role: $inherited.types.heading-medium
 
 \-- ftd.text: $statistic-container.category
-classes: text-4
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 
 \-- end: ftd.column
 
@@ -627,17 +625,15 @@ margin-left.px: 10
 
 
 \-- ftd.text: $statistic-2.title
-classes: title
-css: [ $assets.files.style.component-styles.statistic.css]
+role: $inherited.types.heading-small
+color: $inherited.colors.accent.primary
 margin-bottom.px: 16
 margin-top.px: 30
-color: #0784c7
 
 \-- ftd.text: $statistic-2.about
-classes: about
-css: [ $assets.files.style.component-styles.statistic.css]
 margin-right.px: 100
-
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 
 \-- ftd.row:
 margin-top.px: 64
@@ -702,19 +698,17 @@ margin-left.px: 10
 
 
 \-- ftd.text: $statistic-2.title
-classes: title
-css: [ $assets.files.style.component-styles.statistic.css]
 margin-bottom.px: 12
 margin-top.px: 10
 text-align: center
-color: #0784c7
+role: $inherited.types.heading-tiny
+color: $inherited.colors.accent.primary
 
 \-- ftd.text: $statistic-2.about
-classes: about
-css: [ $assets.files.style.component-styles.statistic.css]
 margin-right.px: 10
 text-align: center
-
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 
 \-- ftd.row:
 margin-top.px: 20
@@ -783,14 +777,13 @@ string category:
 if: { ftd.device == "desktop" }
 
 \-- ftd.text: $statistic-container.number
-classes: text-1
-css: [ $assets.files.style.component-styles.statistic.css]
+color: $inherited.colors.accent.primary
+role: $inherited.types.heading-medium
 align-self: center
-color: #0784c7
 
 \-- ftd.text: $statistic-container.category
-classes: text-2
-css: [ $assets.files.style.component-styles.statistic.css]
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 align-self: center
 
 \-- end: ftd.column
@@ -800,14 +793,13 @@ if: { ftd.device == "mobile" }
 spacing.fixed.px: 5
 
 \-- ftd.text: $statistic-container.number
-classes: text-3
-css: [ $assets.files.style.component-styles.statistic.css]
+color:  $inherited.colors.accent.primary
+role: $inherited.types.heading-medium
 align-self: center
-color: #0784c7
 
 \-- ftd.text: $statistic-container.category
-classes: text-4
-css: [ $assets.files.style.component-styles.statistic.css]
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 align-self: center
 
 \-- end: ftd.column
@@ -1012,13 +1004,13 @@ align-content: center
 
 
 \-- ftd.text: $statistic-3.title
-classes: title
-css: [ $assets.files.style.component-styles.statistic.css]
 margin-bottom.px: 12
+role: $inherited.types.heading-small
+color:  $inherited.colors.accent.tertiary
 
 \-- ftd.text: $statistic-3.about
-classes: about
-css: [ $assets.files.style.component-styles.statistic.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 margin-right.px if { ftd.device == "desktop" }: 260
 margin-left.px if { ftd.device == "desktop" }: 260
 margin-right.px if { ftd.device == "mobile" }: 50
@@ -1143,14 +1135,14 @@ string category:
 if: { ftd.device == "desktop" }
 
 \-- ftd.text: $statistic-container.number
-classes: text-1
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.heading-medium
 
 \-- ftd.text: $statistic-container.category
-classes: text-2
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 
 \-- end: ftd.column
 
@@ -1159,14 +1151,14 @@ if: { ftd.device == "mobile" }
 spacing.fixed.px: 5
 
 \-- ftd.text: $statistic-container.number
-classes: text-3
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.heading-medium
 
 \-- ftd.text: $statistic-container.category
-classes: text-4
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 
 \-- end: ftd.column
 

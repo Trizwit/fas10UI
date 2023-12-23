@@ -22,15 +22,14 @@ align-self: center
 
 -- ftd.text: $team-3.title
 margin-top.px: 80
-role: $inherited.types.heading-small
 align-self: center
-color: white
+role: $inherited.types.heading-medium
+color: $inherited.colors.accent.tertiary
 
 -- ftd.text: $team-3.about
-classes: text
-css: [ $assets.files.style.component-styles.team.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 margin-top.px: 18
-color: grey
 text-align: center
 padding-left.px: 200
 padding-right.px: 200
@@ -44,14 +43,14 @@ if: { ftd.device == "mobile" }
 
 -- ftd.text: $team-3.title
 margin-top.px: 40
-role: $inherited.types.heading-small
 align-self: center
+role: $inherited.types.heading-small
+color: $inherited.colors.accent.tertiary
 
 -- ftd.text: $team-3.about
-classes: text
-css: [ $assets.files.style.component-styles.team.css]
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 margin-top.px: 18
-color: grey
 text-align: center
 padding-left.px: 50
 padding-right.px: 50
@@ -129,32 +128,27 @@ height.fixed.px: 164
 border-radius.percent: 4
 align-self: center
 
-
 -- ftd.column:
 margin-top.px: 10
 align-content: center
 
-
 -- ftd.text: $profilecard-c.name 
-classes: text-1
-css: [ $assets.files.style.component-styles.team.css] 
+color: $inherited.colors.accent.tertiary
+role: $inherited.types.heading-tiny 
 margin-top.px: 16
 
-
 -- ftd.text: $profilecard-c.position
-classes: text-2
-css: [ $assets.files.style.component-styles.team.css]
+color: $inherited.colors.text
+role: $inherited.types.label-large
 margin-top.px: 8
-color: grey
 
 -- ftd.text: $profilecard-c.about
-classes: text-3
-css: [ $assets.files.style.component-styles.team.css]
 margin-top.px: 24
 padding-left.px: 10
 padding-right.px: 10
 text-align: center
-
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 
 -- ftd.row:
 margin-top.px: 24

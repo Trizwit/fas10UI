@@ -28,13 +28,13 @@ align-content: center
 
 
 -- ftd.text: $statistic-3.title
-classes: title
-css: [ $assets.files.style.component-styles.statistic.css]
+role: $inherited.types.heading-small
+color:  $inherited.colors.accent.tertiary
 margin-bottom.px: 12
 
 -- ftd.text: $statistic-3.about
-classes: about
-css: [ $assets.files.style.component-styles.statistic.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 margin-right.px if { ftd.device == "desktop" }: 260
 margin-left.px if { ftd.device == "desktop" }: 260
 margin-right.px if { ftd.device == "mobile" }: 50
@@ -58,7 +58,7 @@ align-content: center
 border-color: grey
 border-width.px: 2
 border-radius.px: 10
-background.solid: #757a7a
+
 
 -- ftd.image:
 src: $assets.files.images.statistics.cloud-download.svg
@@ -161,13 +161,13 @@ string category:
 if: { ftd.device == "desktop" }
 
 -- ftd.text: $statistic-container.number
-classes: text-1
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.heading-medium
 
 -- ftd.text: $statistic-container.category
-classes: text-2
-css: [ $assets.files.style.component-styles.statistic.css]
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 align-self: center
 
 -- end: ftd.column
@@ -177,14 +177,14 @@ if: { ftd.device == "mobile" }
 spacing.fixed.px: 5
 
 -- ftd.text: $statistic-container.number
-classes: text-3
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.heading-medium
 
 -- ftd.text: $statistic-container.category
-classes: text-4
-css: [ $assets.files.style.component-styles.statistic.css]
 align-self: center
+color:  $inherited.colors.accent.tertiary
+role: $inherited.types.copy-small
 
 -- end: ftd.column
 
