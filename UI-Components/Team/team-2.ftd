@@ -23,15 +23,14 @@ if: { ftd.device == "desktop" }
 
 -- ftd.text: $team-2.title
 margin-top.px: 80
-role: $inherited.types.heading-small
 align-self: center
-color: white
+role: $inherited.types.heading-medium
+color: $inherited.colors.accent.tertiary
 
 -- ftd.text: $team-2.about
-classes: text
-css: [ $assets.files.style.component-styles.team.css]
+role: $inherited.types.copy-large
+color: $inherited.colors.text
 margin-top.px: 18
-color: grey
 text-align: center
 padding-left.px: 200
 padding-right.px: 200
@@ -46,13 +45,13 @@ if: { ftd.device == "mobile" }
 -- ftd.text: $team-2.title
 margin-top.px: 40
 role: $inherited.types.heading-small
+color: $inherited.colors.accent.tertiary
 align-self: center
 
 -- ftd.text: $team-2.about
-classes: text
-css: [ $assets.files.style.component-styles.team.css]
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 margin-top.px: 18
-color: grey
 text-align: center
 padding-left.px: 50
 padding-right.px: 50
@@ -94,6 +93,12 @@ children: $team-2.card
 ftd.image-src pro-pic:
 string name:
 string position:
+string social-link-1:
+string social-link-2:
+string social-link-3:
+ftd.image-src social-logo-1:
+ftd.image-src social-logo-2:
+ftd.image-src social-logo-3:
 body about:
 
 -- ftd.column:
@@ -123,21 +128,21 @@ margin-left.px: 15
 
 
 -- ftd.text: $profilecard-b.name 
-classes: text-1
-css: [ $assets.files.style.component-styles.team.css] 
+color: $inherited.colors.accent.tertiary
+role: $inherited.types.heading-tiny 
 margin-top.px: 4
 
 
 -- ftd.text: $profilecard-b.position
-classes: text-2
-css: [ $assets.files.style.component-styles.team.css]
+color: $inherited.colors.text
+role: $inherited.types.label-large
 margin-top.px: 4
 margin-bottom.px: 12
-color: grey
+
 
 -- ftd.text: $profilecard-b.about
-classes: text-3
-css: [ $assets.files.style.component-styles.team.css]
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 margin-top.px: 4
 margin-bottom.px: 24
 align-self: center
@@ -146,16 +151,19 @@ align-self: center
 spacing.fixed.px: 8
 
 -- ftd.image:
-src: $assets.files.images.statistics.facebook.svg
+src: $profilecard-b.social-logo-1
+link: $profilecard-b.social-link-1
 width.fixed.px: 20
 
 -- ftd.image:
-src: $assets.files.images.statistics.twitter.svg
+src: $profilecard-b.social-logo-2
 width.fixed.px: 20
+link: $profilecard-b.social-link-2
 
 -- ftd.image:
-src: $assets.files.images.statistics.whatsapp.svg
+src: $profilecard-b.social-logo-3
 width.fixed.px: 20
+link: $profilecard-b.social-link-3
 
 -- end: ftd.row
 
@@ -193,21 +201,21 @@ margin-left.px: 15
 
 
 -- ftd.text: $profilecard-b.name 
-classes: text-1
-css: [ $assets.files.style.component-styles.team.css] 
+color: $inherited.colors.accent.tertiary
+role: $inherited.types.heading-tiny  
 margin-top.px: 2
 
 
 -- ftd.text: $profilecard-b.position
-classes: text-2
-css: [ $assets.files.style.component-styles.team.css]
+color: $inherited.colors.text
+role: $inherited.types.label-large
 margin-top.px: 2
 margin-bottom.px: 10
-color: grey
+
 
 -- ftd.text: $profilecard-b.about
-classes: text-3
-css: [ $assets.files.style.component-styles.team.css]
+color: $inherited.colors.text
+role: $inherited.types.copy-large
 margin-bottom.px: 12
 align-self: center
 
@@ -217,14 +225,20 @@ spacing.fixed.px: 8
 -- ftd.image:
 src: $assets.files.images.statistics.facebook.svg
 width.fixed.px: 20
+src: $profilecard-b.social-logo-1
+link: $profilecard-b.social-link-1
 
 -- ftd.image:
 src: $assets.files.images.statistics.twitter.svg
 width.fixed.px: 20
+src: $profilecard-b.social-logo-2
+link: $profilecard-b.social-link-2
 
 -- ftd.image:
 src: $assets.files.images.statistics.whatsapp.svg
 width.fixed.px: 20
+src: $profilecard-b.social-logo-3
+link: $profilecard-b.social-link-3
 
 -- end: ftd.row
 

@@ -20,19 +20,16 @@ margin.px: 20
 -- ftd.column:
 if: { ftd.device == "desktop" }
 
-
-
 -- ftd.text: $team-1.title
 margin-top.px: 80
 role: $inherited.types.heading-small
+color: $inherited.colors.accent.tertiary
 align-self: center
-color: white
 
 -- ftd.text: $team-1.about
-classes: text
-css: [ $assets.files.style.component-styles.team.css]
 margin-top.px: 18
-color: grey
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
 text-align: center
 padding-left.px: 200
 padding-right.px: 200
@@ -48,13 +45,13 @@ if: { ftd.device == "mobile" }
 -- ftd.text: $team-1.title
 margin-top.px: 40
 role: $inherited.types.heading-small
+color: $inherited.colors.accent.tertiary
 align-self: center
 
 -- ftd.text: $team-1.about
-classes: text
-css: [ $assets.files.style.component-styles.team.css]
 margin-top.px: 18
-color: grey
+color: $inherited.colors.text
+role: $inherited.types.copy-regular
 text-align: center
 padding-left.px: 50
 padding-right.px: 50
@@ -127,16 +124,14 @@ margin-left.px: 16
 align-content: center
 
 -- ftd.text: $profilecard-a.name 
-classes: text
-css: [ $assets.files.style.component-styles.team.css] 
 margin-top.px: 16
-color: white
+color: $inherited.colors.accent.tertiary
+role: $inherited.types.heading-tiny
 
 -- ftd.text: $profilecard-a.position
-classes: text
-css: [ $assets.files.style.component-styles.team.css]
 margin-top.px: 5
-color: grey
+color: $inherited.colors.text
+role: $inherited.types.label-large
 
 -- end: ftd.column
 
