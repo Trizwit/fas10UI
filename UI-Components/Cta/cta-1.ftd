@@ -3,7 +3,6 @@
 -- import: fastn-community.github.io/code-block as cb
 
 
-
 -- component cta-1:
 string text:
 string cta-text:
@@ -21,8 +20,9 @@ spacing.fixed.px: 20
 align-content: center
 
 -- ftd.text: $cta-1.text
-role: $inherited.types.heading-small
+role: $inherited.types.heading-medium
 margin-top.px: 20
+color: $inherited.colors.accent.primary
 
 
 -- ftd.text: $cta-1.cta-text
@@ -33,11 +33,11 @@ padding-vertical.px: 10
 padding-horizontal.px: 12
 align-self: center
 border-radius.px: 5
-background.solid: skyblue
-background.solid if {$cta-1.is-active}: grey
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {$cta-1.is-active}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $cta-1.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-1.is-active, v = false)
-color: black
+color: $inherited.colors.text
 link: $cta-1.link
 
 -- end: ftd.row
@@ -52,6 +52,7 @@ align-content: center
 -- ftd.text: $cta-1.text
 role: $inherited.types.heading-small
 margin-top.px: 20
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $cta-1.cta-text
 text-align: center
@@ -60,11 +61,11 @@ padding-vertical.px: 10
 padding-horizontal.px: 12
 align-self: center
 border-radius.px: 5
-background.solid: skyblue
-background.solid if {$cta-1.is-active}: grey
+background.solid: $inherited.colors.cta-primary.base
+background.solid if {$cta-1.is-active}: $inherited.colors.cta-primary.hover
 $on-mouse-enter$: $ftd.set-bool($a = $cta-1.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $cta-1.is-active, v = false)
-color: black
+color: $inherited.colors.text
 link: $cta-1.link
 
 -- end: ftd.column
