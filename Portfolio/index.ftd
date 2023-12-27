@@ -107,6 +107,19 @@ github_url: https://github.com/avGayathri/swe-folio-4
 
 
 
+
+-- lib3.portfolio_card: TechFolio
+cover: $assets.files.assets.portfolio_template_5.png
+demo_url: https://www.shaheen-senpai.tech/
+github_url: https://github.com/Trizwit/portfolio-fastn
+
+-- lib3.portfolio_card_view: TechFolio
+cover: $assets.files.assets.portfolio_template_5.png
+demo_url: https://www.shaheen-senpai.tech/
+github_url: https://github.com/Trizwit/portfolio-fastn
+
+
+
 -- end: ftd.row
 
 ;; page container end
