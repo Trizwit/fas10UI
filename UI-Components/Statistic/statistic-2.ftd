@@ -198,7 +198,7 @@ role: $inherited.types.heading-medium
 
 -- ftd.text: $statistic-container.category
 align-self: center
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 role: $inherited.types.copy-small
 
 -- end: ftd.column
@@ -214,7 +214,7 @@ role: $inherited.types.heading-medium
 
 -- ftd.text: $statistic-container.category
 align-self: center
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 role: $inherited.types.copy-small
 
 -- end: ftd.column

@@ -89,13 +89,13 @@ align-self: center
 role: $inherited.types.button-large
 text-align: center
 align-self: center
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $testimonial-3-container.position
 role: $inherited.types.button-medium
 text-align: center
 align-self: center
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 
 -- end: ftd.column

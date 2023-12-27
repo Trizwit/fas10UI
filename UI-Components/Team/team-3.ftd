@@ -24,7 +24,7 @@ align-self: center
 margin-top.px: 80
 align-self: center
 role: $inherited.types.heading-medium
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $team-3.about
 role: $inherited.types.copy-large
@@ -45,7 +45,7 @@ if: { ftd.device == "mobile" }
 margin-top.px: 40
 align-self: center
 role: $inherited.types.heading-small
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $team-3.about
 color: $inherited.colors.text
@@ -133,7 +133,7 @@ margin-top.px: 10
 align-content: center
 
 -- ftd.text: $profilecard-c.name 
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 role: $inherited.types.heading-tiny 
 margin-top.px: 16
 

@@ -29,8 +29,9 @@ align-content: center
 
 -- ftd.text: $statistic-3.title
 role: $inherited.types.heading-small
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 margin-bottom.px: 12
+text-align: center
 
 -- ftd.text: $statistic-3.about
 role: $inherited.types.copy-large
@@ -162,7 +163,7 @@ if: { ftd.device == "desktop" }
 
 -- ftd.text: $statistic-container.number
 align-self: center
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 role: $inherited.types.heading-medium
 
 -- ftd.text: $statistic-container.category
