@@ -97,8 +97,6 @@ color: $inherited.colors.cta-primary.text
 
 -- ftd.row:
 if : { ftd.device == "mobile" }
-classes: feature-2-container
-css: [ $assets.files.style.component-styles.feature.css]
 width.fixed.px: 356
 height.fixed.vh: 28
 spacing.fixed.px: 5
@@ -109,8 +107,6 @@ padding-top.px: 20
 
 
 -- ftd.column:
-classes: symbol
-css: [ $assets.files.style.component-styles.feature.css]
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50

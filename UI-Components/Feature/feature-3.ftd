@@ -135,8 +135,6 @@ spacing.fixed.px: 10
 
 
 -- ftd.column:
-classes: symbol
-css: [ $assets.files.style.component-styles.feature.css]
 width.fixed.px: 52
 height.fixed.px: 52
 border-radius.percent: 50
