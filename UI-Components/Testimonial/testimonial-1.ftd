@@ -22,7 +22,7 @@ margin-top.px: 30
 -- ftd.text: $testimonial-1.heading
 role: $inherited.types.heading-medium
 text-align: center
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 -- end: ftd.row
 
@@ -101,11 +101,11 @@ spacing.fixed.px: 10
 
 -- ftd.text: $testimonial-1-container.name
 role: $inherited.types.button-large
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $testimonial-1-container.position
 role: $inherited.types.heading-tiny
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 
 -- end: ftd.column
@@ -162,11 +162,11 @@ spacing.fixed.px: 10
 
 -- ftd.text: $testimonial-1-container.name
 role: $inherited.types.button-large
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $testimonial-1-container.position
 role: $inherited.types.heading-tiny
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 
 -- end: ftd.column

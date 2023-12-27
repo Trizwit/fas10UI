@@ -484,7 +484,7 @@ if: { ftd.device == "desktop" }
 margin-top.px: 80
 align-self: center
 role: $inherited.types.heading-small
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 \-- ftd.text: $team-1.about
 margin-top.px: 18
@@ -506,7 +506,7 @@ if: { ftd.device == "mobile" }
 margin-top.px: 40
 align-self: center
 role: $inherited.types.heading-small
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 \-- ftd.text: $team-1.about
 margin-top.px: 18
@@ -585,7 +585,7 @@ align-content: center
 
 \-- ftd.text: $profilecard-a.name  
 margin-top.px: 16
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 role: $inherited.types.heading-tiny
 
 \-- ftd.text: $profilecard-a.position
@@ -926,7 +926,7 @@ if: { ftd.device == "desktop" }
 margin-top.px: 80
 align-self: center
 role: $inherited.types.heading-medium
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 \-- ftd.text: $team-2.about
 role: $inherited.types.copy-large
@@ -948,7 +948,7 @@ if: { ftd.device == "mobile" }
 margin-top.px: 40
 align-self: center
 role: $inherited.types.heading-small
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 \-- ftd.text: $team-2.about
 margin-top.px: 18
@@ -1025,7 +1025,7 @@ margin-left.px: 15
 
 \-- ftd.text: $profilecard-b.name 
 margin-top.px: 4
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 role: $inherited.types.heading-tiny 
 
 \-- ftd.text: $profilecard-b.position
@@ -1099,7 +1099,7 @@ margin-left.px: 15
 
 \-- ftd.text: $profilecard-b.name  
 margin-top.px: 2
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 role: $inherited.types.heading-tiny 
 
 \-- ftd.text: $profilecard-b.position
@@ -1476,7 +1476,7 @@ align-self: center
 margin-top.px: 80
 align-self: center
 role: $inherited.types.heading-medium
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 \-- ftd.text: $team-3.about
 color: $inherited.colors.text
@@ -1497,7 +1497,7 @@ if: { ftd.device == "mobile" }
 margin-top.px: 40
 align-self: center
 role: $inherited.types.heading-small
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 
 \-- ftd.text: $team-3.about
 margin-top.px: 18
@@ -1588,7 +1588,7 @@ align-content: center
 
 \-- ftd.text: $profilecard-c.name 
 margin-top.px: 16
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 role: $inherited.types.heading-tiny 
 
 \-- ftd.text: $profilecard-c.position

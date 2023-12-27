@@ -782,7 +782,7 @@ role: $inherited.types.heading-medium
 align-self: center
 
 \-- ftd.text: $statistic-container.category
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 role: $inherited.types.copy-small
 align-self: center
 
@@ -798,7 +798,7 @@ role: $inherited.types.heading-medium
 align-self: center
 
 \-- ftd.text: $statistic-container.category
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 role: $inherited.types.copy-small
 align-self: center
 
@@ -1006,7 +1006,7 @@ align-content: center
 \-- ftd.text: $statistic-3.title
 margin-bottom.px: 12
 role: $inherited.types.heading-small
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 
 \-- ftd.text: $statistic-3.about
 role: $inherited.types.copy-large
@@ -1136,12 +1136,12 @@ if: { ftd.device == "desktop" }
 
 \-- ftd.text: $statistic-container.number
 align-self: center
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 role: $inherited.types.heading-medium
 
 \-- ftd.text: $statistic-container.category
 align-self: center
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 role: $inherited.types.copy-small
 
 \-- end: ftd.column
@@ -1152,12 +1152,12 @@ spacing.fixed.px: 5
 
 \-- ftd.text: $statistic-container.number
 align-self: center
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 role: $inherited.types.heading-medium
 
 \-- ftd.text: $statistic-container.category
 align-self: center
-color:  $inherited.colors.accent.tertiary
+color:  $inherited.colors.accent.primary
 role: $inherited.types.copy-small
 
 \-- end: ftd.column
