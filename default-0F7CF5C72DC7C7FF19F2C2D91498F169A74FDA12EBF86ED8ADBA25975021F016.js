@@ -675,6 +675,7 @@ fastn_dom.propertyMap = {
     "-webkit-mask-repeat": "wmre",
     "mask-position": "mp",
     "-webkit-mask-position": "wmp",
+    "fetch-priority": "ftp",
 };
 
 // dynamic-class-css.md
@@ -862,6 +863,7 @@ fastn_dom.PropertyKind = {
     BackdropFilter: 119,
     Mask: 120,
     TextInputValue: 121,
+    FetchPriority: 122,
 };
 
 
@@ -969,6 +971,12 @@ fastn_dom.Fit = {
     contain: "contain",
     cover: "cover",
     scaleDown: "scale-down",
+}
+
+fastn_dom.FetchPriority = {
+    auto: "auto",
+    high: "high",
+    low:  "low",
 }
 
 fastn_dom.Overflow = {
@@ -1939,7 +1947,7 @@ class Node2 {
         }
     }
     attachExternalCss(css) {
-        if (doubleBuffering) {
+        if(!ssr) {
             let css_tag = document.createElement('link');
             css_tag.rel = 'stylesheet';
             css_tag.type = 'text/css';
@@ -1953,7 +1961,7 @@ class Node2 {
         }
     }
     attachExternalJs(js) {
-        if (doubleBuffering) {
+        if(!ssr) {
             let js_tag = document.createElement('script');
             js_tag.src = js;
 
@@ -2683,6 +2691,8 @@ class Node2 {
             this.#mutables.push(ftd.dark_mode);
         } else if (kind === fastn_dom.PropertyKind.Fit) {
             this.attachCss("object-fit", staticValue);
+        } else if (kind === fastn_dom.PropertyKind.FetchPriority) {
+            this.attachAttribute("fetchpriority", staticValue);
         } else if (kind === fastn_dom.PropertyKind.YoutubeSrc) {
             if (fastn_utils.isNull(staticValue)) {
                 this.attachAttribute("src", staticValue);
