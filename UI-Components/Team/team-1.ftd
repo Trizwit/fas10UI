@@ -23,7 +23,7 @@ if: { ftd.device == "desktop" }
 -- ftd.text: $team-1.title
 margin-top.px: 80
 role: $inherited.types.heading-small
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 align-self: center
 
 -- ftd.text: $team-1.about
@@ -38,15 +38,14 @@ padding-right.px: 200
 
 
 -- ftd.column:
-align-self: center
 if: { ftd.device == "mobile" }
-
+width: fill-container
+align-content: center
 
 -- ftd.text: $team-1.title
 margin-top.px: 40
 role: $inherited.types.heading-small
-color: $inherited.colors.accent.tertiary
-align-self: center
+color: $inherited.colors.accent.primary
 
 -- ftd.text: $team-1.about
 margin-top.px: 18
@@ -97,8 +96,11 @@ string name:
 string position: 
 
 -- ftd.column:
+
+-- ftd.column:
+if: { ftd.device == "desktop" }
 width.fixed.vw: 24
-height.fixed.vw: 8
+height.fixed.vh: 12
 min-height.fixed.px: 96
 min-width.fixed.px: 336
 border-width.px: 1
@@ -119,13 +121,14 @@ margin.px: 16
 align-self: center
 
 -- ftd.column:
-margin-top.px: 16
+width.fixed.vw: 14
+height.fixed.vh: 10
 margin-left.px: 16
-align-content: center
+align-content: left
 
 -- ftd.text: $profilecard-a.name 
 margin-top.px: 16
-color: $inherited.colors.accent.tertiary
+color: $inherited.colors.accent.primary
 role: $inherited.types.heading-tiny
 
 -- ftd.text: $profilecard-a.position
@@ -136,6 +139,54 @@ role: $inherited.types.label-large
 -- end: ftd.column
 
 -- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+if: { ftd.device == "mobile" }
+width.fixed.vw: 24
+height.fixed.vh: 16
+min-height.fixed.px: 96
+min-width.fixed.px: 336
+border-width.px: 1
+border-radius.px: 12
+border-color: grey
+margin.px: 8
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+
+-- ftd.image:
+src: $profilecard-a.pro-pic
+width.fixed.px: 75
+height.fixed.px: 75
+border-radius.percent: 50
+margin.px: 16
+align-self: center
+
+-- ftd.column:
+width.fixed.vw: 48
+height.fixed.vh: 12
+margin-left.px: 16
+align-content: left
+
+
+-- ftd.text: $profilecard-a.name 
+margin-top.px: 16
+color: $inherited.colors.accent.primary
+role: $inherited.types.heading-tiny
+
+-- ftd.text: $profilecard-a.position
+margin-top.px: 5
+color: $inherited.colors.text
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
 
 -- end: ftd.column
 
