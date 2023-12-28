@@ -220,6 +220,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {code-open-1}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-1)
+$on-click$: $ftd.set-bool($a = $use-open-1, v = false)
 
 -- ftd.text: Use
 role: $fira-code-size-16-400
@@ -232,6 +233,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {use-open-1}: #2b303b
 $on-click$: $ftd.toggle($a = $use-open-1)
+$on-click$: $ftd.set-bool($a = $code-open-1, v = false)
 
 -- end: ftd.row
 
@@ -278,6 +280,8 @@ facebook: $assets.files.images.Footer.facebook.png
 twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
+description: Air plant banjo lyft occupy retro adaptogen indego
+footer-text: © 2023 Trizwit —
 logo-test: TRIZWIT
 facebook-link: https://www.facebook.com/trizwit
 twitter-link: https://twitter.com/trizwit
@@ -287,7 +291,19 @@ linkedin-link: https://www.linkedin.com/company/trizwit/
 \-- footer-1.Category:
 heading: CATEGORIES
 text-1: First Link
+link-1: https://www.facebook.com/trizwit
 text-2: Second Link
+link-2: https://www.facebook.com/trizwit
+text-3: Third Link
+link-3: https://www.facebook.com/trizwit
+text-4: Fourth Link
+link-4: https://www.facebook.com/trizwit
+
+\-- footer-1.Category:
+heading: CATEGORIES
+text-1: First Link
+text-2: Second Link
+link-2: https://www.facebook.com/trizwit
 text-3: Third Link
 text-4: Fourth Link
 
@@ -296,6 +312,7 @@ heading: CATEGORIES
 text-1: First Link
 text-2: Second Link
 text-3: Third Link
+link-3: https://www.facebook.com/trizwit
 text-4: Fourth Link
 
 \-- footer-1.Category:
@@ -304,13 +321,7 @@ text-1: First Link
 text-2: Second Link
 text-3: Third Link
 text-4: Fourth Link
-
-\-- footer-1.Category:
-heading: CATEGORIES
-text-1: First Link
-text-2: Second Link
-text-3: Third Link
-text-4: Fourth Link
+link-4: https://www.facebook.com/trizwit
 
 \-- end: footer-1.footer-1
 
@@ -328,6 +339,8 @@ twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
 logo-test: TRIZWIT
+description: Air plant banjo lyft occupy retro adaptogen indego
+footer-text: © 2023 Trizwit —
 facebook-link: https://www.facebook.com/trizwit
 twitter-link: https://twitter.com/trizwit
 instagram-link: https://www.instagram.com/trizwit/
@@ -336,7 +349,19 @@ linkedin-link: https://www.linkedin.com/company/trizwit/
 -- footer-1.Category:
 heading: CATEGORIES
 text-1: First Link
+link-1: https://www.facebook.com/trizwit
 text-2: Second Link
+link-2: https://www.facebook.com/trizwit
+text-3: Third Link
+link-3: https://www.facebook.com/trizwit
+text-4: Fourth Link
+link-4: https://www.facebook.com/trizwit
+
+-- footer-1.Category:
+heading: CATEGORIES
+text-1: First Link
+text-2: Second Link
+link-2: https://www.facebook.com/trizwit
 text-3: Third Link
 text-4: Fourth Link
 
@@ -345,6 +370,7 @@ heading: CATEGORIES
 text-1: First Link
 text-2: Second Link
 text-3: Third Link
+link-3: https://www.facebook.com/trizwit
 text-4: Fourth Link
 
 -- footer-1.Category:
@@ -353,13 +379,7 @@ text-1: First Link
 text-2: Second Link
 text-3: Third Link
 text-4: Fourth Link
-
--- footer-1.Category:
-heading: CATEGORIES
-text-1: First Link
-text-2: Second Link
-text-3: Third Link
-text-4: Fourth Link
+link-4: https://www.facebook.com/trizwit
 
 -- end: footer-1.footer-1
 
@@ -426,9 +446,13 @@ boolean $is-active-3: false
 boolean $is-active-4: false
 string heading: 
 string text-1:
+optional string link-1:
 string text-2:
+optional string link-2:
 string text-3:
+optional string link-3:
 string text-4:
+optional string link-4:
 
 \-- ftd.column:
 padding-horizontal.px: 16
@@ -446,7 +470,7 @@ color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-1}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-1, v = false)
-link:
+link: $Category.link-1
 
 \-- ftd.text: $Category.text-2
 role: $inherited.types.label-small
@@ -455,7 +479,7 @@ color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-2}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-2, v = false)
-link:
+link: $Category.link-2
 
 \-- ftd.text: $Category.text-3
 role: $inherited.types.label-small
@@ -464,7 +488,7 @@ color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-3}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-3, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-3, v = false)
-link:
+link: $Category.link-3
 
 \-- ftd.text: $Category.text-4
 role: $inherited.types.label-small
@@ -473,7 +497,7 @@ color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-4}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-4, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-4, v = false)
-link:
+link: $Category.link-4
 
 \-- end: ftd.column
 \-- end: Category
@@ -493,6 +517,8 @@ ftd.image-src twitter:
 ftd.image-src instagram:
 ftd.image-src linkedin:
 string logo-test:
+optional string description:
+optional string footer-text:
 string facebook-link:
 string twitter-link:
 string instagram-link:
@@ -534,7 +560,7 @@ align-self: center
 \-- end: ftd.row
 
 
-\-- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
+\-- ftd.text: $footer-1.description
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 margin-top.px: 8
@@ -562,7 +588,7 @@ padding-horizontal.percent: 10
 padding-vertical.px: 16
 background.solid: $inherited.colors.cta-tertiary.hover
 
-\-- ftd.text: © 2023 Trizwit —
+\-- ftd.text: $footer-1.footer-text
 role: $inherited.types.copy-small
 color: $inherited.colors.scrim
 width: fill-container
@@ -674,6 +700,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {$code-open-2}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-2)
+$on-click$: $ftd.set-bool($a = $use-open-2, v = false)
 
 -- ftd.text: Use
 role: $fira-code-size-16-400
@@ -686,6 +713,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {use-open-2}: #2b303b
 $on-click$: $ftd.toggle($a = $use-open-2)
+$on-click$: $ftd.set-bool($a = $code-open-2, v = false)
 
 -- end: ftd.row
 
@@ -732,7 +760,9 @@ facebook: $assets.files.images.Footer.facebook.png
 twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
-logo-test: TRIZWIT
+logo-test: TRIZWIT`
+description: Air plant banjo lyft occupy retro adaptogen indego
+footer-text: © 2023 Trizwit —
 facebook-link: https://www.facebook.com/trizwit
 twitter-link: https://twitter.com/trizwit
 instagram-link: https://www.instagram.com/trizwit/
@@ -741,7 +771,20 @@ linkedin-link: https://www.linkedin.com/company/trizwit/
 \-- footer-2.Category:
 heading: CATEGORIES
 text-1: First Link
+link-1: https://www.facebook.com/trizwit
 text-2: Second Link
+link-2: https://www.facebook.com/trizwit
+text-3: Third Link
+link-3: https://www.facebook.com/trizwit
+text-4: Fourth Link
+link-4: https://www.facebook.com/trizwit
+
+\-- footer-2.Category:
+heading: CATEGORIES
+text-1: First Link
+link-1: https://www.facebook.com/trizwit
+text-2: Second Link
+link-2: https://www.facebook.com/trizwit
 text-3: Third Link
 text-4: Fourth Link
 
@@ -750,14 +793,9 @@ heading: CATEGORIES
 text-1: First Link
 text-2: Second Link
 text-3: Third Link
+link-3: https://www.facebook.com/trizwit
 text-4: Fourth Link
-
-\-- footer-2.Category:
-heading: CATEGORIES
-text-1: First Link
-text-2: Second Link
-text-3: Third Link
-text-4: Fourth Link
+link-4: https://www.facebook.com/trizwit
 
 \-- footer-2.Category:
 heading: CATEGORIES
@@ -782,6 +820,8 @@ twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
 logo-test: TRIZWIT
+description: Air plant banjo lyft occupy retro adaptogen indego
+footer-text: © 2023 Trizwit —
 facebook-link: https://www.facebook.com/trizwit
 twitter-link: https://twitter.com/trizwit
 instagram-link: https://www.instagram.com/trizwit/
@@ -790,7 +830,20 @@ linkedin-link: https://www.linkedin.com/company/trizwit/
 -- footer-2.Category:
 heading: CATEGORIES
 text-1: First Link
+link-1: https://www.facebook.com/trizwit
 text-2: Second Link
+link-2: https://www.facebook.com/trizwit
+text-3: Third Link
+link-3: https://www.facebook.com/trizwit
+text-4: Fourth Link
+link-4: https://www.facebook.com/trizwit
+
+-- footer-2.Category:
+heading: CATEGORIES
+text-1: First Link
+link-1: https://www.facebook.com/trizwit
+text-2: Second Link
+link-2: https://www.facebook.com/trizwit
 text-3: Third Link
 text-4: Fourth Link
 
@@ -799,14 +852,9 @@ heading: CATEGORIES
 text-1: First Link
 text-2: Second Link
 text-3: Third Link
+link-3: https://www.facebook.com/trizwit
 text-4: Fourth Link
-
--- footer-2.Category:
-heading: CATEGORIES
-text-1: First Link
-text-2: Second Link
-text-3: Third Link
-text-4: Fourth Link
+link-4: https://www.facebook.com/trizwit
 
 -- footer-2.Category:
 heading: CATEGORIES
@@ -835,6 +883,8 @@ twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
 logo-test: TRIZWIT
+description: Air plant banjo lyft occupy retro adaptogen indego
+footer-text: © 2023 Trizwit —
 facebook-link: https://www.facebook.com/trizwit
 twitter-link: https://twitter.com/trizwit
 instagram-link: https://www.instagram.com/trizwit/
@@ -843,16 +893,22 @@ linkedin-link: https://www.linkedin.com/company/trizwit/
 \-- footer-2.Category:
 heading: CATEGORIES
 text-1: First Link
+link-1: https://www.facebook.com/trizwit
 text-2: Second Link
+link-2: https://www.facebook.com/trizwit
 text-3: Third Link
+link-3: https://www.facebook.com/trizwit
 text-4: Fourth Link
+link-4: https://www.facebook.com/trizwit
 
 \-- footer-2.Category:
 heading: CATEGORIES
 text-1: First Link
 text-2: Second Link
+link-2: https://www.facebook.com/trizwit
 text-3: Third Link
 text-4: Fourth Link
+link-4: https://www.facebook.com/trizwit
 
 \-- footer-2.Category:
 heading: CATEGORIES
@@ -881,9 +937,13 @@ boolean $is-active-3: false
 boolean $is-active-4: false
 string heading: 
 string text-1:
+optional string link-1:
 string text-2:
+optional string link-2:
 string text-3:
+optional string link-3:
 string text-4:
+optional string link-4:
 
 \-- ftd.column:
 padding-horizontal.px: 16
@@ -901,7 +961,7 @@ color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-1}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-1, v = false)
-link:
+link: $Category.link-1
 
 \-- ftd.text: $Category.text-2
 role: $inherited.types.label-small
@@ -910,7 +970,7 @@ color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-2}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-2, v = false)
-link:
+link: $Category.link-2
 
 \-- ftd.text: $Category.text-3
 role: $inherited.types.label-small
@@ -919,7 +979,7 @@ color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-3}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-3, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-3, v = false)
-link:
+link: $Category.link-3
 
 \-- ftd.text: $Category.text-4
 role: $inherited.types.label-small
@@ -928,7 +988,7 @@ color: $inherited.colors.cta-tertiary.hover
 color if {Category.is-active-4}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-4, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-4, v = false)
-link:
+link: $Category.link-4
 
 \-- end: ftd.column
 \-- end: Category
@@ -949,6 +1009,8 @@ ftd.image-src twitter:
 ftd.image-src instagram:
 ftd.image-src linkedin:
 string logo-test:
+optional string description:
+optional string footer-text:
 string facebook-link:
 string twitter-link:
 string instagram-link:
@@ -999,7 +1061,7 @@ align-self: center
 \-- end: ftd.row
 
 
-\-- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
+\-- ftd.text: $footer-2.description
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 margin-top.px: 8
@@ -1016,7 +1078,7 @@ padding-horizontal.percent: 10
 padding-vertical.px: 16
 background.solid: $inherited.colors.cta-tertiary.hover
 
-\-- ftd.text: © 2023 Trizwit —
+\-- ftd.text: $footer-2.footer-text
 role: $inherited.types.copy-small
 color: $inherited.colors.scrim
 width: fill-container
@@ -1127,6 +1189,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {$code-open-3}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-3)
+$on-click$: $ftd.set-bool($a = $use-open-3, v = false)
 
 -- ftd.text: Use
 role: $fira-code-size-16-400
@@ -1139,6 +1202,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {use-open-3}: #2b303b
 $on-click$: $ftd.toggle($a = $use-open-3)
+$on-click$: $ftd.set-bool($a = $code-open-3, v = false)
 
 -- end: ftd.row
 
@@ -1186,6 +1250,7 @@ twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
 logo-test: Trizwit
+footer-text: © 2023 Trizwit —
 facebook-link: https://www.facebook.com/trizwit
 twitter-link: https://twitter.com/trizwit
 instagram-link: https://www.instagram.com/trizwit/
@@ -1205,6 +1270,7 @@ twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
 logo-test: Trizwit
+footer-text: © 2023 Trizwit —
 facebook-link: https://www.facebook.com/trizwit
 twitter-link: https://twitter.com/trizwit
 instagram-link: https://www.instagram.com/trizwit/
@@ -1227,6 +1293,7 @@ twitter: $assets.files.images.Footer.twitter.svg
 instagram: $assets.files.images.Footer.instagram.svg
 linkedin: $assets.files.images.Footer.linkedin.svg
 logo-test: TRIZWIT
+footer-text: © 2023 Trizwit —
 facebook-link: https://www.facebook.com/trizwit
 twitter-link: https://twitter.com/trizwit
 instagram-link: https://www.instagram.com/trizwit/
@@ -1285,7 +1352,7 @@ height: fill-container
 margin-left.px: 10
 align-self: center
 
-\-- ftd.text: © 2023 Trizwit — 
+\-- ftd.text: $footer-3.footer-text
 if: { ftd.device == "desktop" }
 role: $inherited.types.copy-small
 color: $inherited.colors.scrim

@@ -25,6 +25,7 @@ ftd.image-src twitter:
 ftd.image-src instagram:
 ftd.image-src linkedin:
 string logo-test:
+optional string footer-text: © 2023 Trizwit —
 string facebook-link:
 string twitter-link:
 string instagram-link:
@@ -68,7 +69,7 @@ height: fill-container
 margin-left.px: 10
 align-self: center
 
--- ftd.text: © 2023 Trizwit — 
+-- ftd.text: $footer-3.footer-text
 if: { ftd.device == "desktop" }
 role: $inherited.types.copy-small
 color: $inherited.colors.scrim

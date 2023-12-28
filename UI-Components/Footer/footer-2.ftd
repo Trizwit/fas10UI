@@ -24,9 +24,13 @@ boolean $is-active-3: false
 boolean $is-active-4: false
 string heading: 
 string text-1:
+optional string link-1:
 string text-2:
+optional string link-2:
 string text-3:
+optional string link-3:
 string text-4:
+optional string link-4:
 
 -- ftd.column:
 padding-horizontal.px: 16
@@ -44,7 +48,7 @@ color: $inherited.colors.text
 color if {Category.is-active-1}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-1, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-1, v = false)
-link:
+link: $Category.link-1
 
 -- ftd.text: $Category.text-2
 role: $inherited.types.label-small
@@ -53,7 +57,7 @@ color: $inherited.colors.text
 color if {Category.is-active-2}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-2, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-2, v = false)
-link:
+link: $Category.link-2
 
 -- ftd.text: $Category.text-3
 role: $inherited.types.label-small
@@ -62,7 +66,7 @@ color: $inherited.colors.text
 color if {Category.is-active-3}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-3, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-3, v = false)
-link:
+link: $Category.link-3
 
 -- ftd.text: $Category.text-4
 role: $inherited.types.label-small
@@ -71,7 +75,7 @@ color: $inherited.colors.text
 color if {Category.is-active-4}: $inherited.colors.border
 $on-mouse-enter$: $ftd.set-bool($a = $Category.is-active-4, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $Category.is-active-4, v = false)
-link:
+link: $Category.link-4
 
 -- end: ftd.column
 -- end: Category
@@ -92,6 +96,8 @@ ftd.image-src twitter:
 ftd.image-src instagram:
 ftd.image-src linkedin:
 string logo-test:
+optional string description: _
+optional string footer-text: © 2023 Trizwit —
 string facebook-link:
 string twitter-link:
 string instagram-link:
@@ -147,7 +153,7 @@ align-self: center
 -- end: ftd.row
 
 
--- ftd.text: Air plant banjo lyft occupy retro adaptogen indego
+-- ftd.text: $footer-2.description
 role: $inherited.types.copy-small
 color: $inherited.colors.text
 margin-top.px: 8
@@ -164,7 +170,7 @@ padding-horizontal.percent: 10
 padding-vertical.px: 16
 background.solid: $inherited.colors.cta-tertiary.hover
 
--- ftd.text: © 2023 Trizwit —
+-- ftd.text: $footer-2.footer-text	
 role: $inherited.types.copy-small
 color: $inherited.colors.scrim
 width: fill-container
