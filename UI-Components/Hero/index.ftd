@@ -239,6 +239,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {code-open-1}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-1)
+$on-click$: $ftd.set-bool($a = $use-open-1, v = false)
 
 -- ftd.text: Use
 role: $fira-code-size-16-400
@@ -251,6 +252,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {use-open-1}: #2b303b
 $on-click$: $ftd.toggle($a = $use-open-1)
+$on-click$: $ftd.set-bool($a = $code-open-1, v = false)
 
 -- end: ftd.row
 
@@ -550,6 +552,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {$code-open-2}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-2)
+$on-click$: $ftd.set-bool($a = $use-open-2, v = false)
 
 -- ftd.text: Use
 role: $fira-code-size-16-400
@@ -562,6 +565,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {use-open-2}: #2b303b
 $on-click$: $ftd.toggle($a = $use-open-2)
+$on-click$: $ftd.set-bool($a = $code-open-2, v = false)
 
 -- end: ftd.row
 
@@ -860,6 +864,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {code-open-3}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-3)
+$on-click$: $ftd.set-bool($a = $use-open-3, v = false)
 
 -- ftd.text: Use
 role: $fira-code-size-16-400
@@ -872,6 +877,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {use-open-3}: #2b303b
 $on-click$: $ftd.toggle($a = $use-open-3)
+$on-click$: $ftd.set-bool($a = $code-open-3, v = false)
 
 -- end: ftd.row
 
@@ -1169,6 +1175,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {code-open-4}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-4)
+$on-click$: $ftd.set-bool($a = $use-open-4, v = false)
 
 -- ftd.text: Use
 role: $fira-code-size-16-400
@@ -1181,6 +1188,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {use-open-4}: #2b303b
 $on-click$: $ftd.toggle($a = $use-open-4)
+$on-click$: $ftd.set-bool($a = $code-open-4, v = false)
 
 -- end: ftd.row
 
@@ -1617,6 +1625,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {code-open-5}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-5)
+$on-click$: $ftd.set-bool($a = $use-open-5, v = false)
 
 -- ftd.text: Use
 role: $fira-code-size-16-400
@@ -1629,6 +1638,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {use-open-5}: #2b303b
 $on-click$: $ftd.toggle($a = $use-open-5)
+$on-click$: $ftd.set-bool($a = $code-open-5, v = false)
 
 -- end: ftd.row
 
@@ -1904,6 +1914,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {code-open-6}: #2b303b
 $on-click$: $ftd.toggle($a = $code-open-6)
+$on-click$: $ftd.set-bool($a = $use-open-6, v = false)
 
 -- ftd.text: Use
 role: $fira-code-size-16-400
@@ -1916,6 +1927,7 @@ border-color: #5F6C78
 background.solid: #011221
 background.solid if {use-open-6}: #2b303b
 $on-click$: $ftd.toggle($a = $use-open-6)
+$on-click$: $ftd.set-bool($a = $code-open-6, v = false)
 
 -- end: ftd.row
 
